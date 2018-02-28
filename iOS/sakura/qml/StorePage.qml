@@ -661,8 +661,8 @@ Item {
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 20
-                        text: "AdMob"
-                        font.pointSize: 30
+                        text: qsTr("Remove Ads")
+                        font.pointSize: 16
                         font.family: "Helvetica"
                         font.bold: true
                         color: "white"

@@ -611,7 +611,6 @@ Item {
             id:           mouseAreaBackButton
             anchors.fill: parent
             onClicked: {
-                console.log("aaa");
                 rumbleEffectStart();
                 stopTimer();
                 mainStackView.pop();
@@ -732,15 +731,10 @@ Item {
                 scale: backgroundFlickable.initialContentWidth > 0.0 && backgroundFlickable.contentWidth > 0.0 ? backgroundFlickable.contentWidth / backgroundFlickable.initialContentWidth : 1.0
                 color: "transparent"
                 transformOrigin: Item.TopLeft
-                onScaleChanged: {
-                    console.debug(scale);
-                }
             }
 
             onPinchStarted: {
                 backgroundFlickable.interactive = false;
-
-                console.debug("STARTED");
             }
 
             onPinchUpdated: {
@@ -752,7 +746,6 @@ Item {
                 if (backgroundFlickable.contentWidth * scale / backgroundFlickable.initialContentWidth >= 1.0 &&
                     backgroundFlickable.contentWidth * scale / backgroundFlickable.initialContentWidth <= 3.0) {
                     backgroundFlickable.resizeContent(backgroundFlickable.contentWidth * scale, backgroundFlickable.contentHeight * scale, pinch.center);
-                    console.debug("RESIZE");
                 }
             }
 
@@ -760,8 +753,6 @@ Item {
                 backgroundFlickable.interactive = true;
 
                 backgroundFlickable.returnToBounds();
-
-                console.debug("FINISHED");
             }
         }
 

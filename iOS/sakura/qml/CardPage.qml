@@ -522,6 +522,7 @@ Item {
             waitRectangle.visible = false
         })) {
             console.log("grabToImage() failed")
+
             waitRectangle.visible = false
         }
     }

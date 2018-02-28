@@ -231,8 +231,8 @@ Item {
                     backgroundFlickable.returnToBounds()
 
                     if (stateTutorial === 2) {
-                        rowTextPinchMap.visible = false
-                        rowTextFlickGame.visible = true
+                        textPinchMap.visible = false
+                        textFlickMap.visible = true
                         imageTutorial.visible = true
                         imageTutorial.source = "qrc:/resources/images/flick.png"
                         stateTutorial = 3
@@ -248,10 +248,10 @@ Item {
             onMovementEnded: {
                 if (stateTutorial === 4) {
                     stateTutorial = 5
-                    rowTextFlickGame.visible = false
-                    rowTextPinchMap.visible = false
-                    rowTextDisassembleBranch.visible = false
-                    rowTextDoubleTapBranch.visible = true
+                    textFlickMap.visible = false
+                    textPinchMap.visible = false
+                    textDisassembleBranch.visible = false
+                    textDoubleTapBranch.visible = true
                     imageTutorial.source = "qrc:/resources/images/doubletap.png"
                 }
             }
@@ -319,8 +319,8 @@ Item {
                     z: 15
                     spacing: 5
                     Text {
-                        id: textFailedGame
-                        text: "EXCELLENT!"
+                        id: textCompletedGame
+                        text: qsTr("Excellent!")
                         font.pointSize: 30
                         font.bold: true
                         color: "white"
@@ -407,97 +407,80 @@ Item {
                 width: parent.width
             }
 
-            Row {
-                id: rowTextPinchMap
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+            Text {
+                id: textPinchMap
+                anchors.fill: parent
                 z: 15
-                spacing: 5
                 visible: true
-                Text {
-                    id: textPinchMap
-                    text: qsTr("Pinch map!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    opacity: 1.0
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Try to resize playground area with pinch gesture")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                opacity: 1.0
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
 
-            Row {
-                id: rowTextFlickGame
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+            Text {
+                id: textFlickMap
+                anchors.fill: parent
                 z: 15
-                height: 50
-                spacing: 15
-
                 visible: false
-                Text {
-                    id: textFlickMap
-                    text: qsTr("Flick map!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Try to move playground area with your finger")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
 
-            Row {
-                id: rowTextDoubleTapBranch
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+            Text {
+                id: textDoubleTapBranch
+                anchors.fill: parent
                 z: 15
-                spacing: 5
                 visible: false
-                Text {
-                    id: textDoubleTapBranch
-                    text: qsTr("Double tap!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Double tap on playground area to restore its default position")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
 
-            Row {
-                id: rowTextDisassembleBranch
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+            Text {
+                id: textDisassembleBranch
+                anchors.fill: parent
                 z: 15
-                spacing: 5
                 visible: false
-                Text {
-                    id: textDisassembleBranch
-                    text: qsTr("Disassemble branch!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Disassembling puzzle...")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
 
-            Row {
-                id: rowTextPressedBranch
-                anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+            Text {
+                id: textPressedBranch
+                anchors.fill: parent
                 z: 15
-                spacing: 5
                 visible: false
-                Text {
-                    id: textPressedBranch
-                    text: qsTr("Pressed on branch!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Please tap on highlighted fragment")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
         }
         PropertyAnimation {
@@ -548,10 +531,10 @@ Item {
     }
 
     function startTimerTutorial() {
-        rowTextFlickGame.visible = false
-        rowTextPinchMap.visible = false
-        rowTextDisassembleBranch.visible = true
-        rowTextDoubleTapBranch.visible = false
+        textFlickMap.visible = false
+        textPinchMap.visible = false
+        textDisassembleBranch.visible = true
+        textDoubleTapBranch.visible = false
         imageTutorial.visible = false
 
         mixMap()
@@ -559,11 +542,11 @@ Item {
 
     function repeatGame() {
         stateTutorial = 1
-        rowTextFlickGame.visible = false
-        rowTextPinchMap.visible = true
-        rowTextDisassembleBranch.visible = false
-        rowTextPressedBranch.visible = false
-        rowTextDoubleTapBranch.visible = false
+        textFlickMap.visible = false
+        textPinchMap.visible = true
+        textDisassembleBranch.visible = false
+        textPressedBranch.visible = false
+        textDoubleTapBranch.visible = false
         animationRectTutorialGameDown.running = true
         animationRectCompletedGameDown.running = true
         loadBranchOnMap()
@@ -707,11 +690,11 @@ Item {
             }
         }
 
-        rowTextFlickGame.visible = false
-        rowTextPinchMap.visible = false
-        rowTextDisassembleBranch.visible = false
-        rowTextDoubleTapBranch.visible = false
-        rowTextPressedBranch.visible = true
+        textFlickMap.visible = false
+        textPinchMap.visible = false
+        textDisassembleBranch.visible = false
+        textDoubleTapBranch.visible = false
+        textPressedBranch.visible = true
     }
 
     function mixMap() {

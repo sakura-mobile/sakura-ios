@@ -37,7 +37,7 @@ Item {
                 Text {
                     id: textTimeLantern
                     horizontalAlignment: Text.AlignHCenter
-                    text: qsTr("Tournament end time:")
+                    text: qsTr("The tournament will end in:")
                     font.pointSize: 12
                     font.bold: true
                     color: "white"
@@ -352,7 +352,7 @@ Item {
                         id: textName
                         anchors.horizontalCenter: parent.horizontalCenter
 
-                        text: qsTr("YOU NAME: ")
+                        text: qsTr("Your nickname:")
                         font.pointSize: 25
                         font.bold: true
                         color: "white"

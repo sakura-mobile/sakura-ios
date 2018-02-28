@@ -729,22 +729,22 @@ Item {
                 }
             }
 
-            Row {
-                id: rowTextFailedGame
+            Text {
+                id: textFailedGame
                 anchors.top: parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: 50
+                anchors.bottom: rowRectCompletedGame.top
+                anchors.left: parent.left
+                anchors.right: parent.right
                 z: 15
-                spacing: 5
                 visible: false
-                Text {
-                    id: textFailedGame
-                    text: qsTr("FAILED GAME :( REPEAT!")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                }
+                text: qsTr("Game over. Do you want to play again?")
+                font.pointSize: 20
+                font.bold: true
+                color: "white"
+                font.family: "Helvetica"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.Wrap
             }
 
             Row {
@@ -841,7 +841,7 @@ Item {
             easing.type: Easing.InQuad
             to: imageBackgroundMainLevel.height
             onStopped: {
-                rowTextFailedGame.visible = false
+                textFailedGame.visible = false
                 imageShare.visible = true
                 rowTextCompletedGame.visible = true
                 rowTextAvardGame.visible = false
@@ -867,7 +867,7 @@ Item {
                     = GenerationBranchScript.listObjectSingleLevels[currentLevel].currentScore
             animationScoreDown.running = true
 
-            rowTextFailedGame.visible = false
+            textFailedGame.visible = false
             imageShare.visible = true
         }
     }
@@ -1114,7 +1114,7 @@ Item {
     }
 
     function visibleFailedGameWindow() {
-        rowTextFailedGame.visible = true
+        textFailedGame.visible = true
         imageShare.visible = false
         rowTextCompletedGame.visible = false
         GenerationBranchScript.isCompleted = 1
