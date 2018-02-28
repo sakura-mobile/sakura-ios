@@ -6,7 +6,6 @@ import "Settings.js" as SettingsScript
 
 Item {
     id:           gamePage
-  //  anchors.fill: parent
 
     property bool appInForeground: Qt.application.active
     property int countAnimationTree : 0
@@ -22,7 +21,6 @@ Item {
     property variant objectGlare: ""    
     property int isCompleted: 0
     property int isPlayGame: 0
-//    orientationLock : PageOrientation.LockLandscape
 
     function scaleObjectsGame(zoom) {
         return;
@@ -91,7 +89,6 @@ Item {
     }
 
     function funcAnimationGlareBranch() {
-        //listObjectGlare
         if (SettingsScript.listObjectGlare.length != 0) {
             for(var i = 0; i < SettingsScript.listObjectGlare.length; i++) {
                    SettingsScript.listObjectGlare[i].destroy();
@@ -331,23 +328,19 @@ Item {
 
         SettingsScript.listGameBranch[ii][jj].isChecked = 1;
         if (SettingsScript.listGameBranch[ii][jj].posLeft == 1) {
-            //jj= jj -1
             if (SettingsScript.listGameBranch[ii][jj -1] == null) {gamePage.isClosed = 0;return;}
             branchClosed(ii,jj -1);
         }
         if (SettingsScript.listGameBranch[ii][jj].posTop == 1) {
-            //ii = ii - 1
             if (SettingsScript.listGameBranch[ii - 1][jj] == null) { gamePage.isClosed = 0; return;}
             branchClosed(ii - 1,jj);
 
         }
         if (SettingsScript.listGameBranch[ii][jj].posRight == 1) {
-            //jj = jj + 1
             if (SettingsScript.listGameBranch[ii][jj + 1] == null) { gamePage.isClosed = 0; return;}
             branchClosed(ii,jj + 1);
         }
         if (SettingsScript.listGameBranch[ii][jj].posBottom == 1) {
-            //ii = ii + 1
             if (SettingsScript.listGameBranch[ii + 1][jj] == null) { gamePage.isClosed = 0; return;}
             branchClosed(ii + 1,jj);
         }
@@ -355,8 +348,6 @@ Item {
 
     function loadBranch() {        
         isCompleted = 0;
-        //backgroundFlickable.contentWidth = backgroundFlickable.initialContentWidth;
-        //backgroundFlickable.contentHeight = backgroundFlickable.initialContentHeight;
         textScore.text = SettingsScript.listGameScores[widthGame]
         animationGlareBranchPlay.stop();
         if (SettingsScript.listObjectGlare.length != 0) {
@@ -523,9 +514,6 @@ Item {
         mixMap()
     }
     function load() {
-        // imageBackground.width = imageBackground.width
-       //  imageBackground.height = imageBackground.height
-
          SettingsScript.listImageTree[0] = imageBackgroundTrees_1;
          SettingsScript.listImageTree[1] = imageBackgroundTrees_2;
          timerTrees.interval = 2000 + getRandomInt(100,1000)
@@ -572,7 +560,6 @@ Item {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
     function rumbleEffectStart() {
-        //rumbleEffect.start();
     }
 
     Image {
@@ -580,8 +567,6 @@ Item {
         y:0
         id:               imageBackground
         source:             "qrc:/resources/images/background_game.png"
-        //width : mainPage.widthDisplay
-        //height : mainPage.heightDisplay
         fillMode:         Image.PreserveAspectCrop
 
     }
@@ -589,8 +574,6 @@ Item {
         id:               imageBackgroundTrees_1
         source:             "qrc:/resources/images/background_game_trees_01.png"
         visible: true
-        //width : mainPage.widthDisplay
-        //height : mainPage.heightDisplay
         fillMode:         Image.PreserveAspectCrop
 
     }
@@ -598,8 +581,6 @@ Item {
         id:               imageBackgroundTrees_2
         source:             "qrc:/resources/images/background_game_trees_02.png"
         visible: false
-        //width : mainPage.widthDisplay
-        //height : mainPage.heightDisplay
         fillMode:         Image.PreserveAspectCrop
 
     }
@@ -633,7 +614,6 @@ Item {
                 console.log("aaa");
                 rumbleEffectStart();
                 stopTimer();
-                //mainPageStack.replace(levelPage);
                 mainStackView.pop();
                 levelPage.loadLevels()
             }
@@ -732,11 +712,6 @@ Item {
         }
     }
 
-/*
-    Rectangle {
-        id: rectangleMap
-    }
-*/
     Flickable {
         id:             backgroundFlickable
         boundsBehavior: Flickable.StopAtBounds
@@ -842,15 +817,4 @@ Item {
          y: 0
          anchors.right: parent.right
     }
-
-    /*HapticsEffect {
-         id: rumbleEffect
-         attackIntensity: 0.0
-         attackTime: 250
-         intensity: 1.0
-         duration: 250
-         fadeTime: 250
-         fadeIntensity: 0.0
-    }
-    */
 }

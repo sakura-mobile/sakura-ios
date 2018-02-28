@@ -2,4 +2,4 @@
 
 PATH=$PATH:~/Qt/5.9.1/ios/bin
 
-lrelease ../christmassnow.pro
+lrelease ../sakura.pro

@@ -8,7 +8,19 @@ Window {
     visibility: Window.FullScreen
     visible:    true
 
-    property bool fullVersion: false
+    property bool versionWithoutAds: false
+
+    onVersionWithoutAdsChanged: {
+        setSetting("VersionWithoutAds", versionWithoutAds ? "true" : "false");
+
+        if (mainStackView.depth > 0 && mainStackView.currentItem.hasOwnProperty("bannerViewHeight")) {
+            if (versionWithoutAds) {
+                AdMobHelper.hideBannerView();
+            } else {
+                AdMobHelper.showBannerView();
+            }
+        }
+    }
 
     function addScore(text, score, difficulty) {
         var db = LocalStorage.openDatabaseSync("SakuraDB", "1.0", "SakuraDB", 1000000);
@@ -22,7 +34,6 @@ Window {
 
         );
     }
-
 
     function setSetting(key, value) {
         var db = LocalStorage.openDatabaseSync("SakuraDB", "1.0", "SakuraDB", 1000000);
@@ -59,7 +70,6 @@ Window {
         anchors.fill: parent
         color:        "black"
 
-
         StackView {
             id:           mainStackView
             anchors.fill: parent
@@ -91,7 +101,7 @@ Window {
                     }
 
                     if (currentItem.hasOwnProperty("bannerViewHeight")) {
-                        if (mainWindow.fullVersion) {
+                        if (mainWindow.versionWithoutAds) {
                             AdMobHelper.hideBannerView();
                         } else {
                             AdMobHelper.showBannerView();
@@ -102,6 +112,7 @@ Window {
                 }
             }
         }
+
         MainPage {
             id: mainPage
         }
@@ -114,7 +125,7 @@ Window {
         }
 
         Component.onCompleted: {
-            //fullVersion = (getSetting("FullVersion", "false") === "true");
+            versionWithoutAds = (getSetting("VersionWithoutAds", "false") === "true");
 
             AdMobHelper.initialize();
 

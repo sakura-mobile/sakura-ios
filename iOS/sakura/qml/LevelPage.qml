@@ -19,23 +19,19 @@ Item {
 
         SettingsScript.listGameBranch[ii][jj].isChecked = 1;
         if (SettingsScript.listGameBranch[ii][jj].posLeft == 1) {
-            //jj= jj -1
             if (SettingsScript.listGameBranch[ii][jj -1] == null) {gamePageItem.isClosed = 0;return;}
             branchClosed(ii,jj -1);
         }
         if (SettingsScript.listGameBranch[ii][jj].posTop == 1) {
-            //ii = ii - 1
             if (SettingsScript.listGameBranch[ii - 1][jj] == null) { gamePageItem.isClosed = 0; return;}
             branchClosed(ii - 1,jj);
 
         }
         if (SettingsScript.listGameBranch[ii][jj].posRight == 1) {
-            //jj = jj + 1
             if (SettingsScript.listGameBranch[ii][jj + 1] == null) { gamePageItem.isClosed = 0; return;}
             branchClosed(ii,jj + 1);
         }
         if (SettingsScript.listGameBranch[ii][jj].posBottom == 1) {
-            //ii = ii + 1
             if (SettingsScript.listGameBranch[ii + 1][jj] == null) { gamePageItem.isClosed = 0; return;}
             branchClosed(ii + 1,jj);
         }
@@ -71,29 +67,11 @@ Item {
     }
 
     function funcPlayButton() {
-        //--------------------------
-       // var component = Qt.createComponent("GamePage.qml");
-//
-       //        if (component.status === Component.Ready) {
-       //            mainStackView.push(component);
-//
-//                   gamePageItem = mainStackView.currentItem;
-//               } else {
-//                   console.log(gamePageItem.errorString());
-//               }
-
-
-//        loadLevels();
-        //mainStackView.push(gamePageItem);
-        //--------------------------
-
-
         gamePageItem.isPlayGame = 1;
         gamePageItem.widthGame = widthGame
         gamePageItem.heightGame = heightGame
         mainStackView.push(gamePageItem);
 
-        //mainPageStack.replace(gamePageItem);
         gamePageItem.load();
     }
 
@@ -185,9 +163,6 @@ Item {
                 }
                 typeBranch = gamePageItem.getRandomInt(0,arrAvailableBranch.length - 1);
 
-   //             console.debug(typeBranch);
-
- //               console.debug(arrAvailableBranch[typeBranch].source);
                 object.source = arrAvailableBranch[typeBranch].source
                 object.rotation = arrAvailableBranch[typeBranch].rotation
                 object.posLeft = arrAvailableBranch[typeBranch].left
@@ -257,14 +232,12 @@ Item {
         }
     }
     function rumbleEffectStart() {
-        //rumbleEffect.start();
     }
 
     Image {
         id:               imageBackgroundMainLevel
         source:             "qrc:/resources/images/background_main.png"
         anchors.fill: parent
-//        fillMode: Image.PreserveAspectFit
         fillMode:         Image.PreserveAspectCrop
 
         Rectangle {
@@ -329,7 +302,6 @@ Item {
                 onClicked: {
                      rumbleEffectStart();
                      mainStackView.pop();
-                     //mainPageStack.replace(mainPage);
                 }
             }
         }

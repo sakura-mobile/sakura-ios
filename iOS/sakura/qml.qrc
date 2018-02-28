@@ -1,10 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/Branch.qml</file>
-        <file>qml/HelpPage.qml</file>
         <file>qml/main.qml</file>
         <file>qml/MainPage.qml</file>
-        <file>qml/CampaniaPage.qml</file>
+        <file>qml/CampaignPage.qml</file>
         <file>qml/GenerationBranch.js</file>
         <file>qml/MapPage.qml</file>
         <file>qml/LevelsMapPage.qml</file>

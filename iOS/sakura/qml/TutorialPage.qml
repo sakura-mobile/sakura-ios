@@ -9,7 +9,7 @@ Item {
     property int currentLevel: 0
     property var arrRectTrasparent: []
     property int currentTutorialLevel: 0
-    property var arrBranchRotation : []
+    property var arrBranchRotation: []
     property var posFlickering: ""
     property int stateTutorial: 1
 
@@ -21,126 +21,130 @@ Item {
     property int emitRatePetalsMin: 2
     property int emitRatePetals: 2
 
-    property real lastMouseX: 0;
-    property real lastMouseY: 0;
-
+    property real lastMouseX: 0
+    property real lastMouseY: 0
 
     Image {
-        id:               imageBackgroundMainLevel
-        source:             "qrc:/resources/images/background_main.png"
+        id: imageBackgroundMainLevel
+        source: "qrc:/resources/images/background_main.png"
         anchors.fill: parent
-        fillMode:         Image.PreserveAspectCrop
-
+        fillMode: Image.PreserveAspectCrop
 
         ParticleSystem {
-              id:      particleSystem1
-              running: false
-          }
+            id: particleSystem1
+            running: false
+        }
 
-          Emitter {
-              id: emitter1
-              anchors.fill: parent
-              system:       particleSystem1
-              lifeSpan:     5000
-              size:         16
-              emitRate:     tutorialPage.emitRatePetals
-              maximumEmitted: tutorialPage.countPetals
+        Emitter {
+            id: emitter1
+            anchors.fill: parent
+            system: particleSystem1
+            lifeSpan: 5000
+            size: 16
+            emitRate: tutorialPage.emitRatePetals
+            maximumEmitted: tutorialPage.countPetals
 
-              velocity: AngleDirection {
-                  angle:              90.0
-                  angleVariation:     50
-                  magnitude:          80.0
-                  magnitudeVariation: 20
-              }
+            velocity: AngleDirection {
+                angle: 90.0
+                angleVariation: 50
+                magnitude: 80.0
+                magnitudeVariation: 20
+            }
 
-              ImageParticle {
-                  rotationVelocity: 30.0
-                  rotationVariation: 10.0
-                  opacity: 0.75
-                  system:  particleSystem1
-                  source:  "qrc:/resources/images/petal_big_2.png"
-              }
-          }
+            ImageParticle {
+                rotationVelocity: 30.0
+                rotationVariation: 10.0
+                opacity: 0.75
+                system: particleSystem1
+                source: "qrc:/resources/images/petal_big_2.png"
+            }
+        }
 
+        ParticleSystem {
+            id: particleSystem2
+            running: false
+        }
 
+        Emitter {
+            id: emitter2
+            anchors.fill: parent
+            system: particleSystem2
+            lifeSpan: 5000
+            size: 8
+            emitRate: tutorialPage.emitRatePetals
+            maximumEmitted: tutorialPage.countPetals
 
-          ParticleSystem {
-              id:      particleSystem2
-              running: false
-          }
+            velocity: AngleDirection {
+                angle: 90.0
+                angleVariation: 30
+                magnitude: 30.0
+                magnitudeVariation: 10
+            }
 
-          Emitter {
-              id: emitter2
-              anchors.fill: parent
-              system:       particleSystem2
-              lifeSpan:     5000
-              size:         8
-              emitRate:     tutorialPage.emitRatePetals
-              maximumEmitted: tutorialPage.countPetals
-
-              velocity: AngleDirection {
-                  angle:              90.0
-                  angleVariation:     30
-                  magnitude:          30.0
-                  magnitudeVariation: 10
-              }
-
-              ImageParticle {
-                //  z:       10
-                  rotationVelocity: 30.0
-                  rotationVariation: 10.0
-                  opacity: 0.75
-                  system:  particleSystem2
-                  source:  "qrc:/resources/images/petal_small_1.png"
-                  //sizeTable:  "qrc:/resources/images/petal_small_1.png"
-              }
-          }
-
+            ImageParticle {
+                rotationVelocity: 30.0
+                rotationVariation: 10.0
+                opacity: 0.75
+                system: particleSystem2
+                source: "qrc:/resources/images/petal_small_1.png"
+            }
+        }
 
         Flickable {
-            id:             backgroundFlickable
+            id: backgroundFlickable
             boundsBehavior: Flickable.StopAtBounds
             anchors.centerIn: parent
-            width:            Math.min(parent.width, parent.height)
-            height:           Math.min(parent.width, parent.height)
-            clip:             true
+            width: Math.min(parent.width, parent.height)
+            height: Math.min(parent.width, parent.height)
+            clip: true
 
             property real initialContentWidth: 0.0
             property real initialContentHeight: 0.0
 
             function initialResize(grid_width, grid_height) {
                 if (grid_width > 0.0 && grid_height > 0.0) {
-                    var scale = 2.5;
-                    resizeContent(initialContentWidth * scale, initialContentHeight * scale, Qt.point(contentWidth / 2, contentHeight / 2));
+                    var scale = 2.5
+                    resizeContent(initialContentWidth * scale,
+                                  initialContentHeight * scale,
+                                  Qt.point(contentWidth / 2, contentHeight / 2))
 
-                    contentX = (contentWidth  - width)  / 2;
-                    contentY = (contentHeight - height) / 2;
+                    contentX = (contentWidth - width) / 2
+                    contentY = (contentHeight - height) / 2
 
-                    returnToBounds();
+                    returnToBounds()
                 }
             }
 
             PinchArea {
-                id : pinchAreaZoom
+                id: pinchAreaZoom
                 anchors.fill: parent
 
                 Rectangle {
-                    width: Math.max(gridMapTutorialGame.width, backgroundFlickable.width)
-                    height: Math.max(gridMapTutorialGame.height, backgroundFlickable.height)
-                    scale: backgroundFlickable.initialContentWidth > 0.0 && backgroundFlickable.contentWidth > 0.0 ? backgroundFlickable.contentWidth / backgroundFlickable.initialContentWidth : 1.0
+                    width: Math.max(gridMapTutorialGame.width,
+                                    backgroundFlickable.width)
+                    height: Math.max(gridMapTutorialGame.height,
+                                     backgroundFlickable.height)
+                    scale: backgroundFlickable.initialContentWidth > 0.0
+                           && backgroundFlickable.contentWidth
+                           > 0.0 ? backgroundFlickable.contentWidth
+                                   / backgroundFlickable.initialContentWidth : 1.0
                     transformOrigin: Item.TopLeft
-                    color: "transparent"                  
+                    color: "transparent"
 
                     onWidthChanged: {
-                        backgroundFlickable.initialContentWidth = width;
+                        backgroundFlickable.initialContentWidth = width
 
-                        backgroundFlickable.initialResize(gridMapTutorialGame.width, gridMapTutorialGame.height);
+                        backgroundFlickable.initialResize(
+                                    gridMapTutorialGame.width,
+                                    gridMapTutorialGame.height)
                     }
 
                     onHeightChanged: {
-                        backgroundFlickable.initialContentHeight = height;
+                        backgroundFlickable.initialContentHeight = height
 
-                        backgroundFlickable.initialResize(gridMapTutorialGame.width, gridMapTutorialGame.height);
+                        backgroundFlickable.initialResize(
+                                    gridMapTutorialGame.width,
+                                    gridMapTutorialGame.height)
                     }
 
                     Grid {
@@ -149,108 +153,118 @@ Item {
                         spacing: 1
 
                         onWidthChanged: {
-                            backgroundFlickable.initialResize(gridMapTutorialGame.width, gridMapTutorialGame.height);
+                            backgroundFlickable.initialResize(
+                                        gridMapTutorialGame.width,
+                                        gridMapTutorialGame.height)
                         }
 
                         onHeightChanged: {
-                            backgroundFlickable.initialResize(gridMapTutorialGame.width, gridMapTutorialGame.height);
+                            backgroundFlickable.initialResize(
+                                        gridMapTutorialGame.width,
+                                        gridMapTutorialGame.height)
                         }
-
                     }
                     Image {
                         id: imageTutorial
                         anchors.centerIn: parent
                         width: 50
-                        height:50
+                        height: 50
                         z: 10
                         visible: false
                     }
 
                     MouseArea {
-                        id:           mouseAreaRectBranch
+                        id: mouseAreaRectBranch
                         anchors.fill: parent
                         propagateComposedEvents: true
 
                         onClicked: {
-                            lastMouseX = mouse.x;
-                            lastMouseY = mouse.y;
+                            lastMouseX = mouse.x
+                            lastMouseY = mouse.y
 
-                            mouse.accepted = false;
+                            mouse.accepted = false
                         }
 
                         onDoubleClicked: {
 
-                            if (Math.abs(mouse.x - lastMouseX) * scale < 16 &&
-                                Math.abs(mouse.y - lastMouseY) * scale < 16) {
+                            if (Math.abs(mouse.x - lastMouseX) * scale < 16
+                                    && Math.abs(
+                                        mouse.y - lastMouseY) * scale < 16) {
                                 if (stateTutorial === 5) {
-                                    timer.start();
-                                    stateTutorial = 6;
+                                    timer.start()
+                                    stateTutorial = 6
                                 }
-                                backgroundFlickable.initialResize(gridMapTutorialGame.width, gridMapTutorialGame.height);
+                                backgroundFlickable.initialResize(
+                                            gridMapTutorialGame.width,
+                                            gridMapTutorialGame.height)
                             }
                         }
                     }
                 }
 
                 onPinchStarted: {
-                    backgroundFlickable.interactive = false;
+                    backgroundFlickable.interactive = false
                 }
 
                 onPinchUpdated: {
-                    backgroundFlickable.contentX += pinch.previousCenter.x - pinch.center.x;
-                    backgroundFlickable.contentY += pinch.previousCenter.y - pinch.center.y;
+                    backgroundFlickable.contentX += pinch.previousCenter.x - pinch.center.x
+                    backgroundFlickable.contentY += pinch.previousCenter.y - pinch.center.y
 
-                    var scale = 1.0 + pinch.scale - pinch.previousScale;
+                    var scale = 1.0 + pinch.scale - pinch.previousScale
 
-                    if (backgroundFlickable.contentWidth * scale / backgroundFlickable.initialContentWidth >= 1.0 &&
-                        backgroundFlickable.contentWidth * scale / backgroundFlickable.initialContentWidth <= 3.0) {
-                        backgroundFlickable.resizeContent(backgroundFlickable.contentWidth * scale, backgroundFlickable.contentHeight * scale, pinch.center);
-                        if(stateTutorial === 1) stateTutorial = 2;
+                    if (backgroundFlickable.contentWidth * scale
+                            / backgroundFlickable.initialContentWidth >= 1.0
+                            && backgroundFlickable.contentWidth * scale
+                            / backgroundFlickable.initialContentWidth <= 3.0) {
+                        backgroundFlickable.resizeContent(
+                                    backgroundFlickable.contentWidth * scale,
+                                    backgroundFlickable.contentHeight * scale,
+                                    pinch.center)
+                        if (stateTutorial === 1)
+                            stateTutorial = 2
                     }
                 }
 
                 onPinchFinished: {
-                    backgroundFlickable.interactive = true;
+                    backgroundFlickable.interactive = true
 
-                    backgroundFlickable.returnToBounds();
+                    backgroundFlickable.returnToBounds()
 
                     if (stateTutorial === 2) {
-                        rowTextPinchMap.visible = false;
-                        rowTextFlickGame.visible = true;
-                        imageTutorial.visible = true;
-                        imageTutorial.source = "qrc:/resources/images/flick.png";
-                        stateTutorial = 3;
+                        rowTextPinchMap.visible = false
+                        rowTextFlickGame.visible = true
+                        imageTutorial.visible = true
+                        imageTutorial.source = "qrc:/resources/images/flick.png"
+                        stateTutorial = 3
                     }
                 }
             }
 
             Component.onCompleted: {
-                contentWidth = width;
-                contentHeight = height;
+                contentWidth = width
+                contentHeight = height
             }
 
             onMovementEnded: {
                 if (stateTutorial === 4) {
-                    stateTutorial = 5;
-                    rowTextFlickGame.visible = false;
-                    rowTextPinchMap.visible = false;
-                    rowTextDisassembleBranch.visible = false;
-                    rowTextDoubleTapBranch.visible = true;
-                    imageTutorial.source = "qrc:/resources/images/doubletap.png";
+                    stateTutorial = 5
+                    rowTextFlickGame.visible = false
+                    rowTextPinchMap.visible = false
+                    rowTextDisassembleBranch.visible = false
+                    rowTextDoubleTapBranch.visible = true
+                    imageTutorial.source = "qrc:/resources/images/doubletap.png"
                 }
-
             }
             onMovementStarted: {
                 if (stateTutorial === 3) {
-                    stateTutorial = 4;
+                    stateTutorial = 4
                 }
             }
-
-       }
+        }
 
         Image {
-            id:               backButton
-            source:             "qrc:/resources/images/back.png"
+            id: backButton
+            source: "qrc:/resources/images/back.png"
             width: 60
             height: 60
             anchors.left: parent.left
@@ -258,17 +272,17 @@ Item {
             anchors.leftMargin: 40
             anchors.bottomMargin: 16
             MouseArea {
-                id:           mouseAreaBackButton
+                id: mouseAreaBackButton
                 anchors.fill: parent
                 onClicked: {
-                     mainStackView.pop();
+                    mainStackView.pop()
                 }
             }
         }
 
         Image {
-            id:               refreshButton
-            source:             "qrc:/resources/images/refresh.png"
+            id: refreshButton
+            source: "qrc:/resources/images/refresh.png"
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             anchors.rightMargin: 40
@@ -276,79 +290,78 @@ Item {
             width: 60
             height: 60
             MouseArea {
-                id:           mouseAreaRefreshButton
+                id: mouseAreaRefreshButton
                 anchors.fill: parent
                 onClicked: {
-                    repeatGame();
+                    repeatGame()
                 }
             }
         }
 
-
         Rectangle {
-            id :    rectCompletedGame
+            id: rectCompletedGame
             anchors.horizontalCenter: parent.horizontalCenter
             y: imageBackgroundMainLevel.height
             width: 300
             height: 200
-            color : "transparent"
+            color: "transparent"
             Image {
                 id: backgroundCompletedGame
                 source: "qrc:/resources/images/background_rect_score.png"
-                width:            parent.width
-                height:           parent.height
+                width: parent.width
+                height: parent.height
 
                 Row {
-                    id:                       rowTextCompletedGame
-                    anchors.top:           parent.top
+                    id: rowTextCompletedGame
+                    anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin:        50
-                    z:                        15
-                    spacing:                  5
+                    anchors.topMargin: 50
+                    z: 15
+                    spacing: 5
                     Text {
-                        id:               textFailedGame
-                        text:             "EXCELLENT!"
-                        font.pointSize:   30
-                        font.bold:        true
-                        color:            "white"
-                        font.family: "Helvetica";
+                        id: textFailedGame
+                        text: "EXCELLENT!"
+                        font.pointSize: 30
+                        font.bold: true
+                        color: "white"
+                        font.family: "Helvetica"
                     }
                 }
 
                 Row {
-                    id:                       rowRectCompletedGame
-                    anchors.bottom:           parent.bottom
+                    id: rowRectCompletedGame
+                    anchors.bottom: parent.bottom
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottomMargin:     30
-                    z:                        15
+                    anchors.bottomMargin: 30
+                    z: 15
                     height: 50
-                    spacing:                  15
+                    spacing: 15
 
                     Image {
-                            id:     imageRepeatGame
-                            width:  50
-                            height: 50
-                            source: "qrc:/resources/images/button_repeat_game.png"
-                            MouseArea {
-                                id:           mouseAreaPlayRepeatGame
-                                anchors.fill: parent
-                                onClicked: {
-                                    repeatGame();
-                                }
+                        id: imageRepeatGame
+                        width: 50
+                        height: 50
+                        source: "qrc:/resources/images/button_repeat_game.png"
+                        MouseArea {
+                            id: mouseAreaPlayRepeatGame
+                            anchors.fill: parent
+                            onClicked: {
+                                repeatGame()
                             }
+                        }
                     }
                     Image {
-                            id:     imageSeachLevel
-                            width:  50
-                            height: 50
-                            source: "qrc:/resources/images/button_seach_levels.png"
-                            MouseArea {
-                                id:           mouseAreaSeachLevel
-                                anchors.fill: parent
-                                onClicked: {
-                                     mainStackView.pop();
-                                }
+                        id: imageSeachLevel
+                        width: 50
+                        height: 50
+                        source: "qrc:/resources/images/button_seach_levels.png"
+                        MouseArea {
+                            id: mouseAreaSeachLevel
+                            anchors.fill: parent
+                            onClicked: {
+                                mainStackView.pop()
                             }
+                        }
                     }
                 }
             }
@@ -356,445 +369,459 @@ Item {
             PropertyAnimation {
                 id: animationRectCompletedGameUp
                 duration: 500
-                easing.overshoot : 4.5
+                easing.overshoot: 4.5
                 from: imageBackgroundMainLevel.height
-                target : rectCompletedGame
+                target: rectCompletedGame
                 properties: "y"
                 easing.type: Easing.InQuad
-                to :    imageBackgroundMainLevel.height - rectCompletedGame.height - 15
+                to: imageBackgroundMainLevel.height - rectCompletedGame.height - 15
             }
             PropertyAnimation {
                 id: animationRectCompletedGameDown
                 duration: 200
                 from: rectCompletedGame.y
-                target : rectCompletedGame
+                target: rectCompletedGame
                 properties: "y"
                 easing.type: Easing.InQuad
-                to :    imageBackgroundMainLevel.height
+                to: imageBackgroundMainLevel.height
                 onStopped: {
-                    emitter1.enabled = false;
-                    emitter2.enabled = false;
+                    emitter1.enabled = false
+                    emitter2.enabled = false
                 }
             }
         }
 
-
         Rectangle {
-            id :    rectTutorialGame
+            id: rectTutorialGame
             anchors.horizontalCenter: parent.horizontalCenter
             y: imageBackgroundMainLevel.height * -1
             height: 100
             color: "transparent"
-            width:            parent.width
+            width: parent.width
 
             Rectangle {
-                 anchors.fill: parent
-                 height: 100
-                 color: "black"
-                 opacity: 0.5
-                 width:            parent.width
+                anchors.fill: parent
+                height: 100
+                color: "black"
+                opacity: 0.5
+                width: parent.width
             }
 
             Row {
-                id:                       rowTextPinchMap
-                anchors.top:           parent.top
+                id: rowTextPinchMap
+                anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin:        50
-                z:                        15
-                spacing:                  5
+                anchors.topMargin: 50
+                z: 15
+                spacing: 5
                 visible: true
                 Text {
-                    id:               textPinchMap
-                    text:             qsTr("Pinch map!")
-                    font.pointSize:   20
-                    font.bold:        true
-                    color:            "white"
+                    id: textPinchMap
+                    text: qsTr("Pinch map!")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
                     opacity: 1.0
-                    font.family: "Helvetica";
+                    font.family: "Helvetica"
                 }
-
             }
 
             Row {
-                id:                       rowTextFlickGame
-                anchors.top:              parent.top
+                id: rowTextFlickGame
+                anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin:        50
-                z:                        15
+                anchors.topMargin: 50
+                z: 15
                 height: 50
-                spacing:                  15
+                spacing: 15
 
                 visible: false
                 Text {
-                    id:               textFlickMap
-                    text:             qsTr("Flick map!")
-                    font.pointSize:   20
-                    font.bold:        true
-                    color:            "white"
-                    font.family: "Helvetica";
-                }
-
-            }
-
-            Row {
-                id:                       rowTextDoubleTapBranch
-                anchors.top:           parent.top
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin:        50
-                z:                        15
-                spacing:                  5
-                visible: false
-                Text {
-                    id:               textDoubleTapBranch
-                    text:             qsTr("Double tap!")
-                    font.pointSize:   20
-                    font.bold:        true
-                    color:            "white"
-                    font.family: "Helvetica";
+                    id: textFlickMap
+                    text: qsTr("Flick map!")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
                 }
             }
 
             Row {
-                id:                       rowTextDisassembleBranch
-                anchors.top:           parent.top
+                id: rowTextDoubleTapBranch
+                anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin:        50
-                z:                        15
-                spacing:                  5
+                anchors.topMargin: 50
+                z: 15
+                spacing: 5
                 visible: false
                 Text {
-                    id:               textDisassembleBranch
-                    text:             qsTr("Disassemble branch!")
-                    font.pointSize:   20
-                    font.bold:        true
-                    color:            "white"
-                    font.family: "Helvetica";
+                    id: textDoubleTapBranch
+                    text: qsTr("Double tap!")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
                 }
             }
 
             Row {
-                id:                       rowTextPressedBranch
-                anchors.top:           parent.top
+                id: rowTextDisassembleBranch
+                anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin:        50
-                z:                        15
-                spacing:                  5
+                anchors.topMargin: 50
+                z: 15
+                spacing: 5
                 visible: false
                 Text {
-                    id:               textPressedBranch
-                    text:             qsTr("Pressed on branch!")
-                    font.pointSize:   20
-                    font.bold:        true
-                    color:            "white"
-                    font.family: "Helvetica";
+                    id: textDisassembleBranch
+                    text: qsTr("Disassemble branch!")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
                 }
             }
 
+            Row {
+                id: rowTextPressedBranch
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.topMargin: 50
+                z: 15
+                spacing: 5
+                visible: false
+                Text {
+                    id: textPressedBranch
+                    text: qsTr("Pressed on branch!")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
+                }
+            }
         }
         PropertyAnimation {
             id: animationRectTutorialGameUp
             duration: 500
-            easing.overshoot : 1.5
+            easing.overshoot: 1.5
             from: rectTutorialGame.y
-            target : rectTutorialGame
+            target: rectTutorialGame
             properties: "y"
             easing.type: Easing.InQuad
-            to :    rectTutorialGame.height * -1
+            to: rectTutorialGame.height * -1
         }
         PropertyAnimation {
             id: animationRectTutorialGameDown
             duration: 500
             from: rectTutorialGame.height * -1
-            target : rectTutorialGame
+            target: rectTutorialGame
             properties: "y"
             easing.type: Easing.InQuad
-            to :    0
+            to: 0
         }
-
     }
 
     Timer {
-             id:           timer
-             interval: 1000; repeat: false
-             onTriggered: tutorialPage.startTimerTutorial();
+        id: timer
+        interval: 1000
+        repeat: false
+        onTriggered: tutorialPage.startTimerTutorial()
     }
 
     Component.onCompleted: {
-         loadBranchOnMap();
+        loadBranchOnMap()
     }
 
     StackView.onStatusChanged: {
         if (StackView.status === StackView.Active) {
-            animationRectTutorialGameDown.running = true;
+            animationRectTutorialGameDown.running = true
         }
     }
 
-
     function resetParticleSystems() {
-        emitter1.enabled = true;
-        emitter2.enabled = true;
-        particleSystem1.running = true;
-        particleSystem2.running = true;
-        particleSystem1.reset();
-        particleSystem2.reset();
+        emitter1.enabled = true
+        emitter2.enabled = true
+        particleSystem1.running = true
+        particleSystem2.running = true
+        particleSystem1.reset()
+        particleSystem2.reset()
     }
 
     function startTimerTutorial() {
-        rowTextFlickGame.visible = false;
-        rowTextPinchMap.visible = false;
-        rowTextDisassembleBranch.visible = true;
-        rowTextDoubleTapBranch.visible = false;
-        imageTutorial.visible = false;
+        rowTextFlickGame.visible = false
+        rowTextPinchMap.visible = false
+        rowTextDisassembleBranch.visible = true
+        rowTextDoubleTapBranch.visible = false
+        imageTutorial.visible = false
 
-        mixMap();
+        mixMap()
     }
 
     function repeatGame() {
-        stateTutorial = 1;
-        rowTextFlickGame.visible = false;
-        rowTextPinchMap.visible = true;
-        rowTextDisassembleBranch.visible = false;
-        rowTextPressedBranch.visible = false;
-        rowTextDoubleTapBranch.visible = false;
-        animationRectTutorialGameDown.running = true;
-        animationRectCompletedGameDown.running = true;
-        loadBranchOnMap();
+        stateTutorial = 1
+        rowTextFlickGame.visible = false
+        rowTextPinchMap.visible = true
+        rowTextDisassembleBranch.visible = false
+        rowTextPressedBranch.visible = false
+        rowTextDoubleTapBranch.visible = false
+        animationRectTutorialGameDown.running = true
+        animationRectCompletedGameDown.running = true
+        loadBranchOnMap()
     }
 
-
     function loadBranchOnMap() {
-         GenerationBranchScript.initObjectTutorialLevels();
-         var objMap = GenerationBranchScript.listObjectTutorialLevels[currentTutorialLevel];
-         var widthGame = objMap.width;
-         var heightGame = objMap.height;
+        GenerationBranchScript.initObjectTutorialLevels()
+        var objMap = GenerationBranchScript.listObjectTutorialLevels[currentTutorialLevel]
+        var widthGame = objMap.width
+        var heightGame = objMap.height
 
-         if(objMap.map.length === 0) {
-             for (var i = 0; i < objMap.height; i++) {
-                 for (var j = 0; j < objMap.width; j++) {
-                    objMap.map[objMap.map.length] = 1;
-                 }
-             }
-         }
+        if (objMap.map.length === 0) {
+            for (var i = 0; i < objMap.height; i++) {
+                for (var j = 0; j < objMap.width; j++) {
+                    objMap.map[objMap.map.length] = 1
+                }
+            }
+        }
 
+        if (GenerationBranchScript.listGameBranchObject.length !== 0) {
+            for (var keyI in GenerationBranchScript.listGameBranchObject) {
+                if (GenerationBranchScript.listGameBranchObject[keyI].length !== 0) {
+                    for (var keyJ in GenerationBranchScript.listGameBranchObject[keyI]) {
+                        if (GenerationBranchScript.listGameBranchObject[keyI][keyJ] !== null)
+                            GenerationBranchScript.listGameBranchObject[keyI][keyJ].destroy()
+                    }
+                }
+            }
+        }
 
-         if (GenerationBranchScript.listGameBranchObject.length !== 0) {
-             for(var keyI in GenerationBranchScript.listGameBranchObject) {
-                 if(GenerationBranchScript.listGameBranchObject[keyI].length !== 0) {
-                     for(var keyJ in GenerationBranchScript.listGameBranchObject[keyI]) {
-                         if(GenerationBranchScript.listGameBranchObject[keyI][keyJ] !== null)GenerationBranchScript.listGameBranchObject[keyI][keyJ].destroy();
-                     }
-                 }
-             }
-         }
+        GenerationBranchScript.listGameBranch = []
 
-         GenerationBranchScript.listGameBranch = []
+        GenerationBranchScript.listGameBranchObject = []
+        for (var i = 0; i < heightGame; i++) {
+            GenerationBranchScript.listGameBranchObject[i] = []
+            for (var j = 0; j < widthGame; j++) {
+                GenerationBranchScript.listGameBranchObject[i][j] = null
+            }
+        }
 
-         GenerationBranchScript.listGameBranchObject = []
-         for (var i = 0; i < heightGame; i++) {
-             GenerationBranchScript.listGameBranchObject[i] = []
-             for (var j = 0; j < widthGame; j++) {
-                 GenerationBranchScript.listGameBranchObject[i][j] = null;
-             }
-         }
+        if (arrRectTrasparent.length > 0) {
+            for (var key in arrRectTrasparent) {
+                arrRectTrasparent[key].destroy()
+            }
+        }
+        arrRectTrasparent = []
 
-         if (arrRectTrasparent.length > 0) {
-              for(var key in arrRectTrasparent) {
-                  arrRectTrasparent[key].destroy();
-              }
-         }
-         arrRectTrasparent = [];
+        GenerationBranchScript.createBranchForMap(objMap)
 
-         GenerationBranchScript.createBranchForMap(objMap);
+        var component
+        var object
+        gridMapTutorialGame.columns = 0
+        gridMapTutorialGame.columns = widthGame
+        GenerationBranchScript.isPlayGame = 1
+        GenerationBranchScript.isCompleted = 0
+        gridMapTutorialGame.spacing = 1
 
-         var component;
-         var object;
-         gridMapTutorialGame.columns = 0;
-         gridMapTutorialGame.columns = widthGame;
-         GenerationBranchScript.isPlayGame  = 1;
-         GenerationBranchScript.isCompleted = 0;
-         gridMapTutorialGame.spacing = 1;
+        for (var i = 0; i < heightGame; i++) {
+            for (var j = 0; j < widthGame; j++) {
+                if (objMap.mapArray[i][j] === 1) {
+                    component = Qt.createComponent("Branch.qml")
+                    object = component.createObject(gridMapTutorialGame)
+                    object.stopRotation = 0
+                    object.countRotation = 0
+                    object.source = GenerationBranchScript.listGameBranch[i][j].source
+                    object.rotationBranch = GenerationBranchScript.listGameBranch[i][j].rotation
+                    object.posLeft = GenerationBranchScript.listGameBranch[i][j].left
+                    object.posRight = GenerationBranchScript.listGameBranch[i][j].right
+                    object.posTop = GenerationBranchScript.listGameBranch[i][j].top
+                    object.posBottom = GenerationBranchScript.listGameBranch[i][j].bottom
+                    object.nameItem = GenerationBranchScript.listGameBranch[i][j].name
+                    object.typeItem = 1
+                    object.typeAnimation = 1
+                    object.posI = i
+                    object.posJ = j
+                    object.onClickedBranch.connect(rotationBranch)
+                    object.onStopRotationTime.connect(stopRotationBranch)
+                    object.onStopRotationTimeGame.connect(
+                                stopRotationBranchGame)
+                    GenerationBranchScript.listGameBranchObject[i][j] = object
+                } else {
+                    component = Qt.createQmlObject(
+                                'import QtQuick 2.9; Rectangle {color: "transparent"; width: 30; height: 20}',
+                                gridMapSingleGame)
+                    arrRectTrasparent[arrRectTrasparent.length] = component
+                }
+            }
+        }
 
+        imageTutorial.source = "qrc:/resources/images/pinch.png"
+        imageTutorial.visible = true
+        stateTutorial = 1
+    }
 
-         for (var i = 0; i < heightGame; i++) {
-             for (var j = 0; j < widthGame; j++) {
-                 if (objMap.mapArray[i][j] === 1) {
-                     component = Qt.createComponent("Branch.qml");
-                     object = component.createObject(gridMapTutorialGame);
-                     object.stopRotation = 0;
-                     object.countRotation = 0;
-                     object.source = GenerationBranchScript.listGameBranch[i][j].source;
-                     object.rotationBranch = GenerationBranchScript.listGameBranch[i][j].rotation
-                     object.posLeft = GenerationBranchScript.listGameBranch[i][j].left
-                     object.posRight = GenerationBranchScript.listGameBranch[i][j].right
-                     object.posTop = GenerationBranchScript.listGameBranch[i][j].top
-                     object.posBottom = GenerationBranchScript.listGameBranch[i][j].bottom
-                     object.nameItem = GenerationBranchScript.listGameBranch[i][j].name
-                     object.typeItem = 1
-                     object.typeAnimation = 1
-                     object.posI = i;
-                     object.posJ = j;
-                     object.onClickedBranch.connect(rotationBranch);
-                     object.onStopRotationTime.connect(stopRotationBranch);
-                     object.onStopRotationTimeGame.connect(stopRotationBranchGame);
-                     GenerationBranchScript.listGameBranchObject[i][j] = object;
-                 } else {
-                     component = Qt.createQmlObject('import QtQuick 2.9; Rectangle {color: "transparent"; width: 30; height: 20}',gridMapSingleGame);
-                     arrRectTrasparent[arrRectTrasparent.length] = component;
-                 }
-             }
-         }
-
-         imageTutorial.source = "qrc:/resources/images/pinch.png";
-         imageTutorial.visible = true;
-         stateTutorial = 1;
-     }
-
-    function stopRotationBranchGame(ii,jj) {
+    function stopRotationBranchGame(ii, jj) {
         GenerationBranchScript.revivalBranchStart()
 
         if (GenerationBranchScript.isCompletedGame() === true) {
-            GenerationBranchScript.isCompleted = 1;
-            animationRectTutorialGameUp.running = true;
-            animationRectCompletedGameUp.running = true;
-            gridMapTutorialGame.spacing = 0;
-            startAnimationBranch();
+            GenerationBranchScript.isCompleted = 1
+            animationRectTutorialGameUp.running = true
+            animationRectCompletedGameUp.running = true
+            gridMapTutorialGame.spacing = 0
+            startAnimationBranch()
         }
     }
-    function stopRotationBranch(ii,jj) {
-        GenerationBranchScript.listGameBranchObject[ii][jj].stopRotation = 1;
-        var countStopBranch = 0;
-        arrBranchRotation = [];
+    function stopRotationBranch(ii, jj) {
+        GenerationBranchScript.listGameBranchObject[ii][jj].stopRotation = 1
+        var countStopBranch = 0
+        arrBranchRotation = []
         for (var i = 0; i < GenerationBranchScript.heightGame; i++) {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
-               if(GenerationBranchScript.listGameBranchObject[i][j] !== null) {
-                  if (GenerationBranchScript.listGameBranchObject[i][j].stopRotation === 1) {
-                       countStopBranch++;
-                  }
-                  arrBranchRotation[arrBranchRotation.length] =  {
-                      posI: i,
-                      posJ: j
-                    };
+                if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
+                    if (GenerationBranchScript.listGameBranchObject[i][j].stopRotation === 1) {
+                        countStopBranch++
+                    }
+                    arrBranchRotation[arrBranchRotation.length] = {
+                        posI: i,
+                        posJ: j
+                    }
                 }
             }
         }
         if (arrBranchRotation.length === countStopBranch) {
-            GenerationBranchScript.setStartBranch();
-            GenerationBranchScript.revivalBranchStart();
+            GenerationBranchScript.setStartBranch()
+            GenerationBranchScript.revivalBranchStart()
 
-            var seachBranch = 0;
+            var seachBranch = 0
             while (!seachBranch && arrBranchRotation.length > 0) {
-                var startPoint = GenerationBranchScript.getRandomInt(0,arrBranchRotation.length - 1);                
-                var iFlickering = arrBranchRotation[startPoint].posI;
-                var jFlickering = arrBranchRotation[startPoint].posJ;
+                var startPoint = GenerationBranchScript.getRandomInt(
+                            0, arrBranchRotation.length - 1)
+                var iFlickering = arrBranchRotation[startPoint].posI
+                var jFlickering = arrBranchRotation[startPoint].posJ
                 if (GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].countRotation !== 0) {
-                    posFlickering = {posI:iFlickering,posJ:jFlickering};
-                    seachBranch = 1;
-                    GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering();
+                    posFlickering = {
+                        posI: iFlickering,
+                        posJ: jFlickering
+                    }
+                    seachBranch = 1
+                    GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering()
                 }
             }
         }
 
-        rowTextFlickGame.visible = false;
-        rowTextPinchMap.visible = false;
-        rowTextDisassembleBranch.visible = false;
-        rowTextDoubleTapBranch.visible = false;
-        rowTextPressedBranch.visible = true;
-
+        rowTextFlickGame.visible = false
+        rowTextPinchMap.visible = false
+        rowTextDisassembleBranch.visible = false
+        rowTextDoubleTapBranch.visible = false
+        rowTextPressedBranch.visible = true
     }
 
     function mixMap() {
-        tutorialPage.countPetals = tutorialPage.countPetalsMin;
-        tutorialPage.emitRatePetals = tutorialPage.emitRatePetalsMin;
-        tutorialPage.resetParticleSystems();
+        tutorialPage.countPetals = tutorialPage.countPetalsMin
+        tutorialPage.emitRatePetals = tutorialPage.emitRatePetalsMin
+        tutorialPage.resetParticleSystems()
 
-        var arrBranch = [];
+        var arrBranch = []
         for (var i = 0; i < GenerationBranchScript.heightGame; i++) {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
-               if(GenerationBranchScript.listGameBranchObject[i][j] !== null) {
-                   arrBranch[arrBranch.length] =  {
-                       posI: i,
-                       posJ: j
-                     };
-               }
+                if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
+                    arrBranch[arrBranch.length] = {
+                        posI: i,
+                        posJ: j
+                    }
+                }
             }
         }
-        var countBranchInMap = arrBranch.length;
-        var stepGame = 0;
-        var arrRotation = [];
-        while(arrBranch.length > 0) {
-            var startPoint = GenerationBranchScript.getRandomInt(0,arrBranch.length - 1);
-            i = arrBranch[startPoint].posI;
-            j = arrBranch[startPoint].posJ;
+        var countBranchInMap = arrBranch.length
+        var stepGame = 0
+        var arrRotation = []
+        while (arrBranch.length > 0) {
+            var startPoint = GenerationBranchScript.getRandomInt(
+                        0, arrBranch.length - 1)
+            i = arrBranch[startPoint].posI
+            j = arrBranch[startPoint].posJ
             if (GenerationBranchScript.listGameBranchObject[i][j].nameItem !== 'branch_05') {
 
                 if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 270) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
-                        arrRotation = [270,180]
+                        arrRotation = [270, 180]
                     } else {
-                        arrRotation = [270,180]
+                        arrRotation = [270, 180]
                     }
                 }
 
                 if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 0) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
-                        arrRotation = [0,270]
+                        arrRotation = [0, 270]
                     } else {
-                        arrRotation = [0,270,180,90]
+                        arrRotation = [0, 270, 180, 90]
                     }
                 }
                 if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 180) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
-                        arrRotation = [180,90]
+                        arrRotation = [180, 90]
                     } else {
-                        arrRotation = [180,90,0,270]
+                        arrRotation = [180, 90, 0, 270]
                     }
                 }
 
                 if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 90) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
-                        arrRotation = [90,0]
+                        arrRotation = [90, 0]
                     } else {
-                        arrRotation = [90,0,270,180]
+                        arrRotation = [90, 0, 270, 180]
                     }
                 }
 
-                var typeRotation = GenerationBranchScript.getRandomInt(0,arrRotation.length - 1);
-                if (typeRotation === 0) typeRotation = 1;
+                var typeRotation = GenerationBranchScript.getRandomInt(
+                            0, arrRotation.length - 1)
+                if (typeRotation === 0)
+                    typeRotation = 1
 
-                GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch;
-                GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = arrRotation[typeRotation];
-                GenerationBranchScript.listGameBranchObject[i][j].stopRotation = 0;
-                GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotation();
-                for(var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
-                    if (GenerationBranchScript.listImageBranchFull[n].name == GenerationBranchScript.listGameBranchObject[i][j].nameItem && GenerationBranchScript.listImageBranchFull[n].rotation == GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch) {
-                        GenerationBranchScript.listGameBranchObject[i][j].posLeft = GenerationBranchScript.listImageBranchFull[n].left
-                        GenerationBranchScript.listGameBranchObject[i][j].posRight = GenerationBranchScript.listImageBranchFull[n].right
-                        GenerationBranchScript.listGameBranchObject[i][j].posTop = GenerationBranchScript.listImageBranchFull[n].top
-                        GenerationBranchScript.listGameBranchObject[i][j].posBottom = GenerationBranchScript.listImageBranchFull[n].bottom
-                        GenerationBranchScript.listGameBranchObject[i][j].countRotation = typeRotation
-                        stepGame += typeRotation;
+                GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
+                        = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+                GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch
+                        = arrRotation[typeRotation]
+                GenerationBranchScript.listGameBranchObject[i][j].stopRotation = 0
+                GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotation()
+                for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
+                    if (GenerationBranchScript.listImageBranchFull[n].name
+                            == GenerationBranchScript.listGameBranchObject[i][j].nameItem
+                            && GenerationBranchScript.listImageBranchFull[n].rotation
+                            == GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch) {
+                        GenerationBranchScript.listGameBranchObject[i][j].posLeft
+                                = GenerationBranchScript.listImageBranchFull[n].left
+                        GenerationBranchScript.listGameBranchObject[i][j].posRight
+                                = GenerationBranchScript.listImageBranchFull[n].right
+                        GenerationBranchScript.listGameBranchObject[i][j].posTop
+                                = GenerationBranchScript.listImageBranchFull[n].top
+                        GenerationBranchScript.listGameBranchObject[i][j].posBottom
+                                = GenerationBranchScript.listImageBranchFull[n].bottom
+                        GenerationBranchScript.listGameBranchObject[i][j].countRotation
+                                = typeRotation
+                        stepGame += typeRotation
                     }
                 }
             }
-            arrBranch.splice(startPoint, 1);
-
+            arrBranch.splice(startPoint, 1)
         }
     }
 
-    function rotationBranch(i,j) {
+    function rotationBranch(i, j) {
 
-        if (!(posFlickering.posI === i && posFlickering.posJ ===j)) {
-            return;
+        if (!(posFlickering.posI === i && posFlickering.posJ === j)) {
+            return
         }
 
-        if (!GenerationBranchScript.isPlayGame || GenerationBranchScript.isCompleted || !GenerationBranchScript.listGameBranchObject[i][j].stopRotation) return;
+        if (!GenerationBranchScript.isPlayGame
+                || GenerationBranchScript.isCompleted
+                || !GenerationBranchScript.listGameBranchObject[i][j].stopRotation)
+            return
 
-        var paramRotation = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch;
+        var paramRotation = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
 
-        var paramRotation2 = 0;
+        var paramRotation2 = 0
         if (paramRotation == 0) {
-            paramRotation = 90;
-            paramRotation2 = 90;
+            paramRotation = 90
+            paramRotation2 = 90
         } else if (paramRotation == 90) {
             paramRotation = 180
             paramRotation2 = 180
@@ -806,34 +833,45 @@ Item {
             paramRotation2 = 360
         }
 
-        GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch;
-        GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2;
-        GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame();
+        GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
+                = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+        GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
+        GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
 
-        for(var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
-            if (GenerationBranchScript.listImageBranchFull[n].name == GenerationBranchScript.listGameBranchObject[i][j].nameItem && GenerationBranchScript.listImageBranchFull[n].rotation == paramRotation) {
-                GenerationBranchScript.listGameBranchObject[i][j].posLeft = GenerationBranchScript.listImageBranchFull[n].left
-                GenerationBranchScript.listGameBranchObject[i][j].posRight = GenerationBranchScript.listImageBranchFull[n].right
-                GenerationBranchScript.listGameBranchObject[i][j].posTop = GenerationBranchScript.listImageBranchFull[n].top
-                GenerationBranchScript.listGameBranchObject[i][j].posBottom = GenerationBranchScript.listImageBranchFull[n].bottom
-                GenerationBranchScript.listGameBranchObject[i][j].countRotation--;
-                GenerationBranchScript.listGameBranchObject[i][j].stopAnimationFlickering();
+        for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
+            if (GenerationBranchScript.listImageBranchFull[n].name
+                    == GenerationBranchScript.listGameBranchObject[i][j].nameItem
+                    && GenerationBranchScript.listImageBranchFull[n].rotation == paramRotation) {
+                GenerationBranchScript.listGameBranchObject[i][j].posLeft
+                        = GenerationBranchScript.listImageBranchFull[n].left
+                GenerationBranchScript.listGameBranchObject[i][j].posRight
+                        = GenerationBranchScript.listImageBranchFull[n].right
+                GenerationBranchScript.listGameBranchObject[i][j].posTop
+                        = GenerationBranchScript.listImageBranchFull[n].top
+                GenerationBranchScript.listGameBranchObject[i][j].posBottom
+                        = GenerationBranchScript.listImageBranchFull[n].bottom
+                GenerationBranchScript.listGameBranchObject[i][j].countRotation--
+                GenerationBranchScript.listGameBranchObject[i][j].stopAnimationFlickering()
 
                 if (GenerationBranchScript.listGameBranchObject[i][j].countRotation > 0) {
-                    GenerationBranchScript.listGameBranchObject[i][j].startAnimationFlickering();
+                    GenerationBranchScript.listGameBranchObject[i][j].startAnimationFlickering()
                 } else {
 
-                    var seachBranch = 0;
+                    var seachBranch = 0
                     while (!seachBranch && arrBranchRotation.length > 0) {
-                        var startPoint = GenerationBranchScript.getRandomInt(0,arrBranchRotation.length - 1);
-                        var iFlickering = arrBranchRotation[startPoint].posI;
-                        var jFlickering = arrBranchRotation[startPoint].posJ;
+                        var startPoint = GenerationBranchScript.getRandomInt(
+                                    0, arrBranchRotation.length - 1)
+                        var iFlickering = arrBranchRotation[startPoint].posI
+                        var jFlickering = arrBranchRotation[startPoint].posJ
                         if (GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].countRotation !== 0) {
-                            posFlickering = {posI:iFlickering,posJ:jFlickering};
-                            seachBranch = 1;
-                            GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering();
+                            posFlickering = {
+                                posI: iFlickering,
+                                posJ: jFlickering
+                            }
+                            seachBranch = 1
+                            GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering()
                         }
-                        arrBranchRotation.splice(startPoint, 1);
+                        arrBranchRotation.splice(startPoint, 1)
                     }
                 }
             }
@@ -843,11 +881,10 @@ Item {
     function startAnimationBranch() {
         for (var i = 0; i < GenerationBranchScript.heightGame; i++) {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
-               if(GenerationBranchScript.listGameBranchObject[i][j] !== null) {
-                  GenerationBranchScript.listGameBranchObject[i][j].startTimerBlossomedBranch();
+                if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
+                    GenerationBranchScript.listGameBranchObject[i][j].startTimerBlossomedBranch()
                 }
             }
         }
     }
-
 }

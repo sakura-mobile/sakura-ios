@@ -1,7 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 
-
 import "GenerationBranch.js" as GenerationBranchScript
 
 Item {
@@ -12,31 +11,31 @@ Item {
     property var listButtonsLocation: []
 
     Image {
-        id:               imageBackgroundMainMap
+        id: imageBackgroundMainMap
         anchors.centerIn: parent
-        width:            parent.width
-        height:           parent.height
-        fillMode:         Image.PreserveAspectCrop
+        width: parent.width
+        height: parent.height
+        fillMode: Image.PreserveAspectCrop
 
         onPaintedWidthChanged: {
-            width  = paintedWidth;
-            height = paintedHeight;
+            width = paintedWidth
+            height = paintedHeight
         }
         onPaintedHeightChanged: {
-            width  = paintedWidth;
-            height = paintedHeight;
+            width = paintedWidth
+            height = paintedHeight
         }
     }
 
     StackView.onStatusChanged: {
         if (StackView.status === StackView.Activating) {
-            updateMapPage();
+            updateMapPage()
         }
     }
 
     Image {
-        id:               backButton
-        source:             "qrc:/resources/images/back.png"
+        id: backButton
+        source: "qrc:/resources/images/back.png"
         width: 60
         height: 60
         anchors.left: parent.left
@@ -45,18 +44,18 @@ Item {
         anchors.bottomMargin: 16
         z: 1
         MouseArea {
-            id:           mouseAreaBackButton
+            id: mouseAreaBackButton
             anchors.fill: parent
             onClicked: {
-                 mainStackView.pop();
+                mainStackView.pop()
             }
         }
     }
 
     Image {
-        id:               playLastLocationButton
-        source:             "qrc:/resources/images/button_play_last_location.png"
-        anchors.horizontalCenter:  parent.horizontalCenter
+        id: playLastLocationButton
+        source: "qrc:/resources/images/button_play_last_location.png"
+        anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         width: 60
         height: 60
@@ -64,46 +63,62 @@ Item {
         anchors.bottomMargin: 16
 
         MouseArea {
-            id:           mouseAreaPlayLastLocationButton
+            id: mouseAreaPlayLastLocationButton
             anchors.fill: parent
             onClicked: {
-                var component = Qt.createComponent("CampaniaPage.qml");
+                var component = Qt.createComponent("CampaignPage.qml")
 
                 if (component.status === Component.Ready) {
-                    mainStackView.push(component,{currentLevel:mainWindow.getSetting("maxLevel", 0), currentLocation:mainWindow.getSetting("maxLevelLocation", 0), currentCampaign:mainWindow.getSetting("maxLevelCampaign", 0) });
+                    mainStackView.push(component, {
+                                           currentLevel: mainWindow.getSetting(
+                                                             "maxLevel", 0),
+                                           currentLocation: mainWindow.getSetting(
+                                                                "maxLevelLocation",
+                                                                0),
+                                           currentCampaign: mainWindow.getSetting(
+                                                                "maxLevelCampaign",
+                                                                0)
+                                       })
                 } else {
-                    console.log(component.errorString());
+                    console.log(component.errorString())
                 }
             }
         }
     }
 
-
     function updateMapPage() {
-         var component, object;
-         GenerationBranchScript.initObjectCampaigns();
-         var maxLevelCampaign = Number(mainWindow.getSetting("maxLevelCampaign", 0)) ;
-         var maxLevelLocation = Number(mainWindow.getSetting("maxLevelLocation", 0) );
-         imageBackgroundMainMap.source = GenerationBranchScript.listObjectCampaigns[currentCampaign].background;
-         var listLocations = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations;
-         for(var keyLocation in listLocations) {
-             component = Qt.createComponent("ButtonLocation.qml");
-             object = component.createObject(imageBackgroundMainMap);
-             if (maxLevelLocation >= keyLocation && maxLevelCampaign >= currentCampaign) {
+        var component, object
+        GenerationBranchScript.initObjectCampaigns()
+        var maxLevelCampaign = Number(mainWindow.getSetting("maxLevelCampaign",
+                                                            0))
+        var maxLevelLocation = Number(mainWindow.getSetting("maxLevelLocation",
+                                                            0))
+        imageBackgroundMainMap.source
+                = GenerationBranchScript.listObjectCampaigns[currentCampaign].background
+        var listLocations = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations
+        for (var keyLocation in listLocations) {
+            component = Qt.createComponent("ButtonLocation.qml")
+            object = component.createObject(imageBackgroundMainMap)
+            if (maxLevelLocation >= keyLocation
+                    && maxLevelCampaign >= currentCampaign) {
 
-                 object.source = listLocations[keyLocation].imageLabelAvaible;
-                 object.isAvaible = true;
-             } else {
-                 object.source = listLocations[keyLocation].imageLabelNotAvaible;
-                 object.isAvaible = false;
-             }
-             object.currentLocation = keyLocation;
-             object.currentCampaign = currentCampaign;
-             object.width = listLocations[keyLocation].width * (imageBackgroundMainMap.width  / imageBackgroundMainMap.sourceSize.width);
-             object.height = listLocations[keyLocation].height * (imageBackgroundMainMap.height / imageBackgroundMainMap.sourceSize.height);
-             object.x = listLocations[keyLocation].labelX * (imageBackgroundMainMap.width  / imageBackgroundMainMap.sourceSize.width);
-             object.y = listLocations[keyLocation].labelY *(imageBackgroundMainMap.height / imageBackgroundMainMap.sourceSize.height);
-             listButtonsLocation[listButtonsLocation.length] = object;
-         }
+                object.source = listLocations[keyLocation].imageLabelAvaible
+                object.isAvailable = true
+            } else {
+                object.source = listLocations[keyLocation].imageLabelNotAvaible
+                object.isAvailable = false
+            }
+            object.currentLocation = keyLocation
+            object.currentCampaign = currentCampaign
+            object.width = listLocations[keyLocation].width
+                    * (imageBackgroundMainMap.width / imageBackgroundMainMap.sourceSize.width)
+            object.height = listLocations[keyLocation].height
+                    * (imageBackgroundMainMap.height / imageBackgroundMainMap.sourceSize.height)
+            object.x = listLocations[keyLocation].labelX
+                    * (imageBackgroundMainMap.width / imageBackgroundMainMap.sourceSize.width)
+            object.y = listLocations[keyLocation].labelY
+                    * (imageBackgroundMainMap.height / imageBackgroundMainMap.sourceSize.height)
+            listButtonsLocation[listButtonsLocation.length] = object
+        }
     }
 }

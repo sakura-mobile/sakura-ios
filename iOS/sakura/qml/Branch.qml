@@ -2,38 +2,38 @@ import QtQuick 2.9
 import "GenerationBranch.js" as GenerationBranchScript
 
 Rectangle {
-    id:               imageBranch
+    id: imageBranch
     width: 30
-    height : 30    
-    property int posI : 0
-    property int posJ : 0
-    property int posLeft : 0
-    property int posRight : 0
-    property int posTop : 0
-    property int posBottom : 0
-    property int isChecked : 0
-    property int typeItem : 0
-    property int timeBranch:    Math.floor(Math.random() * (300 - 100 + 1)) + 100;
-    property int isGlare : 0
-    property string nameItem : ""
-    property string typeAnimation : ""
-    property int glareUp : 0
-    property int stopRotation : 0
-    property int countRotation : 0
+    height: 30
+    property int posI: 0
+    property int posJ: 0
+    property int posLeft: 0
+    property int posRight: 0
+    property int posTop: 0
+    property int posBottom: 0
+    property int isChecked: 0
+    property int typeItem: 0
+    property int timeBranch: Math.floor(Math.random() * (300 - 100 + 1)) + 100
+    property int isGlare: 0
+    property string nameItem: ""
+    property string typeAnimation: ""
+    property int glareUp: 0
+    property int stopRotation: 0
+    property int countRotation: 0
     property var score: 1
     property int fromRotationBranch: 0
     property int toRotationBranch: 0
     signal clickedBranch(int positI, int positJ)
     signal stopRotationTime(int positI, int positJ)
     signal stopRotationTimeGame(int positI, int positJ)
-    property string source : ""
-    property int rotationBranch : 0
+    property string source: ""
+    property int rotationBranch: 0
     color: "transparent"
 
     Image {
-        id : imageBackgroundBranch
+        id: imageBackgroundBranch
         anchors.fill: parent
-        source: "qrc:/resources/images/branch/branch_f_20.png";
+        source: "qrc:/resources/images/branch/branch_f_20.png"
         z: 1
     }
 
@@ -48,13 +48,13 @@ Rectangle {
             id: animationRotation
             duration: 500
             from: fromRotationBranch
-            target : imageBranchOpacity
+            target: imageBranchOpacity
             properties: "rotation"
             easing.type: Easing.Linear
-            to :    toRotationBranch
+            to: toRotationBranch
             onStopped: {
-               imageBranch.rotationBranch =imageBranchOpacity.rotation;
-               stopRotationTime(posI,posJ);
+                imageBranch.rotationBranch = imageBranchOpacity.rotation
+                stopRotationTime(posI, posJ)
             }
         }
 
@@ -62,24 +62,24 @@ Rectangle {
             id: animationRotationGame
             duration: 100
             from: fromRotationBranch
-            target : imageBranchOpacity
+            target: imageBranchOpacity
             properties: "rotation"
             easing.type: Easing.Linear
-            to :    toRotationBranch
+            to: toRotationBranch
             onStopped: {
-               if (toRotationBranch === 360) {
-                   imageBranchOpacity.rotation = 0;
-                   imageBranch.rotationBranch = 0;
-               } else {
-                   imageBranch.rotationBranch =imageBranchOpacity.rotation;
-               }
-               stopRotationTimeGame(posI,posJ);
+                if (toRotationBranch === 360) {
+                    imageBranchOpacity.rotation = 0
+                    imageBranch.rotationBranch = 0
+                } else {
+                    imageBranch.rotationBranch = imageBranchOpacity.rotation
+                }
+                stopRotationTimeGame(posI, posJ)
             }
         }
     }
 
     Rectangle {
-        id : rectFlick
+        id: rectFlick
         anchors.fill: parent
         color: "white"
         visible: false
@@ -94,20 +94,20 @@ Rectangle {
             id: animationUp
             duration: 300
             from: 0
-            target : rectFlick
+            target: rectFlick
             properties: "opacity"
             easing.type: Easing.Linear
-            to :    0.5
+            to: 0.5
         }
 
         PropertyAnimation {
             id: animationDown
             duration: 300
             from: 0.5
-            target : rectFlick
+            target: rectFlick
             properties: "opacity"
             easing.type: Easing.Linear
-            to :    0.0
+            to: 0.0
         }
     }
 
@@ -118,100 +118,96 @@ Rectangle {
             id: animationUpQuickTip
             duration: 300
             from: 0
-            target : rectFlick
+            target: rectFlick
             properties: "opacity"
             easing.type: Easing.Linear
-            to :    0.5
+            to: 0.5
         }
 
         PropertyAnimation {
             id: animationDownQuickTip
             duration: 300
             from: 0.5
-            target : rectFlick
+            target: rectFlick
             properties: "opacity"
             easing.type: Easing.Linear
-            to :    0.0
+            to: 0.0
         }
         onStopped: {
-            rectFlick.visible = false;
+            rectFlick.visible = false
         }
     }
 
     Image {
         id: imageGlare
         anchors.fill: parent
-        opacity : 0
+        opacity: 0
         rotation: imageBranchOpacity.rotation
         z: 20
     }
 
     Timer {
-             id:           timerBlossomedBranch
-             interval: timeBranch
-             repeat: true
-             onTriggered: imageBranch.animationBlossomedBranch()
+        id: timerBlossomedBranch
+        interval: timeBranch
+        repeat: true
+        onTriggered: imageBranch.animationBlossomedBranch()
     }
 
     Timer {
-             id:           timerGlareBranch
-             interval: 200
-             repeat: true
-             onTriggered: imageBranch.animationGlareBranch()
+        id: timerGlareBranch
+        interval: 200
+        repeat: true
+        onTriggered: imageBranch.animationGlareBranch()
     }
 
     Timer {
-             id:           timerAnimationGlareBranch
-             interval: 20
-             repeat: true
-             onTriggered: imageBranch.animationPlayGlareBranch()
+        id: timerAnimationGlareBranch
+        interval: 20
+        repeat: true
+        onTriggered: imageBranch.animationPlayGlareBranch()
     }
 
     Timer {
-             id:           timerRotationBranchTutorial
-             interval: 100
-             repeat: true
-             onTriggered: imageBranch.playRotationBranch()
+        id: timerRotationBranchTutorial
+        interval: 100
+        repeat: true
+        onTriggered: imageBranch.playRotationBranch()
     }
 
     function visibleRectangleBranch() {
         if (imageBackgroundBranch.visible === true) {
-            imageBackgroundBranch.visible = false;
+            imageBackgroundBranch.visible = false
         } else {
-            imageBackgroundBranch.visible = true;
+            imageBackgroundBranch.visible = true
         }
     }
 
     function startAnimationRotation() {
-        animationRotation.running = true;
+        animationRotation.running = true
     }
 
-
     function startAnimationRotationGame() {
-        animationRotationGame.running = true;
+        animationRotationGame.running = true
     }
 
     function startAnimationQuickTip() {
-        rectFlick.visible = true;
-        sequentialAnimationQuickTip.running = true;
+        rectFlick.visible = true
+        sequentialAnimationQuickTip.running = true
     }
 
     function startAnimationFlickering() {
-        rectFlick.visible = true;
-        sequentialAnimationFlick.running = true;
+        rectFlick.visible = true
+        sequentialAnimationFlick.running = true
     }
 
     function stopAnimationFlickering() {
-        rectFlick.visible = false;
-        sequentialAnimationFlick.running = false;
+        rectFlick.visible = false
+        sequentialAnimationFlick.running = false
     }
-
-
 
     function startTimerBlossomedBranch() {
-        timerBlossomedBranch.start();
+        timerBlossomedBranch.start()
     }
-
 
     function animationPlayGlareBranch() {
         if (glareUp) {
@@ -224,90 +220,85 @@ Rectangle {
         } else {
             imageGlare.opacity -= 0.1
             if (imageGlare.opacity == 0) {
-                timerAnimationGlareBranch.stop();
-                timerGlareBranch.start();
+                timerAnimationGlareBranch.stop()
+                timerGlareBranch.start()
             }
         }
     }
 
-
     function animationGlareBranch() {
-        var val = Math.floor(Math.random() * 100);
+        var val = Math.floor(Math.random() * 100)
         if (val <= 50) {
-            glareUp = 1;
-            timerGlareBranch.stop();
-            timerAnimationGlareBranch.start();
+            glareUp = 1
+            timerGlareBranch.stop()
+            timerAnimationGlareBranch.start()
         }
-
     }
 
     function animationBlossomedBranch() {
         switch (typeAnimation) {
-           case '1' :
-               typeAnimation = "2a"
-               source = "qrc:/resources/images/branch/" + nameItem + "_2a.png"
-               break;
-           case '2a' :
-               typeAnimation = "2b"
-               source = "qrc:/resources/images/branch/" + nameItem + "_2b.png"
-               break;
-           case '2b' :
-               typeAnimation = "2c"
-               source = "qrc:/resources/images/branch/" + nameItem + "_2c.png"
-               break;
-           case '2c' :
-               typeAnimation = "2d"
-               source = "qrc:/resources/images/branch/" + nameItem + "_2d.png"
-               break;
-           case '2d' :
-               typeAnimation = "2e"
-               source = "qrc:/resources/images/branch/" + nameItem + "_2e.png"
-               break;
-
-           case '2e' :
-               typeAnimation = "3a"
-               source = "qrc:/resources/images/branch/" + nameItem + "_3a.png"
-               break;
-           case '3a' :
-               typeAnimation = "3b"
-               source = "qrc:/resources/images/branch/" + nameItem + "_3b.png"
-               break;
-           case '3b' :
-               typeAnimation = "3c"
-               source = "qrc:/resources/images/branch/" + nameItem + "_3c.png"
-               break;
-           case '3c' :
-               typeAnimation = "3d"
-               source = "qrc:/resources/images/branch/" + nameItem + "_3d.png"
-               break;
-           case '3d' :
-               typeAnimation = "3e"
-               source = "qrc:/resources/images/branch/" + nameItem + "_3e.png"
-               break;
-           case '3e' :
-               imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g.png";
-               timerBlossomedBranch.stop();
-               timerGlareBranch.start();
-               break;
+        case '1':
+            typeAnimation = "2a"
+            source = "qrc:/resources/images/branch/" + nameItem + "_2a.png"
+            break
+        case '2a':
+            typeAnimation = "2b"
+            source = "qrc:/resources/images/branch/" + nameItem + "_2b.png"
+            break
+        case '2b':
+            typeAnimation = "2c"
+            source = "qrc:/resources/images/branch/" + nameItem + "_2c.png"
+            break
+        case '2c':
+            typeAnimation = "2d"
+            source = "qrc:/resources/images/branch/" + nameItem + "_2d.png"
+            break
+        case '2d':
+            typeAnimation = "2e"
+            source = "qrc:/resources/images/branch/" + nameItem + "_2e.png"
+            break
+        case '2e':
+            typeAnimation = "3a"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3a.png"
+            break
+        case '3a':
+            typeAnimation = "3b"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3b.png"
+            break
+        case '3b':
+            typeAnimation = "3c"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3c.png"
+            break
+        case '3c':
+            typeAnimation = "3d"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3d.png"
+            break
+        case '3d':
+            typeAnimation = "3e"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3e.png"
+            break
+        case '3e':
+            imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g.png"
+            timerBlossomedBranch.stop()
+            timerGlareBranch.start()
+            break
         }
-
     }
 
     function glareBranchCard() {
-        imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g.png";
-        timerBlossomedBranch.stop();
-        timerGlareBranch.start();
+        imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g.png"
+        timerBlossomedBranch.stop()
+        timerGlareBranch.start()
     }
 
-    function funcRotationBranch() {
-    }
+    function funcRotationBranch() {}
 
     MouseArea {
-        id:           mouseAreaBranch
+        id: mouseAreaBranch
         anchors.fill: parent
-        enabled:     !animationRotationGame.running && !animationRotation.running
+        enabled: !animationRotationGame.running && !animationRotation.running
         onClicked: {
-            clickedBranch(posI,posJ);
+            clickedBranch(posI, posJ)
         }
     }
 }

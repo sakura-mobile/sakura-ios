@@ -2,27 +2,28 @@ import QtQuick 2.9
 import QtQuick.Window 2.3
 import QtQuick.Controls 2.2
 
-
 Item {
     id: storePage
 
     Image {
-        id:               imageBackgroundStorePage
-        source:             "qrc:/resources/images/background_main.png"
+        id: imageBackgroundStorePage
+        source: "qrc:/resources/images/background_main.png"
         anchors.fill: parent
-        fillMode:         Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectCrop
 
-        Rectangle{
+        Rectangle {
             color: "black"
             opacity: 0.6
             anchors.fill: parent
-           // z: 1
         }
 
         Flickable {
             anchors.centerIn: parent
             width: buttonsColumn.width
-            height: Math.min(buttonsColumn.height, parent.height - (backButton.height + backButton.anchors.bottomMargin) * 2 - 8)
+            height: Math.min(
+                        buttonsColumn.height,
+                        parent.height - (backButton.height
+                                         + backButton.anchors.bottomMargin) * 2 - 8)
             contentWidth: buttonsColumn.width
             contentHeight: buttonsColumn.height
             clip: true
@@ -37,8 +38,6 @@ Item {
                 Image {
                     id: purchase1
                     source: "qrc:/resources/images/rectangle-hi.png"
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
 
                     width: 300
                     height: 60
@@ -53,22 +52,28 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "5"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
                         source: "qrc:/resources/images/button_quick_tip.png"
@@ -87,32 +92,34 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase1
+                        id: mouseAreaPurchase1
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countQuickTip", "") === "") {
-                                mainWindow.setSetting("countQuickTip", 5);
+                            if (mainWindow.getSetting("countQuickTip",
+                                                      "") === "") {
+                                mainWindow.setSetting("countQuickTip", 5)
                             } else {
-                                mainWindow.setSetting("countQuickTip", Number(mainWindow.getSetting("countQuickTip", "")) + 5);
+                                mainWindow.setSetting("countQuickTip", Number(
+                                                          mainWindow.getSetting(
+                                                              "countQuickTip",
+                                                              "")) + 5)
                             }
-                            console.log( "countQuickTip :: " + Number(mainWindow.getSetting("countQuickTip", "")));
+                            console.log("countQuickTip :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countQuickTip", "")))
                         }
                     }
-
                 }
-
 
                 Image {
                     id: purchase2
                     source: "qrc:/resources/images/rectangle-hi.png"
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
                     width: 300
                     height: 60
                     Rectangle {
@@ -125,22 +132,28 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "5"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
                         source: "qrc:/resources/images/lantern_step_ice_booster.png"
@@ -159,30 +172,35 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
                     MouseArea {
-                        id:           mouseAreaPurchase2
+                        id: mouseAreaPurchase2
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countBlockStepLantern", "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern", 5);
+                            if (mainWindow.getSetting("countBlockStepLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockStepLantern",
+                                                      5)
                             } else {
-                                mainWindow.setSetting("countBlockStepLantern", Number(mainWindow.getSetting("countBlockStepLantern", "")) + 5);
+                                mainWindow.setSetting(
+                                            "countBlockStepLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockStepLantern",
+                                                       "")) + 5)
                             }
-                            console.log( "countBlockStepLantern :: " + Number(mainWindow.getSetting("countBlockStepLantern", "")));
+                            console.log("countBlockStepLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockStepLantern", "")))
                         }
                     }
-
                 }
 
                 Image {
                     id: purchase3
                     source: "qrc:/resources/images/rectangle-hi.png"
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
                     width: 300
                     height: 60
                     Rectangle {
@@ -195,22 +213,28 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "5"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
                         source: "qrc:/resources/images/lantern_time_ice_booster.png"
@@ -229,24 +253,31 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase3
+                        id: mouseAreaPurchase3
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countBlockTimeLantern", "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern", 5);
+                            if (mainWindow.getSetting("countBlockTimeLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockTimeLantern",
+                                                      5)
                             } else {
-                                mainWindow.setSetting("countBlockTimeLantern", Number(mainWindow.getSetting("countBlockTimeLantern", "")) + 5);
+                                mainWindow.setSetting(
+                                            "countBlockTimeLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockTimeLantern",
+                                                       "")) + 5)
                             }
-                            console.log( "countBlockTimeLantern :: " + Number(mainWindow.getSetting("countBlockTimeLantern", "")));
+                            console.log("countBlockTimeLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockTimeLantern", "")))
                         }
                     }
-
                 }
 
                 Image {
@@ -254,8 +285,6 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
                     Rectangle {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
@@ -266,22 +295,28 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "20"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
                         source: "qrc:/resources/images/button_quick_tip.png"
@@ -300,24 +335,29 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase4
+                        id: mouseAreaPurchase4
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countQuickTip", "") === "") {
-                                mainWindow.setSetting("countQuickTip", 20);
+                            if (mainWindow.getSetting("countQuickTip",
+                                                      "") === "") {
+                                mainWindow.setSetting("countQuickTip", 20)
                             } else {
-                                mainWindow.setSetting("countQuickTip", Number(mainWindow.getSetting("countQuickTip", "")) + 20);
+                                mainWindow.setSetting("countQuickTip", Number(
+                                                          mainWindow.getSetting(
+                                                              "countQuickTip",
+                                                              "")) + 20)
                             }
-                            console.log( "countQuickTip :: " + Number(mainWindow.getSetting("countQuickTip", "")));
+                            console.log("countQuickTip :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countQuickTip", "")))
                         }
                     }
-
                 }
 
                 Image {
@@ -325,8 +365,6 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
                     Rectangle {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
@@ -337,22 +375,28 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "20"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
                         source: "qrc:/resources/images/lantern_step_ice_booster.png"
@@ -371,24 +415,31 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase5
+                        id: mouseAreaPurchase5
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countBlockStepLantern", "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern", 20);
+                            if (mainWindow.getSetting("countBlockStepLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockStepLantern",
+                                                      20)
                             } else {
-                                mainWindow.setSetting("countBlockStepLantern", Number(mainWindow.getSetting("countBlockStepLantern", "")) + 20);
+                                mainWindow.setSetting(
+                                            "countBlockStepLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockStepLantern",
+                                                       "")) + 20)
                             }
-                            console.log( "countBlockStepLantern :: " + Number(mainWindow.getSetting("countBlockStepLantern", "")));
+                            console.log("countBlockStepLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockStepLantern", "")))
                         }
                     }
-
                 }
 
                 Image {
@@ -396,8 +447,6 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
                     Rectangle {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
@@ -408,21 +457,27 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "20"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
 
-                    Image{
+                    Image {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
@@ -442,24 +497,31 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase6
+                        id: mouseAreaPurchase6
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countBlockTimeLantern", "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern", 20);
+                            if (mainWindow.getSetting("countBlockTimeLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockTimeLantern",
+                                                      20)
                             } else {
-                                mainWindow.setSetting("countBlockTimeLantern", Number(mainWindow.getSetting("countBlockTimeLantern", "")) + 20);
+                                mainWindow.setSetting(
+                                            "countBlockTimeLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockTimeLantern",
+                                                       "")) + 20)
                             }
-                            console.log( "countBlockTimeLantern :: " + Number(mainWindow.getSetting("countBlockTimeLantern", "")));
+                            console.log("countBlockTimeLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockTimeLantern", "")))
                         }
                     }
-
                 }
 
                 Image {
@@ -467,8 +529,6 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
-                    //width: imageBackgroundStorePage.width - 100
-                   // height: (imageBackgroundStorePage.height - 150) / 8
                     Rectangle {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
@@ -479,20 +539,26 @@ Item {
                         border.color: "#C5007F"
                         border.width: 3
                         gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#C5007F" }
-                                GradientStop { position: 1.0; color: "purple" }
+                            GradientStop {
+                                position: 0.0
+                                color: "#C5007F"
+                            }
+                            GradientStop {
+                                position: 1.0
+                                color: "purple"
+                            }
                         }
-                        Text{
+                        Text {
                             anchors.right: parent.right
-                            anchors.verticalCenter:  parent.verticalCenter
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             text: "20"
-                            font.pointSize:      20
-                            font.family: "Helvetica";
+                            font.pointSize: 20
+                            font.family: "Helvetica"
                             color: "white"
                         }
                     }
-                    Image{
+                    Image {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 20
@@ -500,8 +566,8 @@ Item {
                         width: 50
                         height: 50
                     }
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 30
 
@@ -509,8 +575,8 @@ Item {
                         width: 50
                         height: 50
                     }
-                    Image{
-                        anchors.verticalCenter:  parent.verticalCenter
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         anchors.leftMargin: 45
 
@@ -530,38 +596,59 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
 
                     MouseArea {
-                        id:           mouseAreaPurchase7
+                        id: mouseAreaPurchase7
                         anchors.fill: parent
                         onClicked: {
-                            if ( mainWindow.getSetting("countBlockStepLantern", "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern", 20);
+                            if (mainWindow.getSetting("countBlockStepLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockStepLantern",
+                                                      20)
                             } else {
-                                mainWindow.setSetting("countBlockStepLantern", Number(mainWindow.getSetting("countBlockStepLantern", "")) + 20);
+                                mainWindow.setSetting(
+                                            "countBlockStepLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockStepLantern",
+                                                       "")) + 20)
                             }
 
-                            if ( mainWindow.getSetting("countBlockTimeLantern", "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern", 20);
+                            if (mainWindow.getSetting("countBlockTimeLantern",
+                                                      "") === "") {
+                                mainWindow.setSetting("countBlockTimeLantern",
+                                                      20)
                             } else {
-                                mainWindow.setSetting("countBlockTimeLantern", Number(mainWindow.getSetting("countBlockTimeLantern", "")) + 20);
+                                mainWindow.setSetting(
+                                            "countBlockTimeLantern",
+                                            Number(mainWindow.getSetting(
+                                                       "countBlockTimeLantern",
+                                                       "")) + 20)
                             }
 
-                            if ( mainWindow.getSetting("countQuickTip", "") === "") {
-                                mainWindow.setSetting("countQuickTip", 20);
+                            if (mainWindow.getSetting("countQuickTip",
+                                                      "") === "") {
+                                mainWindow.setSetting("countQuickTip", 20)
                             } else {
-                                mainWindow.setSetting("countQuickTip", Number(mainWindow.getSetting("countQuickTip", "")) + 20);
+                                mainWindow.setSetting("countQuickTip", Number(
+                                                          mainWindow.getSetting(
+                                                              "countQuickTip",
+                                                              "")) + 20)
                             }
-                            console.log( "countQuickTip :: " + Number(mainWindow.getSetting("countQuickTip", "")));
-                            console.log( "countBlockTimeLantern :: " + Number(mainWindow.getSetting("countBlockTimeLantern", "")));
-                            console.log( "countBlockStepLantern :: " + Number(mainWindow.getSetting("countBlockStepLantern", "")));
+                            console.log("countQuickTip :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countQuickTip", "")))
+                            console.log("countBlockTimeLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockTimeLantern", "")))
+                            console.log("countBlockStepLantern :: " + Number(
+                                            mainWindow.getSetting(
+                                                "countBlockStepLantern", "")))
                         }
                     }
-
                 }
 
                 Image {
@@ -569,17 +656,15 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
-                    //width: imageBackgroundStorePage.width - 100
-                    //height: (imageBackgroundStorePage.height - 150) / 8
 
-                    Text{
+                    Text {
                         anchors.left: parent.left
-                        anchors.verticalCenter:  parent.verticalCenter
-                        anchors.leftMargin : 20
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.leftMargin: 20
                         text: "AdMob"
-                        font.pointSize:      30
-                        font.family: "Helvetica";
-                        font.bold:        true
+                        font.pointSize: 30
+                        font.family: "Helvetica"
+                        font.bold: true
                         color: "white"
                     }
 
@@ -594,19 +679,18 @@ Item {
                             anchors.centerIn: parent
                             text: qsTr("BUY")
                             color: "white"
-                            font.pointSize:      14
-                            font.family: "Helvetica";
+                            font.pointSize: 14
+                            font.family: "Helvetica"
                         }
                     }
-
                 }
             }
         }
 
         Image {
-            id:               backButton
-            source:             "qrc:/resources/images/back.png"
-            anchors.bottom:     parent.bottom
+            id: backButton
+            source: "qrc:/resources/images/back.png"
+            anchors.bottom: parent.bottom
             anchors.bottomMargin: 16
             anchors.left: parent.left
             anchors.leftMargin: 15
@@ -614,14 +698,12 @@ Item {
             width: 40
 
             MouseArea {
-                id:           mouseAreaBackAwardsButton
+                id: mouseAreaBackAwardsButton
                 anchors.fill: parent
                 onClicked: {
-                     mainStackView.pop();
+                    mainStackView.pop()
                 }
             }
         }
     }
-
-
 }
