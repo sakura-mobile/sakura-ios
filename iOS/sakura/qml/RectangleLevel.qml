@@ -7,7 +7,7 @@ Rectangle {
     property int currentLevel: 0
     property int ratingLevel: 0
     property bool isAvailable: false
-    property string sourceImgLattern: ""
+    property string sourceImgLantern: ""
 
     function changeImgRatingLevel() {
         if (ratingLevel === 0) {
@@ -57,12 +57,12 @@ Rectangle {
         }
     }
     Image {
-        id: latternImage
+        id: lanternImage
         width: 50
         height: 50
         anchors.top: buttonImageRow.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        source: rectangleLevel.sourceImgLattern
+        source: rectangleLevel.sourceImgLantern
 
         Text {
             id: textName

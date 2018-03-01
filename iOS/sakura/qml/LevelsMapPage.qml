@@ -74,11 +74,11 @@ Item {
                     || (maxLevelCampaign === currentCampaign
                         && maxLevelLocation === currentLocation
                         && keyLevel > maxLevel)) {
-                object.sourceImgLattern = "qrc:/resources/images/lantern_disable.png"
+                object.sourceImgLantern = "qrc:/resources/images/lantern_disable.png"
                 object.isAvailable = false
                 object.ratingLevel = 0
             } else {
-                object.sourceImgLattern = "qrc:/resources/images/lantern.png"
+                object.sourceImgLantern = "qrc:/resources/images/lantern.png"
                 object.isAvailable = true
                 if (arrRatingLevels[currentCampaign] !== undefined
                         && arrRatingLevels[currentCampaign][currentLocation] !== undefined
@@ -126,11 +126,11 @@ Item {
                     || (maxLevelCampaign === currentCampaign
                         && maxLevelLocation === currentLocation
                         && keyLevel > maxLevel)) {
-                object.sourceImgLattern = "qrc:/resources/images/lantern_disable.png"
+                object.sourceImgLantern = "qrc:/resources/images/lantern_disable.png"
                 object.isAvailable = false
                 object.ratingLevel = 0
             } else {
-                object.sourceImgLattern = "qrc:/resources/images/lantern.png"
+                object.sourceImgLantern = "qrc:/resources/images/lantern.png"
                 object.isAvailable = true
                 if (arrRatingLevels[currentCampaign] !== undefined
                         && arrRatingLevels[currentCampaign][currentLocation] !== undefined
