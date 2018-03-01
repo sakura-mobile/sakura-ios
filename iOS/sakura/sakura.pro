@@ -20,8 +20,13 @@ HEADERS += \
     src/admobhelper.h \
     src/storehelper.h
 
-RESOURCES += qml.qrc \
-    resources.qrc
+RESOURCES += \
+    qml.qrc \
+    resources.qrc \
+    translations.qrc
+
+TRANSLATIONS += \
+    translations/sakura_ru.ts
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

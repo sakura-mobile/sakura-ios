@@ -8,13 +8,13 @@ Window {
     visibility: Window.FullScreen
     visible:    true
 
-    property bool versionWithoutAds: false
+    property bool disableAds: false
 
-    onVersionWithoutAdsChanged: {
-        setSetting("VersionWithoutAds", versionWithoutAds ? "true" : "false");
+    onDisableAdsChanged: {
+        setSetting("DisableAds", disableAds ? "true" : "false");
 
         if (mainStackView.depth > 0 && mainStackView.currentItem.hasOwnProperty("bannerViewHeight")) {
-            if (versionWithoutAds) {
+            if (disableAds) {
                 AdMobHelper.hideBannerView();
             } else {
                 AdMobHelper.showBannerView();
@@ -101,7 +101,7 @@ Window {
                     }
 
                     if (currentItem.hasOwnProperty("bannerViewHeight")) {
-                        if (mainWindow.versionWithoutAds) {
+                        if (mainWindow.disableAds) {
                             AdMobHelper.hideBannerView();
                         } else {
                             AdMobHelper.showBannerView();
@@ -125,7 +125,7 @@ Window {
         }
 
         Component.onCompleted: {
-            versionWithoutAds = (getSetting("VersionWithoutAds", "false") === "true");
+            disableAds = (getSetting("DisableAds", "false") === "true");
 
             AdMobHelper.initialize();
 

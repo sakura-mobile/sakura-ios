@@ -410,6 +410,7 @@ Item {
             Text {
                 id: textPinchMap
                 anchors.fill: parent
+                anchors.margins: 4
                 z: 15
                 visible: true
                 text: qsTr("Try to resize playground area with pinch gesture")
@@ -426,6 +427,7 @@ Item {
             Text {
                 id: textFlickMap
                 anchors.fill: parent
+                anchors.margins: 4
                 z: 15
                 visible: false
                 text: qsTr("Try to move playground area with your finger")
@@ -441,6 +443,7 @@ Item {
             Text {
                 id: textDoubleTapBranch
                 anchors.fill: parent
+                anchors.margins: 4
                 z: 15
                 visible: false
                 text: qsTr("Double tap on playground area to restore its default position")
@@ -456,6 +459,7 @@ Item {
             Text {
                 id: textDisassembleBranch
                 anchors.fill: parent
+                anchors.margins: 4
                 z: 15
                 visible: false
                 text: qsTr("Disassembling puzzle...")
@@ -471,9 +475,10 @@ Item {
             Text {
                 id: textPressedBranch
                 anchors.fill: parent
+                anchors.margins: 4
                 z: 15
                 visible: false
-                text: qsTr("Please tap on highlighted fragment")
+                text: qsTr("Tap on highlighted fragments to solve the puzzle")
                 font.pointSize: 20
                 font.bold: true
                 color: "white"

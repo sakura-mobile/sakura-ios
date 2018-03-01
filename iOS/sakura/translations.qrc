@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/tr">
+        <file alias="sakura_ru.qm">translations/sakura_ru.qm</file>
+    </qresource>
+</RCC>

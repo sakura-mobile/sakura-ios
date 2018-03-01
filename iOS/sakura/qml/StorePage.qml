@@ -1,9 +1,54 @@
 import QtQuick 2.9
 import QtQuick.Window 2.3
 import QtQuick.Controls 2.2
+import QtPurchasing 1.0
 
 Item {
     id: storePage
+
+    function getPrice(status, price) {
+        if (status === Product.Registered) {
+            var result = /([\d \.,]+)/.exec(price);
+
+            if (Array.isArray(result) && result.length > 1) {
+                return result[1].trim();
+            } else {
+                return qsTr("BUY");
+            }
+        } else {
+            return qsTr("BUY");
+        }
+    }
+
+    Store {
+        id: store
+
+        Product {
+            id:         removeAdsProduct
+            identifier: "sakura.unlockable.removeads"
+            type:       Product.Unlockable
+
+            onPurchaseSucceeded: {
+                mainWindow.disableAds = true;
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                mainWindow.disableAds = true;
+
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+    }
 
     Image {
         id: imageBackgroundStorePage
@@ -100,6 +145,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase1
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countQuickTip",
                                                       "") === "") {
@@ -179,6 +226,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase2
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countBlockStepLantern",
                                                       "") === "") {
@@ -261,6 +310,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase3
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countBlockTimeLantern",
                                                       "") === "") {
@@ -343,6 +394,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase4
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countQuickTip",
                                                       "") === "") {
@@ -423,6 +476,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase5
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countBlockStepLantern",
                                                       "") === "") {
@@ -505,6 +560,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase6
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countBlockTimeLantern",
                                                       "") === "") {
@@ -604,6 +661,8 @@ Item {
                     MouseArea {
                         id: mouseAreaPurchase7
                         anchors.fill: parent
+                        z: 1
+
                         onClicked: {
                             if (mainWindow.getSetting("countBlockStepLantern",
                                                       "") === "") {
@@ -677,10 +736,20 @@ Item {
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(removeAdsProduct.status, removeAdsProduct.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                        }
+                    }
+
+                    MouseArea {
+                        id: mouseAreaPurchase8
+                        anchors.fill: parent
+                        z: 1
+
+                        onClicked: {
+                            removeAdsProduct.purchase();
                         }
                     }
                 }
