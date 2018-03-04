@@ -66,22 +66,22 @@ function initObjectSingleLevels() {
     objectLevel.currentTime = 0
     objectLevel.countBlockTime = 1
     objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 5
+    objectLevel.countQuickTip = 50 //5
     objectLevel.place1 = {
         typeGift: 1,
-        countGift: 200
+        countGift: 30
     }
     objectLevel.place2 = {
         typeGift: 2,
-        countGift: 100
+        countGift: 15
     }
     objectLevel.place3 = {
         typeGift: 2,
-        countGift: 50
+        countGift: 10
     }
     objectLevel.place25 = {
-        typeGift: 1,
-        countGift: 30
+        typeGift: 3,
+        countGift: 5
     }
     listObjectSingleLevels[0] = objectLevel
 
@@ -96,23 +96,23 @@ function initObjectSingleLevels() {
     objectLevel.currentStep = 0
     objectLevel.currentTime = 0
     objectLevel.countBlockTime = 1
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 5
+    objectLevel.countBlockStep = 2
+    objectLevel.countQuickTip = 10
     objectLevel.place1 = {
         typeGift: 1,
-        countGift: 200
+        countGift: 40
     }
     objectLevel.place2 = {
         typeGift: 2,
-        countGift: 100
+        countGift: 20
     }
     objectLevel.place3 = {
         typeGift: 2,
-        countGift: 50
+        countGift: 15
     }
     objectLevel.place25 = {
-        typeGift: 1,
-        countGift: 30
+        typeGift: 3,
+        countGift: 10
     }
     listObjectSingleLevels[1] = objectLevel
 
@@ -126,24 +126,24 @@ function initObjectSingleLevels() {
     objectLevel.currentScore = 0
     objectLevel.currentStep = 0
     objectLevel.currentTime = 0
-    objectLevel.countBlockTime = 1
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 5
+    objectLevel.countBlockTime = 2
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.place1 = {
         typeGift: 1,
-        countGift: 200
+        countGift: 50
     }
     objectLevel.place2 = {
         typeGift: 2,
-        countGift: 100
+        countGift: 25
     }
     objectLevel.place3 = {
         typeGift: 2,
-        countGift: 50
+        countGift: 20
     }
     objectLevel.place25 = {
-        typeGift: 1,
-        countGift: 30
+        typeGift: 3,
+        countGift: 15
     }
     listObjectSingleLevels[2] = objectLevel
 
@@ -162,19 +162,19 @@ function initObjectSingleLevels() {
     objectLevel.countQuickTip = 10
     objectLevel.place1 = {
         typeGift: 1,
-        countGift: 200
+        countGift: 60
     }
     objectLevel.place2 = {
         typeGift: 2,
-        countGift: 100
+        countGift: 30
     }
     objectLevel.place3 = {
         typeGift: 2,
-        countGift: 50
+        countGift: 25
     }
     objectLevel.place25 = {
-        typeGift: 1,
-        countGift: 30
+        typeGift: 3,
+        countGift: 20
     }
     listObjectSingleLevels[3] = objectLevel
 
@@ -193,19 +193,19 @@ function initObjectSingleLevels() {
     objectLevel.countQuickTip = 15
     objectLevel.place1 = {
         typeGift: 1,
-        countGift: 200
+        countGift: 70
     }
     objectLevel.place2 = {
         typeGift: 2,
-        countGift: 100
+        countGift: 35
     }
     objectLevel.place3 = {
         typeGift: 2,
-        countGift: 50
+        countGift: 30
     }
     objectLevel.place25 = {
-        typeGift: 1,
-        countGift: 30
+        typeGift: 3,
+        countGift: 25
     }
     listObjectSingleLevels[4] = objectLevel
 }
@@ -248,7 +248,7 @@ function initObjectLevels() {
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
     objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 5
+    objectLevel.countQuickTip = 50 //5
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -273,7 +273,7 @@ function initObjectLevels() {
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
     objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 5
+    objectLevel.countQuickTip = 50 //5
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -522,8 +522,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 50
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -547,8 +547,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 50
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -571,9 +571,9 @@ function initObjectLevels() {
     objectLevel.height = 14
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 50
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -597,8 +597,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 100
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -621,9 +621,9 @@ function initObjectLevels() {
     objectLevel.height = 10
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -646,9 +646,9 @@ function initObjectLevels() {
     objectLevel.height = 10
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -672,8 +672,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -697,8 +697,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 0
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -725,8 +725,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -750,8 +750,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -776,7 +776,7 @@ function initObjectLevels() {
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
     objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 5
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -800,8 +800,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -825,8 +825,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -849,9 +849,9 @@ function initObjectLevels() {
     objectLevel.height = 8
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -874,9 +874,9 @@ function initObjectLevels() {
     objectLevel.height = 13
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 5
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -900,8 +900,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -925,8 +925,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -950,8 +950,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 5
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -975,8 +975,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 1
-    objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -999,9 +999,9 @@ function initObjectLevels() {
     objectLevel.height = 10
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 5
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1025,8 +1025,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1050,8 +1050,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1075,8 +1075,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1100,8 +1100,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1125,8 +1125,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 5
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1150,8 +1150,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1175,8 +1175,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1200,8 +1200,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 1
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 25
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1216,7 +1216,6 @@ function initObjectLevels() {
     //objectLevel.time = 30
     listObjectLevels[39] = objectLevel
 
-
     //------------- location_2 end-------------------------
 
     //------------- location_3 begin-------------------------
@@ -1229,8 +1228,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1254,8 +1253,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1278,9 +1277,9 @@ function initObjectLevels() {
     objectLevel.height = 17
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1303,9 +1302,9 @@ function initObjectLevels() {
     objectLevel.height = 15
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1329,8 +1328,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1354,8 +1353,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1379,8 +1378,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1404,8 +1403,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1429,8 +1428,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1454,8 +1453,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1479,8 +1478,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1504,8 +1503,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1529,8 +1528,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1554,8 +1553,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1579,8 +1578,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1603,9 +1602,9 @@ function initObjectLevels() {
     objectLevel.height = 13
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1628,9 +1627,9 @@ function initObjectLevels() {
     objectLevel.height = 13
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 150
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1654,8 +1653,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1679,8 +1678,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 3
+    objectLevel.countQuickTip = 15
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1704,8 +1703,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 2
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1732,8 +1731,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1756,9 +1755,9 @@ function initObjectLevels() {
     objectLevel.height = 10
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
-    objectLevel.countBlockTime = 1
+    objectLevel.countBlockTime = 3
     objectLevel.countBlockStep = 0
-    objectLevel.countQuickTip = 50
+    objectLevel.countQuickTip = 10
     objectLevel.typeStep = 0
     objectLevel.typeTime = 1
     objectLevel.timeCurrent = 0
@@ -1782,8 +1781,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1807,8 +1806,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 20
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1832,8 +1831,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1857,8 +1856,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1882,8 +1881,8 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 3
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 1
-    objectLevel.countQuickTip = 150
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
@@ -1897,6 +1896,331 @@ function initObjectLevels() {
     objectLevel.step = 145
     //objectLevel.time = 50
     listObjectLevels[66] = objectLevel
+
+    objectLevel = {
+        name: 'test_68'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
+    objectLevel.width = 20
+    objectLevel.height = 24
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 10
+    objectLevel.taskStepStar2 = 15
+    objectLevel.taskStepStar3 = 20
+    // objectLevel.taskTimeStar1 = 5
+    // objectLevel.taskTimeStar2 = 10
+    // objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 185
+    //objectLevel.time = 50
+    listObjectLevels[67] = objectLevel
+
+    objectLevel = {
+        name: 'test_69'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    objectLevel.width = 19
+    objectLevel.height = 21
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 10
+    objectLevel.countBlockStep = 0
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 0
+    objectLevel.typeTime = 1
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    //objectLevel.taskStepStar1 = 10
+    //objectLevel.taskStepStar2 = 15
+    //objectLevel.taskStepStar3 = 20
+    objectLevel.taskTimeStar1 = 5
+    objectLevel.taskTimeStar2 = 10
+    objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 185
+    objectLevel.time = 220
+    listObjectLevels[68] = objectLevel
+
+    objectLevel = {
+        name: 'test_70'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+    objectLevel.width = 15
+    objectLevel.height = 9
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 5
+    objectLevel.countBlockStep = 0
+    objectLevel.countQuickTip = 20
+    objectLevel.typeStep = 0
+    objectLevel.typeTime = 1
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    //objectLevel.taskStepStar1 = 10
+    //objectLevel.taskStepStar2 = 15
+    //objectLevel.taskStepStar3 = 20
+    objectLevel.taskTimeStar1 = 5
+    objectLevel.taskTimeStar2 = 10
+    objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 80
+    objectLevel.time = 80
+    listObjectLevels[69] = objectLevel
+
+    objectLevel = {
+        name: 'test_71'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
+    objectLevel.width = 17
+    objectLevel.height = 19
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 10
+    objectLevel.taskStepStar2 = 15
+    objectLevel.taskStepStar3 = 20
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 145
+    //objectLevel.time = 80
+    listObjectLevels[70] = objectLevel
+
+    objectLevel = {
+        name: 'test_72'
+    }
+    objectLevel.map = [0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0]
+    objectLevel.width = 11
+    objectLevel.height = 11
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 10
+    objectLevel.countBlockStep = 0
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 0
+    objectLevel.typeTime = 1
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    //objectLevel.taskStepStar1 = 10
+    //objectLevel.taskStepStar2 = 15
+    //objectLevel.taskStepStar3 = 20
+    objectLevel.taskTimeStar1 = 5
+    objectLevel.taskTimeStar2 = 10
+    objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 75
+    objectLevel.time = 60
+    listObjectLevels[71] = objectLevel
+
+    objectLevel = {
+        name: 'test_73'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0]
+    objectLevel.width = 14
+    objectLevel.height = 17
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 10
+    objectLevel.taskStepStar2 = 15
+    objectLevel.taskStepStar3 = 20
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 85
+    //objectLevel.time = 80
+    listObjectLevels[72] = objectLevel
+
+    objectLevel = {
+        name: 'test_74'
+    }
+    objectLevel.map = [0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+    objectLevel.width = 15
+    objectLevel.height = 15
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 20
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 5
+    objectLevel.taskStepStar2 = 10
+    objectLevel.taskStepStar3 = 15
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 110
+    //objectLevel.time = 80
+    listObjectLevels[73] = objectLevel
+
+    objectLevel = {
+        name: 'test_75'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0]
+    objectLevel.width = 14
+    objectLevel.height = 16
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 5
+    objectLevel.taskStepStar2 = 10
+    objectLevel.taskStepStar3 = 15
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 125
+    //objectLevel.time = 80
+    listObjectLevels[74] = objectLevel
+
+    objectLevel = {
+        name: 'test_76'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+    objectLevel.width = 14
+    objectLevel.height = 14
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 5
+    objectLevel.taskStepStar2 = 10
+    objectLevel.taskStepStar3 = 15
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 110
+    //objectLevel.time = 80
+    listObjectLevels[75] = objectLevel
+
+    objectLevel = {
+        name: 'test_77'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
+    objectLevel.width = 16
+    objectLevel.height = 16
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 15
+    objectLevel.taskStepStar2 = 20
+    objectLevel.taskStepStar3 = 25
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 150
+    //objectLevel.time = 80
+    listObjectLevels[76] = objectLevel
+
+    objectLevel = {
+        name: 'test_78'
+    }
+    objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0]
+    objectLevel.width = 12
+    objectLevel.height = 12
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 5
+    objectLevel.countQuickTip = 10
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 15
+    objectLevel.taskStepStar2 = 20
+    objectLevel.taskStepStar3 = 25
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 95
+    //objectLevel.time = 80
+    listObjectLevels[77] = objectLevel
+
+    objectLevel = {
+        name: 'test_79'
+    }
+    objectLevel.map = [0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
+    objectLevel.width = 21
+    objectLevel.height = 22
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 20
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 35
+    objectLevel.taskStepStar2 = 45
+    objectLevel.taskStepStar3 = 55
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 255
+    //objectLevel.time = 80
+    listObjectLevels[78] = objectLevel
+
+    objectLevel = {
+        name: 'test_80'
+    }
+    objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    objectLevel.width = 14
+    objectLevel.height = 26
+    objectLevel.mapArray = []
+    objectLevel.typeLocation = 3
+    objectLevel.countBlockTime = 0
+    objectLevel.countBlockStep = 10
+    objectLevel.countQuickTip = 30
+    objectLevel.typeStep = 1
+    objectLevel.typeTime = 0
+    objectLevel.timeCurrent = 0
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 20
+    objectLevel.taskStepStar2 = 25
+    objectLevel.taskStepStar3 = 35
+    //objectLevel.taskTimeStar1 = 5
+    //objectLevel.taskTimeStar2 = 10
+    //objectLevel.taskTimeStar3 = 15
+    objectLevel.step = 135
+    //objectLevel.time = 80
+    listObjectLevels[79] = objectLevel
 
     //------------- location_4 end-------------------------
 }
@@ -2500,7 +2824,6 @@ function initObjectBranch() {
     objectBranch.rotation = 270
     objectBranch.score = 0.9
     listImageBranch[7] = objectBranch
-
 
     //----------- 3 ------------------------------------
     objectBranch = {

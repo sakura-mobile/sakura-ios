@@ -15,6 +15,10 @@
         <source>Game over. Do you want to play again?</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -88,6 +92,14 @@
     </message>
     <message>
         <source>Remove Ads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Restore purchases</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
