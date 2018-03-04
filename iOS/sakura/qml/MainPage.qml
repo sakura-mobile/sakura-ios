@@ -151,14 +151,7 @@ Item {
                             id: mouseAreaHelp
                             anchors.fill: parent
                             onClicked: {
-                                var component = Qt.createComponent(
-                                            "StorePage.qml")
-
-                                if (component.status === Component.Ready) {
-                                    mainStackView.push(component)
-                                } else {
-                                    console.log(component.errorString())
-                                }
+                                mainStackView.push(storePage)
                             }
                         }
                     }

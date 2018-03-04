@@ -123,6 +123,10 @@ Window {
             id: mainPage
         }
 
+        StorePage {
+            id: storePage
+        }
+
         MouseArea {
             id:           screenLockMouseArea
             anchors.fill: parent
