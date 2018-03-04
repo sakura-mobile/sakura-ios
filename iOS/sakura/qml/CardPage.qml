@@ -6,6 +6,7 @@ import "GenerationBranch.js" as GenerationBranchScript
 
 Item {
     id: cardPage
+
     property int currentLevel: 0
     property int currentLocation: 0
     property int currentCampaign: 0

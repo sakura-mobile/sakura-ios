@@ -1,6 +1,7 @@
 import QtQuick 2.3
 import QtQuick.Controls 2.2
 import QtQuick.Particles 2.0
+import QtMultimedia 5.9
 
 import "GenerationBranch.js" as GenerationBranchScript
 
@@ -34,6 +35,7 @@ Item {
     property real lastMouseY: 0
 
     property int bannerViewHeight: AdMobHelper.bannerViewHeight
+    property bool endedAvailableLevels: false
 
     Image {
         id: imageBackgroundMainMap
@@ -692,7 +694,7 @@ Item {
                             anchors.fill: parent
                             onClicked: {
                                 mainStackView.pop()
-                                AdMobHelper.showInterstitial()
+                                mainWindow.showInterstitial()
                             }
                         }
                     }
@@ -731,7 +733,7 @@ Item {
                                 } else {
                                     console.log(component.errorString())
                                 }
-                                AdMobHelper.showInterstitial()
+                                mainWindow.showInterstitial()
                             }
                         }
                     }
@@ -745,6 +747,12 @@ Item {
                             id: mouseAreaPlayNextGame
                             anchors.fill: parent
                             onClicked: {
+                                if (endedAvailableLevels) {
+                                    animationRectCompletedGameDown.running = true
+                                    animationRectNotAvailableLevelsDown.running = true
+                                    return
+                                }
+
                                 if (currentLocation !== nextLocation) {
                                     var map_page = mainStackView.get(1)
 
@@ -800,6 +808,77 @@ Item {
                 }
             }
         }
+
+        Rectangle {
+            id: rectNotAvailableLevels
+            y: rectNotAvailableLevels.height * -1
+            anchors.horizontalCenter: imageBackgroundMainMap.horizontalCenter
+            width: 300
+            height: 200
+            color: "transparent"
+            Image {
+                id: backgroundRectNotAvailableLevels
+                source: "qrc:/resources/images/background_rect_score.png"
+                width: parent.width
+                height: parent.height
+
+                Text {
+                    id: textNotAvailableLevels
+                    anchors.top: parent.top
+                    anchors.bottom: imageOkNotAvailableLevels.top
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.margins: 16
+                    text: qsTr("Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.")
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    wrapMode: Text.Wrap
+                }
+
+                Image {
+                    id: imageOkNotAvailableLevels
+                    width: 50
+                    height: 50
+                    anchors.bottom: parent.bottom
+                    anchors.bottomMargin: 16
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    source: "qrc:/resources/images/button_ok.png"
+                    MouseArea {
+                        id: mouseAreaImageOkNotAvailableLevels
+                        anchors.fill: parent
+                        onClicked: {
+                            animationRectNotAvailableLevelsUp.running = true
+
+                            mainStackView.pop(mainStackView.get(0))
+                        }
+                    }
+                }
+            }
+
+            PropertyAnimation {
+                id: animationRectNotAvailableLevelsDown
+                duration: 200
+                from: rectNotAvailableLevels.height * -1
+                target: rectNotAvailableLevels
+                properties: "y"
+                easing.type: Easing.InQuad
+                to: imageBackgroundMainMap.height / 2 - rectNotAvailableLevels.height / 2
+            }
+
+            PropertyAnimation {
+                id: animationRectNotAvailableLevelsUp
+                duration: 200
+                from: rectNotAvailableLevels.y
+                target: rectNotAvailableLevels
+                properties: "y"
+                easing.type: Easing.InQuad
+                to: rectNotAvailableLevels.height * -1
+            }
+        }
     }
 
     StackView.onStatusChanged: {
@@ -839,6 +918,36 @@ Item {
         interval: 1000
         repeat: true
         onTriggered: campaignPage.timerBlockTime()
+    }
+
+    Audio {
+        id: audioClickBranch
+        volume: 1.0
+        source: "qrc:/resources/sound/click.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
+        id: audioGoodGame
+        volume: 1.0
+        source: "qrc:/resources/sound/game_complete.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
+        id: audioGameOver
+        volume: 1.0
+        source: "qrc:/resources/sound/game_over.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
     }
 
     Button {
@@ -969,6 +1078,7 @@ Item {
                         GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
                                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
                         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
+                        audioClickBranch.play()
                         GenerationBranchScript.listGameBranchObject[i][j].posLeft
                                 = GenerationBranchScript.listGameBranch[i][j].left
                         GenerationBranchScript.listGameBranchObject[i][j].posRight
@@ -1107,6 +1217,7 @@ Item {
     }
 
     function visibleFailedGameWindow() {
+        audioGameOver.play()
 
         nextLocation = currentLocation
         nextCampaign = currentCampaign
@@ -1139,6 +1250,7 @@ Item {
             setRatingUser()
             gridMapCampaign.spacing = 0
             startAnimationBranch()
+            audioGoodGame.play()
             return
         }
         if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].typeStep === 1
@@ -1178,6 +1290,7 @@ Item {
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
+        audioClickBranch.play()
 
         for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
             if (GenerationBranchScript.listImageBranchFull[n].name
@@ -1308,6 +1421,8 @@ Item {
                     nextLevel = currentLevel
                     nextLocation = currentLocation
                     nextCampaign = currentCampaign
+
+                    endedAvailableLevels = true
                 }
             }
         }
@@ -1448,6 +1563,7 @@ Item {
         gridMapCampaign.spacing = 1
         countBranchRotationGame = 0
         isLockedQuickTip = 0
+        endedAvailableLevels = false
         GenerationBranchScript.initObjectCampaigns()
         imageBackgroundMainMap.source = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].background
 

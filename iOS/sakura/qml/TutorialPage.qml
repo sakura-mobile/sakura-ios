@@ -1,6 +1,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Particles 2.0
+import QtMultimedia 5.9
 
 import "GenerationBranch.js" as GenerationBranchScript
 
@@ -516,6 +517,26 @@ Item {
         onTriggered: tutorialPage.startTimerTutorial()
     }
 
+    Audio {
+        id: audioClickBranch
+        volume: 1.0
+        source: "qrc:/resources/sound/click.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
+        id: audioGoodGame
+        volume: 1.0
+        source: "qrc:/resources/sound/game_complete.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
     Component.onCompleted: {
         loadBranchOnMap()
     }
@@ -655,6 +676,7 @@ Item {
             animationRectCompletedGameUp.running = true
             gridMapTutorialGame.spacing = 0
             startAnimationBranch()
+            audioGoodGame.play()
         }
     }
     function stopRotationBranch(ii, jj) {
@@ -825,6 +847,7 @@ Item {
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
+        audioClickBranch.play()
 
         for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
             if (GenerationBranchScript.listImageBranchFull[n].name

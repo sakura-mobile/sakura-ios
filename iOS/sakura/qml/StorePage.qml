@@ -24,6 +24,262 @@ Item {
         id: store
 
         Product {
+            id:         gameTipX5Product
+            identifier: "sakura.consumable.gametip.x5"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countQuickTip",
+                                          "") === "") {
+                    mainWindow.setSetting("countQuickTip", 5)
+                } else {
+                    mainWindow.setSetting("countQuickTip", Number(
+                                              mainWindow.getSetting(
+                                                  "countQuickTip",
+                                                  "")) + 5)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         stepPauseX5Product
+            identifier: "sakura.consumable.steppause.x5"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countBlockStepLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockStepLantern",
+                                          5)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockStepLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockStepLantern",
+                                           "")) + 5)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         timePauseX5Product
+            identifier: "sakura.consumable.timepause.x5"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countBlockTimeLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockTimeLantern",
+                                          5)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockTimeLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockTimeLantern",
+                                           "")) + 5)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         gameTipX20Product
+            identifier: "sakura.consumable.gametip.x20"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countQuickTip",
+                                          "") === "") {
+                    mainWindow.setSetting("countQuickTip", 20)
+                } else {
+                    mainWindow.setSetting("countQuickTip", Number(
+                                              mainWindow.getSetting(
+                                                  "countQuickTip",
+                                                  "")) + 20)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         stepPauseX20Product
+            identifier: "sakura.consumable.steppause.x20"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countBlockStepLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockStepLantern",
+                                          20)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockStepLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockStepLantern",
+                                           "")) + 20)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         timePauseX20Product
+            identifier: "sakura.consumable.timepause.x20"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countBlockTimeLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockTimeLantern",
+                                          20)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockTimeLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockTimeLantern",
+                                           "")) + 20)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
+            id:         boosterPackageX20Product
+            identifier: "sakura.consumable.boosters.x20"
+            type:       Product.Consumable
+
+            onPurchaseSucceeded: {
+                if (mainWindow.getSetting("countBlockStepLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockStepLantern",
+                                          20)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockStepLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockStepLantern",
+                                           "")) + 20)
+                }
+
+                if (mainWindow.getSetting("countBlockTimeLantern",
+                                          "") === "") {
+                    mainWindow.setSetting("countBlockTimeLantern",
+                                          20)
+                } else {
+                    mainWindow.setSetting(
+                                "countBlockTimeLantern",
+                                Number(mainWindow.getSetting(
+                                           "countBlockTimeLantern",
+                                           "")) + 20)
+                }
+
+                if (mainWindow.getSetting("countQuickTip",
+                                          "") === "") {
+                    mainWindow.setSetting("countQuickTip", 20)
+                } else {
+                    mainWindow.setSetting("countQuickTip", Number(
+                                              mainWindow.getSetting(
+                                                  "countQuickTip",
+                                                  "")) + 20)
+                }
+
+                transaction.finalize();
+            }
+
+            onPurchaseRestored: {
+                transaction.finalize();
+            }
+
+            onPurchaseFailed: {
+                if (transaction.failureReason === Transaction.ErrorOccurred) {
+                    console.log(transaction.errorString);
+                }
+
+                transaction.finalize();
+            }
+        }
+
+        Product {
             id:         removeAdsProduct
             identifier: "sakura.unlockable.removeads"
             type:       Product.Unlockable
@@ -131,11 +387,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(gameTipX5Product.status, gameTipX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -148,18 +404,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countQuickTip",
-                                                      "") === "") {
-                                mainWindow.setSetting("countQuickTip", 5)
-                            } else {
-                                mainWindow.setSetting("countQuickTip", Number(
-                                                          mainWindow.getSetting(
-                                                              "countQuickTip",
-                                                              "")) + 5)
-                            }
-                            console.log("countQuickTip :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countQuickTip", "")))
+                            gameTipX5Product.purchase();
                         }
                     }
                 }
@@ -213,11 +458,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(stepPauseX5Product.status, stepPauseX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -229,20 +474,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countBlockStepLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern",
-                                                      5)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockStepLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockStepLantern",
-                                                       "")) + 5)
-                            }
-                            console.log("countBlockStepLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockStepLantern", "")))
+                            stepPauseX5Product.purchase();
                         }
                     }
                 }
@@ -296,11 +528,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(timePauseX5Product.status, timePauseX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -313,20 +545,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countBlockTimeLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern",
-                                                      5)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockTimeLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockTimeLantern",
-                                                       "")) + 5)
-                            }
-                            console.log("countBlockTimeLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockTimeLantern", "")))
+                            timePauseX5Product.purchase();
                         }
                     }
                 }
@@ -380,11 +599,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(gameTipX20Product.status, gameTipX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -397,18 +616,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countQuickTip",
-                                                      "") === "") {
-                                mainWindow.setSetting("countQuickTip", 20)
-                            } else {
-                                mainWindow.setSetting("countQuickTip", Number(
-                                                          mainWindow.getSetting(
-                                                              "countQuickTip",
-                                                              "")) + 20)
-                            }
-                            console.log("countQuickTip :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countQuickTip", "")))
+                            gameTipX20Product.purchase();
                         }
                     }
                 }
@@ -462,11 +670,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(stepPauseX20Product.status, stepPauseX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -479,20 +687,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countBlockStepLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern",
-                                                      20)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockStepLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockStepLantern",
-                                                       "")) + 20)
-                            }
-                            console.log("countBlockStepLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockStepLantern", "")))
+                            stepPauseX20Product.purchase();
                         }
                     }
                 }
@@ -546,11 +741,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(timePauseX20Product.status, timePauseX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -563,20 +758,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countBlockTimeLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern",
-                                                      20)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockTimeLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockTimeLantern",
-                                                       "")) + 20)
-                            }
-                            console.log("countBlockTimeLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockTimeLantern", "")))
+                            timePauseX20Product.purchase();
                         }
                     }
                 }
@@ -647,11 +829,11 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
-                            text: qsTr("BUY")
+                            text: storePage.getPrice(boosterPackageX20Product.status, boosterPackageX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
@@ -664,48 +846,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (mainWindow.getSetting("countBlockStepLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockStepLantern",
-                                                      20)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockStepLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockStepLantern",
-                                                       "")) + 20)
-                            }
-
-                            if (mainWindow.getSetting("countBlockTimeLantern",
-                                                      "") === "") {
-                                mainWindow.setSetting("countBlockTimeLantern",
-                                                      20)
-                            } else {
-                                mainWindow.setSetting(
-                                            "countBlockTimeLantern",
-                                            Number(mainWindow.getSetting(
-                                                       "countBlockTimeLantern",
-                                                       "")) + 20)
-                            }
-
-                            if (mainWindow.getSetting("countQuickTip",
-                                                      "") === "") {
-                                mainWindow.setSetting("countQuickTip", 20)
-                            } else {
-                                mainWindow.setSetting("countQuickTip", Number(
-                                                          mainWindow.getSetting(
-                                                              "countQuickTip",
-                                                              "")) + 20)
-                            }
-                            console.log("countQuickTip :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countQuickTip", "")))
-                            console.log("countBlockTimeLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockTimeLantern", "")))
-                            console.log("countBlockStepLantern :: " + Number(
-                                            mainWindow.getSetting(
-                                                "countBlockStepLantern", "")))
+                            boosterPackageX20Product.purchase();
                         }
                     }
                 }
@@ -715,6 +856,7 @@ Item {
                     source: "qrc:/resources/images/rectangle-hi.png"
                     width: 300
                     height: 60
+                    visible: !mainWindow.disableAds
 
                     Text {
                         anchors.left: parent.left
@@ -732,7 +874,7 @@ Item {
                         anchors.right: parent.right
                         anchors.rightMargin: 20
                         source: "qrc:/resources/images/button_store.png"
-                        width: 80
+                        width: 100
                         height: 30
                         Text {
                             anchors.centerIn: parent
@@ -750,6 +892,50 @@ Item {
 
                         onClicked: {
                             removeAdsProduct.purchase();
+                        }
+                    }
+                }
+
+                Image {
+                    id: purchase9
+                    source: "qrc:/resources/images/rectangle-md.png"
+                    width: 300
+                    height: 60
+
+                    Text {
+                        anchors.left: parent.left
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.leftMargin: 20
+                        text: qsTr("Restore purchases")
+                        font.pointSize: 16
+                        font.family: "Helvetica"
+                        font.bold: true
+                        color: "white"
+                    }
+
+                    Image {
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.right: parent.right
+                        anchors.rightMargin: 20
+                        source: "qrc:/resources/images/button_store.png"
+                        width: 100
+                        height: 30
+                        Text {
+                            anchors.centerIn: parent
+                            text: qsTr("OK")
+                            color: "white"
+                            font.pointSize: 14
+                            font.family: "Helvetica"
+                        }
+                    }
+
+                    MouseArea {
+                        id: mouseAreaPurchase9
+                        anchors.fill: parent
+                        z: 1
+
+                        onClicked: {
+                            store.restorePurchases();
                         }
                     }
                 }

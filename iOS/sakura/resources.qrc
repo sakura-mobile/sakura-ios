@@ -156,5 +156,9 @@
         <file>resources/images/button_store.png</file>
         <file>resources/images/rectangle-hi.png</file>
         <file>resources/images/background_app.jpg</file>
+        <file>resources/images/rectangle-md.png</file>
+        <file>resources/sound/click.wav</file>
+        <file>resources/sound/game_over.wav</file>
+        <file>resources/sound/game_complete.wav</file>
     </qresource>
 </RCC>

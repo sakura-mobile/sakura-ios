@@ -22,6 +22,12 @@ Window {
         }
     }
 
+    function showInterstitial() {
+        if (!disableAds) {
+            AdMobHelper.showInterstitial();
+        }
+    }
+
     function addScore(text, score, difficulty) {
         var db = LocalStorage.openDatabaseSync("SakuraDB", "1.0", "SakuraDB", 1000000);
 

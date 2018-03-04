@@ -1,6 +1,7 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import QtQuick.Particles 2.0
+import QtMultimedia 5.9
 
 import "GenerationBranch.js" as GenerationBranchScript
 
@@ -779,7 +780,7 @@ Item {
                         anchors.fill: parent
                         onClicked: {
                             mainStackView.pop()
-                            AdMobHelper.showInterstitial()
+                            mainWindow.showInterstitial()
                         }
                     }
                 }
@@ -814,7 +815,7 @@ Item {
                             } else {
                                 console.log(component.errorString())
                             }
-                            AdMobHelper.showInterstitial()
+                            mainWindow.showInterstitial()
                         }
                     }
                 }
@@ -884,6 +885,36 @@ Item {
         interval: 1000
         repeat: true
         onTriggered: singleGamePage.timerBlockTime()
+    }
+
+    Audio {
+        id: audioClickBranch
+        volume: 1.0
+        source: "qrc:/resources/sound/click.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
+        id: audioGoodGame
+        volume: 1.0
+        source: "qrc:/resources/sound/game_complete.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
+        id: audioGameOver
+        volume: 1.0
+        source: "qrc:/resources/sound/game_over.wav"
+        loops: 0
+        onError: {
+            console.log(errorString)
+        }
     }
 
     Component.onCompleted: {
@@ -958,6 +989,7 @@ Item {
                         GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
                                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
                         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
+                        audioClickBranch.play()
 
                         GenerationBranchScript.listGameBranchObject[i][j].posLeft
                                 = GenerationBranchScript.listGameBranch[i][j].left
@@ -1114,6 +1146,7 @@ Item {
     }
 
     function visibleFailedGameWindow() {
+        audioGameOver.play()
         textFailedGame.visible = true
         imageShare.visible = false
         rowTextCompletedGame.visible = false
@@ -1246,6 +1279,7 @@ Item {
             animationRectCompletedGameUp.running = true
             gridMapSingleGame.spacing = 0
             startAnimationBranch()
+            audioGoodGame.play()
             var nameUser = mainWindow.getSetting("nameUser", "NONAME")
             mainWindow.addScore(
                         nameUser,
@@ -1452,6 +1486,7 @@ Item {
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
+        audioClickBranch.play()
 
         for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
             if (GenerationBranchScript.listImageBranchFull[n].name
