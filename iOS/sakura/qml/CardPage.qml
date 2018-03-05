@@ -130,8 +130,8 @@ Item {
                         var scale = Math.min(width / grid_width,
                                              height / grid_height)
 
-                        if (scale < 0.5) {
-                            scale = 0.5
+                        if (scale < 0.25) {
+                            scale = 0.25
                         }
                         if (scale > 3.0) {
                             scale = 3.0
@@ -234,7 +234,7 @@ Item {
                         var scale = 1.0 + pinch.scale - pinch.previousScale
 
                         if (backgroundFlickable.contentWidth * scale
-                                / backgroundFlickable.initialContentWidth >= 0.5
+                                / backgroundFlickable.initialContentWidth >= 0.25
                                 && backgroundFlickable.contentWidth * scale
                                 / backgroundFlickable.initialContentWidth <= 3.0) {
                             backgroundFlickable.resizeContent(

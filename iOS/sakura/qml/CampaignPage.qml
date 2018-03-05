@@ -36,6 +36,9 @@ Item {
 
     property int bannerViewHeight: AdMobHelper.bannerViewHeight
     property bool endedAvailableLevels: false
+    property bool isPushStore: false
+    property bool isTimerGameRunning: false
+    property bool isTimerBlockTimeGame: false
 
     Image {
         id: imageBackgroundMainMap
@@ -306,8 +309,8 @@ Item {
                         scale = (height / grid_height)
                     }
 
-                    if (scale < 0.5) {
-                        scale = 0.5
+                    if (scale < 0.25) {
+                        scale = 0.25
                     }
                     if (scale > 3.0) {
                         scale = 3.0
@@ -409,7 +412,7 @@ Item {
                     var scale = 1.0 + pinch.scale - pinch.previousScale
 
                     if (backgroundFlickable.contentWidth * scale
-                            / backgroundFlickable.initialContentWidth >= 0.5
+                            / backgroundFlickable.initialContentWidth >= 0.25
                             && backgroundFlickable.contentWidth * scale
                             / backgroundFlickable.initialContentWidth <= 3.0) {
                         backgroundFlickable.resizeContent(
@@ -491,6 +494,21 @@ Item {
                         id: mouseAreaIceStepButton
                         anchors.fill: parent
                         onClicked: {
+                            if (Number(mainWindow.getSetting(
+                                           "countBlockStepLantern", 0)) <= 0) {
+                                if (timerGame.running) {
+                                    timerGame.running = false
+                                    isTimerGameRunning = true
+                                }
+                                if (timerBlockTimeGame.running) {
+                                    timerBlockTimeGame.running = false
+                                    isTimerBlockTimeGame = true
+                                }
+                                isPushStore = true
+                                mainStackView.push(storePage)
+                                return
+                            }
+
                             if (timerBlockTimeGame.running !== true
                                     && countStepStop === 0) {
                                 setBlockStep()
@@ -538,6 +556,21 @@ Item {
                         id: mouseAreaIceTimeButton
                         anchors.fill: parent
                         onClicked: {
+                            if (Number(mainWindow.getSetting(
+                                           "countBlockTimeLantern", 0)) <= 0) {
+                                if (timerGame.running) {
+                                    timerGame.running = false
+                                    isTimerGameRunning = true
+                                }
+                                if (timerBlockTimeGame.running) {
+                                    timerBlockTimeGame.running = false
+                                    isTimerBlockTimeGame = true
+                                }
+                                isPushStore = true
+                                mainStackView.push(storePage)
+                                return
+                            }
+
                             if (timerBlockTimeGame.running !== true
                                     && countStepStop === 0) {
                                 setBlockTime()
@@ -581,6 +614,20 @@ Item {
                         id: mouseAreaQuickTipButton
                         anchors.fill: parent
                         onClicked: {
+                            if (Number(mainWindow.getSetting("countQuickTip",
+                                                             0)) <= 0) {
+                                if (timerGame.running) {
+                                    timerGame.running = false
+                                    isTimerGameRunning = true
+                                }
+                                if (timerBlockTimeGame.running) {
+                                    timerBlockTimeGame.running = false
+                                    isTimerBlockTimeGame = true
+                                }
+                                isPushStore = true
+                                mainStackView.push(storePage)
+                                return
+                            }
                             setQuickTip()
                         }
                     }
@@ -882,6 +929,25 @@ Item {
     }
 
     StackView.onStatusChanged: {
+        if (StackView.status === StackView.Active && isPushStore) {
+            textCountBlockStepLantern.text = Number(
+                        mainWindow.getSetting("countBlockStepLantern", 0))
+            textCountBlockTimeLantern.text = Number(
+                        mainWindow.getSetting("countBlockTimeLantern", 0))
+            textCountQuickTipButton.text = Number(mainWindow.getSetting(
+                                                      "countQuickTip", 0))
+            isPushStore = false
+            if (isTimerGameRunning) {
+                timerGame.running = true
+                isTimerGameRunning = false
+            }
+            if (isTimerBlockTimeGame) {
+                timerBlockTimeGame.running = true
+                isTimerBlockTimeGame = false
+            }
+            return
+        }
+
         if (StackView.status === StackView.Active
                 && rectCompletedGame.y === imageBackgroundMainMap.height) {
             mixMap()
@@ -1423,6 +1489,11 @@ Item {
                     nextCampaign = currentCampaign
 
                     endedAvailableLevels = true
+
+                    var d = new Date()
+                    var utc = d.getTime() + (d.getTimezoneOffset() * 60000)
+                    var now = new Date(utc + (3600000 * 0))
+                    mainWindow.setSetting("endedAvailableLevels", now.getTime())
                 }
             }
         }

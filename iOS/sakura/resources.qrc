@@ -160,5 +160,6 @@
         <file>resources/sound/click.wav</file>
         <file>resources/sound/game_over.wav</file>
         <file>resources/sound/game_complete.wav</file>
+        <file>resources/images/background_location_5.jpg</file>
     </qresource>
 </RCC>
