@@ -492,7 +492,8 @@ Item {
             if (listTopUsers[i].user_id === mainWindow.getSetting("userUuid",
                                                                   "")) {
                 scoreListModel.append({
-                                          name: nameUser,
+                                          name: mainWindow.getSetting(
+                                                    "nameUser", "NONAME"),
                                           score: Number(listTopUsers[i].score),
                                           date: Qt.formatDate(new Date(),
                                                               "dd.MM.yyyy"),
