@@ -736,7 +736,7 @@ Item {
                         id: textScoreGame
                         anchors.horizontalCenter: parent.horizontalCenter
 
-                        text: qsTr("SCORE: ")
+                        text: qsTr("SCORE:")
                         font.pointSize: 20
                         font.bold: true
                         color: "white"
