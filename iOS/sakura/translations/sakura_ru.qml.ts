@@ -4,22 +4,22 @@
 <context>
     <name>CampaignPage</name>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="129"/>
+        <location filename="../qml/CampaignPage.qml" line="132"/>
         <source>STEP:</source>
         <translation>ШАГ:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="216"/>
+        <location filename="../qml/CampaignPage.qml" line="219"/>
         <source>TIME:</source>
         <translation>ВРЕМЯ:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="655"/>
+        <location filename="../qml/CampaignPage.qml" line="702"/>
         <source>Game over. Do you want to play again?</source>
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="832"/>
+        <location filename="../qml/CampaignPage.qml" line="879"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Поздравляю, вы прошли все доступные уровни! В скором времени вас ожидают обновления с новыми уровнями, задачами и многим другим.</translation>
     </message>
@@ -27,22 +27,22 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/MainPage.qml" line="37"/>
+        <location filename="../qml/MainPage.qml" line="38"/>
         <source>TUTORIAL</source>
         <translation>ОБУЧЕНИЕ</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="70"/>
+        <location filename="../qml/MainPage.qml" line="71"/>
         <source>CAMPAIGN</source>
         <translation>КАМПАНИЯ</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="110"/>
+        <location filename="../qml/MainPage.qml" line="111"/>
         <source>TOURNAMENT</source>
         <translation>ТУРНИР</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="143"/>
+        <location filename="../qml/MainPage.qml" line="144"/>
         <source>STORE</source>
         <translation>МАГАЗИН</translation>
     </message>
@@ -68,27 +68,23 @@
 <context>
     <name>SingleGamePage</name>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="120"/>
+        <location filename="../qml/SingleGamePage.qml" line="123"/>
+        <location filename="../qml/SingleGamePage.qml" line="739"/>
         <source>SCORE:</source>
         <translation>ОЧКИ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="191"/>
+        <location filename="../qml/SingleGamePage.qml" line="194"/>
         <source>STEP:</source>
         <translation>ШАГ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="278"/>
+        <location filename="../qml/SingleGamePage.qml" line="281"/>
         <source>TIME:</source>
         <translation>ВРЕМЯ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="692"/>
-        <source>SCORE:</source>
-        <translation>ОЧКИ:</translation>
-    </message>
-    <message>
-        <location filename="../qml/SingleGamePage.qml" line="741"/>
+        <location filename="../qml/SingleGamePage.qml" line="788"/>
         <source>Game over. Do you want to play again?</source>
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>
