@@ -863,7 +863,7 @@ Item {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 20
                         text: qsTr("Remove Ads")
-                        font.pointSize: 16
+                        font.pointSize: 12
                         font.family: "Helvetica"
                         font.bold: true
                         color: "white"
@@ -907,7 +907,7 @@ Item {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 20
                         text: qsTr("Restore purchases")
-                        font.pointSize: 16
+                        font.pointSize: 12
                         font.family: "Helvetica"
                         font.bold: true
                         color: "white"

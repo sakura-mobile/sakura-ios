@@ -877,7 +877,7 @@ Item {
                     anchors.right: parent.right
                     anchors.margins: 16
                     text: qsTr("Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.")
-                    font.pointSize: 20
+                    font.pointSize: 16
                     font.bold: true
                     color: "white"
                     font.family: "Helvetica"

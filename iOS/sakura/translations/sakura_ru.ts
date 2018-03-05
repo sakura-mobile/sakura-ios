@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation>Поздравляю, вы прошли все доступные уровни! В скором времени вас ожидают обновления с новыми уровнями, задачами и многим другим.</translation>
+        <translation>Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
     </message>
 </context>
 <context>
