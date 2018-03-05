@@ -162,18 +162,6 @@ Item {
     }
 
     Component.onCompleted: {
-        mainWindow.setSetting("countBlockTimeLantern", 1)
-        mainWindow.setSetting("countBlockStepLantern", 1)
-        mainWindow.setSetting("countQuickTip", 1000)
-
-        mainWindow.setSetting("maxLevel", 19)
-        mainWindow.setSetting("maxLevelLocation", 4)
-        mainWindow.setSetting("maxLevelCampaign", 0)
-
-        mainWindow.setSetting("ratingLevelsUser", JSON.stringify(
-                                  GenerationBranchScript.setFullCampaigns()))
-
-        mainWindow.getSetting("userUuid", "")
         if (mainWindow.getSetting("userUuid", "") === "") {
             mainWindow.setSetting("userUuid", UuidCreator.createUuid())
         }
