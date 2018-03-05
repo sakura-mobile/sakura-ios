@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+*/
+
+CFBundleDisplayName               = "Сакура";
+NSCameraUsageDescription          = "Пожалуйста, разрешите доступ к камере, если вы хотите воспользоваться этим функционалом";
+NSPhotoLibraryAddUsageDescription = "Пожалуйста, разрешите доступ к Фотогалерее, чтобы сохранить изображение";
