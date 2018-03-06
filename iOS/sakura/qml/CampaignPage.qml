@@ -496,6 +496,9 @@ Item {
                         onClicked: {
                             if (Number(mainWindow.getSetting(
                                            "countBlockStepLantern", 0)) <= 0) {
+                                if (countBlockStepLevel >= GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].countBlockStep)
+                                    return
+
                                 if (timerGame.running) {
                                     timerGame.running = false
                                     isTimerGameRunning = true
@@ -558,6 +561,9 @@ Item {
                         onClicked: {
                             if (Number(mainWindow.getSetting(
                                            "countBlockTimeLantern", 0)) <= 0) {
+                                if (countBlockTimeLevel >= GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].countBlockTime)
+                                    return
+
                                 if (timerGame.running) {
                                     timerGame.running = false
                                     isTimerGameRunning = true
@@ -616,6 +622,9 @@ Item {
                         onClicked: {
                             if (Number(mainWindow.getSetting("countQuickTip",
                                                              0)) <= 0) {
+                                if (countQuickTipLevel >= GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].countQuickTip)
+                                    return
+
                                 if (timerGame.running) {
                                     timerGame.running = false
                                     isTimerGameRunning = true
@@ -1539,8 +1548,14 @@ Item {
         var countBranchInMap = arrBranch.length
         var stepGame = 0
         var arrRotation = []
-        while (stepGame < GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].step - 3
-               && arrBranch.length > 0) {
+        var countStep = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].step
+        if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].step > 250) {
+            countStep = GenerationBranchScript.getRandomInt(
+                        Number(
+                            GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].step * 0.6),
+                        GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].step)
+        }
+        while (stepGame < countStep - 3 && arrBranch.length > 0) {
             var startPoint = GenerationBranchScript.getRandomInt(
                         0, arrBranch.length - 1)
             i = arrBranch[startPoint].posI

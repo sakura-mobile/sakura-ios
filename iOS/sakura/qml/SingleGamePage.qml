@@ -1477,9 +1477,15 @@ Item {
 
     function setScoreUserRotation(score_branch) {
         if (countStepStop === 0) {
+            var scoreStep = GenerationBranchScript.getRandomInt(
+                        Number(
+                            GenerationBranchScript.SCORE_ROTATION_BRANCH * score_branch),
+                        GenerationBranchScript.SCORE_ROTATION_BRANCH)
+
             var score = Number(
                         GenerationBranchScript.listObjectSingleLevels[currentLevel].currentScore
-                        - GenerationBranchScript.SCORE_ROTATION_BRANCH * score_branch)
+                        - scoreStep)
+
             GenerationBranchScript.listObjectSingleLevels[currentLevel].currentScore
                     = score > 0 ? score : 0
             textScoreGameLantern.text

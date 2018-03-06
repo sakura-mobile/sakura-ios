@@ -167,15 +167,15 @@ Item {
         }
 
         if (mainWindow.getSetting("countBlockTimeLantern", "") === "") {
-            mainWindow.setSetting("countBlockTimeLantern", 3)
+            mainWindow.setSetting("countBlockTimeLantern", 5)
         }
 
         if (mainWindow.getSetting("countBlockStepLantern", "") === "") {
-            mainWindow.setSetting("countBlockStepLantern", 3)
+            mainWindow.setSetting("countBlockStepLantern", 5)
         }
 
         if (mainWindow.getSetting("countQuickTip", "") === "") {
-            mainWindow.setSetting("countQuickTip", 3)
+            mainWindow.setSetting("countQuickTip", 10)
         }
     }
 }

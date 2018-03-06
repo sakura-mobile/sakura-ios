@@ -80,7 +80,7 @@ function initObjectSingleLevels() {
         countGift: 10
     }
     objectLevel.place25 = {
-        typeGift: 3,
+        typeGift: 2,
         countGift: 5
     }
     listObjectSingleLevels[0] = objectLevel
@@ -111,7 +111,7 @@ function initObjectSingleLevels() {
         countGift: 15
     }
     objectLevel.place25 = {
-        typeGift: 3,
+        typeGift: 2,
         countGift: 10
     }
     listObjectSingleLevels[1] = objectLevel
@@ -142,7 +142,7 @@ function initObjectSingleLevels() {
         countGift: 20
     }
     objectLevel.place25 = {
-        typeGift: 3,
+        typeGift: 2,
         countGift: 15
     }
     listObjectSingleLevels[2] = objectLevel
@@ -173,7 +173,7 @@ function initObjectSingleLevels() {
         countGift: 25
     }
     objectLevel.place25 = {
-        typeGift: 3,
+        typeGift: 2,
         countGift: 20
     }
     listObjectSingleLevels[3] = objectLevel
@@ -204,7 +204,7 @@ function initObjectSingleLevels() {
         countGift: 30
     }
     objectLevel.place25 = {
-        typeGift: 3,
+        typeGift: 2,
         countGift: 25
     }
     listObjectSingleLevels[4] = objectLevel
@@ -2590,8 +2590,8 @@ function initObjectLevels() {
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
     objectLevel.stepCurrent = 0
-    objectLevel.taskStepStar1 = 25
-    objectLevel.taskStepStar2 = 30
+    objectLevel.taskStepStar1 = 15
+    objectLevel.taskStepStar2 = 20
     objectLevel.taskStepStar3 = 35
     //objectLevel.taskTimeStar1 = 5
     //objectLevel.taskTimeStar2 = 10
@@ -2603,8 +2603,8 @@ function initObjectLevels() {
     objectLevel = {
         name: 'test_96'
     }
-    objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0]
-    objectLevel.width = 27
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1]
+    objectLevel.width = 13
     objectLevel.height = 21
     objectLevel.mapArray = []
     objectLevel.typeLocation = 4
@@ -2615,13 +2615,13 @@ function initObjectLevels() {
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
     objectLevel.stepCurrent = 0
-    objectLevel.taskStepStar1 = 35
-    objectLevel.taskStepStar2 = 50
-    objectLevel.taskStepStar3 = 55
+    objectLevel.taskStepStar1 = 15
+    objectLevel.taskStepStar2 = 25
+    objectLevel.taskStepStar3 = 35
     //objectLevel.taskTimeStar1 = 5
     //objectLevel.taskTimeStar2 = 10
     //objectLevel.taskTimeStar3 = 15
-    objectLevel.step = 295
+    objectLevel.step = 140
     //objectLevel.time = 80
     listObjectLevels[95] = objectLevel
 
@@ -2665,9 +2665,9 @@ function initObjectLevels() {
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
     objectLevel.stepCurrent = 0
-    objectLevel.taskStepStar1 = 35
-    objectLevel.taskStepStar2 = 45
-    objectLevel.taskStepStar3 = 55
+    objectLevel.taskStepStar1 = 15
+    objectLevel.taskStepStar2 = 25
+    objectLevel.taskStepStar3 = 35
     //objectLevel.taskTimeStar1 = 5
     //objectLevel.taskTimeStar2 = 10
     //objectLevel.taskTimeStar3 = 15
@@ -2709,15 +2709,15 @@ function initObjectLevels() {
     objectLevel.mapArray = []
     objectLevel.typeLocation = 4
     objectLevel.countBlockTime = 0
-    objectLevel.countBlockStep = 10
-    objectLevel.countQuickTip = 30
+    objectLevel.countBlockStep = 30
+    objectLevel.countQuickTip = 40
     objectLevel.typeStep = 1
     objectLevel.typeTime = 0
     objectLevel.timeCurrent = 0
     objectLevel.stepCurrent = 0
-    objectLevel.taskStepStar1 = 20
+    objectLevel.taskStepStar1 = 15
     objectLevel.taskStepStar2 = 25
-    objectLevel.taskStepStar3 = 30
+    objectLevel.taskStepStar3 = 35
     //objectLevel.taskTimeStar1 = 5
     //objectLevel.taskTimeStar2 = 10
     //objectLevel.taskTimeStar3 = 15
