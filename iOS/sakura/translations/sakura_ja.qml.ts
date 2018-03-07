@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/CampaignPage.qml" line="888"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに.</translation>
+        <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
     </message>
 </context>
 <context>

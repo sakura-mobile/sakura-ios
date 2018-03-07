@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+*/
+
+CFBundleDisplayName               = "さくらパズル";
+NSCameraUsageDescription          = "この機能にアクセスするには、カメラへのアクセスを有効にしてください";
+NSPhotoLibraryAddUsageDescription = "撮影した画像を保存する場合は、フォトライブラリへの書き込みアクセスを有効にしてください";
