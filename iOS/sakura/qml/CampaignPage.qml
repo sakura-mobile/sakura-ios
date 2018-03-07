@@ -706,6 +706,7 @@ Item {
                     anchors.bottom: rowRectCompletedGame.top
                     anchors.left: parent.left
                     anchors.right: parent.right
+                    anchors.margins: 16
                     z: 15
                     visible: false
                     text: qsTr("Game over. Do you want to play again?")
