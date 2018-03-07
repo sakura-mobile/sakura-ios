@@ -26,7 +26,8 @@ RESOURCES += \
     translations.qrc
 
 TRANSLATIONS += \
-    translations/sakura_ru.ts
+    translations/sakura_ru.ts \
+    translations/sakura_ja.ts
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =

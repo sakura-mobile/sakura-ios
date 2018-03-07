@@ -14,12 +14,12 @@
         <translation>ВРЕМЯ:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="702"/>
+        <location filename="../qml/CampaignPage.qml" line="711"/>
         <source>Game over. Do you want to play again?</source>
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="879"/>
+        <location filename="../qml/CampaignPage.qml" line="888"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
     </message>
