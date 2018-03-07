@@ -14,12 +14,12 @@
         <translation>時間：</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="711"/>
+        <location filename="../qml/CampaignPage.qml" line="712"/>
         <source>Game over. Do you want to play again?</source>
         <translation>ゲームオーバー。もう一度プレーしたいですか？</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="888"/>
+        <location filename="../qml/CampaignPage.qml" line="889"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
     </message>
@@ -84,7 +84,7 @@
         <translation>時間：</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="788"/>
+        <location filename="../qml/SingleGamePage.qml" line="789"/>
         <source>Game over. Do you want to play again?</source>
         <translation>ゲームオーバー。もう一度プレーしたいですか？</translation>
     </message>
