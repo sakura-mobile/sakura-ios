@@ -1609,12 +1609,15 @@ Item {
             } else {
                 var res = JSON.parse(xhr.responseText)
                 if (res["result"] === "success") {
-                    StoreHelper.requestReview()
                     if (res["updated"] === "true") {
                         rowTextAvardGame.visible = true
                         textAvardPlace.text = res["place"]
                         singleGamePage.countPetals = singleGamePage.countPetalsMax
                         singleGamePage.emitRatePetals = singleGamePage.emitRatePetalsMax
+                    }
+
+                    if (Math.random() < 0.10) {
+                        StoreHelper.requestReview()
                     }
                 } else {
                     console.log(res)

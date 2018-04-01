@@ -846,10 +846,14 @@ Item {
                 to: imageBackgroundMainMap.height - rectCompletedGame.height - Math.max(
                         campaignPage.bannerViewHeight + 8, 20)
                 onStopped: {
-                    if (!textFailedGame.visible)
-                        StoreHelper.requestReview()
+                    if (!textFailedGame.visible) {
+                        if (Math.random() < 0.10) {
+                            StoreHelper.requestReview()
+                        }
+                    }
                 }
             }
+
             PropertyAnimation {
                 id: animationRectCompletedGameDown
                 duration: 200
