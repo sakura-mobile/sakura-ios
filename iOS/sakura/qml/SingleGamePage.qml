@@ -7,6 +7,7 @@ import "GenerationBranch.js" as GenerationBranchScript
 
 Item {
     id: singleGamePage
+
     property int currentLevel: 0
     property var arrRectTrasparent: []
     property int countSecondsTimeStop: 0
@@ -952,6 +953,18 @@ Item {
         interval: 1000
         repeat: true
         onTriggered: singleGamePage.timerBlockTime()
+    }
+
+    Audio {
+        autoPlay: true
+        volume: 0.5
+        muted: !Qt.application.active
+               || singleGamePage.StackView.status !== StackView.Active
+        source: "qrc:/resources/sound/game_music.mp3"
+        loops: Audio.Infinite
+        onError: {
+            console.log(errorString)
+        }
     }
 
     Audio {

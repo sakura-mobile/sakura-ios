@@ -100,12 +100,6 @@ Window {
                         currentItem.pageActive = true;
                     }
 
-                    if (currentItem.hasOwnProperty("screenOrientationUpdated")) {
-                        mainWindow.screenOrientationUpdated.connect(currentItem.screenOrientationUpdated);
-
-                        mainWindow.screenOrientationUpdated(mainWindow.screenOrientation);
-                    }
-
                     if (currentItem.hasOwnProperty("bannerViewHeight")) {
                         if (mainWindow.disableAds) {
                             AdMobHelper.hideBannerView();

@@ -1001,6 +1001,18 @@ Item {
     }
 
     Audio {
+        autoPlay: true
+        volume: 0.5
+        muted: !Qt.application.active
+               || campaignPage.StackView.status !== StackView.Active
+        source: "qrc:/resources/sound/game_music.mp3"
+        loops: Audio.Infinite
+        onError: {
+            console.log(errorString)
+        }
+    }
+
+    Audio {
         id: audioClickBranch
         volume: 1.0
         source: "qrc:/resources/sound/click.wav"
