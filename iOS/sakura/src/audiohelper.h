@@ -16,9 +16,7 @@ public:
     bool silenceAudio() const;
 
     Q_INVOKABLE void initialize();
-
-public slots:
-    void refreshSilenceAudio();
+    Q_INVOKABLE void refresh();
 
 signals:
     void silenceAudioChanged(bool silenceAudio);

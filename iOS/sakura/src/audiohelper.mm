@@ -17,17 +17,6 @@ bool AudioHelper::silenceAudio() const
     return SilenceAudio;
 }
 
-void AudioHelper::refreshSilenceAudio()
-{
-    if (Initialized) {
-        AVAudioSession *session = [AVAudioSession sharedInstance];
-
-        SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
-
-        emit silenceAudioChanged(SilenceAudio);
-    }
-}
-
 void AudioHelper::initialize()
 {
     if (!Initialized) {
@@ -38,5 +27,16 @@ void AudioHelper::initialize()
         emit silenceAudioChanged(SilenceAudio);
 
         Initialized = true;
+    }
+}
+
+void AudioHelper::refresh()
+{
+    if (Initialized) {
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+
+        SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+
+        emit silenceAudioChanged(SilenceAudio);
     }
 }

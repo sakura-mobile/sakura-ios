@@ -12,7 +12,7 @@ Window {
     property bool disableAds:      false
 
     onAppInForegroundChanged: {
-        AudioHelper.refreshSilenceAudio();
+        AudioHelper.refresh();
     }
 
     onDisableAdsChanged: {
