@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
+#include <netinet/in.h>
+
 #include <QtCore/QString>
 #include <QtCore/QDebug>
-
-#include <netinet/in.h>
 
 #include "reachabilityhelper.h"
 
