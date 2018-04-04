@@ -58,7 +58,7 @@ void ReachabilityHelper::initialize()
         ReachabilityRef = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, (const struct sockaddr *)&address);
 
         if (SCNetworkReachabilitySetCallback(ReachabilityRef, ReachabilityCallback, &context)) {
-            dispatch_queue_t queue = dispatch_queue_create("com.derevenetz.reachability", NULL);
+            dispatch_queue_t queue = dispatch_queue_create(NULL, NULL);
 
             if (SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, queue)) {
                 SCNetworkReachabilityFlags flags;
