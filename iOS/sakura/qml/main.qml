@@ -138,6 +138,7 @@ Window {
 
             AdMobHelper.initialize();
             AudioHelper.initialize();
+            ReachabilityHelper.initialize();
 
             mainStackView.push(mainPage);
         }

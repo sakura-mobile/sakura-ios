@@ -60,6 +60,8 @@ AdMobHelper *AdMobHelper::Instance = NULL;
                 [BannerView.centerXAnchor constraintEqualToAnchor:guide.centerXAnchor],
                 [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
             ]];
+
+            AdMobHelper::setBannerViewHeight(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom);
         } else {
             assert(0);
         }
@@ -90,20 +92,6 @@ AdMobHelper *AdMobHelper::Instance = NULL;
 - (void)adViewDidReceiveAd:(GADBannerView *)adView
 {
     Q_UNUSED(adView)
-
-    UIViewController * __block root_view_controller = nil;
-
-    [[[UIApplication sharedApplication] windows] enumerateObjectsUsingBlock:^(UIWindow * _Nonnull window, NSUInteger, BOOL * _Nonnull stop) {
-        root_view_controller = [window rootViewController];
-
-        *stop = (root_view_controller != nil);
-    }];
-
-    if (@available(iOS 11, *)) {
-        AdMobHelper::setBannerViewHeight(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom);
-    } else {
-        assert(0);
-    }
 }
 
 - (void)adViewWillPresentScreen:(GADBannerView *)adView

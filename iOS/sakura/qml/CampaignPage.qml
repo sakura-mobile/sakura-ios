@@ -847,7 +847,7 @@ Item {
                         campaignPage.bannerViewHeight + 8, 20)
                 onStopped: {
                     if (!textFailedGame.visible) {
-                        if (Math.random() < 0.10) {
+                        if (Math.random() < 0.10 && ReachabilityHelper.internetConnected) {
                             StoreHelper.requestReview()
                         }
                     }

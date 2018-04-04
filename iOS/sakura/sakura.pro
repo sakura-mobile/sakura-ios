@@ -11,7 +11,8 @@ OBJECTIVE_SOURCES += \
     src/sharehelper.mm \
     src/admobhelper.mm \
     src/storehelper.mm \
-    src/audiohelper.mm
+    src/audiohelper.mm \
+    src/reachabilityhelper.mm
 
 HEADERS += \
     src/uuidcreator.h \
@@ -20,7 +21,8 @@ HEADERS += \
     src/sharehelper.h \
     src/admobhelper.h \
     src/storehelper.h \
-    src/audiohelper.h
+    src/audiohelper.h \
+    src/reachabilityhelper.h
 
 RESOURCES += \
     qml.qrc \

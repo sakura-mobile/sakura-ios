@@ -1663,7 +1663,7 @@ Item {
                         singleGamePage.emitRatePetals = singleGamePage.emitRatePetalsMax
                     }
 
-                    if (Math.random() < 0.10) {
+                    if (Math.random() < 0.10 && ReachabilityHelper.internetConnected) {
                         StoreHelper.requestReview()
                     }
                 } else {

@@ -8,6 +8,7 @@
 #include "sharehelper.h"
 #include "storehelper.h"
 #include "audiohelper.h"
+#include "reachabilityhelper.h"
 #include "gifcreator.h"
 #include "uuidcreator.h"
 
@@ -26,6 +27,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), new ShareHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), new StoreHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), new AudioHelper(&app));
+    engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), new ReachabilityHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), new GIFCreator(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("UuidCreator"), new UuidCreator(&app));
 
