@@ -10,7 +10,8 @@ OBJECTIVE_SOURCES += \
     src/gifcreator.mm \
     src/sharehelper.mm \
     src/admobhelper.mm \
-    src/storehelper.mm
+    src/storehelper.mm \
+    src/audiohelper.mm
 
 HEADERS += \
     src/uuidcreator.h \
@@ -18,7 +19,8 @@ HEADERS += \
     src/gifcreator.h \
     src/sharehelper.h \
     src/admobhelper.h \
-    src/storehelper.h
+    src/storehelper.h \
+    src/audiohelper.h
 
 RESOURCES += \
     qml.qrc \

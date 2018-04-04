@@ -956,12 +956,22 @@ Item {
     }
 
     Audio {
-        autoPlay: true
         volume: 0.5
-        muted: !Qt.application.active
-               || singleGamePage.StackView.status !== StackView.Active
         source: "qrc:/resources/sound/game_music.mp3"
         loops: Audio.Infinite
+
+        property bool playbackEnabled: Qt.application.active
+                                       && !AudioHelper.silenceAudio
+                                       && singleGamePage.StackView.status === StackView.Active
+
+        onPlaybackEnabledChanged: {
+            if (playbackEnabled) {
+                play()
+            } else {
+                stop()
+            }
+        }
+
         onError: {
             console.log(errorString)
         }
@@ -971,9 +981,17 @@ Item {
         id: audioClickBranch
         volume: 1.0
         source: "qrc:/resources/sound/click.wav"
-        loops: 0
+
+        property bool playbackEnabled: !AudioHelper.silenceAudio
+
         onError: {
             console.log(errorString)
+        }
+
+        function playAudio() {
+            if (playbackEnabled) {
+                play()
+            }
         }
     }
 
@@ -981,9 +999,17 @@ Item {
         id: audioGoodGame
         volume: 1.0
         source: "qrc:/resources/sound/game_complete.wav"
-        loops: 0
+
+        property bool playbackEnabled: !AudioHelper.silenceAudio
+
         onError: {
             console.log(errorString)
+        }
+
+        function playAudio() {
+            if (playbackEnabled) {
+                play()
+            }
         }
     }
 
@@ -991,9 +1017,17 @@ Item {
         id: audioGameOver
         volume: 1.0
         source: "qrc:/resources/sound/game_over.wav"
-        loops: 0
+
+        property bool playbackEnabled: !AudioHelper.silenceAudio
+
         onError: {
             console.log(errorString)
+        }
+
+        function playAudio() {
+            if (playbackEnabled) {
+                play()
+            }
         }
     }
 
@@ -1069,7 +1103,7 @@ Item {
                         GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
                                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
                         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
-                        audioClickBranch.play()
+                        audioClickBranch.playAudio()
 
                         GenerationBranchScript.listGameBranchObject[i][j].posLeft
                                 = GenerationBranchScript.listGameBranch[i][j].left
@@ -1226,7 +1260,7 @@ Item {
     }
 
     function visibleFailedGameWindow() {
-        audioGameOver.play()
+        audioGameOver.playAudio()
         textFailedGame.visible = true
         imageShare.visible = false
         rowTextCompletedGame.visible = false
@@ -1359,7 +1393,7 @@ Item {
             animationRectCompletedGameUp.running = true
             gridMapSingleGame.spacing = 0
             startAnimationBranch()
-            audioGoodGame.play()
+            audioGoodGame.playAudio()
             var nameUser = mainWindow.getSetting("nameUser", "NONAME")
             mainWindow.addScore(
                         nameUser,
@@ -1572,7 +1606,7 @@ Item {
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
-        audioClickBranch.play()
+        audioClickBranch.playAudio()
 
         for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
             if (GenerationBranchScript.listImageBranchFull[n].name

@@ -8,7 +8,12 @@ Window {
     visibility: Window.FullScreen
     visible:    true
 
-    property bool disableAds: false
+    property bool appInForeground: Qt.application.active
+    property bool disableAds:      false
+
+    onAppInForegroundChanged: {
+        AudioHelper.refreshSilenceAudio();
+    }
 
     onDisableAdsChanged: {
         setSetting("DisableAds", disableAds ? "true" : "false");
@@ -132,6 +137,7 @@ Window {
             disableAds = (getSetting("DisableAds", "false") === "true");
 
             AdMobHelper.initialize();
+            AudioHelper.initialize();
 
             mainStackView.push(mainPage);
         }

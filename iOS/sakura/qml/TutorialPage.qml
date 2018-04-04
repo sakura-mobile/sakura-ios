@@ -521,9 +521,17 @@ Item {
         id: audioClickBranch
         volume: 1.0
         source: "qrc:/resources/sound/click.wav"
-        loops: 0
+
+        property bool playbackEnabled: !AudioHelper.silenceAudio
+
         onError: {
             console.log(errorString)
+        }
+
+        function playAudio() {
+            if (playbackEnabled) {
+                play()
+            }
         }
     }
 
@@ -531,9 +539,17 @@ Item {
         id: audioGoodGame
         volume: 1.0
         source: "qrc:/resources/sound/game_complete.wav"
-        loops: 0
+
+        property bool playbackEnabled: !AudioHelper.silenceAudio
+
         onError: {
             console.log(errorString)
+        }
+
+        function playAudio() {
+            if (playbackEnabled) {
+                play()
+            }
         }
     }
 
@@ -676,7 +692,7 @@ Item {
             animationRectCompletedGameUp.running = true
             gridMapTutorialGame.spacing = 0
             startAnimationBranch()
-            audioGoodGame.play()
+            audioGoodGame.playAudio()
         }
     }
     function stopRotationBranch(ii, jj) {
@@ -847,7 +863,7 @@ Item {
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
-        audioClickBranch.play()
+        audioClickBranch.playAudio()
 
         for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
             if (GenerationBranchScript.listImageBranchFull[n].name
