@@ -5,125 +5,125 @@
     <name>CampaignPage</name>
     <message>
         <source>STEP:</source>
-        <translation type="unfinished"></translation>
+        <translation>PASO:</translation>
     </message>
     <message>
         <source>TIME:</source>
-        <translation type="unfinished"></translation>
+        <translation>HORA:</translation>
     </message>
     <message>
         <source>Game over. Do you want to play again?</source>
-        <translation type="unfinished"></translation>
+        <translation>Juego terminado. ¿Quieres jugar de nuevo?</translation>
     </message>
     <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation type="unfinished"></translation>
+        <translation>¡Felicidades, completaste todos los niveles disponibles! Estén atentos para actualizaciones con nuevos niveles, desafíos y más.</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>TUTORIAL</source>
-        <translation type="unfinished"></translation>
+        <translation>TUTORIAL</translation>
     </message>
     <message>
         <source>CAMPAIGN</source>
-        <translation type="unfinished"></translation>
+        <translation>CAMPAÑA</translation>
     </message>
     <message>
         <source>TOURNAMENT</source>
-        <translation type="unfinished"></translation>
+        <translation>TORNEO</translation>
     </message>
     <message>
         <source>STORE</source>
-        <translation type="unfinished"></translation>
+        <translation>ALMACENAR</translation>
     </message>
 </context>
 <context>
     <name>RatingsListPage</name>
     <message>
         <source>The tournament will end in:</source>
-        <translation type="unfinished"></translation>
+        <translation>El torneo terminará en:</translation>
     </message>
     <message>
         <source>TOP SCORE</source>
-        <translation type="unfinished"></translation>
+        <translation>MEJOR PUNTUACIÓN</translation>
     </message>
     <message>
         <source>Your nickname:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tu apodo:</translation>
     </message>
 </context>
 <context>
     <name>SingleGamePage</name>
     <message>
         <source>SCORE:</source>
-        <translation type="unfinished"></translation>
+        <translation>PUNTUACIÓN:</translation>
     </message>
     <message>
         <source>STEP:</source>
-        <translation type="unfinished"></translation>
+        <translation>PASO:</translation>
     </message>
     <message>
         <source>TIME:</source>
-        <translation type="unfinished"></translation>
+        <translation>HORA:</translation>
     </message>
     <message>
         <source>Game over. Do you want to play again?</source>
-        <translation type="unfinished"></translation>
+        <translation>Juego terminado. ¿Quieres jugar de nuevo?</translation>
     </message>
 </context>
 <context>
     <name>SingleLevelsPage</name>
     <message>
         <source>Your nickname:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tu apodo:</translation>
     </message>
 </context>
 <context>
     <name>StorePage</name>
     <message>
         <source>BUY</source>
-        <translation type="unfinished"></translation>
+        <translation>COMPRAR</translation>
     </message>
     <message>
         <source>Remove Ads</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitar anuncios</translation>
     </message>
     <message>
         <source>Restore purchases</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurar las compras</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>TutorialPage</name>
     <message>
         <source>Excellent!</source>
-        <translation type="unfinished"></translation>
+        <translation>¡Excelente!</translation>
     </message>
     <message>
         <source>Try to resize playground area with pinch gesture</source>
-        <translation type="unfinished"></translation>
+        <translation>Intenta cambiar el tamaño del área de juego con un gesto de pellizco</translation>
     </message>
     <message>
         <source>Try to move playground area with your finger</source>
-        <translation type="unfinished"></translation>
+        <translation>Intenta mover el área de juego con tu dedo</translation>
     </message>
     <message>
         <source>Double tap on playground area to restore its default position</source>
-        <translation type="unfinished"></translation>
+        <translation>Doble toque en el área de juegos para restaurar su posición predeterminada</translation>
     </message>
     <message>
         <source>Disassembling puzzle...</source>
-        <translation type="unfinished"></translation>
+        <translation>Desmontando rompecabezas...</translation>
     </message>
     <message>
         <source>Tap on highlighted fragments to solve the puzzle</source>
-        <translation type="unfinished"></translation>
+        <translation>Toque los fragmentos resaltados para resolver el rompecabezas</translation>
     </message>
 </context>
 </TS>

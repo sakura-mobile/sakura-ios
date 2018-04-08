@@ -4,22 +4,22 @@
 <context>
     <name>CampaignPage</name>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="132"/>
+        <location filename="../qml/CampaignPage.qml" line="133"/>
         <source>STEP:</source>
         <translation>步：</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="219"/>
+        <location filename="../qml/CampaignPage.qml" line="234"/>
         <source>TIME:</source>
         <translation>时间：</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="712"/>
+        <location filename="../qml/CampaignPage.qml" line="752"/>
         <source>Game over. Do you want to play again?</source>
         <translation>游戏结束。 你想再玩一次吗？</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="894"/>
+        <location filename="../qml/CampaignPage.qml" line="936"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>恭喜，你完成了所有可用的水平！ 随时关注新的关卡，挑战和更多更新。</translation>
     </message>
@@ -68,23 +68,23 @@
 <context>
     <name>SingleGamePage</name>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="124"/>
-        <location filename="../qml/SingleGamePage.qml" line="740"/>
+        <location filename="../qml/SingleGamePage.qml" line="125"/>
+        <location filename="../qml/SingleGamePage.qml" line="789"/>
         <source>SCORE:</source>
         <translation>得分了：</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="195"/>
+        <location filename="../qml/SingleGamePage.qml" line="205"/>
         <source>STEP:</source>
         <translation>步：</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="282"/>
+        <location filename="../qml/SingleGamePage.qml" line="307"/>
         <source>TIME:</source>
         <translation>时间：</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="790"/>
+        <location filename="../qml/SingleGamePage.qml" line="838"/>
         <source>Game over. Do you want to play again?</source>
         <translation>游戏结束。 你想再玩一次吗？</translation>
     </message>
@@ -92,7 +92,7 @@
 <context>
     <name>SingleLevelsPage</name>
     <message>
-        <location filename="../qml/SingleLevelsPage.qml" line="355"/>
+        <location filename="../qml/SingleLevelsPage.qml" line="354"/>
         <source>Your nickname:</source>
         <translation>您的昵称：</translation>
     </message>
@@ -106,17 +106,17 @@
         <translation>购买</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="865"/>
+        <location filename="../qml/StorePage.qml" line="900"/>
         <source>Remove Ads</source>
         <translation>移除广告</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="909"/>
+        <location filename="../qml/StorePage.qml" line="949"/>
         <source>Restore purchases</source>
         <translation>恢复购买</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="925"/>
+        <location filename="../qml/StorePage.qml" line="966"/>
         <source>OK</source>
         <translation>好</translation>
     </message>
@@ -134,22 +134,22 @@
         <translation>尝试用捏手势调整操场区域的大小</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="434"/>
+        <location filename="../qml/TutorialPage.qml" line="436"/>
         <source>Try to move playground area with your finger</source>
         <translation>尝试用手指移动操场区域</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="450"/>
+        <location filename="../qml/TutorialPage.qml" line="454"/>
         <source>Double tap on playground area to restore its default position</source>
         <translation>双击游乐场区域以恢复其默认位置</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="466"/>
+        <location filename="../qml/TutorialPage.qml" line="472"/>
         <source>Disassembling puzzle...</source>
         <translation>拆解拼图...</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="482"/>
+        <location filename="../qml/TutorialPage.qml" line="490"/>
         <source>Tap on highlighted fragments to solve the puzzle</source>
         <translation>点击突出显示的片段来解决这个难题</translation>
     </message>

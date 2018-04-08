@@ -126,14 +126,19 @@ Item {
                         height: 12
                         width: 50
                         color: "transparent"
+
                         Text {
                             id: textStepLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: qsTr("STEP:")
                             font.pointSize: 12
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -144,12 +149,16 @@ Item {
 
                         Text {
                             id: textStepGameLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: "0"
                             font.pointSize: 18
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
                     Rectangle {
@@ -158,14 +167,19 @@ Item {
                         width: 50
                         color: "transparent"
                         visible: false
+
                         Text {
                             id: textStepStopLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: ""
                             font.pointSize: 20
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
                 }
@@ -213,14 +227,19 @@ Item {
                         height: 12
                         width: 50
                         color: "transparent"
+
                         Text {
                             id: textTimeLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: qsTr("TIME:")
                             font.pointSize: 12
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -231,12 +250,16 @@ Item {
 
                         Text {
                             id: textTimeGameLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: "0"
                             font.pointSize: 18
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -246,14 +269,19 @@ Item {
                         width: 50
                         color: "transparent"
                         visible: false
+
                         Text {
                             id: textTimeStopLantern
-                            anchors.centerIn: parent
+                            anchors.fill: parent
                             text: ""
                             font.pointSize: 20
                             font.bold: true
                             color: "black"
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
                 }
@@ -474,13 +502,17 @@ Item {
 
                     Text {
                         id: textCountBlockStepLantern
-                        anchors.centerIn: parent
+                        anchors.fill: parent
                         text: "0"
                         font.pointSize: 16
                         font.bold: true
                         color: "white"
                         opacity: 1.0
                         font.family: "Helvetica"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 6
                     }
                 }
 
@@ -539,13 +571,17 @@ Item {
 
                     Text {
                         id: textCountBlockTimeLantern
-                        anchors.centerIn: parent
+                        anchors.fill: parent
                         text: "0"
                         font.pointSize: 16
                         font.bold: true
                         color: "white"
                         opacity: 1.0
                         font.family: "Helvetica"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 6
                     }
                 }
 
@@ -601,13 +637,17 @@ Item {
                     }
                     Text {
                         id: textCountQuickTipButton
-                        anchors.centerIn: parent
+                        anchors.fill: parent
                         text: "0"
                         font.pointSize: 16
                         font.bold: true
                         color: "white"
                         opacity: 1.0
                         font.family: "Helvetica"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 6
                     }
                 }
                 Image {
@@ -717,6 +757,8 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     wrapMode: Text.Wrap
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 6
                 }
 
                 Row {
@@ -899,6 +941,8 @@ Item {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     wrapMode: Text.Wrap
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 6
                 }
 
                 Image {

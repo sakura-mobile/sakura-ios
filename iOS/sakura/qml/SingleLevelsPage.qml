@@ -351,7 +351,6 @@ Item {
                     Text {
                         id: textNameUser
                         anchors.horizontalCenter: parent.horizontalCenter
-
                         text: qsTr("Your nickname:")
                         font.pointSize: 25
                         font.bold: true

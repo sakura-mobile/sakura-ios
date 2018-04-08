@@ -4,22 +4,22 @@
 <context>
     <name>CampaignPage</name>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="132"/>
+        <location filename="../qml/CampaignPage.qml" line="133"/>
         <source>STEP:</source>
         <translation>단계:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="219"/>
+        <location filename="../qml/CampaignPage.qml" line="234"/>
         <source>TIME:</source>
         <translation>시각:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="712"/>
+        <location filename="../qml/CampaignPage.qml" line="752"/>
         <source>Game over. Do you want to play again?</source>
         <translation>게임 끝. 다시 놀고 싶니?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="894"/>
+        <location filename="../qml/CampaignPage.qml" line="936"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>축하합니다. 사용 가능한 모든 레벨을 완료하셨습니다! 새로운 차원, 도전 과제 등으로 업데이트를 계속 지켜보십시오.</translation>
     </message>
@@ -68,23 +68,23 @@
 <context>
     <name>SingleGamePage</name>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="124"/>
-        <location filename="../qml/SingleGamePage.qml" line="740"/>
+        <location filename="../qml/SingleGamePage.qml" line="125"/>
+        <location filename="../qml/SingleGamePage.qml" line="789"/>
         <source>SCORE:</source>
         <translation>점수:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="195"/>
+        <location filename="../qml/SingleGamePage.qml" line="205"/>
         <source>STEP:</source>
         <translation>단계:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="282"/>
+        <location filename="../qml/SingleGamePage.qml" line="307"/>
         <source>TIME:</source>
         <translation>시각:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="790"/>
+        <location filename="../qml/SingleGamePage.qml" line="838"/>
         <source>Game over. Do you want to play again?</source>
         <translation>게임 끝. 다시 놀고 싶니?</translation>
     </message>
@@ -92,7 +92,7 @@
 <context>
     <name>SingleLevelsPage</name>
     <message>
-        <location filename="../qml/SingleLevelsPage.qml" line="355"/>
+        <location filename="../qml/SingleLevelsPage.qml" line="354"/>
         <source>Your nickname:</source>
         <translation>닉네임 :</translation>
     </message>
@@ -106,17 +106,17 @@
         <translation>사다</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="865"/>
+        <location filename="../qml/StorePage.qml" line="900"/>
         <source>Remove Ads</source>
         <translation>광고를 제거하다</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="909"/>
+        <location filename="../qml/StorePage.qml" line="949"/>
         <source>Restore purchases</source>
         <translation>구매를 복원</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="925"/>
+        <location filename="../qml/StorePage.qml" line="966"/>
         <source>OK</source>
         <translation>승인</translation>
     </message>
@@ -134,22 +134,22 @@
         <translation>핀치 제스처로 놀이터 영역의 크기를 조정 해보십시오</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="434"/>
+        <location filename="../qml/TutorialPage.qml" line="436"/>
         <source>Try to move playground area with your finger</source>
         <translation>손가락으로 놀이터를 움직여보십시오</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="450"/>
+        <location filename="../qml/TutorialPage.qml" line="454"/>
         <source>Double tap on playground area to restore its default position</source>
         <translation>놀이터 영역을 두 번 탭하면 기본 위치로 돌아갑니다</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="466"/>
+        <location filename="../qml/TutorialPage.qml" line="472"/>
         <source>Disassembling puzzle...</source>
         <translation>퍼즐 분해...</translation>
     </message>
     <message>
-        <location filename="../qml/TutorialPage.qml" line="482"/>
+        <location filename="../qml/TutorialPage.qml" line="490"/>
         <source>Tap on highlighted fragments to solve the puzzle</source>
         <translation>강조 표시된 조각을 탭하여 퍼즐을 해결하십시오</translation>
     </message>

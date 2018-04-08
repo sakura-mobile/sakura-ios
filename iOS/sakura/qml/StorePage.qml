@@ -390,11 +390,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(gameTipX5Product.status, gameTipX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -461,11 +466,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(stepPauseX5Product.status, stepPauseX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
                     MouseArea {
@@ -531,11 +541,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(timePauseX5Product.status, timePauseX5Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -602,11 +617,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(gameTipX20Product.status, gameTipX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -673,11 +693,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(stepPauseX20Product.status, stepPauseX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -744,11 +769,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(timePauseX20Product.status, timePauseX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -832,11 +862,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(boosterPackageX20Product.status, boosterPackageX20Product.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -877,11 +912,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: storePage.getPrice(removeAdsProduct.status, removeAdsProduct.price)
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 
@@ -921,11 +961,16 @@ Item {
                         width: 100
                         height: 30
                         Text {
-                            anchors.centerIn: parent
+                            anchors.fill: parent
+                            anchors.margins: 4
                             text: qsTr("OK")
                             color: "white"
                             font.pointSize: 14
                             font.family: "Helvetica"
+                            horizontalAlignment: Text.AlignHCenter
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            minimumPointSize: 6
                         }
                     }
 

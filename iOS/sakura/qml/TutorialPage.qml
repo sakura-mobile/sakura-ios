@@ -423,6 +423,8 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 wrapMode: Text.Wrap
+                fontSizeMode: Text.Fit
+                minimumPointSize: 6
             }
 
             Text {
@@ -439,6 +441,8 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 wrapMode: Text.Wrap
+                fontSizeMode: Text.Fit
+                minimumPointSize: 6
             }
 
             Text {
@@ -455,6 +459,8 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 wrapMode: Text.Wrap
+                fontSizeMode: Text.Fit
+                minimumPointSize: 6
             }
 
             Text {
@@ -471,6 +477,8 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 wrapMode: Text.Wrap
+                fontSizeMode: Text.Fit
+                minimumPointSize: 6
             }
 
             Text {
@@ -487,6 +495,8 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 wrapMode: Text.Wrap
+                fontSizeMode: Text.Fit
+                minimumPointSize: 6
             }
         }
         PropertyAnimation {
