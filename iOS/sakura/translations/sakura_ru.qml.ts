@@ -19,7 +19,7 @@
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="889"/>
+        <location filename="../qml/CampaignPage.qml" line="894"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
     </message>
@@ -68,23 +68,23 @@
 <context>
     <name>SingleGamePage</name>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="123"/>
-        <location filename="../qml/SingleGamePage.qml" line="739"/>
+        <location filename="../qml/SingleGamePage.qml" line="124"/>
+        <location filename="../qml/SingleGamePage.qml" line="740"/>
         <source>SCORE:</source>
         <translation>ОЧКИ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="194"/>
+        <location filename="../qml/SingleGamePage.qml" line="195"/>
         <source>STEP:</source>
         <translation>ШАГ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="281"/>
+        <location filename="../qml/SingleGamePage.qml" line="282"/>
         <source>TIME:</source>
         <translation>ВРЕМЯ:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleGamePage.qml" line="789"/>
+        <location filename="../qml/SingleGamePage.qml" line="790"/>
         <source>Game over. Do you want to play again?</source>
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>

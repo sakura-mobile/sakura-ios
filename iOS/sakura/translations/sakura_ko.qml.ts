@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja_JP">
+<TS version="2.1" language="ko_KR">
 <context>
     <name>CampaignPage</name>
     <message>
         <location filename="../qml/CampaignPage.qml" line="132"/>
         <source>STEP:</source>
-        <translation>ステップ：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="219"/>
         <source>TIME:</source>
-        <translation>時間：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="712"/>
         <source>Game over. Do you want to play again?</source>
-        <translation>ゲームオーバー。もう一度プレーしたいですか？</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="894"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -29,22 +29,22 @@
     <message>
         <location filename="../qml/MainPage.qml" line="38"/>
         <source>TUTORIAL</source>
-        <translation>チュートリアル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="71"/>
         <source>CAMPAIGN</source>
-        <translation>キャンペーン</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="111"/>
         <source>TOURNAMENT</source>
-        <translation>トーナメント</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="144"/>
         <source>STORE</source>
-        <translation>ストア</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -52,17 +52,17 @@
     <message>
         <location filename="../qml/RatingsListPage.qml" line="40"/>
         <source>The tournament will end in:</source>
-        <translation>トーナメントの終了まで：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/RatingsListPage.qml" line="236"/>
         <source>TOP SCORE</source>
-        <translation>トップスコア</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/RatingsListPage.qml" line="355"/>
         <source>Your nickname:</source>
-        <translation>あなたのニックネーム：</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -71,22 +71,22 @@
         <location filename="../qml/SingleGamePage.qml" line="124"/>
         <location filename="../qml/SingleGamePage.qml" line="740"/>
         <source>SCORE:</source>
-        <translation>スコア：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="195"/>
         <source>STEP:</source>
-        <translation>ステップ：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="282"/>
         <source>TIME:</source>
-        <translation>時間：</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="790"/>
         <source>Game over. Do you want to play again?</source>
-        <translation>ゲームオーバー。もう一度プレーしたいですか？</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="355"/>
         <source>Your nickname:</source>
-        <translation>あなたのニックネーム：</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -103,22 +103,22 @@
         <location filename="../qml/StorePage.qml" line="16"/>
         <location filename="../qml/StorePage.qml" line="19"/>
         <source>BUY</source>
-        <translation>購入する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="865"/>
         <source>Remove Ads</source>
-        <translation>広告を除去する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="909"/>
         <source>Restore purchases</source>
-        <translation>購入を復旧する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="925"/>
         <source>OK</source>
-        <translation>オッケー</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -126,32 +126,32 @@
     <message>
         <location filename="../qml/TutorialPage.qml" line="324"/>
         <source>Excellent!</source>
-        <translation>スゲー！</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="417"/>
         <source>Try to resize playground area with pinch gesture</source>
-        <translation>ピンチジェスチャーでプレイエリアのサイズを変更しましょう</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="434"/>
         <source>Try to move playground area with your finger</source>
-        <translation>あなたの指で遊び場を移動しましょう</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="450"/>
         <source>Double tap on playground area to restore its default position</source>
-        <translation>遊び場をダブルタップしてデフォルト位置に戻しましょう</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="466"/>
         <source>Disassembling puzzle...</source>
-        <translation>パズルを分解する...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="482"/>
         <source>Tap on highlighted fragments to solve the puzzle</source>
-        <translation>ハイライトされた断片をタップしてパズルを解きましょう</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
