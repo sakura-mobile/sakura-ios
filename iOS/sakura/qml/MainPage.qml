@@ -162,6 +162,17 @@ Item {
     }
 
     Component.onCompleted: {
+        if ((mainWindow.getSetting("endedAvailableLevels", "")
+             !== "") && (Number(mainWindow.getSetting("maxLevelCampaign",
+                                                      0)) === 0)
+                && (Number(mainWindow.getSetting("maxLevelLocation", 0))
+                    === 6) && (Number(mainWindow.getSetting("maxLevel",
+                                                            0)) === 19)) {
+            mainWindow.setSetting("maxLevel", 0)
+            mainWindow.setSetting("maxLevelLocation", 7)
+            mainWindow.setSetting("maxLevelCampaign", 0)
+        }
+
         if (mainWindow.getSetting("userUuid", "") === "") {
             mainWindow.setSetting("userUuid", UuidCreator.createUuid())
         }

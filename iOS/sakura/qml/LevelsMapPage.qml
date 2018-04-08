@@ -80,10 +80,10 @@ Item {
             } else {
                 object.sourceImgLantern = "qrc:/resources/images/lantern.png"
                 object.isAvailable = true
-                if (arrRatingLevels[currentCampaign] !== undefined
-                        && arrRatingLevels[currentCampaign][currentLocation] !== undefined
-                        && arrRatingLevels[currentCampaign][currentLocation][keyLevel]
-                        !== undefined) {
+                if (typeof arrRatingLevels[currentCampaign] !== "undefined"
+                        && typeof arrRatingLevels[currentCampaign][currentLocation] !== "undefined"
+                        && typeof arrRatingLevels[currentCampaign][currentLocation][keyLevel]
+                        !== "undefined") {
                     object.ratingLevel = arrRatingLevels[currentCampaign][currentLocation][keyLevel]
                 } else {
                     object.ratingLevel = 0
@@ -132,10 +132,10 @@ Item {
             } else {
                 object.sourceImgLantern = "qrc:/resources/images/lantern.png"
                 object.isAvailable = true
-                if (arrRatingLevels[currentCampaign] !== undefined
-                        && arrRatingLevels[currentCampaign][currentLocation] !== undefined
-                        && arrRatingLevels[currentCampaign][currentLocation][keyLevel]
-                        !== undefined) {
+                if (typeof arrRatingLevels[currentCampaign] !== "undefined"
+                        && typeof arrRatingLevels[currentCampaign][currentLocation] !== "undefined"
+                        && typeof arrRatingLevels[currentCampaign][currentLocation][keyLevel]
+                        !== "undefined") {
                     object.ratingLevel = arrRatingLevels[currentCampaign][currentLocation][keyLevel]
                 } else {
                     object.ratingLevel = 0

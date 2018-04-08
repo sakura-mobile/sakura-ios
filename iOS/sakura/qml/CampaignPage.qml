@@ -847,7 +847,8 @@ Item {
                         campaignPage.bannerViewHeight + 8, 20)
                 onStopped: {
                     if (!textFailedGame.visible) {
-                        if (Math.random() < 0.10 && ReachabilityHelper.internetConnected) {
+                        if (Math.random() < 0.10
+                                && ReachabilityHelper.internetConnected) {
                             StoreHelper.requestReview()
                         }
                     }
@@ -1496,11 +1497,12 @@ Item {
         }
         animationRectCompletedGameUp.running = true
 
-        if (arrUserRatingLevels[currentCampaign][currentLocation] === undefined
-                || arrUserRatingLevels[currentCampaign][currentLocation][currentLevel] === undefined
+        if (typeof arrUserRatingLevels[currentCampaign][currentLocation] === "undefined"
+                || typeof arrUserRatingLevels[currentCampaign][currentLocation][currentLevel]
+                === "undefined"
                 || arrUserRatingLevels[currentCampaign][currentLocation][currentLevel]
                 < ratingGame) {
-            if (arrUserRatingLevels[currentCampaign][currentLocation] === undefined)
+            if (typeof arrUserRatingLevels[currentCampaign][currentLocation] === "undefined")
                 arrUserRatingLevels[currentCampaign][currentLocation] = []
             arrUserRatingLevels[currentCampaign][currentLocation][currentLevel] = ratingGame
             mainWindow.setSetting("ratingLevelsUser",
@@ -1512,8 +1514,9 @@ Item {
 
     function setNewLevel() {
         var newLevel = currentLevel + 1
-        if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[newLevel] !== undefined) {
-            if (arrUserRatingLevels[currentCampaign][currentLocation][newLevel] === undefined) {
+        if (typeof GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[newLevel] !== "undefined") {
+            if (typeof arrUserRatingLevels[currentCampaign][currentLocation][newLevel]
+                    === "undefined") {
                 mainWindow.setSetting("maxLevel", newLevel)
             }
             nextLevel = newLevel
@@ -1521,9 +1524,12 @@ Item {
             nextCampaign = currentCampaign
         } else {
             var newLocation = currentLocation + 1
-            if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation] != undefined
-                    && GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation].listLevels[0] !== undefined) {
-                if (arrUserRatingLevels[currentCampaign][newLocation] === undefined) {
+            if (typeof GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation] !== "undefined"
+                    && typeof GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation].listLevels[0] !== "undefined") {
+                if (typeof arrUserRatingLevels[currentCampaign][newLocation] === "undefined"
+                        || (Array.isArray(
+                                arrUserRatingLevels[currentCampaign][newLocation])
+                            && arrUserRatingLevels[currentCampaign][newLocation].length === 0)) {
                     mainWindow.setSetting("maxLevel", 0)
                     mainWindow.setSetting("maxLevelLocation", newLocation)
                 }
@@ -1532,10 +1538,10 @@ Item {
                 nextCampaign = currentCampaign
             } else {
                 var newCampaigns = currentCampaign + 1
-                if (GenerationBranchScript.listObjectCampaigns[newCampaigns] != undefined
-                        && GenerationBranchScript.listObjectCampaigns[newCampaigns].listLocations[newLocation] != undefined
-                        && GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation].listLevels[0] !== undefined) {
-                    if (arrUserRatingLevels[newCampaigns] === undefined) {
+                if (typeof GenerationBranchScript.listObjectCampaigns[newCampaigns] !== "undefined"
+                        && typeof GenerationBranchScript.listObjectCampaigns[newCampaigns].listLocations[newLocation] !== "undefined"
+                        && typeof GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[newLocation].listLevels[0] !== "undefined") {
+                    if (typeof arrUserRatingLevels[newCampaigns] === "undefined") {
                         mainWindow.setSetting("maxLevel", 0)
                         mainWindow.setSetting("maxLevelLocation", 0)
                         mainWindow.setSetting("maxLevelCampaign", newCampaigns)

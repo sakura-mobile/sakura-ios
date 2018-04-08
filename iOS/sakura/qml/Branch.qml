@@ -60,7 +60,7 @@ Rectangle {
 
         PropertyAnimation {
             id: animationRotationGame
-            duration: 100
+            duration: 50
             from: fromRotationBranch
             target: imageBranchOpacity
             properties: "rotation"

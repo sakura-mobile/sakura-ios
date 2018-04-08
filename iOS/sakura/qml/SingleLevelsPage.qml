@@ -476,14 +476,14 @@ Item {
 
                 if (res["result"] === "success") {
                     var listRatings = res["ratings"]
-                    if (listRatings.length !== 0
-                            && listRatings.length !== undefined) {
+                    if (typeof listRatings.length !== "undefined"
+                            && listRatings.length !== 0) {
                         for (var i = 0; i < listRatings.length; i++) {
                             var obj = GenerationBranchScript.getObjectGift(
                                         listRatings[i].rating_type,
                                         listRatings[i].place)
                             if (obj !== false) {
-                                if (listGifts[obj.typeGift] !== undefined) {
+                                if (typeof listGifts[obj.typeGift] !== "undefined") {
                                     listGifts[obj.typeGift] += obj.countGift
                                 } else {
                                     listGifts[obj.typeGift] = obj.countGift
@@ -552,7 +552,7 @@ Item {
 
     function nextLevelButton() {
         var nextLevel = currentLevel + 1
-        if (GenerationBranchScript.listObjectSingleLevels[nextLevel] === undefined) {
+        if (typeof GenerationBranchScript.listObjectSingleLevels[nextLevel] === "undefined") {
             currentLevel = 0
         } else {
             currentLevel++
@@ -562,7 +562,7 @@ Item {
 
     function previousLevelButton() {
         var nextLevel = currentLevel - 1
-        if (GenerationBranchScript.listObjectSingleLevels[nextLevel] === undefined) {
+        if (typeof GenerationBranchScript.listObjectSingleLevels[nextLevel] === "undefined") {
             currentLevel = GenerationBranchScript.listObjectSingleLevels.length - 1
         } else {
             currentLevel--

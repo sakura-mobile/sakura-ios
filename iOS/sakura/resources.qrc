@@ -164,5 +164,8 @@
         <file>resources/images/background_location_5.jpg</file>
         <file>resources/images/background_location_6.jpg</file>
         <file>resources/images/background_location_7.jpg</file>
+        <file>resources/images/background_location_8.jpg</file>
+        <file>resources/images/background_location_9.jpg</file>
+        <file>resources/images/background_location_10.jpg</file>
     </qresource>
 </RCC>
