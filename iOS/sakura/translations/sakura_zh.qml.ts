@@ -34,7 +34,7 @@
     <message>
         <location filename="../qml/MainPage.qml" line="71"/>
         <source>CAMPAIGN</source>
-        <translation>运动</translation>
+        <translation>单人游戏</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="111"/>
