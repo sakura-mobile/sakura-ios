@@ -22,7 +22,7 @@ var SCORE_TIME_BRANCH = 10
 var COUNT_STEP_STOP = 10
 var listObjectSingleLevels = []
 var listObjectTutorialLevels = []
-var SERVER_KEY = 'fuhr5fskfj4t2hfsgjy6f'
+var SERVER_KEY = ''
 
 function initObjectTutorialLevels() {
     var objectLevel = {

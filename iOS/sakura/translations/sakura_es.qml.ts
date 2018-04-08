@@ -6,22 +6,22 @@
     <message>
         <location filename="../qml/CampaignPage.qml" line="132"/>
         <source>STEP:</source>
-        <translation type="unfinished"></translation>
+        <translation>PASO:</translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="219"/>
         <source>TIME:</source>
-        <translation type="unfinished"></translation>
+        <translation>HORA:</translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="712"/>
         <source>Game over. Do you want to play again?</source>
-        <translation type="unfinished"></translation>
+        <translation>Juego terminado. ¿Quieres jugar de nuevo?</translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="894"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation type="unfinished"></translation>
+        <translation>¡Felicidades, completaste todos los niveles disponibles! Estén atentos para actualizaciones con nuevos niveles, desafíos y más.</translation>
     </message>
 </context>
 <context>
@@ -29,22 +29,22 @@
     <message>
         <location filename="../qml/MainPage.qml" line="38"/>
         <source>TUTORIAL</source>
-        <translation type="unfinished"></translation>
+        <translation>TUTORIAL</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="71"/>
         <source>CAMPAIGN</source>
-        <translation type="unfinished"></translation>
+        <translation>CAMPAÑA</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="111"/>
         <source>TOURNAMENT</source>
-        <translation type="unfinished"></translation>
+        <translation>TORNEO</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="144"/>
         <source>STORE</source>
-        <translation type="unfinished"></translation>
+        <translation>ALMACENAR</translation>
     </message>
 </context>
 <context>
@@ -52,17 +52,17 @@
     <message>
         <location filename="../qml/RatingsListPage.qml" line="40"/>
         <source>The tournament will end in:</source>
-        <translation type="unfinished"></translation>
+        <translation>El torneo terminará en:</translation>
     </message>
     <message>
         <location filename="../qml/RatingsListPage.qml" line="236"/>
         <source>TOP SCORE</source>
-        <translation type="unfinished"></translation>
+        <translation>MEJOR PUNTUACIÓN</translation>
     </message>
     <message>
         <location filename="../qml/RatingsListPage.qml" line="355"/>
         <source>Your nickname:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tu apodo:</translation>
     </message>
 </context>
 <context>
@@ -71,22 +71,22 @@
         <location filename="../qml/SingleGamePage.qml" line="124"/>
         <location filename="../qml/SingleGamePage.qml" line="740"/>
         <source>SCORE:</source>
-        <translation type="unfinished"></translation>
+        <translation>PUNTUACIÓN:</translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="195"/>
         <source>STEP:</source>
-        <translation type="unfinished"></translation>
+        <translation>PASO:</translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="282"/>
         <source>TIME:</source>
-        <translation type="unfinished"></translation>
+        <translation>HORA:</translation>
     </message>
     <message>
         <location filename="../qml/SingleGamePage.qml" line="790"/>
         <source>Game over. Do you want to play again?</source>
-        <translation type="unfinished"></translation>
+        <translation>Juego terminado. ¿Quieres jugar de nuevo?</translation>
     </message>
 </context>
 <context>
@@ -94,7 +94,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="355"/>
         <source>Your nickname:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tu apodo:</translation>
     </message>
 </context>
 <context>
@@ -103,22 +103,22 @@
         <location filename="../qml/StorePage.qml" line="16"/>
         <location filename="../qml/StorePage.qml" line="19"/>
         <source>BUY</source>
-        <translation type="unfinished"></translation>
+        <translation>COMPRAR</translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="865"/>
         <source>Remove Ads</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitar anuncios</translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="909"/>
         <source>Restore purchases</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurar las compras</translation>
     </message>
     <message>
         <location filename="../qml/StorePage.qml" line="925"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -126,32 +126,32 @@
     <message>
         <location filename="../qml/TutorialPage.qml" line="324"/>
         <source>Excellent!</source>
-        <translation type="unfinished"></translation>
+        <translation>¡Excelente!</translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="417"/>
         <source>Try to resize playground area with pinch gesture</source>
-        <translation type="unfinished"></translation>
+        <translation>Intenta cambiar el tamaño del área de juego con un gesto de pellizco</translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="434"/>
         <source>Try to move playground area with your finger</source>
-        <translation type="unfinished"></translation>
+        <translation>Intenta mover el área de juego con tu dedo</translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="450"/>
         <source>Double tap on playground area to restore its default position</source>
-        <translation type="unfinished"></translation>
+        <translation>Doble toque en el área de juegos para restaurar su posición predeterminada</translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="466"/>
         <source>Disassembling puzzle...</source>
-        <translation type="unfinished"></translation>
+        <translation>Desmontando rompecabezas...</translation>
     </message>
     <message>
         <location filename="../qml/TutorialPage.qml" line="482"/>
         <source>Tap on highlighted fragments to solve the puzzle</source>
-        <translation type="unfinished"></translation>
+        <translation>Toque los fragmentos resaltados para resolver el rompecabezas</translation>
     </message>
 </context>
 </TS>

@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+*/
+
+CFBundleDisplayName               = "사쿠라";
+NSCameraUsageDescription          = "이 기능에 액세스하려면 카메라 액세스를 사용 설정하십시오";
+NSPhotoLibraryAddUsageDescription = "캡처 한 이미지를 이미지 라이브러리에 저장하려면 사진 라이브러리에 대한 쓰기 권한을 활성화하십시오";

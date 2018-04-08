@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+*/
+
+CFBundleDisplayName               = "Sakura";
+NSCameraUsageDescription          = "Veuillez activer l'accès à la caméra si vous souhaitez accéder à cette fonctionnalité";
+NSPhotoLibraryAddUsageDescription = "Activer l'accès en écriture à la photothèque si vous souhaitez enregistrer l'image capturée";
