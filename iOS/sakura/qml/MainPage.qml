@@ -116,7 +116,7 @@ Item {
                         }
 
                         MouseArea {
-                            id: mouseAreaLevel
+                            id: mouseAreaTournament
                             anchors.fill: parent
                             onClicked: {
                                 var component = Qt.createComponent(
@@ -149,7 +149,7 @@ Item {
                         }
 
                         MouseArea {
-                            id: mouseAreaHelp
+                            id: mouseAreaStore
                             anchors.fill: parent
                             onClicked: {
                                 mainStackView.push(storePage)
