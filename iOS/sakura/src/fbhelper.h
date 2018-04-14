@@ -20,10 +20,10 @@ public:
     Q_INVOKABLE void showGameRequest(const QString &title, const QString &message);
     Q_INVOKABLE void logout();
 
-    static void notifyGameRequestCompleted();
+    static void notifyGameRequestCompleted(const int &recipients_count);
 
 signals:
-    void gameRequestCompleted();
+    void gameRequestCompleted(int recipientsCount);
 
 private:
     bool             Initialized;
