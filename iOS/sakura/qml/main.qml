@@ -137,6 +137,7 @@ Window {
             disableAds = (getSetting("DisableAds", "false") === "true");
 
             AdMobHelper.initialize();
+            FBHelper.initialize();
             AudioHelper.initialize();
             ReachabilityHelper.initialize();
 

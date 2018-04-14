@@ -5,6 +5,7 @@
 #include <QtQml/QQmlContext>
 
 #include "admobhelper.h"
+#include "fbhelper.h"
 #include "sharehelper.h"
 #include "storehelper.h"
 #include "audiohelper.h"
@@ -24,6 +25,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty(QStringLiteral("AdMobHelper"), new AdMobHelper(&app));
+    engine.rootContext()->setContextProperty(QStringLiteral("FBHelper"), new FBHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), new ShareHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), new StoreHelper(&app));
     engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), new AudioHelper(&app));

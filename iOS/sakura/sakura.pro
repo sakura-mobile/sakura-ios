@@ -7,9 +7,11 @@ SOURCES += src/main.cpp \
     src/uuidcreator.cpp
 
 OBJECTIVE_SOURCES += \
+    src/sakuraappdelegate.mm \
     src/gifcreator.mm \
     src/sharehelper.mm \
     src/admobhelper.mm \
+    src/fbhelper.mm \
     src/storehelper.mm \
     src/audiohelper.mm \
     src/reachabilityhelper.mm
@@ -20,6 +22,7 @@ HEADERS += \
     src/gifcreator.h \
     src/sharehelper.h \
     src/admobhelper.h \
+    src/fbhelper.h \
     src/storehelper.h \
     src/audiohelper.h \
     src/reachabilityhelper.h
@@ -46,19 +49,24 @@ QML_IMPORT_PATH =
 QML_DESIGNER_IMPORT_PATH =
 
 ios {
-    LIBS += -F $$PWD/admob -framework GoogleMobileAds \
-                -framework AdSupport \
-                -framework AVFoundation \
-                -framework CFNetwork \
-                -framework CoreMedia \
-                -framework CoreMotion \
-                -framework CoreTelephony \
-                -framework CoreVideo \
-                -framework GLKit \
-                -framework MediaPlayer \
-                -framework MessageUI \
-                -framework StoreKit \
-                -framework SystemConfiguration
+    LIBS += -F $$PWD/ios/frameworks \
+            -framework GoogleMobileAds \
+            -framework Bolts \
+            -framework FBSDKCoreKit \
+            -framework FBSDKLoginKit \
+            -framework FBSDKShareKit \
+            -framework AdSupport \
+            -framework AVFoundation \
+            -framework CFNetwork \
+            -framework CoreMedia \
+            -framework CoreMotion \
+            -framework CoreTelephony \
+            -framework CoreVideo \
+            -framework GLKit \
+            -framework MediaPlayer \
+            -framework MessageUI \
+            -framework StoreKit \
+            -framework SystemConfiguration
 
     QMAKE_APPLE_DEVICE_ARCHS = arm64
     QMAKE_INFO_PLIST = ios/Info.plist
