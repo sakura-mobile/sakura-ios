@@ -55,7 +55,7 @@ FBHelper *FBHelper::Instance = NULL;
 
         FBSDKLoginManager *login_manager = [[FBSDKLoginManager alloc] init];
 
-        [login_manager logInWithReadPermissions:@[@"public_profile", @"email"] fromViewController:root_view_controller handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+        [login_manager logInWithReadPermissions:@[@"public_profile"] fromViewController:root_view_controller handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
             if (error != nil) {
                 qWarning() << QString::fromNSString([error localizedDescription]);
             } else if (!result.isCancelled) {
@@ -86,7 +86,8 @@ FBHelper *FBHelper::Instance = NULL;
 {
     Q_UNUSED(gameRequestDialog)
 
-    if (results != nil && [results objectForKey:@"to"] != nil && [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
+    if (results != nil && [results objectForKey:@"to"] != nil &&
+                         [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
         NSArray *to = [results objectForKey:@"to"];
 
         FBHelper::notifyGameRequestCompleted((int)(to.count));
@@ -103,6 +104,15 @@ FBHelper *FBHelper::Instance = NULL;
     Q_UNUSED(gameRequestDialog)
 
     qWarning() << QString::fromNSString([error localizedDescription]);
+
+    if ([error.domain hasPrefix:@"com.facebook.sdk"] && (error.code == 102 ||
+                                                         error.code == 190)) {
+        FBSDKLoginManager *login_manager = [[FBSDKLoginManager alloc] init];
+
+        [login_manager logOut];
+
+        [login_manager release];
+    }
 }
 
 @end
