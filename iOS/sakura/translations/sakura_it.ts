@@ -40,15 +40,15 @@
     </message>
     <message>
         <source>Sakura Puzzle</source>
-        <translation type="unfinished"></translation>
+        <translation>Puzzle di Sakura</translation>
     </message>
     <message>
         <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
-        <translation type="unfinished"></translation>
+        <translation>Aiutami a risolvere un puzzle e goditi le immagini fantasiose dei fiori che sbocciano!</translation>
     </message>
     <message>
         <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
-        <translation type="unfinished"></translation>
+        <translation>Grazie! Nuovi regali per gli inviti di Facebook saranno disponibili domani.</translation>
     </message>
 </context>
 <context>
