@@ -38,6 +38,18 @@
         <source>STORE</source>
         <translation>GESCHÄFT</translation>
     </message>
+    <message>
+        <source>Sakura Puzzle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RatingsListPage</name>
