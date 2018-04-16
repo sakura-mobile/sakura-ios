@@ -278,7 +278,7 @@ Item {
                                 font.family: "Helvetica"
                             }
                             Text {
-                                id: textStepIce
+                                id: textCountStepIce
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: "1"
                                 font.pointSize: 20
@@ -309,7 +309,7 @@ Item {
                                 font.family: "Helvetica"
                             }
                             Text {
-                                id: textTimeIce
+                                id: textCountTimeIce
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: "1"
                                 font.pointSize: 20
@@ -362,6 +362,9 @@ Item {
                     easing.type: Easing.InQuad
                     to: rectFacebookGifts.height
                     onStopped: {
+                        textCountQuickTip.text = "1"
+                        textCountStepIce.text = "1"
+                        textCountTimeIce.text = "1"
                         rowQuickTip.visible = false
                         rowStepIce.visible = false
                         rowTimeIce.visible = false
@@ -450,32 +453,59 @@ Item {
             mainWindow.setSetting("countQuickTip",
                                   Number(mainWindow.getSetting("countQuickTip",
                                                                0)) + 1)
+            textCountQuickTip.text = "1"
             rowQuickTip.visible = true
+
+            mainWindow.setSetting("countBlockTimeLantern",
+                                  Number(mainWindow.getSetting(
+                                             "countBlockTimeLantern", 0)) + 1)
+            textCountTimeIce.text = "1"
+            rowTimeIce.visible = true
+
+            mainWindow.setSetting("countBlockStepLantern",
+                                  Number(mainWindow.getSetting(
+                                             "countBlockStepLantern", 0)) + 1)
+            textCountStepIce.text = "1"
+            rowStepIce.visible = true
         }
 
         if (recipientsCount >= 3 && recipientsCount < 5) {
             mainWindow.setSetting("countQuickTip",
                                   Number(mainWindow.getSetting("countQuickTip",
-                                                               0)) + 1)
+                                                               0)) + 2)
+            textCountQuickTip.text = "2"
             rowQuickTip.visible = true
+
             mainWindow.setSetting("countBlockTimeLantern",
                                   Number(mainWindow.getSetting(
-                                             "countBlockTimeLantern", 0)) + 1)
+                                             "countBlockTimeLantern", 0)) + 2)
+            textCountTimeIce.text = "2"
             rowTimeIce.visible = true
+
+            mainWindow.setSetting("countBlockStepLantern",
+                                  Number(mainWindow.getSetting(
+                                             "countBlockStepLantern", 0)) + 2)
+            textCountStepIce.text = "2"
+            rowStepIce.visible = true
         }
 
         if (recipientsCount >= 5) {
             mainWindow.setSetting("countQuickTip",
                                   Number(mainWindow.getSetting("countQuickTip",
-                                                               0)) + 1)
+                                                               0)) + 3)
+            textCountQuickTip.text = "3"
             rowQuickTip.visible = true
+
             mainWindow.setSetting("countBlockTimeLantern",
                                   Number(mainWindow.getSetting(
-                                             "countBlockTimeLantern", 0)) + 1)
+                                             "countBlockTimeLantern", 0)) + 3)
+            textCountTimeIce.text = "3"
             rowTimeIce.visible = true
+
             mainWindow.setSetting("countBlockStepLantern",
                                   Number(mainWindow.getSetting(
-                                             "countBlockStepLantern", 0)) + 1)
+                                             "countBlockStepLantern", 0)) + 3)
+            textCountStepIce.text = "3"
             rowStepIce.visible = true
         }
 
