@@ -49,17 +49,17 @@
     <message>
         <location filename="../qml/MainPage.qml" line="176"/>
         <source>Sakura Puzzle</source>
-        <translation type="unfinished"></translation>
+        <translation>さくらパズル</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="176"/>
         <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
-        <translation type="unfinished"></translation>
+        <translation>パズルを解いて咲く花の幻想的な写真を楽しんでください！</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="216"/>
         <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
-        <translation type="unfinished"></translation>
+        <translation>ありがとうございました！ 明日、Facebookの招待状のための新しい贈り物が利用可能になります。</translation>
     </message>
 </context>
 <context>
