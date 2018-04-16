@@ -410,7 +410,7 @@ function initObjectLevels() {
     objectLevel.taskTimeStar2 = 10
     objectLevel.taskTimeStar3 = 15
     objectLevel.step = 45
-    objectLevel.time = 45
+    objectLevel.time = 50
     listObjectLevels[7] = objectLevel
 
     objectLevel = {
@@ -485,7 +485,7 @@ function initObjectLevels() {
     objectLevel.taskTimeStar2 = 3
     objectLevel.taskTimeStar3 = 5
     objectLevel.step = 35
-    objectLevel.time = 40
+    objectLevel.time = 45
     listObjectLevels[10] = objectLevel
 
     objectLevel = {
@@ -4739,7 +4739,6 @@ function initObjectLevels() {
     objectLevel.step = 280
     //objectLevel.time = 80
     listObjectLevels[179] = objectLevel
-
 
     //------------- location_9 end-------------------------
 

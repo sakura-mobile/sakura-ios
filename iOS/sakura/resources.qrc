@@ -167,5 +167,7 @@
         <file>resources/images/background_location_8.jpg</file>
         <file>resources/images/background_location_9.jpg</file>
         <file>resources/images/background_location_10.jpg</file>
+        <file>resources/images/fb_invite_gift.png</file>
+        <file>resources/images/fb_invite.png</file>
     </qresource>
 </RCC>
