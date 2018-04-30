@@ -7,7 +7,7 @@
 @interface QIOSApplicationDelegate : UIResponder <UIApplicationDelegate>
 @end
 
-@interface QIOSApplicationDelegate (MyApplicationDelegate)
+@interface QIOSApplicationDelegate (SakuraAppDelegate)
 @end
 
 @implementation QIOSApplicationDelegate (SakuraAppDelegate)
