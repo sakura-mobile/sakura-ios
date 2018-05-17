@@ -71,6 +71,8 @@ void ReachabilityHelper::initialize()
 
                 SCNetworkReachabilitySetCallback(ReachabilityRef, NULL, NULL);
             }
+
+            dispatch_release(queue);
         } else {
             qWarning() << QString("SCNetworkReachabilitySetCallback() failed: %1").arg(SCErrorString(SCError()));
         }
