@@ -140,7 +140,7 @@ void FBHelper::initialize()
     }
 }
 
-void FBHelper::showGameRequest(const QString &title, const QString &message)
+void FBHelper::showGameRequest(QString title, QString message)
 {
     if (Initialized) {
         [FBDelegateInstance showGameRequestWithTitle:title.toNSString() withMessage:message.toNSString()];
@@ -154,7 +154,7 @@ void FBHelper::logout()
     }
 }
 
-void FBHelper::notifyGameRequestCompleted(const int &recipients_count)
+void FBHelper::notifyGameRequestCompleted(int recipients_count)
 {
     emit Instance->gameRequestCompleted(recipients_count);
 }

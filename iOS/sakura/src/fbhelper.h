@@ -17,10 +17,10 @@ public:
     virtual ~FBHelper();
 
     Q_INVOKABLE void initialize();
-    Q_INVOKABLE void showGameRequest(const QString &title, const QString &message);
+    Q_INVOKABLE void showGameRequest(QString title, QString message);
     Q_INVOKABLE void logout();
 
-    static void notifyGameRequestCompleted(const int &recipients_count);
+    static void notifyGameRequestCompleted(int recipients_count);
 
 signals:
     void gameRequestCompleted(int recipientsCount);
