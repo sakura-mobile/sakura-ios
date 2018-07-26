@@ -15,14 +15,13 @@ public:
 
     bool silenceAudio() const;
 
-    Q_INVOKABLE void initialize();
     Q_INVOKABLE void refresh();
 
 signals:
     void silenceAudioChanged(bool silenceAudio);
 
 private:
-    bool Initialized, SilenceAudio;
+    bool SilenceAudio;
 };
 
 #endif // AUDIOHELPER_H

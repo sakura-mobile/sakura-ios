@@ -119,39 +119,23 @@ FBHelper *FBHelper::Instance = NULL;
 
 FBHelper::FBHelper(QObject *parent) : QObject(parent)
 {
-    Initialized        = false;
     Instance           = this;
-    FBDelegateInstance = NULL;
+    FBDelegateInstance = [[FBDelegate alloc] init];
 }
 
 FBHelper::~FBHelper()
 {
-    if (Initialized) {
-        [FBDelegateInstance release];
-    }
-}
-
-void FBHelper::initialize()
-{
-    if (!Initialized) {
-        FBDelegateInstance = [[FBDelegate alloc] init];
-
-        Initialized = true;
-    }
+    [FBDelegateInstance release];
 }
 
 void FBHelper::showGameRequest(QString title, QString message)
 {
-    if (Initialized) {
-        [FBDelegateInstance showGameRequestWithTitle:title.toNSString() withMessage:message.toNSString()];
-    }
+    [FBDelegateInstance showGameRequestWithTitle:title.toNSString() withMessage:message.toNSString()];
 }
 
 void FBHelper::logout()
 {
-    if (Initialized) {
-        [FBDelegateInstance logout];
-    }
+    [FBDelegateInstance logout];
 }
 
 void FBHelper::notifyGameRequestCompleted(int recipients_count)

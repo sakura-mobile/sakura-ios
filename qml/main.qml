@@ -129,11 +129,6 @@ Window {
         Component.onCompleted: {
             disableAds = (getSetting("DisableAds", "false") === "true");
 
-            AdMobHelper.initialize();
-            FBHelper.initialize();
-            AudioHelper.initialize();
-            ReachabilityHelper.initialize();
-
             mainStackView.push(mainPage);
         }
     }

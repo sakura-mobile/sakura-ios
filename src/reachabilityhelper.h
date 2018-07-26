@@ -19,8 +19,6 @@ public:
     bool internetAvailable() const;
     bool internetConnected() const;
 
-    Q_INVOKABLE void initialize();
-
     void analyzeFlags(SCNetworkReachabilityFlags flags);
 
 signals:
@@ -28,7 +26,7 @@ signals:
     void internetConnectedChanged(bool connected);
 
 private:
-    bool                     Initialized, InternetAvailable, InternetConnected;
+    bool                     InternetAvailable, InternetConnected;
     SCNetworkReachabilityRef ReachabilityRef;
 };
 
