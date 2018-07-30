@@ -4,11 +4,11 @@ CONFIG += c++11
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += src/main.cpp \
+    src/gifcreator.cpp \
     src/uuidcreator.cpp
 
 OBJECTIVE_SOURCES += \
     src/sakuraappdelegate.mm \
-    src/gifcreator.mm \
     src/sharehelper.mm \
     src/admobhelper.mm \
     src/fbhelper.mm \
