@@ -5,6 +5,7 @@
 #import <GoogleMobileAds/GADInterstitial.h>
 #import <GoogleMobileAds/GADInterstitialDelegate.h>
 
+#include <QtCore/QtMath>
 #include <QtCore/QDebug>
 
 #include "admobhelper.h"
@@ -60,7 +61,7 @@ AdMobHelper *AdMobHelper::Instance = nullptr;
                 [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
             ]];
 
-            AdMobHelper::setBannerViewHeight(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom);
+            AdMobHelper::setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
         } else {
             assert(0);
         }

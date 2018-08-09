@@ -90,7 +90,7 @@ FBHelper *FBHelper::Instance = nullptr;
                          [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
         NSArray *to = [results objectForKey:@"to"];
 
-        FBHelper::notifyGameRequestCompleted((int)(to.count));
+        FBHelper::notifyGameRequestCompleted(static_cast<int>(to.count));
     }
 }
 
