@@ -6,7 +6,7 @@
 
 #include "fbhelper.h"
 
-FBHelper *FBHelper::Instance = NULL;
+FBHelper *FBHelper::Instance = nullptr;
 
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 

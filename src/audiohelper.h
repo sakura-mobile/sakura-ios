@@ -10,7 +10,7 @@ class AudioHelper : public QObject
     Q_PROPERTY(bool silenceAudio READ silenceAudio NOTIFY silenceAudioChanged)
 
 public:
-    explicit AudioHelper(QObject *parent = 0);
+    explicit AudioHelper(QObject *parent = nullptr);
     virtual ~AudioHelper();
 
     bool silenceAudio() const;

@@ -8,7 +8,7 @@ class UuidCreator : public QObject
     Q_OBJECT
 
 public:
-    explicit UuidCreator(QObject *parent = 0);
+    explicit UuidCreator(QObject *parent = nullptr);
     virtual ~UuidCreator();
 
     Q_INVOKABLE QString createUuid();

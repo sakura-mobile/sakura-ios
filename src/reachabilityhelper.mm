@@ -11,7 +11,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 {
     Q_UNUSED(target)
 
-    ((ReachabilityHelper *)info)->analyzeFlags(flags);
+    (static_cast<ReachabilityHelper *>(info))->analyzeFlags(flags);
 }
 
 ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
@@ -20,7 +20,7 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
     InternetConnected = false;
 
     struct sockaddr_in           address;
-    SCNetworkReachabilityContext context = { 0, NULL, NULL, NULL, NULL };
+    SCNetworkReachabilityContext context = { 0, nullptr, nullptr, nullptr, nullptr };
 
     bzero(&address, sizeof(address));
 
@@ -29,10 +29,10 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
 
     context.info = this;
 
-    ReachabilityRef = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, (const struct sockaddr *)&address);
+    ReachabilityRef = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, reinterpret_cast<const struct sockaddr *>(&address));
 
     if (SCNetworkReachabilitySetCallback(ReachabilityRef, ReachabilityCallback, &context)) {
-        dispatch_queue_t queue = dispatch_queue_create(NULL, NULL);
+        dispatch_queue_t queue = dispatch_queue_create(nullptr, nullptr);
 
         if (SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, queue)) {
             SCNetworkReachabilityFlags flags;
@@ -54,7 +54,7 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
         } else {
             qWarning() << QString("SCNetworkReachabilitySetDispatchQueue() failed: %1").arg(SCErrorString(SCError()));
 
-            SCNetworkReachabilitySetCallback(ReachabilityRef, NULL, NULL);
+            SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
         }
 
         dispatch_release(queue);
@@ -65,8 +65,8 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
 
 ReachabilityHelper::~ReachabilityHelper()
 {
-    SCNetworkReachabilitySetCallback(ReachabilityRef, NULL, NULL);
-    SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, NULL);
+    SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
+    SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, nullptr);
 
     CFRelease(ReachabilityRef);
 }

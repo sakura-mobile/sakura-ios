@@ -13,7 +13,7 @@ class ReachabilityHelper : public QObject
     Q_PROPERTY(bool internetConnected READ internetConnected NOTIFY internetConnectedChanged)
 
 public:
-    explicit ReachabilityHelper(QObject *parent = 0);
+    explicit ReachabilityHelper(QObject *parent = nullptr);
     virtual ~ReachabilityHelper();
 
     bool internetAvailable() const;

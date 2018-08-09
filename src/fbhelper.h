@@ -13,7 +13,7 @@ class FBHelper : public QObject
     Q_OBJECT
 
 public:
-    explicit FBHelper(QObject *parent = 0);
+    explicit FBHelper(QObject *parent = nullptr);
     virtual ~FBHelper();
 
     Q_INVOKABLE void showGameRequest(QString title, QString message);
