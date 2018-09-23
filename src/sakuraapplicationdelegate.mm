@@ -4,13 +4,15 @@
 
 #include <QtCore/QtGlobal>
 
-@interface QIOSApplicationDelegate : UIResponder <UIApplicationDelegate>
+#include "sakuraapplicationdelegate.h"
+
+@interface QIOSApplicationDelegate : UIResponder<UIApplicationDelegate>
 @end
 
-@interface QIOSApplicationDelegate (SakuraAppDelegate)
+@interface QIOSApplicationDelegate (QIOSApplicationDelegateSakuraCategory)
 @end
 
-@implementation QIOSApplicationDelegate (SakuraAppDelegate)
+@implementation QIOSApplicationDelegate (QIOSApplicationDelegateSakuraCategory)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -26,12 +28,29 @@
     [FBSDKAppEvents activateApp];
 }
 
+@end
+
+@interface SakuraApplicationDelegate : QIOSApplicationDelegate
+@end
+
+@implementation SakuraApplicationDelegate
+
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                       openURL:url
                                                       sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-                                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+                                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]] ||
+           [super application:application openURL:url options:options];
 }
 
 @end
+
+static SakuraApplicationDelegate *SakuraApplicationDelegateInstance = nil;
+
+void InitializeSakuraApplicationDelegate()
+{
+    SakuraApplicationDelegateInstance = [[SakuraApplicationDelegate alloc] init];
+
+    [UIApplication sharedApplication].delegate = SakuraApplicationDelegateInstance;
+}

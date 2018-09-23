@@ -4,6 +4,7 @@
 #include <QtQml/QQmlApplicationEngine>
 #include <QtQml/QQmlContext>
 
+#include "sakuraapplicationdelegate.h"
 #include "admobhelper.h"
 #include "fbhelper.h"
 #include "sharehelper.h"
@@ -21,6 +22,8 @@ int main(int argc, char *argv[])
     if (translator.load(QString(":/tr/sakura_%1").arg(QLocale::system().name()))) {
         app.installTranslator(&translator);
     }
+
+    InitializeSakuraApplicationDelegate();
 
     QQmlApplicationEngine engine;
 

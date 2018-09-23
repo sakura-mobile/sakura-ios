@@ -8,7 +8,7 @@ SOURCES += src/main.cpp \
     src/uuidcreator.cpp
 
 OBJECTIVE_SOURCES += \
-    src/sakuraappdelegate.mm \
+    src/sakuraapplicationdelegate.mm \
     src/sharehelper.mm \
     src/admobhelper.mm \
     src/fbhelper.mm \
@@ -17,6 +17,7 @@ OBJECTIVE_SOURCES += \
     src/reachabilityhelper.mm
 
 HEADERS += \
+    src/sakuraapplicationdelegate.h \
     src/uuidcreator.h \
     src/gif.h \
     src/gifcreator.h \
