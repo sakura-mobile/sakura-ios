@@ -3,7 +3,7 @@
 set DEBUG_MODE 0
 set DATA_DIR   ""
 set AUTH_KEY   ""
-set TOP_SIZE   5
+set TOP_SIZE   25
 
 if {[catch {
     lappend auto_path /home/project-web/sakuramobile/lib/tcllib1.18
