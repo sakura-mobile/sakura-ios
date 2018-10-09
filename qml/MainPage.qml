@@ -166,7 +166,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 source: showGift ? "qrc:/resources/images/fb_invite_gift.png" : "qrc:/resources/images/fb_invite.png"
 
-                property bool showGift: true
+                property bool showGift: false
 
                 MouseArea {
                     anchors.fill: parent
@@ -378,6 +378,9 @@ Item {
     }
 
     Component.onCompleted: {
+        /*
+         * Don't offer rewards for Facebook invitations
+         *
         var d = new Date()
         var utc = d.getTime() + (d.getTimezoneOffset() * 60000)
         var now = new Date(utc + (3600000 * 0))
@@ -398,6 +401,7 @@ Item {
         }
 
         FBHelper.gameRequestCompleted.connect(gameRequestCompleted)
+        */
 
         if ((mainWindow.getSetting("endedAvailableLevels", "")
              !== "") && (Number(mainWindow.getSetting("maxLevelCampaign",
