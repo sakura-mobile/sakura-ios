@@ -31,8 +31,7 @@
   The photo that represents the video.
  @return The photo
  */
-@property (nonatomic, copy) FBSDKSharePhoto *previewPhoto
-DEPRECATED_MSG_ATTRIBUTE("Use `video.previewPhoto`");
+@property (nonatomic, copy) FBSDKSharePhoto *previewPhoto;
 
 /**
   The video to be shared.
