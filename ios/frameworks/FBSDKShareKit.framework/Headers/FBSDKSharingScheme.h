@@ -1,4 +1,4 @@
-// Copyright (c) 2016-present, Facebook, Inc. All rights reserved.
+// Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
 //
 // You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
 // copy, modify, and distribute this software in source code or binary form for use
@@ -16,25 +16,18 @@
 // IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "FBSDKShareDialogMode.h"
 
 /**
- Error domain used for all of the errors in FBNotifications framework.
+ A base interface for indicating a custom URL scheme
  */
-extern NSString *FBNotificationsErrorDomain;
-
-typedef NS_ENUM(NSUInteger, FBNotificationsErrorCode) {
-    /**
-     Error code indicating that notification payload is invalid.
-     */
-    FBNotificationsErrorInvalidPayload = 1,
-};
+@protocol FBSDKSharingScheme
 
 /**
- String that represents a highest supported card format by the framework.
+ Asks the receiver to provide a custom scheme.
+ - Parameter mode: The intended dialog mode for sharing the content.
+ - Returns: A custom URL scheme to use for the specified mode, or nil.
  */
-extern NSString *FBNotificationsCardFormatVersionString;
+- (nullable NSString *)schemeForMode:(FBSDKShareDialogMode)mode;
 
-NS_ASSUME_NONNULL_END
+@end
