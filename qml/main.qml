@@ -5,6 +5,7 @@ import QtQuick.LocalStorage 2.0
 
 Window {
     id:         mainWindow
+    title:      qsTr("Sakura")
     visibility: Window.FullScreen
     visible:    true
 
