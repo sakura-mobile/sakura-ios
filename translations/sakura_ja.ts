@@ -138,4 +138,11 @@
         <translation>ハイライトされた断片をタップしてパズルを解きましょう</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

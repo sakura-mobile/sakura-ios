@@ -169,4 +169,12 @@
         <translation>ハイライトされた断片をタップしてパズルを解きましょう</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../qml/main.qml" line="8"/>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

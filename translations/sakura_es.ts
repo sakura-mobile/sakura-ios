@@ -138,4 +138,11 @@
         <translation>Toque los fragmentos resaltados para resolver el rompecabezas</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

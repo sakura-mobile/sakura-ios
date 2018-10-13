@@ -138,4 +138,11 @@
         <translation>点击突出显示的片段来解决这个难题</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

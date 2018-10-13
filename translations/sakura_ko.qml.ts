@@ -169,4 +169,12 @@
         <translation>강조 표시된 조각을 탭하여 퍼즐을 해결하십시오</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../qml/main.qml" line="8"/>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

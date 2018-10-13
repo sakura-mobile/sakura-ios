@@ -138,4 +138,11 @@
         <translation>Appuyez sur les fragments en surbrillance pour résoudre le puzzle</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

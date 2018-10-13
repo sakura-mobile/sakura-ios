@@ -138,4 +138,11 @@
         <translation>Нажимайте на подсвеченные фрагменты, чтобы собрать головоломку</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

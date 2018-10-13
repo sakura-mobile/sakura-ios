@@ -169,4 +169,12 @@
         <translation>Tocca i frammenti evidenziati per risolvere il puzzle</translation>
     </message>
 </context>
+<context>
+    <name>main</name>
+    <message>
+        <location filename="../qml/main.qml" line="8"/>
+        <source>Sakura</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>
