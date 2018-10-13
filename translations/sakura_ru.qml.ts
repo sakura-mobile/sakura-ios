@@ -174,7 +174,7 @@
     <message>
         <location filename="../qml/main.qml" line="8"/>
         <source>Sakura</source>
-        <translation type="unfinished"></translation>
+        <translation>Сакура</translation>
     </message>
 </context>
 </TS>
