@@ -142,7 +142,7 @@
     <name>main</name>
     <message>
         <source>Sakura</source>
-        <translation type="unfinished"></translation>
+        <translation>Сакура</translation>
     </message>
 </context>
 </TS>
