@@ -11,6 +11,8 @@ Item {
     property int currentLocation: 0
     property int currentCampaign: 0
     property int isCampaign: 0
+    property int isRelax: 0
+
     property var listGameBranchObject: []
     property var listGameBranchCard: []
     property var arrRectTrasparent: []
@@ -582,7 +584,13 @@ Item {
         var component
         var object
         var objMap
-        if (isCampaign === 1) {
+        if (isRelax === 1) {
+            GenerationBranchScript.initObjectRelaxLevels();
+            imageBackgroundMainMap.source = "qrc:/resources/images/background_relax.jpg"
+            objMap = GenerationBranchScript.listObjectRelaxLevels[currentLevel]
+            widthGame = objMap.width
+            heightGame = objMap.height
+        } else if (isCampaign === 1) {
             GenerationBranchScript.initObjectCampaigns()
             imageBackgroundMainMap.source = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].background
             objMap = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel]
@@ -643,19 +651,24 @@ Item {
 
         gridMapCard.columns = 0
         gridMapCard.columns = widthGame
+        var typeColorBranch = "";
         for (var i = 0; i < heightGame; i++) {
             for (var j = 0; j < widthGame; j++) {
-                if (objMap.mapArray[i][j] === 1) {
+                if ((objMap.mapArray[i][j] === 1) || (objMap.mapArray[i][j] === 2) || (objMap.mapArray[i][j] === 3)) {
                     component = Qt.createComponent("Branch.qml")
+                    typeColorBranch = "";
+                    if (listGameBranchObject[i][j].typeColor === 2) typeColorBranch = "_1";
+                    if (listGameBranchObject[i][j].typeColor === 3) typeColorBranch = "_2";
                     object = component.createObject(gridMapCard)
                     object.source = "qrc:/resources/images/branch/"
-                            + listGameBranchObject[i][j].nameItem + "_3e.png"
+                            + listGameBranchObject[i][j].nameItem + "_3e" + typeColorBranch +".png"
                     object.rotationBranch = listGameBranchObject[i][j].rotationBranch
                     object.posLeft = listGameBranchObject[i][j].posLeft
                     object.posRight = listGameBranchObject[i][j].posRight
                     object.posTop = listGameBranchObject[i][j].posTop
                     object.posBottom = listGameBranchObject[i][j].posBottom
                     object.nameItem = listGameBranchObject[i][j].nameItem
+                    object.typeColor = listGameBranchObject[i][j].typeColor
                     object.typeItem = 1
                     object.typeAnimation = 1
                     object.posI = i

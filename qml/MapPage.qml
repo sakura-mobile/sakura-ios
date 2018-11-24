@@ -18,12 +18,16 @@ Item {
         fillMode: Image.PreserveAspectCrop
 
         onPaintedWidthChanged: {
-            width = paintedWidth
-            height = paintedHeight
+            if (width > 0 && height > 0 && sourceSize.width > 0 && sourceSize.height > 0 && paintedWidth > 0 && paintedHeight > 0) {
+                width = paintedWidth
+                height = paintedHeight
+            }
         }
         onPaintedHeightChanged: {
-            width = paintedWidth
-            height = paintedHeight
+            if (width > 0 && height > 0 && sourceSize.width > 0 && sourceSize.height > 0 && paintedWidth > 0 && paintedHeight > 0) {
+                width = paintedWidth
+                height = paintedHeight
+            }
         }
     }
 

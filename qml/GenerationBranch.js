@@ -1,5 +1,6 @@
 var listGlobalMap = []
 var listMap = []
+var listColor = []
 var listGameBranch = []
 var listGameBranchObject = []
 var listImageBranch = []
@@ -22,6 +23,7 @@ var SCORE_TIME_BRANCH = 10
 var COUNT_STEP_STOP = 10
 var listObjectSingleLevels = []
 var listObjectTutorialLevels = []
+var listObjectRelaxLevels = []
 var SERVER_KEY = ''
 
 function initObjectTutorialLevels() {
@@ -208,6 +210,1633 @@ function initObjectSingleLevels() {
         countGift: 25
     }
     listObjectSingleLevels[4] = objectLevel
+}
+
+function initObjectRelaxLevels() {
+    var objectLevel = {
+        name: 'level_1'
+    }
+    objectLevel.map = [0,2,0,2,3,2,0,2,0]
+    objectLevel.width = 3
+    objectLevel.height = 3
+    objectLevel.mapArray = []
+    objectLevel.step = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.countQuickTip = 5
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+    listObjectRelaxLevels[0] = objectLevel
+
+    objectLevel = {
+        name: 'level_2'
+    }
+    objectLevel.map = [0,3,3,0,3,2,1,3,3,1,2,3,0,3,3,0]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.countQuickTip = 5
+    objectLevel.step = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[1] = objectLevel
+
+    objectLevel = {
+        name: 'level_3'
+    }
+    objectLevel.map = [2,0,0,3,2,2,3,3,2,3,2,3,2,0,0,3]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 10
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[2] = objectLevel
+
+    objectLevel = {
+        name: 'level_4'
+    }
+    objectLevel.map = [0,3,2,3,0,2,3,2,2,3,2,0,3,2,3,0]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 10
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[3] = objectLevel
+
+    objectLevel = {
+        name: 'level_5'
+    }
+    objectLevel.map = [3,1,1,3,2,1,3,3,3]
+    objectLevel.width = 3
+    objectLevel.height = 3
+    objectLevel.mapArray = []
+    objectLevel.step = 9
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[4] = objectLevel
+
+    objectLevel = {
+        name: 'level_6'
+    }
+    objectLevel.map = [3,3,3,3,1,0,1,0,3,3,3,3,1,0,1,0]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 12
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[5] = objectLevel
+
+    objectLevel = {
+        name: 'level_7'
+    }
+    objectLevel.map = [3,2,2,0,2,3,1,2,2,1,3,2,0,2,2,3]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 14
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[6] = objectLevel
+
+    objectLevel = {
+        name: 'level_8'
+    }
+    objectLevel.map = [2,2,0,0,2,2,3,0,0,3,3,1,0,0,1,1]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 10
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[7] = objectLevel
+
+    objectLevel = {
+        name: 'level_9'
+    }
+    objectLevel.map = [3,3,3,3,3,1,1,3,3,1,1,3,3,3,3,3]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 16
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[8] = objectLevel
+
+    objectLevel = {
+        name: 'level_10'
+    }
+    objectLevel.map = [1,0,2,2,1,3,3,3,3,3,3,1,2,2,0,1]
+    objectLevel.width = 4
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 14
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[9] = objectLevel
+
+    objectLevel = {
+        name: 'level_11'
+    }
+    objectLevel.map = [0,3,3,3,0,3,1,0,1,3,3,0,0,0,3,3,1,0,1,3,0,3,3,3,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 16
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[10] = objectLevel
+
+    objectLevel = {
+        name: 'level_12'
+    }
+    objectLevel.map = [2,2,0,1,1,2,2,2,1,1,0,2,0,2,0,1,1,2,2,2,1,1,0,2,2]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[11] = objectLevel
+
+    objectLevel = {
+        name: 'level_13'
+    }
+    objectLevel.map = [3,2,3,2,3,2,0,2,0,2,3,2,3,2,3,2,0,2,0,2,3,2,3,2,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[12] = objectLevel
+
+    objectLevel = {
+        name: 'level_14'
+    }
+    objectLevel.map = [3,2,0,0,0,3,3,2,0,0,0,3,3,2,0,0,0,3,3,2,0,0,0,3,2]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 13
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[13] = objectLevel
+
+    objectLevel = {
+        name: 'level_15'
+    }
+    objectLevel.map = [0,2,2,2,0,2,2,2,0,3,2,2,3,3,3,2,0,3,3,3,0,3,3,3,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 19
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[14] = objectLevel
+
+    objectLevel = {
+        name: 'level_16'
+    }
+    objectLevel.map = [0,3,3,3,0,3,1,3,1,3,3,3,3,3,3,3,2,2,2,3,0,3,3,3,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[15] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_17'
+    }
+    objectLevel.map = [2,0,0,0,2,2,2,2,2,2,0,2,2,2,0,2,2,2,2,2,2,0,0,0,2]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 15
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[16] = objectLevel
+
+    objectLevel = {
+        name: 'level_18'
+    }
+    objectLevel.map = [0,3,0,3,0,1,2,1,2,1,0,3,0,3,0,1,2,1,2,1,0,3,0,3,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 15
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[17] = objectLevel
+
+    objectLevel = {
+        name: 'level_19'
+    }
+    objectLevel.map = [0,0,3,0,0,0,3,3,3,0,0,3,3,3,0,3,3,0,3,3,3,0,0,0,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 13
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[18] = objectLevel
+
+    objectLevel = {
+        name: 'level_20'
+    }
+    objectLevel.map = [2,2,0,2,2,2,2,0,2,2,0,1,3,1,0,2,2,0,2,2,2,2,0,2,2]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 19
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[19] = objectLevel
+
+    objectLevel = {
+        name: 'level_21'
+    }
+    objectLevel.map = [0,3,3,0,0,0,3,3,0,0,0,0,3,0,0,2,2,2,2,2,0,2,2,2,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 13
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[20] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_22'
+    }
+    objectLevel.map = [0,3,0,3,0,2,3,3,3,2,2,2,2,2,2,2,1,1,1,2,0,1,0,1,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 19
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[21] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_23'
+    }
+    objectLevel.map = [3,0,1,0,3,3,1,1,1,3,3,1,0,1,3,3,1,1,1,3,3,0,1,0,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[22] = objectLevel
+
+    objectLevel = {
+        name: 'level_24'
+    }
+    objectLevel.map = [2,2,0,2,2,2,1,1,1,2,0,1,2,1,0,2,1,1,1,2,2,2,0,2,2]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[23] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_25'
+    }
+    objectLevel.map = [3,3,0,1,1,3,3,3,1,1,0,3,3,3,0,1,1,3,3,3,1,1,0,3,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[24] = objectLevel
+
+    objectLevel = {
+        name: 'level_26'
+    }
+    objectLevel.map = [3,3,3,3,3,3,1,1,1,3,3,1,2,1,3,3,1,1,1,3,3,3,3,3,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[25] = objectLevel
+
+    objectLevel = {
+        name: 'level_27'
+    }
+    objectLevel.map = [3,3,0,3,3,3,3,3,3,3,0,3,3,3,0,0,0,3,0,0]
+    objectLevel.width = 5
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 13
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[26] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_28'
+    }
+    objectLevel.map = [0,0,2,0,0,2,2,2,2,2,0,2,2,2,0,0,2,0,2,0]
+    objectLevel.width = 5
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 11
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[27] = objectLevel
+
+    objectLevel = {
+        name: 'level_29'
+    }
+    objectLevel.map = [0,0,3,3,3,0,0,0,3,2,2,2,3,0,3,2,1,1,1,2,3,3,2,1,0,1,2,3]
+    objectLevel.width = 7
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[28] = objectLevel
+
+    objectLevel = {
+        name: 'level_30'
+    }
+    objectLevel.map = [0,2,2,2,0,2,3,2,3,2,2,2,2,2,2,2,3,2,3,2,0,2,3,2,0]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[29] = objectLevel
+
+    objectLevel = {
+        name: 'level_31'
+    }
+    objectLevel.map = [3,3,3,1,1,3,3,3,1,1,3,3,3,3,3,1,1,3,3,3,1,1,3,3,3]
+    objectLevel.width = 5
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[30] = objectLevel
+
+    objectLevel = {
+        name: 'level_32'
+    }
+    objectLevel.map = [2,2,0,0,1,1,2,2,2,2,1,0,0,1,2,2,2,2,1,1,0,0,2,2]
+    objectLevel.width = 6
+    objectLevel.height = 4
+    objectLevel.mapArray = []
+    objectLevel.step = 18
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[31] = objectLevel
+
+    objectLevel = {
+        name: 'level_33'
+    }
+    objectLevel.map = [2,0,0,0,0,2,2,3,3,0,3,2,0,0,3,3,3,0,0,3,3,3,0,0,2,3,0,3,3,2,2,0,0,0,0,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[32] = objectLevel
+
+    objectLevel = {
+        name: 'level_34'
+    }
+    objectLevel.map = [3,3,0,0,1,1,3,3,2,2,1,1,0,2,0,0,2,0,0,2,0,0,2,0,1,1,2,2,3,3,1,1,0,0,3,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 24
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[33] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_35'
+    }
+    objectLevel.map = [2,2,0,0,2,2,2,2,2,2,2,2,0,2,3,3,2,0,0,2,3,3,2,0,2,2,2,2,2,2,2,2,0,0,2,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[34] = objectLevel
+
+    objectLevel = {
+        name: 'level_36'
+    }
+    objectLevel.map = [0,1,0,0,1,0,1,2,2,2,2,1,0,2,3,3,2,0,0,2,3,3,2,0,1,2,2,2,2,1,0,1,0,0,1,0]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[35] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_37'
+    }
+    objectLevel.map = [3,3,0,0,3,3,3,3,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,3,3,3,3,0,0,3,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[36] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_38'
+    }
+    objectLevel.map = [0,2,2,2,2,0,2,2,2,2,2,2,0,2,0,0,2,0,0,2,0,0,2,0,2,2,2,2,2,2,0,2,2,2,2,0]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[37] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_39'
+    }
+    objectLevel.map = [3,1,3,1,3,1,1,3,0,0,3,3,3,0,0,0,0,1,1,0,0,0,0,3,3,3,0,0,3,1,1,3,1,3,1,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[38] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_40'
+    }
+    objectLevel.map = [2,3,2,3,2,3,3,2,3,2,3,2,2,3,0,0,2,3,3,2,0,0,3,2,2,3,2,3,2,3,3,2,3,2,3,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[39] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_41'
+    }
+    objectLevel.map = [2,3,0,3,3,2,3,2,1,1,2,3,3,0,2,2,0,3,0,0,2,2,0,0,3,2,1,1,2,3,2,3,3,0,3,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[40] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_42'
+    }
+    objectLevel.map = [3,0,0,0,3,1,2,0,2,1,3,3,2,3,3,0,1,2,1,0,3,3,2,3,3,1,3,0,3,1]
+    objectLevel.width = 5
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[41] = objectLevel
+
+    objectLevel = {
+        name: 'level_43'
+    }
+    objectLevel.map = [0,0,2,2,2,0,0,0,3,2,2,2,3,0,3,2,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,2,3,0,3,3,2,3,3,0]
+    objectLevel.width = 7
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[42] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_44'
+    }
+    objectLevel.map = [3,3,0,0,3,3,0,3,3,3,3,0,0,3,1,1,3,0,0,3,1,1,3,0,0,3,3,3,3,0,3,3,0,0,3,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[43] = objectLevel
+
+    objectLevel = {
+        name: 'level_45'
+    }
+    objectLevel.map = [2,2,2,2,2,2,0,3,3,3,3,0,0,0,1,1,0,0,0,0,1,1,0,0,0,3,3,3,3,0,2,2,2,2,2,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[44] = objectLevel
+
+    objectLevel = {
+        name: 'level_46'
+    }
+    objectLevel.map = [3,3,0,0,0,0,3,1,1,0,0,0,0,1,2,2,0,0,0,0,2,3,3,0,0,0,0,3,1,1,0,0,0,0,1,2]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 15
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[45] = objectLevel
+
+    objectLevel = {
+        name: 'level_47'
+    }
+    objectLevel.map = [3,3,3,3,3,3,3,1,1,1,1,3,3,1,0,0,1,3,3,1,0,0,1,3,3,1,1,1,1,3,3,3,3,3,3,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[46] = objectLevel
+
+    objectLevel = {
+        name: 'level_48'
+    }
+    objectLevel.map = [0,3,1,1,3,0,3,3,2,2,3,3,1,2,3,3,2,1,1,2,3,3,2,1,3,3,2,2,3,3,0,3,1,1,3,0]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[47] = objectLevel
+
+    objectLevel = {
+        name: 'level_49'
+    }
+    objectLevel.map = [3,0,0,0,3,3,3,3,1,1,3,0,0,1,3,3,1,0,0,1,3,3,1,0,3,3,1,1,3,3,3,0,0,0,0,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 5
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[48] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_50'
+    }
+    objectLevel.map = [3,3,3,3,3,3,3,1,1,1,1,3,3,1,2,2,1,3,3,1,2,2,1,3,3,1,1,1,1,3,3,3,3,3,3,3]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[49] = objectLevel
+
+    objectLevel = {
+        name: 'level_51'
+    }
+    objectLevel.map = [3,0,0,0,0,3,3,3,3,3,3,3,2,3,3,3,3,2,3,2,3,3,2,3,3,3,3,3,3,3,0,3,3,3,3,0]
+    objectLevel.width = 6
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[50] = objectLevel
+
+    objectLevel = {
+        name: 'level_52'
+    }
+    objectLevel.map = [0,0,2,2,0,0,0,0,0,0,2,0,0,0,0,2,2,2,2,2,0,2,2,2,2,2,2,2,2,1,2,3,2,1,2,2,2,3,3,3,2,2,0,2,2,2,2,2,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[51] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_53'
+    }
+    objectLevel.map = [2,2,0,0,0,1,1,2,2,2,0,1,1,1,0,2,2,2,1,1,0,0,0,2,2,2,0,0,0,1,1,2,2,2,0,1,1,1,0,2,2,2,1,1,0,0,0,2,2]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[52] = objectLevel
+
+    objectLevel = {
+        name: 'level_54'
+    }
+    objectLevel.map = [2,2,2,2,2,2,2,2,2,0,0,0,2,2,0,1,1,0,1,1,0,0,0,3,3,3,0,0,0,1,1,0,1,1,0,2,2,0,0,0,2,2,2,2,2,2,2,2,2]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[53] = objectLevel
+
+    objectLevel = {
+        name: 'level_55'
+    }
+    objectLevel.map = [3,3,0,0,0,3,3,3,3,1,0,1,3,3,0,1,1,2,1,1,0,0,0,2,2,2,0,0,0,1,1,2,1,1,0,3,3,1,0,1,3,3,3,3,0,0,0,3,3]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[54] = objectLevel
+
+    objectLevel = {
+        name: 'level_56'
+    }
+    objectLevel.map = [2,1,3,2,1,3,2,0,2,1,3,2,1,0,0,0,2,1,3,0,0,0,0,0,2,0,0,0,0,0,1,3,2,0,0,0,1,3,2,1,3,0,1,3,2,1,3,2,1]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[55] = objectLevel
+
+    objectLevel = {
+        name: 'level_57'
+    }
+    objectLevel.map = [3,3,0,0,0,3,3,3,3,1,1,1,3,3,0,1,2,2,2,1,0,0,1,2,3,2,1,0,0,1,2,2,2,1,0,3,3,1,1,1,3,3,3,3,0,0,0,3,3]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[56] = objectLevel
+
+    objectLevel = {
+        name: 'level_58'
+    }
+    objectLevel.map = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,2,2,1,1,0,0,0,1,1,3,3,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[57] = objectLevel
+
+    objectLevel = {
+        name: 'level_59'
+    }
+    objectLevel.map = [0,0,1,1,1,0,0,3,3,1,1,1,3,3,0,3,1,1,1,3,0,0,0,1,1,1,0,0,3,3,1,1,1,3,3,3,0,1,1,1,0,3,0,0,1,1,1,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[58] = objectLevel
+
+    objectLevel = {
+        name: 'level_60'
+    }
+    objectLevel.map = [2,3,0,0,0,3,2,3,2,3,0,3,2,3,0,3,2,3,2,3,0,0,0,3,2,3,0,0,0,3,2,3,2,3,0,3,2,3,0,3,2,3,2,3,0,0,0,3,2]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[59] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_61'
+    }
+    objectLevel.map = [0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,2,1,2,1,0,1,2,2,1,2,2,1,0,1,2,1,2,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[60] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_62'
+    }
+    objectLevel.map = [0,0,3,3,3,0,0,0,0,1,1,1,0,0,3,3,3,0,3,3,3,0,0,1,1,1,0,0,3,3,3,0,3,3,3,0,0,1,1,1,0,0,0,0,3,3,3,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[61] = objectLevel
+
+    objectLevel = {
+        name: 'level_63'
+    }
+    objectLevel.map = [0,0,0,3,0,0,0,0,0,3,2,3,0,0,0,3,3,3,3,3,0,3,2,3,3,2,3,3,3,3,3,3,3,3,3,0,0,0,1,0,0,0,0,0,0,1,0,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[62] = objectLevel
+
+    objectLevel = {
+        name: 'level_64'
+    }
+    objectLevel.map = [0,0,2,1,2,0,0,0,0,3,3,1,0,0,2,3,3,0,2,1,2,1,3,2,0,2,3,1,2,1,2,0,3,3,2,0,0,1,3,3,0,0,0,0,2,1,2,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[63] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_65'
+    }
+    objectLevel.map = [1,1,0,0,0,1,1,1,1,3,3,3,1,1,0,0,3,3,3,0,0,1,1,3,3,3,1,1,1,1,3,3,3,1,1,0,3,3,0,3,3,0,0,3,3,0,3,3,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[64] = objectLevel
+
+    objectLevel = {
+        name: 'level_66'
+    }
+    objectLevel.map = [0,0,0,1,0,0,0,0,0,1,2,1,0,0,0,1,2,2,2,1,0,1,2,3,2,3,2,1,0,1,2,2,2,1,0,0,0,1,2,1,0,0,0,0,0,1,0,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[65] = objectLevel
+
+    objectLevel = {
+        name: 'level_67'
+    }
+    objectLevel.map = [2,0,0,0,0,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,2,1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,2,3,2,2,2,0,2,2,2,2,2,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[66] = objectLevel
+
+    objectLevel = {
+        name: 'level_68'
+    }
+    objectLevel.map = [2,2,0,0,0,2,2,2,0,0,0,0,0,2,2,2,1,1,1,2,2,0,1,1,1,1,1,0,0,3,3,1,3,3,0,0,3,3,1,3,3,0,0,0,1,1,1,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[67] = objectLevel
+
+    objectLevel = {
+        name: 'level_69'
+    }
+    objectLevel.map = [2,2,2,2,2,2,2,2,3,1,3,1,3,2,2,1,3,1,3,1,2,2,3,1,3,1,3,2,2,1,3,1,3,1,2,2,3,1,3,1,3,2,2,2,2,2,2,2,2]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 45
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[68] = objectLevel
+
+    objectLevel = {
+        name: 'level_70'
+    }
+    objectLevel.map = [2,2,2,0,2,2,2,2,3,2,2,2,3,2,2,2,2,2,2,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,0,1,1,1,1,1,0]
+    objectLevel.width = 7
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[69] = objectLevel
+
+    objectLevel = {
+        name: 'level_71'
+    }
+    objectLevel.map = [3,3,0,0,0,3,3,3,3,0,0,0,3,3,2,2,2,2,2,2,2,2,3,3,2,3,3,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2]
+    objectLevel.width = 7
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[70] = objectLevel
+
+    objectLevel = {
+        name: 'level_72'
+    }
+    objectLevel.map = [0,0,2,2,2,0,0,0,2,3,3,3,2,0,2,3,2,2,2,3,2,2,3,2,3,2,3,2,2,3,2,2,2,3,2,0,2,3,3,3,2,0,0,0,2,2,2,0,0]
+    objectLevel.width = 7
+    objectLevel.height = 7
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[71] = objectLevel
+
+    objectLevel = {
+        name: 'level_73'
+    }
+    objectLevel.map = [0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,2,3,2,1,2,0,2,1,2,0,0,1,2,1,0,0,0,1,0,0,0,0,2,0,0]
+    objectLevel.width = 5
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[72] = objectLevel
+
+    objectLevel = {
+        name: 'level_74'
+    }
+    objectLevel.map = [3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0]
+    objectLevel.width = 5
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[73] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_75'
+    }
+    objectLevel.map = [0,0,3,3,3,3,0,0,0,0,3,1,1,3,0,0,3,3,3,3,3,3,3,3,3,2,2,3,2,2,3,3,0,2,2,0,2,2,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 5
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[74] = objectLevel
+
+    objectLevel = {
+        name: 'level_76'
+    }
+    objectLevel.map = [0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,0,0,0,2,2,2,2,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[75] = objectLevel
+
+    objectLevel = {
+        name: 'level_77'
+    }
+    objectLevel.map = [2,2,0,0,0,0,2,2,2,2,3,0,0,3,2,2,0,0,3,1,1,3,0,0,0,0,3,1,1,3,0,0,2,2,3,0,0,3,2,2,2,2,0,0,0,0,2,2]
+    objectLevel.width = 8
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 25
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[76] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_78'
+    }
+    objectLevel.map = [2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2,2,2,3,3,3,3,2,2,2,2,3,3,3,3,2,2,2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2]
+    objectLevel.width = 8
+    objectLevel.height = 6
+    objectLevel.mapArray = []
+    objectLevel.step = 45
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[77] = objectLevel
+
+    objectLevel = {
+        name: 'level_79'
+    }
+    objectLevel.map = [3,3,0,0,0,0,1,1,3,3,3,2,2,1,1,1,0,3,0,2,2,0,1,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,0,0,1,0,2,2,0,3,0,1,1,1,2,2,3,3,3,1,1,0,0,0,0,3,3]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[78] = objectLevel
+
+    objectLevel = {
+        name: 'level_80'
+    }
+    objectLevel.map = [1,3,0,0,0,0,3,1,3,3,3,0,0,3,3,3,0,3,3,3,3,3,3,0,0,0,3,2,2,3,0,0,0,0,3,2,2,3,0,0,0,3,3,3,3,3,3,0,3,3,3,0,0,3,3,3,1,3,0,0,0,0,3,1]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[79] = objectLevel
+
+    objectLevel = {
+        name: 'level_81'
+    }
+    objectLevel.map = [2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 55
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[80] = objectLevel
+
+    objectLevel = {
+        name: 'level_82'
+    }
+    objectLevel.map = [0,0,0,1,1,0,0,0,0,0,1,3,3,1,0,0,0,1,3,2,2,3,1,0,1,3,2,1,1,2,3,1,1,3,2,1,1,2,3,1,0,1,3,2,2,3,1,0,0,0,1,3,3,1,0,0,0,0,0,1,1,0,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[81] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_83'
+    }
+    objectLevel.map = [3,3,3,0,0,3,3,3,3,3,3,1,1,3,3,3,3,3,3,1,1,3,3,3,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,3,3,3,1,1,3,3,3,3,3,3,1,1,3,3,3,3,3,3,0,0,3,3,3]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 50
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[82] = objectLevel
+
+    objectLevel = {
+        name: 'level_84'
+    }
+    objectLevel.map = [0,1,0,0,0,0,1,0,1,1,3,0,0,3,1,1,0,3,3,2,2,3,3,0,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,0,3,3,2,2,3,3,0,1,1,3,0,0,3,1,1,0,1,0,0,0,0,1,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[83] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_85'
+    }
+    objectLevel.map = [3,2,1,0,0,1,2,3,2,2,1,0,0,1,2,2,0,1,3,1,1,3,1,0,0,1,1,2,2,1,1,0,0,1,1,2,2,1,1,0,0,1,3,1,1,3,1,0,2,2,1,0,0,1,2,2,3,2,1,0,0,1,2,3]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 45
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[84] = objectLevel
+
+    objectLevel = {
+        name: 'level_86'
+    }
+    objectLevel.map = [0,1,0,0,0,0,1,0,1,3,2,0,0,2,3,1,0,2,2,2,2,2,2,0,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,0,2,2,2,2,2,2,0,1,3,2,0,0,2,3,1,0,1,0,0,0,0,1,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[85] = objectLevel
+
+
+    objectLevel = {
+        name: 'level_87'
+    }
+    objectLevel.map = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 50
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[86] = objectLevel
+
+    objectLevel = {
+        name: 'level_88'
+    }
+    objectLevel.map = [1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,3,3,2,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,1,1,0,0,0,0,0,0,1,1]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 20
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[87] = objectLevel
+
+    objectLevel = {
+        name: 'level_89'
+    }
+    objectLevel.map = [0,2,2,2,2,2,2,0,2,2,3,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,3,2,2,0,2,2,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[88] = objectLevel
+
+    objectLevel = {
+        name: 'level_90'
+    }
+    objectLevel.map = [0,0,0,3,3,0,0,0,0,0,3,3,3,3,0,0,0,3,1,3,3,1,3,0,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,0,3,1,3,3,1,3,0,0,0,3,3,3,3,0,0,0,0,0,3,3,0,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[89] = objectLevel
+
+    objectLevel = {
+        name: 'level_91'
+    }
+    objectLevel.map = [1,1,0,0,0,0,1,1,0,3,3,2,2,3,3,0,1,1,0,2,2,0,1,1,0,0,0,2,2,0,0,0,0,3,3,2,2,3,3,0,1,1,0,2,2,0,1,1,0,3,3,2,2,3,3,0,1,1,0,0,0,0,1,1]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[90] = objectLevel
+
+    objectLevel = {
+        name: 'level_92'
+    }
+    objectLevel.map = [0,0,0,2,3,0,0,0,0,0,2,3,2,2,0,0,0,2,3,2,2,2,3,0,0,3,2,2,2,3,2,0,3,2,2,2,3,2,2,2,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[91] = objectLevel
+
+    objectLevel = {
+        name: 'level_93'
+    }
+    objectLevel.map = [0,0,1,0,0,1,0,0,0,1,3,2,2,3,1,0,1,3,2,2,2,2,3,1,0,2,2,0,0,2,2,0,0,2,2,0,0,2,2,0,1,3,2,2,2,2,3,1,0,1,3,2,2,3,1,0,0,0,1,0,0,1,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 40
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[92] = objectLevel
+
+    objectLevel = {
+        name: 'level_94'
+    }
+    objectLevel.map = [0,0,3,3,3,3,0,0,0,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,0,0,0,3,3,3,3,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 50
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[93] = objectLevel
+
+    objectLevel = {
+        name: 'level_95'
+    }
+    objectLevel.map = [1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,3,3,3,3,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,3,3,3,3,0,0,1,1,1,1,1,1,1,1]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 50
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[94] = objectLevel
+
+    objectLevel = {
+        name: 'level_96'
+    }
+    objectLevel.map = [0,0,1,1,1,1,0,0,0,1,3,3,3,3,1,0,1,3,2,2,2,2,3,1,1,3,2,1,1,2,3,1,1,3,2,1,1,2,3,1,1,3,2,2,2,2,3,1,0,1,3,3,3,3,1,0,0,0,1,1,1,1,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 50
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[95] = objectLevel
+
+    objectLevel = {
+        name: 'level_97'
+    }
+    objectLevel.map = [1,1,1,0,0,3,3,3,1,1,1,0,0,3,3,3,1,1,1,2,2,3,3,3,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,3,3,3,2,2,1,1,1,3,3,3,0,0,1,1,1,3,3,3,0,0,1,1,1]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 45
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[96] = objectLevel
+
+    objectLevel = {
+        name: 'level_98'
+    }
+    objectLevel.map = [0,2,2,0,0,2,2,0,2,3,3,2,2,3,3,2,2,3,3,2,2,3,3,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2,2,2,2,3,3,2,2,3,3,2,2,3,3,2,2,3,3,2,0,2,2,0,0,2,2,0]
+    objectLevel.width = 8
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 55
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 3
+    objectLevel.taskStepStar2 = 5
+    objectLevel.taskStepStar3 = 10
+
+    listObjectRelaxLevels[97] = objectLevel
+
+    objectLevel = {
+        name: 'level_99'
+    }
+    objectLevel.map = [0,0,3,0,3,0,0,0,3,3,3,3,3,0,3,2,2,3,2,2,3,3,2,1,3,1,2,3,0,3,3,3,3,3,0,0,0,3,0,3,0,0,0,0,3,0,3,0,0,0,3,3,0,3,3,0]
+    objectLevel.width = 7
+    objectLevel.height = 8
+    objectLevel.mapArray = []
+    objectLevel.step = 30
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[98] = objectLevel
+
+    objectLevel = {
+        name: 'level_100'
+    }
+    objectLevel.map = [0,3,3,3,3,0,0,0,3,3,1,3,3,3,3,3,0,0,2,2,3,3,3,3,0,0,0,2,2,3,3,0,0,0,0,0,2,3,3,0,0,0,0,0,2,3,3,0,0,0,0,0,3,3,0,0,0,0,3,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,0,0,0]
+    objectLevel.width = 8
+    objectLevel.height = 10
+    objectLevel.mapArray = []
+    objectLevel.step = 35
+    objectLevel.countQuickTip = 10
+    objectLevel.stepCurrent = 0
+    objectLevel.taskStepStar1 = 2
+    objectLevel.taskStepStar2 = 3
+    objectLevel.taskStepStar3 = 5
+
+    listObjectRelaxLevels[99] = objectLevel
+
+
+
 }
 
 function initObjectLevels() {
@@ -6106,10 +7735,15 @@ function createBranchForMap(objectMap) {
     var yPos = 0
     var failBranch = 0
 
+    listColor = [];
     for (var i = 0; i < heightGame; i++) {
         listMap[i] = []
+        listColor[i] = []
         for (var j = 0; j < widthGame; j++) {
-            listMap[i][j] = objectMap.map[pos]
+            if(objectMap.map[pos] > 0) {listMap[i][j] = 1;} else{
+                listMap[i][j] = objectMap.map[pos]
+            }
+            listColor[i][j] = objectMap.map[pos];
             pos++
         }
     }

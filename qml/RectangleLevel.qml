@@ -8,6 +8,7 @@ Rectangle {
     property int ratingLevel: 0
     property bool isAvailable: false
     property string sourceImgLantern: ""
+    property bool isRelax: false
 
     function changeImgRatingLevel() {
         if (ratingLevel === 0) {
@@ -79,19 +80,36 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
 
-        onClicked: {
+        onClicked: {            
             if (isAvailable) {
-                var component = Qt.createComponent("CampaignPage.qml")
+                var component;
+                if (!isRelax){
+                    var component = Qt.createComponent("CampaignPage.qml")
 
-                if (component.status === Component.Ready) {
-                    mainStackView.push(component, {
-                                           currentLevel: currentLevel,
-                                           currentLocation: currentLocation,
-                                           currentCampaign: currentCampaign
-                                       })
+                    if (component.status === Component.Ready) {
+                        mainStackView.push(component, {
+                                               currentLevel: currentLevel,
+                                               currentLocation: currentLocation,
+                                               currentCampaign: currentCampaign
+                                           })
+                    } else {
+                        console.log(component.errorString())
+                    }
                 } else {
-                    console.log(component.errorString())
-                }
+                        //relax page
+                            console.log("relax");
+                        component = Qt.createComponent("RelaxGamePage.qml")
+
+                        if (component.status === Component.Ready) {
+                            mainStackView.push(component, {
+                                                   currentLevel: currentLevel,
+                                                   currentLocation: currentLocation,
+                                                   currentCampaign: currentCampaign
+                                               })
+                        } else {
+                            console.log(component.errorString())
+                        }
+               }
             }
         }
     }

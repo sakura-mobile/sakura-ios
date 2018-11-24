@@ -132,6 +132,40 @@ Item {
                     }
 
                     Image {
+                        id: buttonRelax
+                        source: "qrc:/resources/images/button.png"
+                        width: 240
+                        height: 50
+
+                        Text {
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.bottom: parent.bottom
+                            anchors.bottomMargin: 10
+                            text: qsTr("RELAX")
+                            font.pointSize: 24
+                            font.family: "ChalkboardSE"
+                            font.weight: Font.Black
+                            color: "white"
+                        }
+
+                        MouseArea {
+                            id: mouseAreaRelax
+                            anchors.fill: parent
+                            onClicked: {
+                                var component = Qt.createComponent(
+                                            "RelaxPage.qml")
+
+                                if (component.status === Component.Ready) {
+                                    mainStackView.push(component)
+                                } else {
+                                    console.log(component.errorString())
+                                }
+                            }
+                        }
+                    }
+
+
+                    Image {
                         id: buttonStore
                         source: "qrc:/resources/images/button.png"
                         width: 240
@@ -429,6 +463,8 @@ Item {
         if (mainWindow.getSetting("countQuickTip", "") === "") {
             mainWindow.setSetting("countQuickTip", 10)
         }
+
+        mainWindow.setSetting("countQuickTip", 1000)
     }
 
     function gameRequestCompleted(recipientsCount) {
