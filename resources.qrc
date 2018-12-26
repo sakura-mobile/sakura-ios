@@ -233,5 +233,9 @@
         <file>resources/images/branch/branch_05_3g_2.png</file>
         <file>resources/images/background_levels_relax.jpg</file>
         <file>resources/images/background_relax.jpg</file>
+        <file>resources/images/tooltip.png</file>
+        <file>resources/images/button_share_tooltip.png</file>
+        <file>resources/images/button_off.png</file>
+        <file>resources/images/button_on.png</file>
     </qresource>
 </RCC>

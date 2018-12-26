@@ -464,59 +464,12 @@ Item {
                 width: parent.width
                 height: parent.height
                 Row {
-                    id: rowButtonImage
-                    anchors.top: parent.top
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin: 20
-                    z: 15
-                    spacing: 5
-
-                    Image {
-                        id: firstStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                    Image {
-                        id: secondStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                    Image {
-                        id: thirdStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                }
-
-                Text {
-                    id: textFailedGame
-                    anchors.top: parent.top
-                    anchors.bottom: rowRectCompletedGame.top
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-                    anchors.margins: 16
-                    z: 15
-                    visible: false
-                    text: qsTr("Game over. Do you want to play again?")
-                    font.pointSize: 20
-                    font.bold: true
-                    color: "white"
-                    font.family: "Helvetica"
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    wrapMode: Text.Wrap
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 6
-                }
-
-                Row {
                     id: rowRectCompletedGame
-                    anchors.bottom: parent.bottom
+                    //anchors.bottom: parent.bottom
+                    anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottomMargin: 30
+                    //anchors.bottomMargin: 30
+                    anchors.topMargin: 20
                     z: 15
                     height: 50
                     spacing: 15
@@ -576,10 +529,39 @@ Item {
                                                                isMaxPetals: 0
                                                            })
                                     }
+                                    mainWindow.setSetting("ShareTooltip", 1);
                                 } else {
                                     console.log(component.errorString())
                                 }
                                 mainWindow.showInterstitial()
+                            }
+                        }
+
+                        Image {
+                            id: imageShareTooltip
+                            anchors.bottom: imageShare.top
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            width: 200
+                            height: 70
+                            visible: false
+                            source: "qrc:/resources/images/tooltip.png"
+
+                            Text {
+                                id: textTooltipShare
+                                anchors.margins: 3
+                                anchors.centerIn: parent
+                                z: 15
+                                visible: true
+                                text: qsTr("Make a card!!!")
+                                font.pointSize: 18
+                                font.bold: true
+                                color: "black"
+                                font.family: "Helvetica"
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                                wrapMode: Text.Wrap
+                                fontSizeMode: Text.Fit
+                                minimumPointSize: 6
                             }
                         }
                     }
@@ -598,28 +580,48 @@ Item {
                                     animationRectNotAvailableLevelsDown.running = true
                                     return
                                 }
-
-                                if (currentLocation !== nextLocation) {
-                                    var map_page = mainStackView.get(1)
-
-                                    map_page.currentCampaign = nextCampaign
-                                    map_page.currentLocation = nextLocation
-
-                                    mainStackView.pop(map_page)
-
-                                    return
-                                }
                                 currentLevel = nextLevel
-                                currentLocation = nextLocation
-                                currentCampaign = nextCampaign
-
                                 animationRectCompletedGameDown.running = true
+                                imageShareTooltip.visible = false;
+                                timerTooltipShare.stop()
+                                imageShare.source = "qrc:/resources/images/button_share.png";
                                 loadBranchOnMap()
                                 mixMap()
                                 updateDataLevel()
                                 updateBoostUser()
                             }
                         }
+                    }
+                }
+
+
+                Row {
+                    id: rowButtonImage
+                    ///anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    //anchors.topMargin: 20
+                    anchors.bottomMargin: 30
+                    z: 15
+                    spacing: 5
+
+                    Image {
+                        id: firstStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: secondStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: thirdStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
                     }
                 }
             }
@@ -635,12 +637,15 @@ Item {
                 to: imageBackgroundMainMap.height - rectCompletedGame.height - Math.max(
                         relaxGamePage.bannerViewHeight + 8, 20)
                 onStopped: {
-                    if (!textFailedGame.visible) {
+
+                    if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 0){
+                         imageShareTooltip.visible = true;
+                         timerTooltipShare.start();
+                    }
                         if (Math.random() < 0.10
                                 && ReachabilityHelper.internetConnected) {
                             StoreHelper.requestReview()
                         }
-                    }
                 }
             }
 
@@ -653,9 +658,11 @@ Item {
                 easing.type: Easing.InQuad
                 to: imageBackgroundMainMap.height
                 onStopped: {
-                    textFailedGame.visible = false
                     imageShare.visible = true
                     rowButtonImage.visible = true
+                    imageShareTooltip.visible = false;
+                    timerTooltipShare.stop()
+                    imageShare.source = "qrc:/resources/images/button_share.png";
                 }
             }
         }
@@ -748,10 +755,16 @@ Item {
             textStepGameLantern.text = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
             imageLanternStep.visible = true
             animationStepDown.running = true
-            textFailedGame.visible = false
             imageShare.visible = true
             rowButtonImage.visible = true
         }
+
+            if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1){
+                 imageShareTooltip.visible = false;
+                 timerTooltipShare.stop();
+                imageShare.source = "qrc:/resources/images/button_share.png";
+            }
+
     }
 
     Audio {
@@ -764,6 +777,9 @@ Item {
                                        && relaxGamePage.StackView.status === StackView.Active
 
         onPlaybackEnabledChanged: {
+
+            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0) return;
+
             if (playbackEnabled) {
                 play()
             } else {
@@ -788,6 +804,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -806,6 +823,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -824,6 +842,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -852,6 +871,21 @@ Item {
             mixMap()
         }
     }
+
+    Timer {
+        id: timerTooltipShare
+        interval: 500
+        repeat: true
+        onTriggered: relaxGamePage.timerTooltipShare()
+    }
+
+    function timerTooltipShare() {
+        if (imageShare.source == "qrc:/resources/images/button_share.png"){
+            imageShare.source = "qrc:/resources/images/button_share_tooltip.png";
+        } else {
+            imageShare.source = "qrc:/resources/images/button_share.png";
+        }
+  }
 
     function resetParticleSystems() {
         particleSystem1.running = true
@@ -955,26 +989,14 @@ Item {
 
     function repeatGame() {
         animationRectCompletedGameDown.running = true
+        imageShareTooltip.visible = false;
+        timerTooltipShare.stop()
+        imageShare.source = "qrc:/resources/images/button_share.png";
         loadBranchOnMap()
         mixMap()
         updateBoostUser()
         animationStepDown.running = false
         animationStepUp.running = true
-    }
-
-    function visibleFailedGameWindow() {
-        audioGameOver.playAudio()
-
-        nextLocation = currentLocation
-        nextCampaign = currentCampaign
-        nextLevel = currentLevel
-
-        textFailedGame.visible = true
-        imageShare.visible = false
-        rowButtonImage.visible = false
-        GenerationBranchScript.isCompleted = 1
-
-        animationRectCompletedGameUp.running = true
     }
 
     function stopRotationBranchGame(ii, jj) {
@@ -990,12 +1012,7 @@ Item {
             startAnimationBranch()
             audioGoodGame.playAudio()
             return
-        }
-        if (GenerationBranchScript.listObjectRelaxLevels[currentLevel].typeStep === 1
-                && GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent <= 0) {
-            visibleFailedGameWindow()
-            return
-        }
+        }      
     }
 
     function rotationBranch(i, j) {
@@ -1068,10 +1085,6 @@ Item {
         } else {
             ratingGame = 1
         }
-
-        console.log("ratingGame ::" + ratingGame)
-
-    //    return;
 
         if (ratingGame === 3) {
             relaxGamePage.countPetals = relaxGamePage.countPetalsMax
@@ -1319,7 +1332,6 @@ Item {
                     object.posJ = j
                     object.stopRotation = 0
                     object.typeColor = GenerationBranchScript.listColor[i][j]
-                  //  console.log(object.typeColor);
                     object.onStopRotationTime.connect(stopRotationBranch)
                     object.onStopRotationTimeGame.connect(
                                 stopRotationBranchGame)

@@ -712,7 +712,7 @@ Item {
                 source: "qrc:/resources/images/background_rect_score.png"
                 width: parent.width
                 height: parent.height
-                Row {
+ /*               Row {
                     id: rowButtonImage
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -739,6 +739,7 @@ Item {
                         source: "qrc:/resources/images/star_disable.png"
                     }
                 }
+                */
 
                 Text {
                     id: textFailedGame
@@ -763,9 +764,12 @@ Item {
 
                 Row {
                     id: rowRectCompletedGame
-                    anchors.bottom: parent.bottom
+//                    anchors.bottom: parent.bottom
+//                    anchors.horizontalCenter: parent.horizontalCenter
+//                    anchors.bottomMargin: 30
+                    anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottomMargin: 30
+                    anchors.topMargin: 20
                     z: 15
                     height: 50
                     spacing: 15
@@ -829,10 +833,39 @@ Item {
                                                                isMaxPetals: 0
                                                            })
                                     }
+
+                                    mainWindow.setSetting("ShareTooltip", 1);
                                 } else {
                                     console.log(component.errorString())
                                 }
                                 mainWindow.showInterstitial()
+                            }
+                        }
+                        Image {
+                            id: imageShareTooltip
+                            anchors.bottom: imageShare.top
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            width: 200
+                            height: 70
+                            visible: false
+                            source: "qrc:/resources/images/tooltip.png"
+
+                            Text {
+                                id: textTooltipShare
+                                anchors.margins: 3
+                                anchors.centerIn: parent
+                                z: 15
+                                visible: true
+                                text: qsTr("Make a card!!!")
+                                font.pointSize: 18
+                                font.bold: true
+                                color: "black"
+                                font.family: "Helvetica"
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
+                                wrapMode: Text.Wrap
+                                fontSizeMode: Text.Fit
+                                minimumPointSize: 6
                             }
                         }
                     }
@@ -866,6 +899,10 @@ Item {
                                 currentLocation = nextLocation
                                 currentCampaign = nextCampaign
 
+                                imageShareTooltip.visible = false;
+                                timerTooltipShare.stop()
+                                imageShare.source = "qrc:/resources/images/button_share.png";
+
                                 animationRectCompletedGameDown.running = true
                                 loadBranchOnMap()
                                 mixMap()
@@ -873,6 +910,38 @@ Item {
                                 updateBoostUser()
                             }
                         }
+                    }
+                }
+
+                Row {
+                    id: rowButtonImage
+/*                    anchors.top: parent.top
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.topMargin: 20
+*/
+                    anchors.bottom: parent.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.bottomMargin: 30
+                    z: 15
+                    spacing: 5
+
+                    Image {
+                        id: firstStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: secondStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: thirdStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
                     }
                 }
             }
@@ -892,6 +961,11 @@ Item {
                         if (Math.random() < 0.10
                                 && ReachabilityHelper.internetConnected) {
                             StoreHelper.requestReview()
+                        }
+
+                        if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 0){
+                             imageShareTooltip.visible = true;
+                             timerTooltipShare.start();
                         }
                     }
                 }
@@ -1029,6 +1103,12 @@ Item {
             imageShare.visible = true
             rowButtonImage.visible = true
         }
+
+            if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1){
+                 imageShareTooltip.visible = false;
+                 timerTooltipShare.stop();
+                imageShare.source = "qrc:/resources/images/button_share.png";
+            }
     }
 
     Timer {
@@ -1045,6 +1125,14 @@ Item {
         onTriggered: campaignPage.timerBlockTime()
     }
 
+
+    Timer {
+        id: timerTooltipShare
+        interval: 500
+        repeat: true
+        onTriggered: campaignPage.timerTooltipShare()
+    }
+
     Audio {
         volume: 0.5
         source: "qrc:/resources/sound/game_music.mp3"
@@ -1055,6 +1143,8 @@ Item {
                                        && campaignPage.StackView.status === StackView.Active
 
         onPlaybackEnabledChanged: {
+            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0) return;
+
             if (playbackEnabled) {
                 play()
             } else {
@@ -1079,6 +1169,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -1097,6 +1188,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -1115,6 +1207,7 @@ Item {
         }
 
         function playAudio() {
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
             if (playbackEnabled) {
                 play()
             }
@@ -1150,6 +1243,14 @@ Item {
         particleSystem1.reset()
         particleSystem2.reset()
     }
+
+    function timerTooltipShare() {
+        if (imageShare.source == "qrc:/resources/images/button_share.png"){
+            imageShare.source = "qrc:/resources/images/button_share_tooltip.png";
+        } else {
+            imageShare.source = "qrc:/resources/images/button_share.png";
+        }
+  }
 
     function updateDataLevel() {
         if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].typeStep === 1) {
@@ -1361,8 +1462,11 @@ Item {
         }
     }
 
-    function repeatGame() {
+    function repeatGame() {             
         animationRectCompletedGameDown.running = true
+        imageShareTooltip.visible = false;
+        timerTooltipShare.stop()
+        imageShare.source = "qrc:/resources/images/button_share.png";
         loadBranchOnMap()
         mixMap()
         updateBoostUser()

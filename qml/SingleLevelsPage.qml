@@ -12,7 +12,7 @@ Item {
         id: imageBackgroundMainLevel
         source: "qrc:/resources/images/background_main.png"
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectCrop       
 
         Rectangle {
             id: rectLevels
@@ -184,13 +184,24 @@ Item {
 
                 Column {
                     anchors.centerIn: parent
-                    spacing: 15
+                    spacing: 3
+
+                    Text {
+                        id: textRewardUser
+                        anchors.topMargin: 15
+                        text: qsTr("Your reward:")
+                        font.pointSize: 25
+                        font.bold: true
+                        color: "white"
+                        font.family: "Helvetica"
+                    }
 
                     Row {
                         id: rowQuickTip
                         z: 15
                         spacing: 15
                         visible: false
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageQuickTip
@@ -221,6 +232,7 @@ Item {
                         z: 15
                         spacing: 15
                         visible: false
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageStepIce
@@ -251,6 +263,7 @@ Item {
                         z: 15
                         spacing: 15
                         visible: false
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageTimeIce
@@ -367,6 +380,14 @@ Item {
                         maximumLength: 10
                         inputMethodHints: Qt.ImhNoPredictiveText
                         font.family: "Helvetica"
+
+                        MouseArea {
+                            id: mouseAreaTextInputName
+                            anchors.fill: parent
+                            onClicked: {
+                                if (textInputName.text == "NONAME") textInputName.text = "";
+                            }
+                        }
                     }
                 }
                 Image {
@@ -419,6 +440,77 @@ Item {
             visible: false
         }
 
+        Rectangle {
+            id: rectTournamentHint
+            anchors.fill: parent
+            visible: false
+            color: "transparent"
+            Rectangle {
+                color: "black"
+                opacity: 0.6
+                anchors.fill: parent
+            }
+
+            Rectangle {
+                id: rectHint
+                anchors.centerIn: parent
+                color: "black"
+                radius: 20
+                width: 250
+                height: 200
+                border.color: "#C5007F"
+                border.width: 10
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.0
+                        color: "#C5007F"
+                    }
+                    GradientStop {
+                        position: 1.0
+                        color: "purple"
+                    }
+                }
+
+                TextArea {
+                    id: textAreaCard
+                    width: parent.width
+                    height: parent.height
+                    focus: false
+                    font.pointSize: 20
+                    font.bold: true
+                    color: "white"
+                    font.family: "Helvetica"
+                    readOnly: true
+                    text: qsTr("Play every day in the tournament and get rewards!")
+                    wrapMode: TextEdit.Wrap
+                    verticalAlignment: TextEdit.AlignVCenter
+                    horizontalAlignment: TextEdit.AlignHCenter
+
+                }
+                Image {
+                    anchors.bottom: rectHint.bottom
+                    anchors.bottomMargin: 10
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    id: imageHintOk
+                    width: 50
+                    height: 50
+                    source: "qrc:/resources/images/button_ok.png"
+
+                    MouseArea {
+                        id: mouseAreaImageHintOk
+                        anchors.fill: parent
+                        onClicked: {
+                            mainWindow.setSetting("TournamentHint", 1);
+                            rectTournamentHint.visible = false;
+                            rectNameUser.visible = true
+                            animationRectNameUserUp.running = true
+                            textInputName.focus = true
+                        }
+                    }
+                }
+            }
+        }
+
         Component.onCompleted: {
             loadBranchOnMap()
             sendRequestGetYesterday()
@@ -426,13 +518,9 @@ Item {
     }
 
     StackView.onStatusChanged: {
+        if (Number(mainWindow.getSetting("TournamentHint", 0))  === 0) rectTournamentHint.visible = true;
         if (StackView.status === StackView.Active) {
             var nameUser = mainWindow.getSetting("nameUser", "NONAME")
-            if (nameUser === "NONAME") {
-                rectNameUser.visible = true
-                animationRectNameUserUp.running = true
-                textInputName.focus = true
-            }
         }
     }
 

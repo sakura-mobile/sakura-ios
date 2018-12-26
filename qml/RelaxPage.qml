@@ -77,25 +77,6 @@ Item {
             }
         }
     }
-/*
-    Image {
-        id: backButton
-        source: "qrc:/resources/images/back.png"
-        width: 50
-        height: 50
-        anchors.left: parent.left
-        anchors.bottom: parent.bottom
-        anchors.leftMargin: 15
-        anchors.bottomMargin: 16
-        MouseArea {
-            id: mouseAreaBackButton
-            anchors.fill: parent
-            onClicked: {
-                mainStackView.pop()
-            }
-        }
-    }
-    */
     StackView.onStatusChanged: {
         if (StackView.status === StackView.Activating) {
             updateLevelsMapPage()
@@ -114,12 +95,7 @@ Item {
             arrRatingLevelsRelax = JSON.parse(ratingLevelsUserRelax)
         }
 
-       // Math.abs(maxLevelRelax/19) * 19
-       // Math.abs(maxLevelRelax/19) * 19 + 20
-       // var maxLevelRelax2= 0;
-
         currentPageRelax = Math.floor(maxLevelRelax/20);
-        console.log("currentPageRelax::" + currentPageRelax)
 
         if(currentPageRelax === 0) {
             leftButton.source = "qrc:/resources/images/button_triple_left_disabled.png";
@@ -134,10 +110,8 @@ Item {
 
         }
         for (var i = currentPageRelax * 20; i < currentPageRelax * 20 + 20; i++) {
-            console.log("i ::" + i);
 
             if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined") || (GenerationBranchScript.listObjectRelaxLevels[i] === null )) {
-                console.log('NULL');
                 break;
             }
 
@@ -217,10 +191,8 @@ Item {
 
         }
         for (var i = currentPageRelax * 20; i < currentPageRelax * 20 + 20; i++) {
-            console.log("i ::" + i);
 
             if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined") || (GenerationBranchScript.listObjectRelaxLevels[i] === null )) {
-                console.log('NULL');
                 break;
             }
 

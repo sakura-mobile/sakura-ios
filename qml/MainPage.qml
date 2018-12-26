@@ -190,6 +190,39 @@ Item {
                             }
                         }
                     }
+
+                    Image {
+                        id: buttonSettings
+                        source: "qrc:/resources/images/button.png"
+                        width: 240
+                        height: 50
+
+                        Text {
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.bottom: parent.bottom
+                            anchors.bottomMargin: 10
+                            text: qsTr("SETTINGS")
+                            font.pointSize: 24
+                            font.family: "ChalkboardSE"
+                            font.weight: Font.Black
+                            color: "white"
+                        }
+
+                        MouseArea {
+                            id: mouseAreaSettings
+                            anchors.fill: parent
+                            onClicked: {
+                                var component = Qt.createComponent(
+                                            "SettingsPage.qml")
+
+                                if (component.status === Component.Ready) {
+                                    mainStackView.push(component)
+                                } else {
+                                    console.log(component.errorString())
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -465,6 +498,10 @@ Item {
         }
 
         mainWindow.setSetting("countQuickTip", 1000)
+
+        mainWindow.setSetting("ShareTooltip", 0)
+
+        mainWindow.setSetting("TournamentHint", 0)
     }
 
     function gameRequestCompleted(recipientsCount) {
