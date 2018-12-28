@@ -498,12 +498,6 @@ Item {
         if (mainWindow.getSetting("countQuickTip", "") === "") {
             mainWindow.setSetting("countQuickTip", 10)
         }
-
-        mainWindow.setSetting("countQuickTip", 1000)
-
-        mainWindow.setSetting("ShareTooltip", 0)
-
-        mainWindow.setSetting("TournamentHint", 0)
     }
 
     function gameRequestCompleted(recipientsCount) {
