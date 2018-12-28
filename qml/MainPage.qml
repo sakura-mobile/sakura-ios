@@ -231,6 +231,8 @@ Item {
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 50
                 anchors.horizontalCenter: parent.horizontalCenter
+                height: 54
+                width: 70
                 source: showGift ? "qrc:/resources/images/fb_invite_gift.png" : "qrc:/resources/images/fb_invite.png"
 
                 property bool showGift: false
