@@ -481,7 +481,7 @@ Item {
                     color: "white"
                     font.family: "Helvetica"
                     readOnly: true
-                    text: qsTr("Play every day in the tournament and get rewards!")
+                    text: qsTr("Participate in daily tournaments and get rewards!")
                     wrapMode: TextEdit.Wrap
                     verticalAlignment: TextEdit.AlignVCenter
                     horizontalAlignment: TextEdit.AlignHCenter

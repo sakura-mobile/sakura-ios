@@ -852,11 +852,11 @@ Item {
 
                             Text {
                                 id: textTooltipShare
+                                anchors.fill: parent
                                 anchors.margins: 3
-                                anchors.centerIn: parent
                                 z: 15
                                 visible: true
-                                text: qsTr("Make a card!!!")
+                                text: qsTr("Create postcard and share with friends")
                                 font.pointSize: 18
                                 font.bold: true
                                 color: "black"

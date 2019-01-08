@@ -48,7 +48,7 @@ Item {
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 20
-                        text: qsTr("MUSIC ")
+                        text: qsTr("MUSIC")
                         font.pointSize: 20
                         font.family: "Helvetica"
                         font.bold: true
@@ -92,7 +92,7 @@ Item {
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 20
-                        text: qsTr("SOUNDS ")
+                        text: qsTr("SOUNDS")
                         font.pointSize: 20
                         font.family: "Helvetica"
                         font.bold: true
@@ -121,44 +121,6 @@ Item {
                                imageCheckSounds.source = "qrc:/resources/images/button_on.png"
                                 mainWindow.setSetting("SettingsSounds", 1)
                             }
-                        }
-                    }
-                }
-
-                Image {
-                    id: settings3
-                    source: "qrc:/resources/images/rectangle-hi.png"
-
-                    width: 300
-                    height: 75
-
-                    Text {
-                        anchors.left: parent.left
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.leftMargin: 20
-                        text: qsTr("AAAAAA ")
-                        font.pointSize: 20
-                        font.family: "Helvetica"
-                        font.bold: true
-                        color: "white"
-                    }
-
-                    Image {
-                        id : imageCheck3
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.right: parent.right
-                        anchors.rightMargin: 40
-                        width: 30
-                        height: 30
-                    }
-
-                    MouseArea {
-                        id: mouseAreaSettings3
-                        anchors.fill: parent
-                        z: 1
-
-                        onClicked: {
-
                         }
                     }
                 }
