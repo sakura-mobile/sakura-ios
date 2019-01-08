@@ -14,17 +14,17 @@
         <translation>時間：</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="753"/>
+        <location filename="../qml/CampaignPage.qml" line="754"/>
         <source>Game over. Do you want to play again?</source>
         <translation>ゲームオーバー。もう一度プレーしたいですか？</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="859"/>
+        <location filename="../qml/CampaignPage.qml" line="860"/>
         <source>Create postcard and share with friends</source>
         <translation>はがきを作成して友達と共有する</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="1010"/>
+        <location filename="../qml/CampaignPage.qml" line="1013"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
     </message>
@@ -42,37 +42,37 @@
         <translation>キャンペーン</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="111"/>
+        <location filename="../qml/MainPage.qml" line="107"/>
         <source>TOURNAMENT</source>
         <translation>トーナメント</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="144"/>
+        <location filename="../qml/MainPage.qml" line="140"/>
         <source>RELAX</source>
         <translation>リラックス</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="173"/>
         <source>STORE</source>
         <translation>ストア</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="204"/>
+        <location filename="../qml/MainPage.qml" line="199"/>
         <source>SETTINGS</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Sakura Puzzle</source>
         <translation>さくらパズル</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
         <translation>パズルを解いて咲く花の幻想的な写真を楽しんでください！</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="285"/>
+        <location filename="../qml/MainPage.qml" line="280"/>
         <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
         <translation>ありがとうございました！ 明日、Facebookの招待状のための新しい贈り物が利用可能になります。</translation>
     </message>
@@ -103,12 +103,12 @@
         <translation>ステップ：</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="555"/>
+        <location filename="../qml/RelaxGamePage.qml" line="549"/>
         <source>Create postcard and share with friends</source>
         <translation>はがきを作成して友達と共有する</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="690"/>
+        <location filename="../qml/RelaxGamePage.qml" line="684"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
     </message>
@@ -116,7 +116,7 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="51"/>
+        <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>MUSIC</source>
         <translation>ゲームミュージック</translation>
     </message>
@@ -163,7 +163,7 @@
         <translation>あなたのニックネーム：</translation>
     </message>
     <message>
-        <location filename="../qml/SingleLevelsPage.qml" line="484"/>
+        <location filename="../qml/SingleLevelsPage.qml" line="485"/>
         <source>Participate in daily tournaments and get rewards!</source>
         <translation>毎日のトーナメントに参加して報酬を得ましょう！</translation>
     </message>
@@ -177,17 +177,17 @@
         <translation>購入する</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="900"/>
+        <location filename="../qml/StorePage.qml" line="886"/>
         <source>Remove Ads</source>
         <translation>広告を除去する</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="949"/>
+        <location filename="../qml/StorePage.qml" line="936"/>
         <source>Restore purchases</source>
         <translation>購入を復旧する</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="966"/>
+        <location filename="../qml/StorePage.qml" line="953"/>
         <source>OK</source>
         <translation>オッケー</translation>
     </message>

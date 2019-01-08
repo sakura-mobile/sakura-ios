@@ -14,17 +14,17 @@
         <translation>시각:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="753"/>
+        <location filename="../qml/CampaignPage.qml" line="754"/>
         <source>Game over. Do you want to play again?</source>
         <translation>게임 끝. 다시 놀고 싶니?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="859"/>
+        <location filename="../qml/CampaignPage.qml" line="860"/>
         <source>Create postcard and share with friends</source>
         <translation>엽서 만들기 및 친구와 공유</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="1010"/>
+        <location filename="../qml/CampaignPage.qml" line="1013"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>축하합니다. 사용 가능한 모든 레벨을 완료하셨습니다! 새로운 차원, 도전 과제 등으로 업데이트를 계속 지켜보십시오.</translation>
     </message>
@@ -42,37 +42,37 @@
         <translation>캠페인</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="111"/>
+        <location filename="../qml/MainPage.qml" line="107"/>
         <source>TOURNAMENT</source>
         <translation>토너먼트</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="144"/>
+        <location filename="../qml/MainPage.qml" line="140"/>
         <source>RELAX</source>
         <translation>편하게 하다</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="173"/>
         <source>STORE</source>
         <translation>가게</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="204"/>
+        <location filename="../qml/MainPage.qml" line="199"/>
         <source>SETTINGS</source>
         <translation>구성</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Sakura Puzzle</source>
         <translation>사쿠라 퍼즐</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
         <translation>퍼즐을 풀고 피는 꽃의 환상적인 그림을 즐기도록 도와주세요!</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="285"/>
+        <location filename="../qml/MainPage.qml" line="280"/>
         <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
         <translation>고맙습니다! 내일 Facebook 초대장을위한 새로운 선물을 사용할 수 있습니다.</translation>
     </message>
@@ -103,12 +103,12 @@
         <translation>단계:</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="555"/>
+        <location filename="../qml/RelaxGamePage.qml" line="549"/>
         <source>Create postcard and share with friends</source>
         <translation>엽서 만들기 및 친구와 공유</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="690"/>
+        <location filename="../qml/RelaxGamePage.qml" line="684"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>축하합니다. 사용 가능한 모든 레벨을 완료하셨습니다! 새로운 차원, 도전 과제 등으로 업데이트를 계속 지켜보십시오.</translation>
     </message>
@@ -116,7 +116,7 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="51"/>
+        <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>MUSIC</source>
         <translation>게임 음악</translation>
     </message>
@@ -163,7 +163,7 @@
         <translation>닉네임 :</translation>
     </message>
     <message>
-        <location filename="../qml/SingleLevelsPage.qml" line="484"/>
+        <location filename="../qml/SingleLevelsPage.qml" line="485"/>
         <source>Participate in daily tournaments and get rewards!</source>
         <translation>매일 토너먼트에 참가하고 보상을 받으십시오!</translation>
     </message>
@@ -177,17 +177,17 @@
         <translation>사다</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="900"/>
+        <location filename="../qml/StorePage.qml" line="886"/>
         <source>Remove Ads</source>
         <translation>광고를 제거하다</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="949"/>
+        <location filename="../qml/StorePage.qml" line="936"/>
         <source>Restore purchases</source>
         <translation>구매를 복원</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="966"/>
+        <location filename="../qml/StorePage.qml" line="953"/>
         <source>OK</source>
         <translation>승인</translation>
     </message>

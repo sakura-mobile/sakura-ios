@@ -14,17 +14,17 @@
         <translation>TEMPS:</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="753"/>
+        <location filename="../qml/CampaignPage.qml" line="754"/>
         <source>Game over. Do you want to play again?</source>
         <translation>Jeu terminé. Voulez-vous jouer à nouveau?</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="859"/>
+        <location filename="../qml/CampaignPage.qml" line="860"/>
         <source>Create postcard and share with friends</source>
         <translation>Créer une carte postale et partager avec des amis</translation>
     </message>
     <message>
-        <location filename="../qml/CampaignPage.qml" line="1010"/>
+        <location filename="../qml/CampaignPage.qml" line="1013"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Félicitations, vous avez terminé tous les niveaux disponibles! Restez à l&apos;écoute des mises à jour avec de nouveaux niveaux, défis et plus encore.</translation>
     </message>
@@ -42,37 +42,37 @@
         <translation>CAMPAGNE</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="111"/>
+        <location filename="../qml/MainPage.qml" line="107"/>
         <source>TOURNAMENT</source>
         <translation>TOURNOI</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="144"/>
+        <location filename="../qml/MainPage.qml" line="140"/>
         <source>RELAX</source>
         <translation>RELAX</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="173"/>
         <source>STORE</source>
         <translation>MAGASIN</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="204"/>
+        <location filename="../qml/MainPage.qml" line="199"/>
         <source>SETTINGS</source>
         <translation>PARAMÈTRES</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Sakura Puzzle</source>
         <translation>Sakura Puzzle</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="245"/>
+        <location filename="../qml/MainPage.qml" line="240"/>
         <source>Help me to solve a puzzle and enjoy the fanciful pictures of blooming flowers!</source>
         <translation>Aidez-moi à résoudre un casse-tête et profitez des images fantaisistes de fleurs en fleurs!</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="285"/>
+        <location filename="../qml/MainPage.qml" line="280"/>
         <source>Thank you! New gifts for Facebook invitations will be available tomorrow.</source>
         <translation>Je vous remercie! De nouveaux cadeaux pour les invitations Facebook seront disponibles demain.</translation>
     </message>
@@ -103,12 +103,12 @@
         <translation>ÉTAPE:</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="555"/>
+        <location filename="../qml/RelaxGamePage.qml" line="549"/>
         <source>Create postcard and share with friends</source>
         <translation>Créer une carte postale et partager avec des amis</translation>
     </message>
     <message>
-        <location filename="../qml/RelaxGamePage.qml" line="690"/>
+        <location filename="../qml/RelaxGamePage.qml" line="684"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Félicitations, vous avez terminé tous les niveaux disponibles! Restez à l&apos;écoute des mises à jour avec de nouveaux niveaux, défis et plus encore.</translation>
     </message>
@@ -116,7 +116,7 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="51"/>
+        <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>MUSIC</source>
         <translation>LA MUSIQUE</translation>
     </message>
@@ -163,7 +163,7 @@
         <translation>Ton surnom:</translation>
     </message>
     <message>
-        <location filename="../qml/SingleLevelsPage.qml" line="484"/>
+        <location filename="../qml/SingleLevelsPage.qml" line="485"/>
         <source>Participate in daily tournaments and get rewards!</source>
         <translation>Participez aux tournois quotidiens et obtenez des récompenses!</translation>
     </message>
@@ -177,17 +177,17 @@
         <translation>ACHETER</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="900"/>
+        <location filename="../qml/StorePage.qml" line="886"/>
         <source>Remove Ads</source>
         <translation>Supprimer la publicité</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="949"/>
+        <location filename="../qml/StorePage.qml" line="936"/>
         <source>Restore purchases</source>
         <translation>Restaurer les achats</translation>
     </message>
     <message>
-        <location filename="../qml/StorePage.qml" line="966"/>
+        <location filename="../qml/StorePage.qml" line="953"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
