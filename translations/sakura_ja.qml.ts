@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/CampaignPage.qml" line="859"/>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>はがきを作成して友達と共有する</translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="1010"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../qml/MainPage.qml" line="144"/>
         <source>RELAX</source>
-        <translation type="unfinished"></translation>
+        <translation>リラックス</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../qml/MainPage.qml" line="204"/>
         <source>SETTINGS</source>
-        <translation type="unfinished"></translation>
+        <translation>設定</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="245"/>
@@ -100,17 +100,17 @@
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="132"/>
         <source>STEP:</source>
-        <translation type="unfinished">ステップ：</translation>
+        <translation>ステップ：</translation>
     </message>
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="555"/>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>はがきを作成して友達と共有する</translation>
     </message>
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="690"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation type="unfinished">ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
+        <translation>ゲームのすべてのレベルを完了しましておめでとうございます！新しいレベル、課題などのアップデートはもうすぐお楽しみに。</translation>
     </message>
 </context>
 <context>
@@ -118,12 +118,12 @@
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>MUSIC</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームミュージック</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="95"/>
         <source>SOUNDS</source>
-        <translation type="unfinished"></translation>
+        <translation>ゲームサウンド</translation>
     </message>
 </context>
 <context>
@@ -155,7 +155,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="192"/>
         <source>Your reward:</source>
-        <translation type="unfinished"></translation>
+        <translation>あなたの報酬：</translation>
     </message>
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="367"/>
@@ -165,7 +165,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="484"/>
         <source>Participate in daily tournaments and get rewards!</source>
-        <translation type="unfinished"></translation>
+        <translation>毎日のトーナメントに参加して報酬を得ましょう！</translation>
     </message>
 </context>
 <context>

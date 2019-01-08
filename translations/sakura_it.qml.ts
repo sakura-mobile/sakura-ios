@@ -21,7 +21,7 @@
     <message>
         <location filename="../qml/CampaignPage.qml" line="859"/>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea cartolina e condividi con gli amici</translation>
     </message>
     <message>
         <location filename="../qml/CampaignPage.qml" line="1010"/>
@@ -49,7 +49,7 @@
     <message>
         <location filename="../qml/MainPage.qml" line="144"/>
         <source>RELAX</source>
-        <translation type="unfinished"></translation>
+        <translation>RELAX</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../qml/MainPage.qml" line="204"/>
         <source>SETTINGS</source>
-        <translation type="unfinished"></translation>
+        <translation>IMPOSTAZIONI</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="245"/>
@@ -100,17 +100,17 @@
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="132"/>
         <source>STEP:</source>
-        <translation type="unfinished">PASSO:</translation>
+        <translation>PASSO:</translation>
     </message>
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="555"/>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea cartolina e condividi con gli amici</translation>
     </message>
     <message>
         <location filename="../qml/RelaxGamePage.qml" line="690"/>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation type="unfinished">Congratulazioni, hai completato tutti i livelli disponibili! Resta sintonizzato per aggiornamenti con nuovi livelli, sfide e altro ancora.</translation>
+        <translation>Congratulazioni, hai completato tutti i livelli disponibili! Resta sintonizzato per aggiornamenti con nuovi livelli, sfide e altro ancora.</translation>
     </message>
 </context>
 <context>
@@ -118,12 +118,12 @@
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>MUSIC</source>
-        <translation type="unfinished"></translation>
+        <translation>MUSICA</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="95"/>
         <source>SOUNDS</source>
-        <translation type="unfinished"></translation>
+        <translation>SUONI</translation>
     </message>
 </context>
 <context>
@@ -155,7 +155,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="192"/>
         <source>Your reward:</source>
-        <translation type="unfinished"></translation>
+        <translation>Il tuo premio:</translation>
     </message>
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="367"/>
@@ -165,7 +165,7 @@
     <message>
         <location filename="../qml/SingleLevelsPage.qml" line="484"/>
         <source>Participate in daily tournaments and get rewards!</source>
-        <translation type="unfinished"></translation>
+        <translation>Partecipa ai tornei giornalieri e ricevi premi!</translation>
     </message>
 </context>
 <context>
