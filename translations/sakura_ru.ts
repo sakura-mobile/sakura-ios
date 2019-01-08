@@ -16,6 +16,10 @@
         <translation>Игра окончена. Хотите попробовать снова?</translation>
     </message>
     <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
     </message>
@@ -35,8 +39,16 @@
         <translation>ТУРНИР</translation>
     </message>
     <message>
+        <source>RELAX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>STORE</source>
         <translation>МАГАЗИН</translation>
+    </message>
+    <message>
+        <source>SETTINGS</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sakura Puzzle</source>
@@ -67,6 +79,32 @@
     </message>
 </context>
 <context>
+    <name>RelaxGamePage</name>
+    <message>
+        <source>STEP:</source>
+        <translation type="unfinished">ШАГ:</translation>
+    </message>
+    <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
+        <translation type="unfinished">Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsPage</name>
+    <message>
+        <source>MUSIC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOUNDS</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SingleGamePage</name>
     <message>
         <source>SCORE:</source>
@@ -88,8 +126,16 @@
 <context>
     <name>SingleLevelsPage</name>
     <message>
+        <source>Your reward:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Your nickname:</source>
         <translation>Ваш псевдоним:</translation>
+    </message>
+    <message>
+        <source>Participate in daily tournaments and get rewards!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

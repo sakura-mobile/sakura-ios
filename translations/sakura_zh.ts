@@ -16,6 +16,10 @@
         <translation>游戏结束。 你想再玩一次吗？</translation>
     </message>
     <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>恭喜，你完成了所有可用的水平！ 随时关注新的关卡，挑战和更多更新。</translation>
     </message>
@@ -35,8 +39,16 @@
         <translation>比赛</translation>
     </message>
     <message>
+        <source>RELAX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>STORE</source>
         <translation>店</translation>
+    </message>
+    <message>
+        <source>SETTINGS</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sakura Puzzle</source>
@@ -67,6 +79,32 @@
     </message>
 </context>
 <context>
+    <name>RelaxGamePage</name>
+    <message>
+        <source>STEP:</source>
+        <translation type="unfinished">步：</translation>
+    </message>
+    <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
+        <translation type="unfinished">恭喜，你完成了所有可用的水平！ 随时关注新的关卡，挑战和更多更新。</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsPage</name>
+    <message>
+        <source>MUSIC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOUNDS</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SingleGamePage</name>
     <message>
         <source>SCORE:</source>
@@ -88,8 +126,16 @@
 <context>
     <name>SingleLevelsPage</name>
     <message>
+        <source>Your reward:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Your nickname:</source>
         <translation>您的昵称：</translation>
+    </message>
+    <message>
+        <source>Participate in daily tournaments and get rewards!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

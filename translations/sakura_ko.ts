@@ -16,6 +16,10 @@
         <translation>게임 끝. 다시 놀고 싶니?</translation>
     </message>
     <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
         <translation>축하합니다. 사용 가능한 모든 레벨을 완료하셨습니다! 새로운 차원, 도전 과제 등으로 업데이트를 계속 지켜보십시오.</translation>
     </message>
@@ -35,8 +39,16 @@
         <translation>토너먼트</translation>
     </message>
     <message>
+        <source>RELAX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>STORE</source>
         <translation>가게</translation>
+    </message>
+    <message>
+        <source>SETTINGS</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sakura Puzzle</source>
@@ -67,6 +79,32 @@
     </message>
 </context>
 <context>
+    <name>RelaxGamePage</name>
+    <message>
+        <source>STEP:</source>
+        <translation type="unfinished">단계:</translation>
+    </message>
+    <message>
+        <source>Create postcard and share with friends</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
+        <translation type="unfinished">축하합니다. 사용 가능한 모든 레벨을 완료하셨습니다! 새로운 차원, 도전 과제 등으로 업데이트를 계속 지켜보십시오.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsPage</name>
+    <message>
+        <source>MUSIC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SOUNDS</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SingleGamePage</name>
     <message>
         <source>SCORE:</source>
@@ -88,8 +126,16 @@
 <context>
     <name>SingleLevelsPage</name>
     <message>
+        <source>Your reward:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Your nickname:</source>
         <translation>닉네임 :</translation>
+    </message>
+    <message>
+        <source>Participate in daily tournaments and get rewards!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
