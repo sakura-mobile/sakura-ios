@@ -854,7 +854,10 @@ Item {
                             Text {
                                 id: textTooltipShare
                                 anchors.fill: parent
-                                anchors.margins: 3
+                                anchors.topMargin: 8
+                                anchors.bottomMargin: 16
+                                anchors.leftMargin: 12
+                                anchors.rightMargin: 12
                                 z: 15
                                 visible: true
                                 text: qsTr("Create postcard and share with friends")
