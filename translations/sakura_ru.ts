@@ -17,7 +17,7 @@
     </message>
     <message>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Создайте открытку и поделитесь с друзьями</translation>
     </message>
     <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>RELAX</source>
-        <translation type="unfinished"></translation>
+        <translation>РЕЛАКС</translation>
     </message>
     <message>
         <source>STORE</source>
@@ -48,7 +48,7 @@
     </message>
     <message>
         <source>SETTINGS</source>
-        <translation type="unfinished"></translation>
+        <translation>НАСТРОЙКИ</translation>
     </message>
     <message>
         <source>Sakura Puzzle</source>
@@ -82,26 +82,26 @@
     <name>RelaxGamePage</name>
     <message>
         <source>STEP:</source>
-        <translation type="unfinished">ШАГ:</translation>
+        <translation>ШАГ:</translation>
     </message>
     <message>
         <source>Create postcard and share with friends</source>
-        <translation type="unfinished"></translation>
+        <translation>Создайте открытку и поделитесь с друзьями</translation>
     </message>
     <message>
         <source>Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.</source>
-        <translation type="unfinished">Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
+        <translation>Поздравляю, вы прошли все доступные уровни! Ожидайте обновлений с новыми уровнями, задачами и многим другим.</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>MUSIC</source>
-        <translation type="unfinished"></translation>
+        <translation>МУЗЫКА</translation>
     </message>
     <message>
         <source>SOUNDS</source>
-        <translation type="unfinished"></translation>
+        <translation>ЗВУКИ</translation>
     </message>
 </context>
 <context>
@@ -127,7 +127,7 @@
     <name>SingleLevelsPage</name>
     <message>
         <source>Your reward:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ваш приз:</translation>
     </message>
     <message>
         <source>Your nickname:</source>
@@ -135,7 +135,7 @@
     </message>
     <message>
         <source>Participate in daily tournaments and get rewards!</source>
-        <translation type="unfinished"></translation>
+        <translation>Принимайте участие в ежедневных турнирах и получайте призы!</translation>
     </message>
 </context>
 <context>
