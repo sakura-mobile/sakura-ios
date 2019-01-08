@@ -12,7 +12,7 @@ Item {
         id: imageBackgroundMainLevel
         source: "qrc:/resources/images/background_main.png"
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop       
+        fillMode: Image.PreserveAspectCrop
 
         Rectangle {
             id: rectLevels
@@ -36,7 +36,7 @@ Item {
 
                         if (component.status === Component.Ready) {
                             mainStackView.push(component, {
-                                                   currentLevel: currentLevel
+                                                   "currentLevel": currentLevel
                                                })
                         } else {
                             console.log(component.errorString())
@@ -385,7 +385,8 @@ Item {
                             id: mouseAreaTextInputName
                             anchors.fill: parent
                             onClicked: {
-                                if (textInputName.text == "NONAME") textInputName.text = "";
+                                if (textInputName.text == "NONAME")
+                                    textInputName.text = ""
                             }
                         }
                     }
@@ -485,7 +486,6 @@ Item {
                     wrapMode: TextEdit.Wrap
                     verticalAlignment: TextEdit.AlignVCenter
                     horizontalAlignment: TextEdit.AlignHCenter
-
                 }
                 Image {
                     anchors.bottom: rectHint.bottom
@@ -500,8 +500,8 @@ Item {
                         id: mouseAreaImageHintOk
                         anchors.fill: parent
                         onClicked: {
-                            mainWindow.setSetting("TournamentHint", 1);
-                            rectTournamentHint.visible = false;
+                            mainWindow.setSetting("TournamentHint", 1)
+                            rectTournamentHint.visible = false
                             rectNameUser.visible = true
                             animationRectNameUserUp.running = true
                             textInputName.focus = true
@@ -518,7 +518,8 @@ Item {
     }
 
     StackView.onStatusChanged: {
-        if (Number(mainWindow.getSetting("TournamentHint", 0))  === 0) rectTournamentHint.visible = true;
+        if (Number(mainWindow.getSetting("TournamentHint", 0)) === 0)
+            rectTournamentHint.visible = true
         if (StackView.status === StackView.Active) {
             var nameUser = mainWindow.getSetting("nameUser", "NONAME")
         }
@@ -630,7 +631,7 @@ Item {
 
         if (component.status === Component.Ready) {
             mainStackView.push(component, {
-                                   currentLevel: currentLevel
+                                   "currentLevel": currentLevel
                                })
         } else {
             console.log(component.errorString())

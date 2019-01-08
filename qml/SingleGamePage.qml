@@ -898,17 +898,17 @@ Item {
                             if (component.status === Component.Ready) {
                                 if (singleGamePage.countPetals === singleGamePage.countPetalsMax) {
                                     mainStackView.push(component, {
-                                                           currentLevel: currentLevel,
-                                                           isCampaign: 0,
-                                                           listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                           isMaxPetals: 1
+                                                           "currentLevel": currentLevel,
+                                                           "isCampaign": 0,
+                                                           "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                           "isMaxPetals": 1
                                                        })
                                 } else {
                                     mainStackView.push(component, {
-                                                           currentLevel: currentLevel,
-                                                           isCampaign: 0,
-                                                           listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                           isMaxPetals: 0
+                                                           "currentLevel": currentLevel,
+                                                           "isCampaign": 0,
+                                                           "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                           "isMaxPetals": 0
                                                        })
                                 }
                             } else {
@@ -1015,7 +1015,8 @@ Item {
                                        && singleGamePage.StackView.status === StackView.Active
 
         onPlaybackEnabledChanged: {
-            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0)
+                return
 
             if (playbackEnabled) {
                 play()
@@ -1041,7 +1042,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -1060,7 +1062,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
 
             if (playbackEnabled) {
                 play()
@@ -1080,7 +1083,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
 
             if (playbackEnabled) {
                 play()
@@ -1473,8 +1477,8 @@ Item {
                         countStopBranch++
                     }
                     arrBranchRotation[arrBranchRotation.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }
@@ -1496,8 +1500,8 @@ Item {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
                 if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
                     arrBranch[arrBranch.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }
@@ -1720,7 +1724,8 @@ Item {
                         singleGamePage.emitRatePetals = singleGamePage.emitRatePetalsMax
                     }
 
-                    if (Math.random() < 0.10 && ReachabilityHelper.internetConnected) {
+                    if (Math.random() < 0.10
+                            && ReachabilityHelper.internetConnected) {
                         StoreHelper.requestReview()
                     }
                 } else {

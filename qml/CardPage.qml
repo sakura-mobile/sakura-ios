@@ -156,12 +156,10 @@ Item {
                     anchors.fill: parent
 
                     Rectangle {
-                        width: Math.max(
-                                   gridMapCard.width,
-                                   backgroundFlickable.width) * 4
-                        height: Math.max(
-                                    gridMapCard.height,
-                                    backgroundFlickable.height) * 4
+                        width: Math.max(gridMapCard.width,
+                                        backgroundFlickable.width) * 4
+                        height: Math.max(gridMapCard.height,
+                                         backgroundFlickable.height) * 4
                         scale: backgroundFlickable.initialContentWidth > 0.0
                                && backgroundFlickable.contentWidth
                                > 0.0 ? backgroundFlickable.contentWidth
@@ -585,7 +583,7 @@ Item {
         var object
         var objMap
         if (isRelax === 1) {
-            GenerationBranchScript.initObjectRelaxLevels();
+            GenerationBranchScript.initObjectRelaxLevels()
             imageBackgroundMainMap.source = "qrc:/resources/images/background_relax.jpg"
             objMap = GenerationBranchScript.listObjectRelaxLevels[currentLevel]
             widthGame = objMap.width
@@ -651,17 +649,21 @@ Item {
 
         gridMapCard.columns = 0
         gridMapCard.columns = widthGame
-        var typeColorBranch = "";
+        var typeColorBranch = ""
         for (var i = 0; i < heightGame; i++) {
             for (var j = 0; j < widthGame; j++) {
-                if ((objMap.mapArray[i][j] === 1) || (objMap.mapArray[i][j] === 2) || (objMap.mapArray[i][j] === 3)) {
+                if ((objMap.mapArray[i][j] === 1)
+                        || (objMap.mapArray[i][j] === 2)
+                        || (objMap.mapArray[i][j] === 3)) {
                     component = Qt.createComponent("Branch.qml")
-                    typeColorBranch = "";
-                    if (listGameBranchObject[i][j].typeColor === 2) typeColorBranch = "_1";
-                    if (listGameBranchObject[i][j].typeColor === 3) typeColorBranch = "_2";
+                    typeColorBranch = ""
+                    if (listGameBranchObject[i][j].typeColor === 2)
+                        typeColorBranch = "_1"
+                    if (listGameBranchObject[i][j].typeColor === 3)
+                        typeColorBranch = "_2"
                     object = component.createObject(gridMapCard)
                     object.source = "qrc:/resources/images/branch/"
-                            + listGameBranchObject[i][j].nameItem + "_3e" + typeColorBranch +".png"
+                            + listGameBranchObject[i][j].nameItem + "_3e" + typeColorBranch + ".png"
                     object.rotationBranch = listGameBranchObject[i][j].rotationBranch
                     object.posLeft = listGameBranchObject[i][j].posLeft
                     object.posRight = listGameBranchObject[i][j].posRight

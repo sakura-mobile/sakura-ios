@@ -28,7 +28,7 @@ var SERVER_KEY = ''
 
 function initObjectTutorialLevels() {
     var objectLevel = {
-        name: '3x3'
+        "name": '3x3'
     }
     objectLevel.map = []
     objectLevel.width = 3
@@ -57,7 +57,7 @@ function getObjectGift(name, place) {
 
 function initObjectSingleLevels() {
     var objectLevel = {
-        name: '5x5'
+        "name": '5x5'
     }
     objectLevel.map = []
     objectLevel.width = 5
@@ -70,25 +70,25 @@ function initObjectSingleLevels() {
     objectLevel.countBlockStep = 1
     objectLevel.countQuickTip = 5
     objectLevel.place1 = {
-        typeGift: 1,
-        countGift: 10
+        "typeGift": 1,
+        "countGift": 10
     }
     objectLevel.place2 = {
-        typeGift: 2,
-        countGift: 3
+        "typeGift": 2,
+        "countGift": 3
     }
     objectLevel.place3 = {
-        typeGift: 2,
-        countGift: 2
+        "typeGift": 2,
+        "countGift": 2
     }
     objectLevel.place25 = {
-        typeGift: 2,
-        countGift: 1
+        "typeGift": 2,
+        "countGift": 1
     }
     listObjectSingleLevels[0] = objectLevel
 
     objectLevel = {
-        name: '7x7'
+        "name": '7x7'
     }
     objectLevel.map = []
     objectLevel.width = 7
@@ -101,25 +101,25 @@ function initObjectSingleLevels() {
     objectLevel.countBlockStep = 2
     objectLevel.countQuickTip = 10
     objectLevel.place1 = {
-        typeGift: 1,
-        countGift: 15
+        "typeGift": 1,
+        "countGift": 15
     }
     objectLevel.place2 = {
-        typeGift: 2,
-        countGift: 5
+        "typeGift": 2,
+        "countGift": 5
     }
     objectLevel.place3 = {
-        typeGift: 2,
-        countGift: 3
+        "typeGift": 2,
+        "countGift": 3
     }
     objectLevel.place25 = {
-        typeGift: 2,
-        countGift: 2
+        "typeGift": 2,
+        "countGift": 2
     }
     listObjectSingleLevels[1] = objectLevel
 
     objectLevel = {
-        name: '9x9'
+        "name": '9x9'
     }
     objectLevel.map = []
     objectLevel.width = 9
@@ -132,25 +132,25 @@ function initObjectSingleLevels() {
     objectLevel.countBlockStep = 3
     objectLevel.countQuickTip = 10
     objectLevel.place1 = {
-        typeGift: 1,
-        countGift: 20
+        "typeGift": 1,
+        "countGift": 20
     }
     objectLevel.place2 = {
-        typeGift: 2,
-        countGift: 8
+        "typeGift": 2,
+        "countGift": 8
     }
     objectLevel.place3 = {
-        typeGift: 2,
-        countGift: 6
+        "typeGift": 2,
+        "countGift": 6
     }
     objectLevel.place25 = {
-        typeGift: 2,
-        countGift: 3
+        "typeGift": 2,
+        "countGift": 3
     }
     listObjectSingleLevels[2] = objectLevel
 
     objectLevel = {
-        name: '11x11'
+        "name": '11x11'
     }
     objectLevel.map = []
     objectLevel.width = 11
@@ -163,25 +163,25 @@ function initObjectSingleLevels() {
     objectLevel.countBlockStep = 3
     objectLevel.countQuickTip = 10
     objectLevel.place1 = {
-        typeGift: 1,
-        countGift: 25
+        "typeGift": 1,
+        "countGift": 25
     }
     objectLevel.place2 = {
-        typeGift: 2,
-        countGift: 10
+        "typeGift": 2,
+        "countGift": 10
     }
     objectLevel.place3 = {
-        typeGift: 2,
-        countGift: 8
+        "typeGift": 2,
+        "countGift": 8
     }
     objectLevel.place25 = {
-        typeGift: 2,
-        countGift: 5
+        "typeGift": 2,
+        "countGift": 5
     }
     listObjectSingleLevels[3] = objectLevel
 
     objectLevel = {
-        name: '13x13'
+        "name": '13x13'
     }
     objectLevel.map = []
     objectLevel.width = 13
@@ -194,29 +194,29 @@ function initObjectSingleLevels() {
     objectLevel.countBlockStep = 5
     objectLevel.countQuickTip = 15
     objectLevel.place1 = {
-        typeGift: 1,
-        countGift: 30
+        "typeGift": 1,
+        "countGift": 30
     }
     objectLevel.place2 = {
-        typeGift: 2,
-        countGift: 12
+        "typeGift": 2,
+        "countGift": 12
     }
     objectLevel.place3 = {
-        typeGift: 2,
-        countGift: 10
+        "typeGift": 2,
+        "countGift": 10
     }
     objectLevel.place25 = {
-        typeGift: 2,
-        countGift: 6
+        "typeGift": 2,
+        "countGift": 6
     }
     listObjectSingleLevels[4] = objectLevel
 }
 
 function initObjectRelaxLevels() {
     var objectLevel = {
-        name: 'level_1'
+        "name": 'level_1'
     }
-    objectLevel.map = [0,2,0,2,3,2,0,2,0]
+    objectLevel.map = [0, 2, 0, 2, 3, 2, 0, 2, 0]
     objectLevel.width = 3
     objectLevel.height = 3
     objectLevel.mapArray = []
@@ -229,9 +229,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[0] = objectLevel
 
     objectLevel = {
-        name: 'level_2'
+        "name": 'level_2'
     }
-    objectLevel.map = [0,3,3,0,3,2,1,3,3,1,2,3,0,3,3,0]
+    objectLevel.map = [0, 3, 3, 0, 3, 2, 1, 3, 3, 1, 2, 3, 0, 3, 3, 0]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -245,9 +245,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[1] = objectLevel
 
     objectLevel = {
-        name: 'level_3'
+        "name": 'level_3'
     }
-    objectLevel.map = [2,0,0,3,2,2,3,3,2,3,2,3,2,0,0,3]
+    objectLevel.map = [2, 0, 0, 3, 2, 2, 3, 3, 2, 3, 2, 3, 2, 0, 0, 3]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -261,9 +261,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[2] = objectLevel
 
     objectLevel = {
-        name: 'level_4'
+        "name": 'level_4'
     }
-    objectLevel.map = [0,3,2,3,0,2,3,2,2,3,2,0,3,2,3,0]
+    objectLevel.map = [0, 3, 2, 3, 0, 2, 3, 2, 2, 3, 2, 0, 3, 2, 3, 0]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -277,9 +277,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[3] = objectLevel
 
     objectLevel = {
-        name: 'level_5'
+        "name": 'level_5'
     }
-    objectLevel.map = [3,1,1,3,2,1,3,3,3]
+    objectLevel.map = [3, 1, 1, 3, 2, 1, 3, 3, 3]
     objectLevel.width = 3
     objectLevel.height = 3
     objectLevel.mapArray = []
@@ -293,9 +293,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[4] = objectLevel
 
     objectLevel = {
-        name: 'level_6'
+        "name": 'level_6'
     }
-    objectLevel.map = [3,3,3,3,1,0,1,0,3,3,3,3,1,0,1,0]
+    objectLevel.map = [3, 3, 3, 3, 1, 0, 1, 0, 3, 3, 3, 3, 1, 0, 1, 0]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -309,9 +309,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[5] = objectLevel
 
     objectLevel = {
-        name: 'level_7'
+        "name": 'level_7'
     }
-    objectLevel.map = [3,2,2,0,2,3,1,2,2,1,3,2,0,2,2,3]
+    objectLevel.map = [3, 2, 2, 0, 2, 3, 1, 2, 2, 1, 3, 2, 0, 2, 2, 3]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -325,9 +325,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[6] = objectLevel
 
     objectLevel = {
-        name: 'level_8'
+        "name": 'level_8'
     }
-    objectLevel.map = [2,2,0,0,2,2,3,0,0,3,3,1,0,0,1,1]
+    objectLevel.map = [2, 2, 0, 0, 2, 2, 3, 0, 0, 3, 3, 1, 0, 0, 1, 1]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -341,9 +341,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[7] = objectLevel
 
     objectLevel = {
-        name: 'level_9'
+        "name": 'level_9'
     }
-    objectLevel.map = [3,3,3,3,3,1,1,3,3,1,1,3,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 3, 1, 1, 3, 3, 1, 1, 3, 3, 3, 3, 3]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -357,9 +357,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[8] = objectLevel
 
     objectLevel = {
-        name: 'level_10'
+        "name": 'level_10'
     }
-    objectLevel.map = [1,0,2,2,1,3,3,3,3,3,3,1,2,2,0,1]
+    objectLevel.map = [1, 0, 2, 2, 1, 3, 3, 3, 3, 3, 3, 1, 2, 2, 0, 1]
     objectLevel.width = 4
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -373,9 +373,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[9] = objectLevel
 
     objectLevel = {
-        name: 'level_11'
+        "name": 'level_11'
     }
-    objectLevel.map = [0,3,3,3,0,3,1,0,1,3,3,0,0,0,3,3,1,0,1,3,0,3,3,3,0]
+    objectLevel.map = [0, 3, 3, 3, 0, 3, 1, 0, 1, 3, 3, 0, 0, 0, 3, 3, 1, 0, 1, 3, 0, 3, 3, 3, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -389,9 +389,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[10] = objectLevel
 
     objectLevel = {
-        name: 'level_12'
+        "name": 'level_12'
     }
-    objectLevel.map = [2,2,0,1,1,2,2,2,1,1,0,2,0,2,0,1,1,2,2,2,1,1,0,2,2]
+    objectLevel.map = [2, 2, 0, 1, 1, 2, 2, 2, 1, 1, 0, 2, 0, 2, 0, 1, 1, 2, 2, 2, 1, 1, 0, 2, 2]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -405,9 +405,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[11] = objectLevel
 
     objectLevel = {
-        name: 'level_13'
+        "name": 'level_13'
     }
-    objectLevel.map = [3,2,3,2,3,2,0,2,0,2,3,2,3,2,3,2,0,2,0,2,3,2,3,2,3]
+    objectLevel.map = [3, 2, 3, 2, 3, 2, 0, 2, 0, 2, 3, 2, 3, 2, 3, 2, 0, 2, 0, 2, 3, 2, 3, 2, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -421,9 +421,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[12] = objectLevel
 
     objectLevel = {
-        name: 'level_14'
+        "name": 'level_14'
     }
-    objectLevel.map = [3,2,0,0,0,3,3,2,0,0,0,3,3,2,0,0,0,3,3,2,0,0,0,3,2]
+    objectLevel.map = [3, 2, 0, 0, 0, 3, 3, 2, 0, 0, 0, 3, 3, 2, 0, 0, 0, 3, 3, 2, 0, 0, 0, 3, 2]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -437,9 +437,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[13] = objectLevel
 
     objectLevel = {
-        name: 'level_15'
+        "name": 'level_15'
     }
-    objectLevel.map = [0,2,2,2,0,2,2,2,0,3,2,2,3,3,3,2,0,3,3,3,0,3,3,3,0]
+    objectLevel.map = [0, 2, 2, 2, 0, 2, 2, 2, 0, 3, 2, 2, 3, 3, 3, 2, 0, 3, 3, 3, 0, 3, 3, 3, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -453,9 +453,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[14] = objectLevel
 
     objectLevel = {
-        name: 'level_16'
+        "name": 'level_16'
     }
-    objectLevel.map = [0,3,3,3,0,3,1,3,1,3,3,3,3,3,3,3,2,2,2,3,0,3,3,3,0]
+    objectLevel.map = [0, 3, 3, 3, 0, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 0, 3, 3, 3, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -468,11 +468,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[15] = objectLevel
 
-
     objectLevel = {
-        name: 'level_17'
+        "name": 'level_17'
     }
-    objectLevel.map = [2,0,0,0,2,2,2,2,2,2,0,2,2,2,0,2,2,2,2,2,2,0,0,0,2]
+    objectLevel.map = [2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -486,9 +485,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[16] = objectLevel
 
     objectLevel = {
-        name: 'level_18'
+        "name": 'level_18'
     }
-    objectLevel.map = [0,3,0,3,0,1,2,1,2,1,0,3,0,3,0,1,2,1,2,1,0,3,0,3,0]
+    objectLevel.map = [0, 3, 0, 3, 0, 1, 2, 1, 2, 1, 0, 3, 0, 3, 0, 1, 2, 1, 2, 1, 0, 3, 0, 3, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -502,9 +501,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[17] = objectLevel
 
     objectLevel = {
-        name: 'level_19'
+        "name": 'level_19'
     }
-    objectLevel.map = [0,0,3,0,0,0,3,3,3,0,0,3,3,3,0,3,3,0,3,3,3,0,0,0,3]
+    objectLevel.map = [0, 0, 3, 0, 0, 0, 3, 3, 3, 0, 0, 3, 3, 3, 0, 3, 3, 0, 3, 3, 3, 0, 0, 0, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -518,9 +517,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[18] = objectLevel
 
     objectLevel = {
-        name: 'level_20'
+        "name": 'level_20'
     }
-    objectLevel.map = [2,2,0,2,2,2,2,0,2,2,0,1,3,1,0,2,2,0,2,2,2,2,0,2,2]
+    objectLevel.map = [2, 2, 0, 2, 2, 2, 2, 0, 2, 2, 0, 1, 3, 1, 0, 2, 2, 0, 2, 2, 2, 2, 0, 2, 2]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -534,9 +533,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[19] = objectLevel
 
     objectLevel = {
-        name: 'level_21'
+        "name": 'level_21'
     }
-    objectLevel.map = [0,3,3,0,0,0,3,3,0,0,0,0,3,0,0,2,2,2,2,2,0,2,2,2,0]
+    objectLevel.map = [0, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 3, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -549,11 +548,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[20] = objectLevel
 
-
     objectLevel = {
-        name: 'level_22'
+        "name": 'level_22'
     }
-    objectLevel.map = [0,3,0,3,0,2,3,3,3,2,2,2,2,2,2,2,1,1,1,2,0,1,0,1,0]
+    objectLevel.map = [0, 3, 0, 3, 0, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 0, 1, 0, 1, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -566,11 +564,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[21] = objectLevel
 
-
     objectLevel = {
-        name: 'level_23'
+        "name": 'level_23'
     }
-    objectLevel.map = [3,0,1,0,3,3,1,1,1,3,3,1,0,1,3,3,1,1,1,3,3,0,1,0,3]
+    objectLevel.map = [3, 0, 1, 0, 3, 3, 1, 1, 1, 3, 3, 1, 0, 1, 3, 3, 1, 1, 1, 3, 3, 0, 1, 0, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -584,9 +581,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[22] = objectLevel
 
     objectLevel = {
-        name: 'level_24'
+        "name": 'level_24'
     }
-    objectLevel.map = [2,2,0,2,2,2,1,1,1,2,0,1,2,1,0,2,1,1,1,2,2,2,0,2,2]
+    objectLevel.map = [2, 2, 0, 2, 2, 2, 1, 1, 1, 2, 0, 1, 2, 1, 0, 2, 1, 1, 1, 2, 2, 2, 0, 2, 2]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -599,11 +596,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[23] = objectLevel
 
-
     objectLevel = {
-        name: 'level_25'
+        "name": 'level_25'
     }
-    objectLevel.map = [3,3,0,1,1,3,3,3,1,1,0,3,3,3,0,1,1,3,3,3,1,1,0,3,3]
+    objectLevel.map = [3, 3, 0, 1, 1, 3, 3, 3, 1, 1, 0, 3, 3, 3, 0, 1, 1, 3, 3, 3, 1, 1, 0, 3, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -617,9 +613,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[24] = objectLevel
 
     objectLevel = {
-        name: 'level_26'
+        "name": 'level_26'
     }
-    objectLevel.map = [3,3,3,3,3,3,1,1,1,3,3,1,2,1,3,3,1,1,1,3,3,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 3, 3, 1, 1, 1, 3, 3, 1, 2, 1, 3, 3, 1, 1, 1, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -633,9 +629,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[25] = objectLevel
 
     objectLevel = {
-        name: 'level_27'
+        "name": 'level_27'
     }
-    objectLevel.map = [3,3,0,3,3,3,3,3,3,3,0,3,3,3,0,0,0,3,0,0]
+    objectLevel.map = [3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 0, 0, 0, 3, 0, 0]
     objectLevel.width = 5
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -648,11 +644,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[26] = objectLevel
 
-
     objectLevel = {
-        name: 'level_28'
+        "name": 'level_28'
     }
-    objectLevel.map = [0,0,2,0,0,2,2,2,2,2,0,2,2,2,0,0,2,0,2,0]
+    objectLevel.map = [0, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 0, 0, 2, 0, 2, 0]
     objectLevel.width = 5
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -666,9 +661,10 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[27] = objectLevel
 
     objectLevel = {
-        name: 'level_29'
+        "name": 'level_29'
     }
-    objectLevel.map = [0,0,3,3,3,0,0,0,3,2,2,2,3,0,3,2,1,1,1,2,3,3,2,1,0,1,2,3]
+    objectLevel.map
+            = [0, 0, 3, 3, 3, 0, 0, 0, 3, 2, 2, 2, 3, 0, 3, 2, 1, 1, 1, 2, 3, 3, 2, 1, 0, 1, 2, 3]
     objectLevel.width = 7
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -682,9 +678,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[28] = objectLevel
 
     objectLevel = {
-        name: 'level_30'
+        "name": 'level_30'
     }
-    objectLevel.map = [0,2,2,2,0,2,3,2,3,2,2,2,2,2,2,2,3,2,3,2,0,2,3,2,0]
+    objectLevel.map = [0, 2, 2, 2, 0, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 0, 2, 3, 2, 0]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -698,9 +694,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[29] = objectLevel
 
     objectLevel = {
-        name: 'level_31'
+        "name": 'level_31'
     }
-    objectLevel.map = [3,3,3,1,1,3,3,3,1,1,3,3,3,3,3,1,1,3,3,3,1,1,3,3,3]
+    objectLevel.map = [3, 3, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 3]
     objectLevel.width = 5
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -714,9 +710,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[30] = objectLevel
 
     objectLevel = {
-        name: 'level_32'
+        "name": 'level_32'
     }
-    objectLevel.map = [2,2,0,0,1,1,2,2,2,2,1,0,0,1,2,2,2,2,1,1,0,0,2,2]
+    objectLevel.map = [2, 2, 0, 0, 1, 1, 2, 2, 2, 2, 1, 0, 0, 1, 2, 2, 2, 2, 1, 1, 0, 0, 2, 2]
     objectLevel.width = 6
     objectLevel.height = 4
     objectLevel.mapArray = []
@@ -730,9 +726,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[31] = objectLevel
 
     objectLevel = {
-        name: 'level_33'
+        "name": 'level_33'
     }
-    objectLevel.map = [2,0,0,0,0,2,2,3,3,0,3,2,0,0,3,3,3,0,0,3,3,3,0,0,2,3,0,3,3,2,2,0,0,0,0,2]
+    objectLevel.map = [2, 0, 0, 0, 0, 2, 2, 3, 3, 0, 3, 2, 0, 0, 3, 3, 3, 0, 0, 3, 3, 3, 0, 0, 2, 3, 0, 3, 3, 2, 2, 0, 0, 0, 0, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -746,9 +742,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[32] = objectLevel
 
     objectLevel = {
-        name: 'level_34'
+        "name": 'level_34'
     }
-    objectLevel.map = [3,3,0,0,1,1,3,3,2,2,1,1,0,2,0,0,2,0,0,2,0,0,2,0,1,1,2,2,3,3,1,1,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 1, 1, 3, 3, 2, 2, 1, 1, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 1, 1, 2, 2, 3, 3, 1, 1, 0, 0, 3, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -761,11 +757,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[33] = objectLevel
 
-
     objectLevel = {
-        name: 'level_35'
+        "name": 'level_35'
     }
-    objectLevel.map = [2,2,0,0,2,2,2,2,2,2,2,2,0,2,3,3,2,0,0,2,3,3,2,0,2,2,2,2,2,2,2,2,0,0,2,2]
+    objectLevel.map = [2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 3, 3, 2, 0, 0, 2, 3, 3, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -779,9 +774,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[34] = objectLevel
 
     objectLevel = {
-        name: 'level_36'
+        "name": 'level_36'
     }
-    objectLevel.map = [0,1,0,0,1,0,1,2,2,2,2,1,0,2,3,3,2,0,0,2,3,3,2,0,1,2,2,2,2,1,0,1,0,0,1,0]
+    objectLevel.map = [0, 1, 0, 0, 1, 0, 1, 2, 2, 2, 2, 1, 0, 2, 3, 3, 2, 0, 0, 2, 3, 3, 2, 0, 1, 2, 2, 2, 2, 1, 0, 1, 0, 0, 1, 0]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -794,11 +789,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[35] = objectLevel
 
-
     objectLevel = {
-        name: 'level_37'
+        "name": 'level_37'
     }
-    objectLevel.map = [3,3,0,0,3,3,3,3,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,3,3,3,3,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3, 0, 0, 3, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -811,11 +805,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[36] = objectLevel
 
-
     objectLevel = {
-        name: 'level_38'
+        "name": 'level_38'
     }
-    objectLevel.map = [0,2,2,2,2,0,2,2,2,2,2,2,0,2,0,0,2,0,0,2,0,0,2,0,2,2,2,2,2,2,0,2,2,2,2,0]
+    objectLevel.map = [0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -828,11 +821,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[37] = objectLevel
 
-
     objectLevel = {
-        name: 'level_39'
+        "name": 'level_39'
     }
-    objectLevel.map = [3,1,3,1,3,1,1,3,0,0,3,3,3,0,0,0,0,1,1,0,0,0,0,3,3,3,0,0,3,1,1,3,1,3,1,3]
+    objectLevel.map = [3, 1, 3, 1, 3, 1, 1, 3, 0, 0, 3, 3, 3, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 3, 3, 3, 0, 0, 3, 1, 1, 3, 1, 3, 1, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -845,11 +837,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[38] = objectLevel
 
-
     objectLevel = {
-        name: 'level_40'
+        "name": 'level_40'
     }
-    objectLevel.map = [2,3,2,3,2,3,3,2,3,2,3,2,2,3,0,0,2,3,3,2,0,0,3,2,2,3,2,3,2,3,3,2,3,2,3,2]
+    objectLevel.map = [2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2, 2, 3, 0, 0, 2, 3, 3, 2, 0, 0, 3, 2, 2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -862,11 +853,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[39] = objectLevel
 
-
     objectLevel = {
-        name: 'level_41'
+        "name": 'level_41'
     }
-    objectLevel.map = [2,3,0,3,3,2,3,2,1,1,2,3,3,0,2,2,0,3,0,0,2,2,0,0,3,2,1,1,2,3,2,3,3,0,3,2]
+    objectLevel.map = [2, 3, 0, 3, 3, 2, 3, 2, 1, 1, 2, 3, 3, 0, 2, 2, 0, 3, 0, 0, 2, 2, 0, 0, 3, 2, 1, 1, 2, 3, 2, 3, 3, 0, 3, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -879,11 +869,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[40] = objectLevel
 
-
     objectLevel = {
-        name: 'level_42'
+        "name": 'level_42'
     }
-    objectLevel.map = [3,0,0,0,3,1,2,0,2,1,3,3,2,3,3,0,1,2,1,0,3,3,2,3,3,1,3,0,3,1]
+    objectLevel.map = [3, 0, 0, 0, 3, 1, 2, 0, 2, 1, 3, 3, 2, 3, 3, 0, 1, 2, 1, 0, 3, 3, 2, 3, 3, 1, 3, 0, 3, 1]
     objectLevel.width = 5
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -897,9 +886,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[41] = objectLevel
 
     objectLevel = {
-        name: 'level_43'
+        "name": 'level_43'
     }
-    objectLevel.map = [0,0,2,2,2,0,0,0,3,2,2,2,3,0,3,2,3,3,3,2,3,3,3,3,2,3,3,3,3,2,3,3,3,2,3,0,3,3,2,3,3,0]
+    objectLevel.map = [0, 0, 2, 2, 2, 0, 0, 0, 3, 2, 2, 2, 3, 0, 3, 2, 3, 3, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 3, 2, 3, 3, 3, 2, 3, 0, 3, 3, 2, 3, 3, 0]
     objectLevel.width = 7
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -912,11 +901,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[42] = objectLevel
 
-
     objectLevel = {
-        name: 'level_44'
+        "name": 'level_44'
     }
-    objectLevel.map = [3,3,0,0,3,3,0,3,3,3,3,0,0,3,1,1,3,0,0,3,1,1,3,0,0,3,3,3,3,0,3,3,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 3, 3, 0, 3, 3, 3, 3, 0, 0, 3, 1, 1, 3, 0, 0, 3, 1, 1, 3, 0, 0, 3, 3, 3, 3, 0, 3, 3, 0, 0, 3, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -930,9 +918,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[43] = objectLevel
 
     objectLevel = {
-        name: 'level_45'
+        "name": 'level_45'
     }
-    objectLevel.map = [2,2,2,2,2,2,0,3,3,3,3,0,0,0,1,1,0,0,0,0,1,1,0,0,0,3,3,3,3,0,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 0, 3, 3, 3, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 3, 3, 3, 3, 0, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -946,9 +934,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[44] = objectLevel
 
     objectLevel = {
-        name: 'level_46'
+        "name": 'level_46'
     }
-    objectLevel.map = [3,3,0,0,0,0,3,1,1,0,0,0,0,1,2,2,0,0,0,0,2,3,3,0,0,0,0,3,1,1,0,0,0,0,1,2]
+    objectLevel.map = [3, 3, 0, 0, 0, 0, 3, 1, 1, 0, 0, 0, 0, 1, 2, 2, 0, 0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 3, 1, 1, 0, 0, 0, 0, 1, 2]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -962,9 +950,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[45] = objectLevel
 
     objectLevel = {
-        name: 'level_47'
+        "name": 'level_47'
     }
-    objectLevel.map = [3,3,3,3,3,3,3,1,1,1,1,3,3,1,0,0,1,3,3,1,0,0,1,3,3,1,1,1,1,3,3,3,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 1, 0, 0, 1, 3, 3, 1, 0, 0, 1, 3, 3, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -978,9 +966,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[46] = objectLevel
 
     objectLevel = {
-        name: 'level_48'
+        "name": 'level_48'
     }
-    objectLevel.map = [0,3,1,1,3,0,3,3,2,2,3,3,1,2,3,3,2,1,1,2,3,3,2,1,3,3,2,2,3,3,0,3,1,1,3,0]
+    objectLevel.map = [0, 3, 1, 1, 3, 0, 3, 3, 2, 2, 3, 3, 1, 2, 3, 3, 2, 1, 1, 2, 3, 3, 2, 1, 3, 3, 2, 2, 3, 3, 0, 3, 1, 1, 3, 0]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -994,9 +982,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[47] = objectLevel
 
     objectLevel = {
-        name: 'level_49'
+        "name": 'level_49'
     }
-    objectLevel.map = [3,0,0,0,3,3,3,3,1,1,3,0,0,1,3,3,1,0,0,1,3,3,1,0,3,3,1,1,3,3,3,0,0,0,0,3]
+    objectLevel.map = [3, 0, 0, 0, 3, 3, 3, 3, 1, 1, 3, 0, 0, 1, 3, 3, 1, 0, 0, 1, 3, 3, 1, 0, 3, 3, 1, 1, 3, 3, 3, 0, 0, 0, 0, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1009,11 +997,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[48] = objectLevel
 
-
     objectLevel = {
-        name: 'level_50'
+        "name": 'level_50'
     }
-    objectLevel.map = [3,3,3,3,3,3,3,1,1,1,1,3,3,1,2,2,1,3,3,1,2,2,1,3,3,1,1,1,1,3,3,3,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 1, 2, 2, 1, 3, 3, 1, 2, 2, 1, 3, 3, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1027,9 +1014,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[49] = objectLevel
 
     objectLevel = {
-        name: 'level_51'
+        "name": 'level_51'
     }
-    objectLevel.map = [3,0,0,0,0,3,3,3,3,3,3,3,2,3,3,3,3,2,3,2,3,3,2,3,3,3,3,3,3,3,0,3,3,3,3,0]
+    objectLevel.map = [3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 2, 3, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0]
     objectLevel.width = 6
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1043,9 +1030,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[50] = objectLevel
 
     objectLevel = {
-        name: 'level_52'
+        "name": 'level_52'
     }
-    objectLevel.map = [0,0,2,2,0,0,0,0,0,0,2,0,0,0,0,2,2,2,2,2,0,2,2,2,2,2,2,2,2,1,2,3,2,1,2,2,2,3,3,3,2,2,0,2,2,2,2,2,0]
+    objectLevel.map = [0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 3, 2, 1, 2, 2, 2, 3, 3, 3, 2, 2, 0, 2, 2, 2, 2, 2, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1058,11 +1045,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[51] = objectLevel
 
-
     objectLevel = {
-        name: 'level_53'
+        "name": 'level_53'
     }
-    objectLevel.map = [2,2,0,0,0,1,1,2,2,2,0,1,1,1,0,2,2,2,1,1,0,0,0,2,2,2,0,0,0,1,1,2,2,2,0,1,1,1,0,2,2,2,1,1,0,0,0,2,2]
+    objectLevel.map = [2, 2, 0, 0, 0, 1, 1, 2, 2, 2, 0, 1, 1, 1, 0, 2, 2, 2, 1, 1, 0, 0, 0, 2, 2, 2, 0, 0, 0, 1, 1, 2, 2, 2, 0, 1, 1, 1, 0, 2, 2, 2, 1, 1, 0, 0, 0, 2, 2]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1076,9 +1062,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[52] = objectLevel
 
     objectLevel = {
-        name: 'level_54'
+        "name": 'level_54'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,0,0,0,2,2,0,1,1,0,1,1,0,0,0,3,3,3,0,0,0,1,1,0,1,1,0,2,2,0,0,0,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 0, 1, 1, 0, 1, 1, 0, 0, 0, 3, 3, 3, 0, 0, 0, 1, 1, 0, 1, 1, 0, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1092,9 +1078,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[53] = objectLevel
 
     objectLevel = {
-        name: 'level_55'
+        "name": 'level_55'
     }
-    objectLevel.map = [3,3,0,0,0,3,3,3,3,1,0,1,3,3,0,1,1,2,1,1,0,0,0,2,2,2,0,0,0,1,1,2,1,1,0,3,3,1,0,1,3,3,3,3,0,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 0, 3, 3, 3, 3, 1, 0, 1, 3, 3, 0, 1, 1, 2, 1, 1, 0, 0, 0, 2, 2, 2, 0, 0, 0, 1, 1, 2, 1, 1, 0, 3, 3, 1, 0, 1, 3, 3, 3, 3, 0, 0, 0, 3, 3]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1108,9 +1094,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[54] = objectLevel
 
     objectLevel = {
-        name: 'level_56'
+        "name": 'level_56'
     }
-    objectLevel.map = [2,1,3,2,1,3,2,0,2,1,3,2,1,0,0,0,2,1,3,0,0,0,0,0,2,0,0,0,0,0,1,3,2,0,0,0,1,3,2,1,3,0,1,3,2,1,3,2,1]
+    objectLevel.map = [2, 1, 3, 2, 1, 3, 2, 0, 2, 1, 3, 2, 1, 0, 0, 0, 2, 1, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 3, 2, 0, 0, 0, 1, 3, 2, 1, 3, 0, 1, 3, 2, 1, 3, 2, 1]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1124,9 +1110,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[55] = objectLevel
 
     objectLevel = {
-        name: 'level_57'
+        "name": 'level_57'
     }
-    objectLevel.map = [3,3,0,0,0,3,3,3,3,1,1,1,3,3,0,1,2,2,2,1,0,0,1,2,3,2,1,0,0,1,2,2,2,1,0,3,3,1,1,1,3,3,3,3,0,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 0, 3, 3, 3, 3, 1, 1, 1, 3, 3, 0, 1, 2, 2, 2, 1, 0, 0, 1, 2, 3, 2, 1, 0, 0, 1, 2, 2, 2, 1, 0, 3, 3, 1, 1, 1, 3, 3, 3, 3, 0, 0, 0, 3, 3]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1140,9 +1126,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[56] = objectLevel
 
     objectLevel = {
-        name: 'level_58'
+        "name": 'level_58'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,2,2,1,1,0,0,0,1,1,3,3,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 1, 1, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1156,9 +1142,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[57] = objectLevel
 
     objectLevel = {
-        name: 'level_59'
+        "name": 'level_59'
     }
-    objectLevel.map = [0,0,1,1,1,0,0,3,3,1,1,1,3,3,0,3,1,1,1,3,0,0,0,1,1,1,0,0,3,3,1,1,1,3,3,3,0,1,1,1,0,3,0,0,1,1,1,0,0]
+    objectLevel.map = [0, 0, 1, 1, 1, 0, 0, 3, 3, 1, 1, 1, 3, 3, 0, 3, 1, 1, 1, 3, 0, 0, 0, 1, 1, 1, 0, 0, 3, 3, 1, 1, 1, 3, 3, 3, 0, 1, 1, 1, 0, 3, 0, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1172,9 +1158,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[58] = objectLevel
 
     objectLevel = {
-        name: 'level_60'
+        "name": 'level_60'
     }
-    objectLevel.map = [2,3,0,0,0,3,2,3,2,3,0,3,2,3,0,3,2,3,2,3,0,0,0,3,2,3,0,0,0,3,2,3,2,3,0,3,2,3,0,3,2,3,2,3,0,0,0,3,2]
+    objectLevel.map = [2, 3, 0, 0, 0, 3, 2, 3, 2, 3, 0, 3, 2, 3, 0, 3, 2, 3, 2, 3, 0, 0, 0, 3, 2, 3, 0, 0, 0, 3, 2, 3, 2, 3, 0, 3, 2, 3, 0, 3, 2, 3, 2, 3, 0, 0, 0, 3, 2]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1187,11 +1173,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[59] = objectLevel
 
-
     objectLevel = {
-        name: 'level_61'
+        "name": 'level_61'
     }
-    objectLevel.map = [0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,1,2,1,2,1,0,1,2,2,1,2,2,1,0,1,2,1,2,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 2, 1, 2, 1, 0, 1, 2, 2, 1, 2, 2, 1, 0, 1, 2, 1, 2, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1204,11 +1189,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[60] = objectLevel
 
-
     objectLevel = {
-        name: 'level_62'
+        "name": 'level_62'
     }
-    objectLevel.map = [0,0,3,3,3,0,0,0,0,1,1,1,0,0,3,3,3,0,3,3,3,0,0,1,1,1,0,0,3,3,3,0,3,3,3,0,0,1,1,1,0,0,0,0,3,3,3,0,0]
+    objectLevel.map = [0, 0, 3, 3, 3, 0, 0, 0, 0, 1, 1, 1, 0, 0, 3, 3, 3, 0, 3, 3, 3, 0, 0, 1, 1, 1, 0, 0, 3, 3, 3, 0, 3, 3, 3, 0, 0, 1, 1, 1, 0, 0, 0, 0, 3, 3, 3, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1222,9 +1206,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[61] = objectLevel
 
     objectLevel = {
-        name: 'level_63'
+        "name": 'level_63'
     }
-    objectLevel.map = [0,0,0,3,0,0,0,0,0,3,2,3,0,0,0,3,3,3,3,3,0,3,2,3,3,2,3,3,3,3,3,3,3,3,3,0,0,0,1,0,0,0,0,0,0,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 2, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 2, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1238,9 +1222,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[62] = objectLevel
 
     objectLevel = {
-        name: 'level_64'
+        "name": 'level_64'
     }
-    objectLevel.map = [0,0,2,1,2,0,0,0,0,3,3,1,0,0,2,3,3,0,2,1,2,1,3,2,0,2,3,1,2,1,2,0,3,3,2,0,0,1,3,3,0,0,0,0,2,1,2,0,0]
+    objectLevel.map = [0, 0, 2, 1, 2, 0, 0, 0, 0, 3, 3, 1, 0, 0, 2, 3, 3, 0, 2, 1, 2, 1, 3, 2, 0, 2, 3, 1, 2, 1, 2, 0, 3, 3, 2, 0, 0, 1, 3, 3, 0, 0, 0, 0, 2, 1, 2, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1253,11 +1237,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[63] = objectLevel
 
-
     objectLevel = {
-        name: 'level_65'
+        "name": 'level_65'
     }
-    objectLevel.map = [1,1,0,0,0,1,1,1,1,3,3,3,1,1,0,0,3,3,3,0,0,1,1,3,3,3,1,1,1,1,3,3,3,1,1,0,3,3,0,3,3,0,0,3,3,0,3,3,0]
+    objectLevel.map = [1, 1, 0, 0, 0, 1, 1, 1, 1, 3, 3, 3, 1, 1, 0, 0, 3, 3, 3, 0, 0, 1, 1, 3, 3, 3, 1, 1, 1, 1, 3, 3, 3, 1, 1, 0, 3, 3, 0, 3, 3, 0, 0, 3, 3, 0, 3, 3, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1271,9 +1254,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[64] = objectLevel
 
     objectLevel = {
-        name: 'level_66'
+        "name": 'level_66'
     }
-    objectLevel.map = [0,0,0,1,0,0,0,0,0,1,2,1,0,0,0,1,2,2,2,1,0,1,2,3,2,3,2,1,0,1,2,2,2,1,0,0,0,1,2,1,0,0,0,0,0,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 1, 2, 2, 2, 1, 0, 1, 2, 3, 2, 3, 2, 1, 0, 1, 2, 2, 2, 1, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1287,9 +1270,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[65] = objectLevel
 
     objectLevel = {
-        name: 'level_67'
+        "name": 'level_67'
     }
-    objectLevel.map = [2,0,0,0,0,0,2,2,2,0,0,0,2,2,2,2,2,2,2,2,2,2,1,1,2,1,1,2,2,1,1,2,1,1,2,2,2,2,3,2,2,2,0,2,2,2,2,2,0]
+    objectLevel.map = [2, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 3, 2, 2, 2, 0, 2, 2, 2, 2, 2, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1303,9 +1286,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[66] = objectLevel
 
     objectLevel = {
-        name: 'level_68'
+        "name": 'level_68'
     }
-    objectLevel.map = [2,2,0,0,0,2,2,2,0,0,0,0,0,2,2,2,1,1,1,2,2,0,1,1,1,1,1,0,0,3,3,1,3,3,0,0,3,3,1,3,3,0,0,0,1,1,1,0,0]
+    objectLevel.map = [2, 2, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 1, 1, 1, 2, 2, 0, 1, 1, 1, 1, 1, 0, 0, 3, 3, 1, 3, 3, 0, 0, 3, 3, 1, 3, 3, 0, 0, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1319,9 +1302,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[67] = objectLevel
 
     objectLevel = {
-        name: 'level_69'
+        "name": 'level_69'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,3,1,3,1,3,2,2,1,3,1,3,1,2,2,3,1,3,1,3,2,2,1,3,1,3,1,2,2,3,1,3,1,3,2,2,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 3, 1, 3, 2, 2, 1, 3, 1, 3, 1, 2, 2, 3, 1, 3, 1, 3, 2, 2, 1, 3, 1, 3, 1, 2, 2, 3, 1, 3, 1, 3, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1335,9 +1318,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[68] = objectLevel
 
     objectLevel = {
-        name: 'level_70'
+        "name": 'level_70'
     }
-    objectLevel.map = [2,2,2,0,2,2,2,2,3,2,2,2,3,2,2,2,2,2,2,2,2,2,1,1,1,1,1,2,1,1,1,1,1,1,1,0,1,1,1,1,1,0]
+    objectLevel.map = [2, 2, 2, 0, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 7
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1351,9 +1334,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[69] = objectLevel
 
     objectLevel = {
-        name: 'level_71'
+        "name": 'level_71'
     }
-    objectLevel.map = [3,3,0,0,0,3,3,3,3,0,0,0,3,3,2,2,2,2,2,2,2,2,3,3,2,3,3,2,2,3,2,2,2,3,2,2,2,2,3,2,2,2]
+    objectLevel.map = [3, 3, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 3, 3, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2]
     objectLevel.width = 7
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1367,9 +1350,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[70] = objectLevel
 
     objectLevel = {
-        name: 'level_72'
+        "name": 'level_72'
     }
-    objectLevel.map = [0,0,2,2,2,0,0,0,2,3,3,3,2,0,2,3,2,2,2,3,2,2,3,2,3,2,3,2,2,3,2,2,2,3,2,0,2,3,3,3,2,0,0,0,2,2,2,0,0]
+    objectLevel.map = [0, 0, 2, 2, 2, 0, 0, 0, 2, 3, 3, 3, 2, 0, 2, 3, 2, 2, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3, 2, 2, 2, 3, 2, 0, 2, 3, 3, 3, 2, 0, 0, 0, 2, 2, 2, 0, 0]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -1383,9 +1366,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[71] = objectLevel
 
     objectLevel = {
-        name: 'level_73'
+        "name": 'level_73'
     }
-    objectLevel.map = [0,3,3,3,0,3,3,3,3,3,3,3,3,3,3,2,3,2,1,2,0,2,1,2,0,0,1,2,1,0,0,0,1,0,0,0,0,2,0,0]
+    objectLevel.map = [0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 2, 1, 2, 0, 2, 1, 2, 0, 0, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 2, 0, 0]
     objectLevel.width = 5
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1399,9 +1382,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[72] = objectLevel
 
     objectLevel = {
-        name: 'level_74'
+        "name": 'level_74'
     }
-    objectLevel.map = [3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0,3,3,3,3,3,0,1,1,1,0]
+    objectLevel.map = [3, 3, 3, 3, 3, 0, 1, 1, 1, 0, 3, 3, 3, 3, 3, 0, 1, 1, 1, 0, 3, 3, 3, 3, 3, 0, 1, 1, 1, 0, 3, 3, 3, 3, 3, 0, 1, 1, 1, 0]
     objectLevel.width = 5
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1414,11 +1397,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[73] = objectLevel
 
-
     objectLevel = {
-        name: 'level_75'
+        "name": 'level_75'
     }
-    objectLevel.map = [0,0,3,3,3,3,0,0,0,0,3,1,1,3,0,0,3,3,3,3,3,3,3,3,3,2,2,3,2,2,3,3,0,2,2,0,2,2,0,0]
+    objectLevel.map = [0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 3, 1, 1, 3, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 2, 2, 3, 3, 0, 2, 2, 0, 2, 2, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -1432,9 +1414,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[74] = objectLevel
 
     objectLevel = {
-        name: 'level_76'
+        "name": 'level_76'
     }
-    objectLevel.map = [0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,0,0,0,2,2,2,2,0,0]
+    objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1448,9 +1430,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[75] = objectLevel
 
     objectLevel = {
-        name: 'level_77'
+        "name": 'level_77'
     }
-    objectLevel.map = [2,2,0,0,0,0,2,2,2,2,3,0,0,3,2,2,0,0,3,1,1,3,0,0,0,0,3,1,1,3,0,0,2,2,3,0,0,3,2,2,2,2,0,0,0,0,2,2]
+    objectLevel.map = [2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 3, 0, 0, 3, 2, 2, 0, 0, 3, 1, 1, 3, 0, 0, 0, 0, 3, 1, 1, 3, 0, 0, 2, 2, 3, 0, 0, 3, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2]
     objectLevel.width = 8
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1463,11 +1445,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[76] = objectLevel
 
-
     objectLevel = {
-        name: 'level_78'
+        "name": 'level_78'
     }
-    objectLevel.map = [2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2,2,2,3,3,3,3,2,2,2,2,3,3,3,3,2,2,2,2,1,1,1,1,2,2,2,2,1,1,1,1,2,2]
+    objectLevel.map = [2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2]
     objectLevel.width = 8
     objectLevel.height = 6
     objectLevel.mapArray = []
@@ -1481,9 +1462,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[77] = objectLevel
 
     objectLevel = {
-        name: 'level_79'
+        "name": 'level_79'
     }
-    objectLevel.map = [3,3,0,0,0,0,1,1,3,3,3,2,2,1,1,1,0,3,0,2,2,0,1,0,0,2,2,2,2,2,2,0,0,2,2,2,2,2,2,0,0,1,0,2,2,0,3,0,1,1,1,2,2,3,3,3,1,1,0,0,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 0, 0, 1, 1, 3, 3, 3, 2, 2, 1, 1, 1, 0, 3, 0, 2, 2, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 1, 0, 2, 2, 0, 3, 0, 1, 1, 1, 2, 2, 3, 3, 3, 1, 1, 0, 0, 0, 0, 3, 3]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1497,9 +1478,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[78] = objectLevel
 
     objectLevel = {
-        name: 'level_80'
+        "name": 'level_80'
     }
-    objectLevel.map = [1,3,0,0,0,0,3,1,3,3,3,0,0,3,3,3,0,3,3,3,3,3,3,0,0,0,3,2,2,3,0,0,0,0,3,2,2,3,0,0,0,3,3,3,3,3,3,0,3,3,3,0,0,3,3,3,1,3,0,0,0,0,3,1]
+    objectLevel.map = [1, 3, 0, 0, 0, 0, 3, 1, 3, 3, 3, 0, 0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 2, 2, 3, 0, 0, 0, 0, 3, 2, 2, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 0, 0, 3, 3, 3, 1, 3, 0, 0, 0, 0, 3, 1]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1513,9 +1494,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[79] = objectLevel
 
     objectLevel = {
-        name: 'level_81'
+        "name": 'level_81'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,1,0,0,1,3,2,2,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1529,9 +1510,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[80] = objectLevel
 
     objectLevel = {
-        name: 'level_82'
+        "name": 'level_82'
     }
-    objectLevel.map = [0,0,0,1,1,0,0,0,0,0,1,3,3,1,0,0,0,1,3,2,2,3,1,0,1,3,2,1,1,2,3,1,1,3,2,1,1,2,3,1,0,1,3,2,2,3,1,0,0,0,1,3,3,1,0,0,0,0,0,1,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 3, 3, 1, 0, 0, 0, 1, 3, 2, 2, 3, 1, 0, 1, 3, 2, 1, 1, 2, 3, 1, 1, 3, 2, 1, 1, 2, 3, 1, 0, 1, 3, 2, 2, 3, 1, 0, 0, 0, 1, 3, 3, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1544,11 +1525,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[81] = objectLevel
 
-
     objectLevel = {
-        name: 'level_83'
+        "name": 'level_83'
     }
-    objectLevel.map = [3,3,3,0,0,3,3,3,3,3,3,1,1,3,3,3,3,3,3,1,1,3,3,3,0,1,1,0,0,1,1,0,0,1,1,0,0,1,1,0,3,3,3,1,1,3,3,3,3,3,3,1,1,3,3,3,3,3,3,0,0,3,3,3]
+    objectLevel.map = [3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1562,9 +1542,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[82] = objectLevel
 
     objectLevel = {
-        name: 'level_84'
+        "name": 'level_84'
     }
-    objectLevel.map = [0,1,0,0,0,0,1,0,1,1,3,0,0,3,1,1,0,3,3,2,2,3,3,0,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,0,3,3,2,2,3,3,0,1,1,3,0,0,3,1,1,0,1,0,0,0,0,1,0]
+    objectLevel.map = [0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 3, 0, 0, 3, 1, 1, 0, 3, 3, 2, 2, 3, 3, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 3, 3, 2, 2, 3, 3, 0, 1, 1, 3, 0, 0, 3, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1577,11 +1557,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[83] = objectLevel
 
-
     objectLevel = {
-        name: 'level_85'
+        "name": 'level_85'
     }
-    objectLevel.map = [3,2,1,0,0,1,2,3,2,2,1,0,0,1,2,2,0,1,3,1,1,3,1,0,0,1,1,2,2,1,1,0,0,1,1,2,2,1,1,0,0,1,3,1,1,3,1,0,2,2,1,0,0,1,2,2,3,2,1,0,0,1,2,3]
+    objectLevel.map = [3, 2, 1, 0, 0, 1, 2, 3, 2, 2, 1, 0, 0, 1, 2, 2, 0, 1, 3, 1, 1, 3, 1, 0, 0, 1, 1, 2, 2, 1, 1, 0, 0, 1, 1, 2, 2, 1, 1, 0, 0, 1, 3, 1, 1, 3, 1, 0, 2, 2, 1, 0, 0, 1, 2, 2, 3, 2, 1, 0, 0, 1, 2, 3]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1595,9 +1574,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[84] = objectLevel
 
     objectLevel = {
-        name: 'level_86'
+        "name": 'level_86'
     }
-    objectLevel.map = [0,1,0,0,0,0,1,0,1,3,2,0,0,2,3,1,0,2,2,2,2,2,2,0,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,0,2,2,2,2,2,2,0,1,3,2,0,0,2,3,1,0,1,0,0,0,0,1,0]
+    objectLevel.map = [0, 1, 0, 0, 0, 0, 1, 0, 1, 3, 2, 0, 0, 2, 3, 1, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 1, 3, 2, 0, 0, 2, 3, 1, 0, 1, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1610,11 +1589,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[85] = objectLevel
 
-
     objectLevel = {
-        name: 'level_87'
+        "name": 'level_87'
     }
-    objectLevel.map = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1628,9 +1606,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[86] = objectLevel
 
     objectLevel = {
-        name: 'level_88'
+        "name": 'level_88'
     }
-    objectLevel.map = [1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,3,3,2,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,1,1,0,0,0,0,0,0,1,1]
+    objectLevel.map = [1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1644,9 +1622,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[87] = objectLevel
 
     objectLevel = {
-        name: 'level_89'
+        "name": 'level_89'
     }
-    objectLevel.map = [0,2,2,2,2,2,2,0,2,2,3,2,2,3,2,2,2,2,2,2,2,2,2,2,2,3,2,2,2,3,2,2,0,2,2,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0,0]
+    objectLevel.map = [0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1660,9 +1638,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[88] = objectLevel
 
     objectLevel = {
-        name: 'level_90'
+        "name": 'level_90'
     }
-    objectLevel.map = [0,0,0,3,3,0,0,0,0,0,3,3,3,3,0,0,0,3,1,3,3,1,3,0,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,0,3,1,3,3,1,3,0,0,0,3,3,3,3,0,0,0,0,0,3,3,0,0,0]
+    objectLevel.map = [0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 3, 1, 3, 3, 1, 3, 0, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 0, 3, 1, 3, 3, 1, 3, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1676,9 +1654,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[89] = objectLevel
 
     objectLevel = {
-        name: 'level_91'
+        "name": 'level_91'
     }
-    objectLevel.map = [1,1,0,0,0,0,1,1,0,3,3,2,2,3,3,0,1,1,0,2,2,0,1,1,0,0,0,2,2,0,0,0,0,3,3,2,2,3,3,0,1,1,0,2,2,0,1,1,0,3,3,2,2,3,3,0,1,1,0,0,0,0,1,1]
+    objectLevel.map = [1, 1, 0, 0, 0, 0, 1, 1, 0, 3, 3, 2, 2, 3, 3, 0, 1, 1, 0, 2, 2, 0, 1, 1, 0, 0, 0, 2, 2, 0, 0, 0, 0, 3, 3, 2, 2, 3, 3, 0, 1, 1, 0, 2, 2, 0, 1, 1, 0, 3, 3, 2, 2, 3, 3, 0, 1, 1, 0, 0, 0, 0, 1, 1]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1692,9 +1670,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[90] = objectLevel
 
     objectLevel = {
-        name: 'level_92'
+        "name": 'level_92'
     }
-    objectLevel.map = [0,0,0,2,3,0,0,0,0,0,2,3,2,2,0,0,0,2,3,2,2,2,3,0,0,3,2,2,2,3,2,0,3,2,2,2,3,2,2,2,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 2, 3, 2, 2, 0, 0, 0, 2, 3, 2, 2, 2, 3, 0, 0, 3, 2, 2, 2, 3, 2, 0, 3, 2, 2, 2, 3, 2, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1708,9 +1686,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[91] = objectLevel
 
     objectLevel = {
-        name: 'level_93'
+        "name": 'level_93'
     }
-    objectLevel.map = [0,0,1,0,0,1,0,0,0,1,3,2,2,3,1,0,1,3,2,2,2,2,3,1,0,2,2,0,0,2,2,0,0,2,2,0,0,2,2,0,1,3,2,2,2,2,3,1,0,1,3,2,2,3,1,0,0,0,1,0,0,1,0,0]
+    objectLevel.map = [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 3, 2, 2, 3, 1, 0, 1, 3, 2, 2, 2, 2, 3, 1, 0, 2, 2, 0, 0, 2, 2, 0, 0, 2, 2, 0, 0, 2, 2, 0, 1, 3, 2, 2, 2, 2, 3, 1, 0, 1, 3, 2, 2, 3, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1724,9 +1702,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[92] = objectLevel
 
     objectLevel = {
-        name: 'level_94'
+        "name": 'level_94'
     }
-    objectLevel.map = [0,0,3,3,3,3,0,0,0,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,3,2,2,3,3,3,3,3,3,2,2,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,0,0,0,3,3,3,3,0,0]
+    objectLevel.map = [0, 0, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1740,9 +1718,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[93] = objectLevel
 
     objectLevel = {
-        name: 'level_95'
+        "name": 'level_95'
     }
-    objectLevel.map = [1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,3,3,3,3,0,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,0,0,3,3,3,3,0,0,1,1,1,1,1,1,1,1]
+    objectLevel.map = [1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 3, 3, 3, 3, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1756,9 +1734,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[94] = objectLevel
 
     objectLevel = {
-        name: 'level_96'
+        "name": 'level_96'
     }
-    objectLevel.map = [0,0,1,1,1,1,0,0,0,1,3,3,3,3,1,0,1,3,2,2,2,2,3,1,1,3,2,1,1,2,3,1,1,3,2,1,1,2,3,1,1,3,2,2,2,2,3,1,0,1,3,3,3,3,1,0,0,0,1,1,1,1,0,0]
+    objectLevel.map = [0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 3, 3, 3, 3, 1, 0, 1, 3, 2, 2, 2, 2, 3, 1, 1, 3, 2, 1, 1, 2, 3, 1, 1, 3, 2, 1, 1, 2, 3, 1, 1, 3, 2, 2, 2, 2, 3, 1, 0, 1, 3, 3, 3, 3, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1772,9 +1750,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[95] = objectLevel
 
     objectLevel = {
-        name: 'level_97'
+        "name": 'level_97'
     }
-    objectLevel.map = [1,1,1,0,0,3,3,3,1,1,1,0,0,3,3,3,1,1,1,2,2,3,3,3,0,0,2,2,2,2,0,0,0,0,2,2,2,2,0,0,3,3,3,2,2,1,1,1,3,3,3,0,0,1,1,1,3,3,3,0,0,1,1,1]
+    objectLevel.map = [1, 1, 1, 0, 0, 3, 3, 3, 1, 1, 1, 0, 0, 3, 3, 3, 1, 1, 1, 2, 2, 3, 3, 3, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 3, 3, 3, 2, 2, 1, 1, 1, 3, 3, 3, 0, 0, 1, 1, 1, 3, 3, 3, 0, 0, 1, 1, 1]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1788,9 +1766,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[96] = objectLevel
 
     objectLevel = {
-        name: 'level_98'
+        "name": 'level_98'
     }
-    objectLevel.map = [0,2,2,0,0,2,2,0,2,3,3,2,2,3,3,2,2,3,3,2,2,3,3,2,2,2,2,1,1,2,2,2,2,2,2,1,1,2,2,2,2,3,3,2,2,3,3,2,2,3,3,2,2,3,3,2,0,2,2,0,0,2,2,0]
+    objectLevel.map = [0, 2, 2, 0, 0, 2, 2, 0, 2, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 2, 2, 3, 3, 2, 0, 2, 2, 0, 0, 2, 2, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1804,9 +1782,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[97] = objectLevel
 
     objectLevel = {
-        name: 'level_99'
+        "name": 'level_99'
     }
-    objectLevel.map = [0,0,3,0,3,0,0,0,3,3,3,3,3,0,3,2,2,3,2,2,3,3,2,1,3,1,2,3,0,3,3,3,3,3,0,0,0,3,0,3,0,0,0,0,3,0,3,0,0,0,3,3,0,3,3,0]
+    objectLevel.map = [0, 0, 3, 0, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 2, 2, 3, 2, 2, 3, 3, 2, 1, 3, 1, 2, 3, 0, 3, 3, 3, 3, 3, 0, 0, 0, 3, 0, 3, 0, 0, 0, 0, 3, 0, 3, 0, 0, 0, 3, 3, 0, 3, 3, 0]
     objectLevel.width = 7
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -1820,9 +1798,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[98] = objectLevel
 
     objectLevel = {
-        name: 'level_100'
+        "name": 'level_100'
     }
-    objectLevel.map = [0,3,3,3,3,0,0,0,3,3,1,3,3,3,3,3,0,0,2,2,3,3,3,3,0,0,0,2,2,3,3,0,0,0,0,0,2,3,3,0,0,0,0,0,2,3,3,0,0,0,0,0,3,3,0,0,0,0,3,3,3,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,0,0,0]
+    objectLevel.map = [0, 3, 3, 3, 3, 0, 0, 0, 3, 3, 1, 3, 3, 3, 3, 3, 0, 0, 2, 2, 3, 3, 3, 3, 0, 0, 0, 2, 2, 3, 3, 0, 0, 0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, 2, 3, 3, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -1835,11 +1813,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[99] = objectLevel
 
-
     objectLevel = {
-        name: 'level_101'
+        "name": 'level_101'
     }
-    objectLevel.map = [0,0,0,0,3,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,0,2,2,2,2,3,2,2,2,2,2,2,2,2,3,2,2,2,2,0,0,0,0,3,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,3,3,3,3,3,0,0]
+    objectLevel.map = [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1853,9 +1830,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[100] = objectLevel
 
     objectLevel = {
-        name: 'level_102'
+        "name": 'level_102'
     }
-    objectLevel.map = [0,0,0,1,3,1,0,0,0,0,0,1,3,2,3,1,0,0,0,1,3,2,0,2,3,1,0,1,3,2,0,0,0,2,3,1,3,2,0,0,0,0,0,2,3,1,3,2,0,0,0,2,3,1,0,1,3,2,0,2,3,1,0,0,0,1,3,2,3,1,0,0,0,0,0,1,3,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 3, 1, 0, 0, 0, 0, 0, 1, 3, 2, 3, 1, 0, 0, 0, 1, 3, 2, 0, 2, 3, 1, 0, 1, 3, 2, 0, 0, 0, 2, 3, 1, 3, 2, 0, 0, 0, 0, 0, 2, 3, 1, 3, 2, 0, 0, 0, 2, 3, 1, 0, 1, 3, 2, 0, 2, 3, 1, 0, 0, 0, 1, 3, 2, 3, 1, 0, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1868,11 +1845,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[101] = objectLevel
 
-
     objectLevel = {
-        name: 'level_103'
+        "name": 'level_103'
     }
-    objectLevel.map = [0,3,3,0,0,0,3,3,0,3,3,3,3,0,3,3,3,3,3,1,1,3,3,3,1,1,3,3,1,2,2,3,2,2,1,3,3,3,2,2,3,2,2,3,3,3,3,2,2,2,2,2,3,3,0,3,3,2,2,2,3,3,0,0,0,3,3,3,3,3,0,0,0,0,0,3,3,3,0,0,0]
+    objectLevel.map = [0, 3, 3, 0, 0, 0, 3, 3, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 1, 1, 3, 3, 3, 1, 1, 3, 3, 1, 2, 2, 3, 2, 2, 1, 3, 3, 3, 2, 2, 3, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 2, 3, 3, 0, 3, 3, 2, 2, 2, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1886,9 +1862,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[102] = objectLevel
 
     objectLevel = {
-        name: 'level_104'
+        "name": 'level_104'
     }
-    objectLevel.map = [0,0,0,2,2,2,0,0,0,0,2,2,2,2,2,2,2,0,0,2,2,2,2,2,2,2,0,2,2,3,3,2,3,3,2,2,2,2,3,3,2,3,3,2,2,2,2,2,2,2,2,2,2,2,0,2,2,1,1,1,2,2,0,0,2,2,2,1,2,2,2,0,0,0,0,2,2,2,0,0,0]
+    objectLevel.map = [0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 3, 3, 2, 3, 3, 2, 2, 2, 2, 3, 3, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 1, 1, 1, 2, 2, 0, 0, 2, 2, 2, 1, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1901,11 +1877,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[103] = objectLevel
 
-
     objectLevel = {
-        name: 'level_105'
+        "name": 'level_105'
     }
-    objectLevel.map = [3,3,0,0,0,0,0,3,3,3,3,1,0,0,0,1,3,3,0,1,1,1,2,1,1,1,0,0,0,1,1,2,1,1,0,0,0,0,2,2,2,2,2,0,0,0,0,1,1,2,1,1,0,0,0,1,1,1,2,1,1,1,0,3,3,1,0,0,0,1,3,3,3,3,0,0,0,0,0,3,3]
+    objectLevel.map = [3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 1, 0, 0, 0, 1, 3, 3, 0, 1, 1, 1, 2, 1, 1, 1, 0, 0, 0, 1, 1, 2, 1, 1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 1, 1, 2, 1, 1, 0, 0, 0, 1, 1, 1, 2, 1, 1, 1, 0, 3, 3, 1, 0, 0, 0, 1, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1918,11 +1893,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[104] = objectLevel
 
-
     objectLevel = {
-        name: 'level_106'
+        "name": 'level_106'
     }
-    objectLevel.map = [2,2,2,2,2,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,2,2,2,2,2,0,0,0,1,1,1,1,1,0,0,0,3,3,3,3,3,0,0,0,2,2,2,2,2,0,0,0,1,1,1,1,1,0,0,0,0,0,3,3,3,3,3,0,0,0]
+    objectLevel.map = [2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1936,9 +1910,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[105] = objectLevel
 
     objectLevel = {
-        name: 'level_107'
+        "name": 'level_107'
     }
-    objectLevel.map = [0,0,0,0,2,0,0,0,0,0,0,0,2,3,2,0,0,0,0,0,2,3,1,3,2,0,0,0,0,3,1,3,1,3,0,0,0,3,1,3,2,3,1,3,0,0,1,3,2,1,2,3,1,0,1,3,2,1,3,1,2,3,1,3,2,1,3,0,3,1,2,3,2,1,3,0,0,0,3,1,2]
+    objectLevel.map = [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 2, 3, 1, 3, 2, 0, 0, 0, 0, 3, 1, 3, 1, 3, 0, 0, 0, 3, 1, 3, 2, 3, 1, 3, 0, 0, 1, 3, 2, 1, 2, 3, 1, 0, 1, 3, 2, 1, 3, 1, 2, 3, 1, 3, 2, 1, 3, 0, 3, 1, 2, 3, 2, 1, 3, 0, 0, 0, 3, 1, 2]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1952,9 +1926,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[106] = objectLevel
 
     objectLevel = {
-        name: 'level_108'
+        "name": 'level_108'
     }
-    objectLevel.map = [0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,3,3,3,3,3,0,0,0,0,3,3,3,3,3,0,0,0,0,3,3,3,3,3,0,0,0,0,3,3,3,3,3,0,0,0,1,3,3,3,3,3,1,0,1,1,3,3,3,3,3,1,1,0,1,3,3,3,3,3,1,0]
+    objectLevel.map = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 1, 3, 3, 3, 3, 3, 1, 0, 1, 1, 3, 3, 3, 3, 3, 1, 1, 0, 1, 3, 3, 3, 3, 3, 1, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1967,11 +1941,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[107] = objectLevel
 
-
     objectLevel = {
-        name: 'level_109'
+        "name": 'level_109'
     }
-    objectLevel.map = [0,0,0,2,2,2,0,0,0,0,3,3,2,2,2,3,3,0,0,3,1,3,3,3,1,3,0,2,1,1,3,2,3,1,1,2,2,2,3,3,2,3,3,2,2,2,1,1,3,2,3,1,1,2,0,3,1,3,3,3,1,3,0,0,3,3,2,2,2,3,3,0,0,0,0,2,2,2,0,0,0]
+    objectLevel.map = [0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 3, 3, 2, 2, 2, 3, 3, 0, 0, 3, 1, 3, 3, 3, 1, 3, 0, 2, 1, 1, 3, 2, 3, 1, 1, 2, 2, 2, 3, 3, 2, 3, 3, 2, 2, 2, 1, 1, 3, 2, 3, 1, 1, 2, 0, 3, 1, 3, 3, 3, 1, 3, 0, 0, 3, 3, 2, 2, 2, 3, 3, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -1985,9 +1958,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[108] = objectLevel
 
     objectLevel = {
-        name: 'level_110'
+        "name": 'level_110'
     }
-    objectLevel.map = [0,0,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,1,2,2,2,2,1,1,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,2,2,2,0,2,2,2,3,2,2,2,0,0,0,2,2,2,2,2,0,0]
+    objectLevel.map = [0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 0, 2, 2, 2, 3, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2000,11 +1973,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[109] = objectLevel
 
-
     objectLevel = {
-        name: 'level_111'
+        "name": 'level_111'
     }
-    objectLevel.map = [2,2,2,0,0,0,2,2,2,2,2,2,3,1,3,2,2,2,2,2,2,3,1,3,2,2,2,0,3,3,3,1,3,3,3,0,0,1,1,1,1,1,1,1,0,0,3,3,3,1,3,3,3,0,2,2,2,3,1,3,2,2,2,2,2,2,3,1,3,2,2,2,2,2,2,0,0,0,2,2,2]
+    objectLevel.map = [2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 3, 1, 3, 2, 2, 2, 2, 2, 2, 3, 1, 3, 2, 2, 2, 0, 3, 3, 3, 1, 3, 3, 3, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 3, 3, 3, 1, 3, 3, 3, 0, 2, 2, 2, 3, 1, 3, 2, 2, 2, 2, 2, 2, 3, 1, 3, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2017,11 +1989,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[110] = objectLevel
 
-
     objectLevel = {
-        name: 'level_112'
+        "name": 'level_112'
     }
-    objectLevel.map = [3,2,3,0,0,0,3,2,3,2,2,2,3,0,3,2,2,2,3,2,2,2,3,2,2,2,3,0,3,2,2,2,2,2,3,0,0,0,3,2,2,2,3,0,0,0,3,2,2,2,2,2,3,0,3,2,2,2,3,2,2,2,3,2,2,2,3,0,3,2,2,2,3,2,3,0,0,0,3,2,3]
+    objectLevel.map = [3, 2, 3, 0, 0, 0, 3, 2, 3, 2, 2, 2, 3, 0, 3, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 3, 0, 3, 2, 2, 2, 2, 2, 3, 0, 0, 0, 3, 2, 2, 2, 3, 0, 0, 0, 3, 2, 2, 2, 2, 2, 3, 0, 3, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 3, 0, 3, 2, 2, 2, 3, 2, 3, 0, 0, 0, 3, 2, 3]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2035,9 +2006,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[111] = objectLevel
 
     objectLevel = {
-        name: 'level_113'
+        "name": 'level_113'
     }
-    objectLevel.map = [0,0,0,3,1,3,0,0,0,0,0,0,3,1,3,0,0,0,0,0,0,3,1,3,0,0,0,3,3,3,3,1,3,3,3,3,1,1,1,1,1,1,1,1,1,3,3,3,3,1,3,3,3,3,0,0,0,3,1,3,0,0,0,0,0,0,3,1,3,0,0,0,0,0,0,3,1,3,0,0,0]
+    objectLevel.map = [0, 0, 0, 3, 1, 3, 0, 0, 0, 0, 0, 0, 3, 1, 3, 0, 0, 0, 0, 0, 0, 3, 1, 3, 0, 0, 0, 3, 3, 3, 3, 1, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 1, 3, 3, 3, 3, 0, 0, 0, 3, 1, 3, 0, 0, 0, 0, 0, 0, 3, 1, 3, 0, 0, 0, 0, 0, 0, 3, 1, 3, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2050,11 +2021,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[112] = objectLevel
 
-
     objectLevel = {
-        name: 'level_114'
+        "name": 'level_114'
     }
-    objectLevel.map = [0,3,3,2,0,2,3,3,0,3,1,1,2,1,2,1,1,3,3,1,2,2,1,2,2,1,3,0,3,3,3,1,3,3,3,0,0,0,1,1,0,1,1,0,0,0,2,2,2,1,2,2,2,0,2,1,3,3,1,3,3,1,2,2,1,1,3,1,3,1,1,2,0,2,2,3,0,3,2,2,0]
+    objectLevel.map = [0, 3, 3, 2, 0, 2, 3, 3, 0, 3, 1, 1, 2, 1, 2, 1, 1, 3, 3, 1, 2, 2, 1, 2, 2, 1, 3, 0, 3, 3, 3, 1, 3, 3, 3, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 2, 2, 2, 1, 2, 2, 2, 0, 2, 1, 3, 3, 1, 3, 3, 1, 2, 2, 1, 1, 3, 1, 3, 1, 1, 2, 0, 2, 2, 3, 0, 3, 2, 2, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2068,9 +2038,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[113] = objectLevel
 
     objectLevel = {
-        name: 'level_115'
+        "name": 'level_115'
     }
-    objectLevel.map = [3,3,3,0,0,0,2,2,2,3,0,3,0,0,0,2,0,2,3,3,3,2,0,3,2,2,2,0,0,2,1,1,1,3,0,0,0,0,0,1,0,1,0,0,0,0,0,3,1,1,1,2,0,0,2,2,2,3,0,2,3,3,3,2,0,2,0,0,0,3,0,3,2,2,2,0,0,0,3,3,3]
+    objectLevel.map = [3, 3, 3, 0, 0, 0, 2, 2, 2, 3, 0, 3, 0, 0, 0, 2, 0, 2, 3, 3, 3, 2, 0, 3, 2, 2, 2, 0, 0, 2, 1, 1, 1, 3, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 3, 1, 1, 1, 2, 0, 0, 2, 2, 2, 3, 0, 2, 3, 3, 3, 2, 0, 2, 0, 0, 0, 3, 0, 3, 2, 2, 2, 0, 0, 0, 3, 3, 3]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2084,9 +2054,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[114] = objectLevel
 
     objectLevel = {
-        name: 'level_116'
+        "name": 'level_116'
     }
-    objectLevel.map = [0,0,0,0,2,1,3,2,0,0,0,0,0,2,1,3,2,2,0,0,0,0,2,1,3,3,3,0,0,0,0,2,1,1,1,1,2,2,2,2,2,2,2,2,2,1,1,1,1,2,0,0,0,0,3,3,3,1,2,0,0,0,0,2,2,3,1,2,0,0,0,0,0,2,3,1,2,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 2, 1, 3, 2, 0, 0, 0, 0, 0, 2, 1, 3, 2, 2, 0, 0, 0, 0, 2, 1, 3, 3, 3, 0, 0, 0, 0, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 0, 0, 0, 0, 3, 3, 3, 1, 2, 0, 0, 0, 0, 2, 2, 3, 1, 2, 0, 0, 0, 0, 0, 2, 3, 1, 2, 0, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2100,9 +2070,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[115] = objectLevel
 
     objectLevel = {
-        name: 'level_117'
+        "name": 'level_117'
     }
-    objectLevel.map = [0,0,1,1,1,1,1,0,0,0,1,3,3,3,3,3,1,0,1,3,2,2,2,2,2,3,1,3,2,1,1,0,1,1,2,3,3,2,1,0,0,0,1,2,3,3,2,1,1,0,1,1,2,3,1,3,2,2,2,2,2,3,1,0,1,3,3,3,3,3,1,0,0,0,1,1,1,1,1,0,0]
+    objectLevel.map = [0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 3, 3, 3, 3, 3, 1, 0, 1, 3, 2, 2, 2, 2, 2, 3, 1, 3, 2, 1, 1, 0, 1, 1, 2, 3, 3, 2, 1, 0, 0, 0, 1, 2, 3, 3, 2, 1, 1, 0, 1, 1, 2, 3, 1, 3, 2, 2, 2, 2, 2, 3, 1, 0, 1, 3, 3, 3, 3, 3, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2115,11 +2085,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[116] = objectLevel
 
-
     objectLevel = {
-        name: 'level_118'
+        "name": 'level_118'
     }
-    objectLevel.map = [3,3,3,3,0,3,3,3,3,3,2,2,3,1,3,2,2,3,3,2,2,3,1,3,2,2,3,3,3,3,3,0,3,3,3,3,0,1,1,0,0,0,1,1,0,3,3,3,3,0,3,3,3,3,3,2,2,3,1,3,2,2,3,3,2,2,3,1,3,2,2,3,3,3,3,3,0,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 2, 2, 3, 1, 3, 2, 2, 3, 3, 2, 2, 3, 1, 3, 2, 2, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0, 1, 1, 0, 0, 0, 1, 1, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 2, 2, 3, 1, 3, 2, 2, 3, 3, 2, 2, 3, 1, 3, 2, 2, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2133,9 +2102,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[117] = objectLevel
 
     objectLevel = {
-        name: 'level_119'
+        "name": 'level_119'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,2,2,3,2,3,2,3,2,2,2,3,2,0,2,0,2,3,2,2,2,0,0,0,0,0,2,2,2,3,2,0,0,0,2,3,2,2,2,0,0,0,0,0,2,2,2,3,2,0,2,0,2,3,2,2,2,3,2,3,2,3,2,2,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 2, 0, 2, 0, 2, 3, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 3, 2, 0, 0, 0, 2, 3, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 3, 2, 0, 2, 0, 2, 3, 2, 2, 2, 3, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2148,11 +2117,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[118] = objectLevel
 
-
     objectLevel = {
-        name: 'level_120'
+        "name": 'level_120'
     }
-    objectLevel.map = [0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,3,1,2,3,3,0,0,0,0,0,0,1,1,1,2,3,3,3,0,0,0,0,0,0,0,1,1,0,0,0,3,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,3,3,1,1,1,1,0,0,0,0,0,3,3,3,3,1,1,1,1,0,0,0,3,3,3,3,1,1,1,1,1,0,0,0,3,3,3,1,1,1,1,1,0,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 1, 1, 1, 1, 0, 0, 0, 0, 0, 3, 3, 3, 3, 1, 1, 1, 1, 0, 0, 0, 3, 3, 3, 3, 1, 1, 1, 1, 1, 0, 0, 0, 3, 3, 3, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2165,11 +2133,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[119] = objectLevel
 
-
     objectLevel = {
-        name: 'level_121'
+        "name": 'level_121'
     }
-    objectLevel.map = [0,0,0,3,3,3,3,3,0,0,0,0,3,3,3,3,3,3,3,0,0,0,1,3,3,3,3,3,3,3,0,1,3,1,3,3,3,3,3,3,2,1,1,1,3,3,3,3,3,3]
+    objectLevel.map = [0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 1, 3, 3, 3, 3, 3, 3, 3, 0, 1, 3, 1, 3, 3, 3, 3, 3, 3, 2, 1, 1, 1, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 10
     objectLevel.height = 5
     objectLevel.mapArray = []
@@ -2182,11 +2149,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[120] = objectLevel
 
-
     objectLevel = {
-        name: 'level_122'
+        "name": 'level_122'
     }
-    objectLevel.map = [0,2,2,2,2,0,0,0,0,0,0,2,3,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,0,2,2,2,2,0,0,2,2,2,0,2,2,2,0,0,0,2,2,2,0,2,2,2]
+    objectLevel.map = [0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 3, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 2, 2, 0, 0, 0, 2, 2, 2, 0, 2, 2, 2]
     objectLevel.width = 10
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2199,11 +2165,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[121] = objectLevel
 
-
     objectLevel = {
-        name: 'level_123'
+        "name": 'level_123'
     }
-    objectLevel.map = [0,0,0,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,3,1,0,0,0,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,0,0,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 11
     objectLevel.height = 12
     objectLevel.mapArray = []
@@ -2216,11 +2181,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[122] = objectLevel
 
-
     objectLevel = {
-        name: 'level_124'
+        "name": 'level_124'
     }
-    objectLevel.map = [0,0,0,2,0,2,0,2,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,2,3,2,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,0,0,2,2,2,2,2,2,2,0,2,0,0,2,2,0,0,0,2,2,0,0,0,0,2,2,0,0,0,2,2,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,0,2,0,0]
+    objectLevel.map = [0, 0, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0]
     objectLevel.width = 11
     objectLevel.height = 14
     objectLevel.mapArray = []
@@ -2233,11 +2197,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[123] = objectLevel
 
-
     objectLevel = {
-        name: 'level_125'
+        "name": 'level_125'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,2,3,3,2,1,3,1,1,2,2,3,3,2,1,3,1,1,2,2,2,2,2,1,3,3,3,2,2,1,1,1,1,1,1,1,2,2,3,3,3,1,2,2,2,2,2,1,1,3,1,2,3,3,2,2,1,1,3,1,2,3,3,2,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 1, 3, 1, 1, 2, 2, 3, 3, 2, 1, 3, 1, 1, 2, 2, 2, 2, 2, 1, 3, 3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 3, 1, 2, 2, 2, 2, 2, 1, 1, 3, 1, 2, 3, 3, 2, 2, 1, 1, 3, 1, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2251,9 +2214,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[124] = objectLevel
 
     objectLevel = {
-        name: 'level_126'
+        "name": 'level_126'
     }
-    objectLevel.map = [0,0,0,0,0,2,3,2,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,2,3,2,0,0,0,0,0,0,0,2,2,2,0,0,2,1,2,2,2,2,2,2,1,2,1,1,1,2,2,2,2,1,1,1,2,1,2,2,2,2,2,2,1,2,0,0,2,3,2,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,2,3,2,0,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 1, 2, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2267,9 +2230,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[125] = objectLevel
 
     objectLevel = {
-        name: 'level_127'
+        "name": 'level_127'
     }
-    objectLevel.map = [2,2,0,0,0,0,0,0,2,2,2,2,1,0,0,0,0,3,2,2,0,1,1,1,0,0,3,3,3,0,0,0,1,1,1,3,3,3,0,0,0,0,0,1,3,3,3,0,0,0,0,0,0,3,3,3,1,0,0,0,0,0,3,3,3,1,1,1,0,0,0,3,3,3,0,0,1,1,1,0,2,2,3,0,0,0,0,1,2,2,2,2,0,0,0,0,0,0,2,2]
+    objectLevel.map = [2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 1, 0, 0, 0, 0, 3, 2, 2, 0, 1, 1, 1, 0, 0, 3, 3, 3, 0, 0, 0, 1, 1, 1, 3, 3, 3, 0, 0, 0, 0, 0, 1, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 1, 0, 0, 0, 0, 0, 3, 3, 3, 1, 1, 1, 0, 0, 0, 3, 3, 3, 0, 0, 1, 1, 1, 0, 2, 2, 3, 0, 0, 0, 0, 1, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2282,11 +2245,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[126] = objectLevel
 
-
     objectLevel = {
-        name: 'level_128'
+        "name": 'level_128'
     }
-    objectLevel.map = [0,2,3,1,0,0,1,3,2,0,2,2,3,1,0,0,1,3,2,2,3,3,3,1,0,0,1,3,3,3,1,1,1,1,2,2,1,1,1,1,0,0,0,2,2,2,2,0,0,0,0,0,0,2,2,2,2,0,0,0,1,1,1,1,2,2,1,1,1,1,3,3,3,1,0,0,1,3,3,3,2,2,3,1,0,0,1,3,2,2,0,2,3,1,0,0,1,3,2,0]
+    objectLevel.map = [0, 2, 3, 1, 0, 0, 1, 3, 2, 0, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 3, 3, 3, 1, 0, 0, 1, 3, 3, 3, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 3, 3, 3, 1, 0, 0, 1, 3, 3, 3, 2, 2, 3, 1, 0, 0, 1, 3, 2, 2, 0, 2, 3, 1, 0, 0, 1, 3, 2, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2299,11 +2261,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[127] = objectLevel
 
-
     objectLevel = {
-        name: 'level_129'
+        "name": 'level_129'
     }
-    objectLevel.map = [0,0,0,0,3,1,0,0,0,0,0,0,0,3,3,1,1,0,0,0,0,0,3,3,3,1,1,1,0,0,0,3,3,3,3,1,1,1,1,0,3,3,3,3,2,2,1,1,1,1,3,3,3,0,2,2,0,1,1,1,3,3,0,0,2,2,0,0,1,1,3,0,0,0,2,2,0,0,0,1,0,0,0,0,2,2,0,0,0,0,0,0,0,2,2,2,2,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 3, 3, 1, 1, 0, 0, 0, 0, 0, 3, 3, 3, 1, 1, 1, 0, 0, 0, 3, 3, 3, 3, 1, 1, 1, 1, 0, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1, 3, 3, 3, 0, 2, 2, 0, 1, 1, 1, 3, 3, 0, 0, 2, 2, 0, 0, 1, 1, 3, 0, 0, 0, 2, 2, 0, 0, 0, 1, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2317,9 +2278,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[128] = objectLevel
 
     objectLevel = {
-        name: 'level_130'
+        "name": 'level_130'
     }
-    objectLevel.map = [0,0,0,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,0,0,0,1,1,3,3,3,3,1,1,0,1,1,3,3,3,3,3,3,1,1,1,1,3,3,2,2,3,3,1,1,1,1,3,3,2,2,3,3,1,1,1,1,3,3,3,3,3,3,1,1,0,1,1,3,3,3,3,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 3, 3, 3, 3, 1, 1, 0, 1, 1, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 2, 2, 3, 3, 1, 1, 1, 1, 3, 3, 2, 2, 3, 3, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 1, 1, 0, 1, 1, 3, 3, 3, 3, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2332,11 +2293,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[129] = objectLevel
 
-
     objectLevel = {
-        name: 'level_131'
+        "name": 'level_131'
     }
-    objectLevel.map = [0,0,0,0,2,2,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,3,3,3,3,3,3,0,0,0,3,3,3,1,1,3,3,3,0,3,3,3,3,1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,0,3,3,3,3,1,1,3,3,0,0,0,3,3,3,3,3,3,0,0]
+    objectLevel.map = [0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 1, 1, 3, 3, 3, 0, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 1, 1, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2349,11 +2309,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[130] = objectLevel
 
-
     objectLevel = {
-        name: 'level_132'
+        "name": 'level_132'
     }
-    objectLevel.map = [2,2,2,0,0,0,0,2,2,2,2,2,2,0,0,0,0,2,2,2,2,2,1,1,1,1,1,1,2,2,0,0,1,3,3,3,3,1,0,0,0,0,1,3,2,2,3,1,0,0,0,0,1,3,2,2,3,1,0,0,0,0,1,3,3,3,3,1,0,0,2,2,1,1,1,1,1,1,2,2,2,2,2,0,0,0,0,2,2,2,2,2,2,0,0,0,0,2,2,2]
+    objectLevel.map = [2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 0, 0, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 1, 3, 2, 2, 3, 1, 0, 0, 0, 0, 1, 3, 2, 2, 3, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 0, 0, 2, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2367,9 +2326,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[131] = objectLevel
 
     objectLevel = {
-        name: 'level_133'
+        "name": 'level_133'
     }
-    objectLevel.map = [3,3,3,0,0,0,0,3,3,3,3,0,3,0,3,3,0,3,0,3,3,3,3,1,1,1,1,3,3,3,0,0,1,1,1,1,1,1,0,0,0,2,1,1,0,0,1,1,2,0,0,2,1,1,0,0,1,1,2,0,0,0,1,1,1,1,1,1,0,0,2,2,2,1,1,1,1,2,2,2,2,0,2,0,3,3,0,2,0,2,2,2,2,0,0,0,0,2,2,2]
+    objectLevel.map = [3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 0, 3, 0, 3, 3, 0, 3, 0, 3, 3, 3, 3, 1, 1, 1, 1, 3, 3, 3, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 2, 1, 1, 0, 0, 1, 1, 2, 0, 0, 2, 1, 1, 0, 0, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 0, 2, 0, 3, 3, 0, 2, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2382,11 +2341,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[132] = objectLevel
 
-
     objectLevel = {
-        name: 'level_134'
+        "name": 'level_134'
     }
-    objectLevel.map = [3,3,2,2,0,0,0,0,1,1,3,3,3,2,2,0,0,1,1,1,2,3,3,3,2,2,1,1,1,0,2,2,3,3,3,2,2,1,0,0,0,2,2,3,3,3,2,2,0,0,0,0,2,2,3,3,3,2,2,0,0,1,1,2,2,3,3,3,2,2,1,1,1,0,2,2,3,3,3,2,1,1,0,0,0,2,2,3,3,3,1,0,0,0,0,0,2,2,3,3]
+    objectLevel.map = [3, 3, 2, 2, 0, 0, 0, 0, 1, 1, 3, 3, 3, 2, 2, 0, 0, 1, 1, 1, 2, 3, 3, 3, 2, 2, 1, 1, 1, 0, 2, 2, 3, 3, 3, 2, 2, 1, 0, 0, 0, 2, 2, 3, 3, 3, 2, 2, 0, 0, 0, 0, 2, 2, 3, 3, 3, 2, 2, 0, 0, 1, 1, 2, 2, 3, 3, 3, 2, 2, 1, 1, 1, 0, 2, 2, 3, 3, 3, 2, 1, 1, 0, 0, 0, 2, 2, 3, 3, 3, 1, 0, 0, 0, 0, 0, 2, 2, 3, 3]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2400,9 +2358,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[133] = objectLevel
 
     objectLevel = {
-        name: 'level_135'
+        "name": 'level_135'
     }
-    objectLevel.map = [0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,1,1,3,1,3,1,1,0,0,0,1,1,1,1,1,1,1,1,0,0,0,1,3,1,3,1,3,1,1,0,0,0,1,1,1,1,1,1,3,1,0,0,0,1,3,1,3,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 3, 1, 3, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 3, 1, 3, 1, 3, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 3, 1, 0, 0, 0, 1, 3, 1, 3, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2416,9 +2374,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[134] = objectLevel
 
     objectLevel = {
-        name: 'level_136'
+        "name": 'level_136'
     }
-    objectLevel.map = [0,0,0,0,2,2,0,0,0,0,0,0,0,2,3,3,2,0,0,0,0,0,2,3,1,1,3,2,0,0,0,2,3,1,2,2,1,3,2,0,2,3,1,2,0,0,2,1,3,2,2,3,1,2,0,0,2,1,3,2,0,2,3,1,2,2,1,3,2,0,0,0,2,3,1,1,3,2,0,0,0,0,0,2,3,3,2,0,0,0,0,0,0,0,2,2,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 2, 0, 0, 0, 0, 0, 2, 3, 1, 1, 3, 2, 0, 0, 0, 2, 3, 1, 2, 2, 1, 3, 2, 0, 2, 3, 1, 2, 0, 0, 2, 1, 3, 2, 2, 3, 1, 2, 0, 0, 2, 1, 3, 2, 0, 2, 3, 1, 2, 2, 1, 3, 2, 0, 0, 0, 2, 3, 1, 1, 3, 2, 0, 0, 0, 0, 0, 2, 3, 3, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2432,9 +2390,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[135] = objectLevel
 
     objectLevel = {
-        name: 'level_137'
+        "name": 'level_137'
     }
-    objectLevel.map = [0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1,3,2,1,3,2,1,0,0,0,0,1,2,3,1,2,3,1,0,0,0,1,1,3,3,1,3,3,1,1,0,1,1,1,1,3,3,3,1,1,1,1,1,1,2,1,1,3,1,1,2,1,1,1,1,2,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2,2,1,1,0,1,2,2,2,2,2,2,2,1,0,0,0,2,2,2,2,2,2,2,0,0,0,3,3,3,3,0,3,3,3,3,0]
+    objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 3, 2, 1, 3, 2, 1, 0, 0, 0, 0, 1, 2, 3, 1, 2, 3, 1, 0, 0, 0, 1, 1, 3, 3, 1, 3, 3, 1, 1, 0, 1, 1, 1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 2, 1, 1, 3, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 0, 1, 2, 2, 2, 2, 2, 2, 2, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0]
     objectLevel.width = 11
     objectLevel.height = 12
     objectLevel.mapArray = []
@@ -2448,9 +2406,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[136] = objectLevel
 
     objectLevel = {
-        name: 'level_138'
+        "name": 'level_138'
     }
-    objectLevel.map = [3,3,3,3,1,0,0,0,0,0,3,3,3,3,1,1,0,0,0,0,1,3,3,3,3,1,0,0,0,0,1,3,3,3,3,1,1,0,0,0,1,1,3,3,3,3,1,0,0,0,0,1,3,3,3,3,1,1,0,0,0,1,1,3,3,3,3,1,0,0,0,0,1,3,3,3,3,1,1,1,0,0,1,1,1,3,3,3,3,1,0,0,0,0,1,3,3,3,3,1]
+    objectLevel.map = [3, 3, 3, 3, 1, 0, 0, 0, 0, 0, 3, 3, 3, 3, 1, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 1, 0, 0, 0, 1, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 1, 0, 0, 0, 1, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 1, 1, 0, 0, 1, 1, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2463,11 +2421,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[137] = objectLevel
 
-
     objectLevel = {
-        name: 'level_139'
+        "name": 'level_139'
     }
-    objectLevel.map = [0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,3,3,0,0,0,0,0,3,3,3,3,3,3,0,0,0,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2480,11 +2437,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[138] = objectLevel
 
-
     objectLevel = {
-        name: 'level_140'
+        "name": 'level_140'
     }
-    objectLevel.map = [1,3,1,0,0,0,0,1,3,1,1,3,1,0,0,0,0,1,3,1,1,3,1,0,0,0,0,1,3,1,1,3,1,0,0,0,0,1,3,1,1,3,1,1,1,1,1,1,3,1,1,3,3,3,3,3,3,3,3,1,1,3,1,1,1,1,1,1,3,1,1,3,1,0,0,0,0,1,3,1,1,3,1,0,0,0,0,1,3,1,1,3,1,0,0,0,0,1,3,1]
+    objectLevel.map = [1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 1, 1, 1, 1, 1, 3, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 1, 1, 1, 1, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1, 1, 3, 1, 0, 0, 0, 0, 1, 3, 1]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2497,11 +2453,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[139] = objectLevel
 
-
     objectLevel = {
-        name: 'level_141'
+        "name": 'level_141'
     }
-    objectLevel.map = [2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,0,2,3,3,3,3,3,2,0,0,0,2,3,3,3,2,0,0,0,0,0,2,3,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,2,2,2,2,0,0]
+    objectLevel.map = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 0, 2, 3, 3, 3, 3, 3, 2, 0, 0, 0, 2, 3, 3, 3, 2, 0, 0, 0, 0, 0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 11
     objectLevel.mapArray = []
@@ -2514,11 +2469,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[140] = objectLevel
 
-
     objectLevel = {
-        name: 'level_142'
+        "name": 'level_142'
     }
-    objectLevel.map = [0,2,2,0,2,2,0,0,2,2,2,2,2,0,3,3,3,2,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,3]
+    objectLevel.map = [0, 2, 2, 0, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3]
     objectLevel.width = 7
     objectLevel.height = 7
     objectLevel.mapArray = []
@@ -2532,9 +2486,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[141] = objectLevel
 
     objectLevel = {
-        name: 'level_143'
+        "name": 'level_143'
     }
-    objectLevel.map = [0,0,2,0,0,0,2,0,0,2,2,2,2,2,0,0,2,1,2,1,2,0,0,2,2,2,2,2,0,0,0,3,3,3,0,0,0,2,2,2,2,2,2,0,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2]
+    objectLevel.map = [0, 0, 2, 0, 0, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 1, 2, 1, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 3, 3, 3, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
     objectLevel.width = 7
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2547,11 +2501,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[142] = objectLevel
 
-
     objectLevel = {
-        name: 'level_144'
+        "name": 'level_144'
     }
-    objectLevel.map = [0,0,3,3,3,0,0,0,3,2,3,2,3,0,0,0,3,3,3,0,0,0,0,0,3,0,0,0,3,3,3,3,3,3,3,0,0,3,3,3,0,0,0,0,3,3,3,0,0,0,3,3,3,3,3,0,0,3,3,0,3,3,0,3,3,3,0,3,3,3]
+    objectLevel.map = [0, 0, 3, 3, 3, 0, 0, 0, 3, 2, 3, 2, 3, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 3, 3, 0, 3, 3, 0, 3, 3, 3, 0, 3, 3, 3]
     objectLevel.width = 7
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2565,9 +2518,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[143] = objectLevel
 
     objectLevel = {
-        name: 'level_145'
+        "name": 'level_145'
     }
-    objectLevel.map = [0,2,2,2,2,0,0,0,0,0,0,2,3,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,2,0,2,2,2,2,2,2,2,2,2,0,2,2,2,0,2,2,2,2,0,0,2,2,2,0,2,2,2,0,0,0,2,2,2,0,2,2,2]
+    objectLevel.map = [0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 3, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 2, 2, 0, 0, 0, 2, 2, 2, 0, 2, 2, 2]
     objectLevel.width = 10
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -2581,9 +2534,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[144] = objectLevel
 
     objectLevel = {
-        name: 'level_146'
+        "name": 'level_146'
     }
-    objectLevel.map = [0,0,0,3,3,3,3,3,3,3,3,3,3,3,0,0,0,3,3,3,3,3,3,3,3,3,3,3,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,3,3,3,3,0,0,0,0,0,3,3,3,3,3,3,3,3,3,0,0,0,0,3,3,3,3,3,3,3,3,3,3,0,0,0,0,3,3,3,3,3,3,3,3,3,3,0,0,0,0,3,3,3,3,3,0,3,3,3,0,0,0,0,0,0,3,3,3,0]
+    objectLevel.map = [0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0]
     objectLevel.width = 14
     objectLevel.height = 12
     objectLevel.mapArray = []
@@ -2596,11 +2549,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[145] = objectLevel
 
-
     objectLevel = {
-        name: 'level_147'
+        "name": 'level_147'
     }
-    objectLevel.map = [3,3,3,3,0,0,0,3,3,3,3,1,1,1,1,1,0,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,0,3,3,3,3,3,3,3,3,3,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0]
+    objectLevel.map = [3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 11
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -2613,11 +2565,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[146] = objectLevel
 
-
     objectLevel = {
-        name: 'level_148'
+        "name": 'level_148'
     }
-    objectLevel.map = [0,0,0,0,2,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,0,0,0,0,0,2,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,2,0,0,0,2,2,2,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 0, 0, 0]
     objectLevel.width = 9
     objectLevel.height = 13
     objectLevel.mapArray = []
@@ -2630,11 +2581,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[147] = objectLevel
 
-
     objectLevel = {
-        name: 'level_149'
+        "name": 'level_149'
     }
-    objectLevel.map = [0,0,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,2,2,0,2,2,2,1,1,1,1,2,2,2,2,2,1,0,0,0,0,1,2,2,2,2,1,0,0,0,0,1,2,2,2,2,1,0,0,0,0,1,2,2,2,2,1,0,0,0,0,1,2,2,2,2,2,1,1,1,1,2,2,2,0,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2,2,2,0,0]
+    objectLevel.map = [0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 1, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0]
     objectLevel.width = 10
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2647,11 +2597,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[148] = objectLevel
 
-
     objectLevel = {
-        name: 'level_150'
+        "name": 'level_150'
     }
-    objectLevel.map = [0,0,3,3,2,3,0,0,0,3,3,2,2,2,3,0,3,3,3,3,2,3,3,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,1,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,0,0,0,3,3,3,3,0,0]
+    objectLevel.map = [0, 0, 3, 3, 2, 3, 0, 0, 0, 3, 3, 2, 2, 2, 3, 0, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -2665,9 +2614,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[149] = objectLevel
 
     objectLevel = {
-        name: 'level_151'
+        "name": 'level_151'
     }
-    objectLevel.map = [0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,3,3,3,1,1,3,3,3,3,2,3,2,3,3,3,3,3,3,3,3,3,3,2,3,3,2,3,2,3,3,3,3,0,3,3,3,3,2,3,0,0,0,3,2,3,3,0,0,0,0,0,3,3,0,0,0]
+    objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 3, 3, 3, 1, 1, 3, 3, 3, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 2, 3, 2, 3, 3, 3, 3, 0, 3, 3, 3, 3, 2, 3, 0, 0, 0, 3, 2, 3, 3, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 11
     objectLevel.mapArray = []
@@ -2680,11 +2629,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[150] = objectLevel
 
-
     objectLevel = {
-        name: 'level_152'
+        "name": 'level_152'
     }
-    objectLevel.map = [0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,0,1,3,3,3,3,1,0,0,0,0,0,1,3,3,3,3,3,3,1,2,2,2,2,1,3,3,3,3,3,3,1,2,3,2,0,1,1,1,1,1,1,1,1,2,2,2,0,2,2,2,0,0,2,2,2,0,0,0,0,2,2,2,0,0,2,2,2,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 3, 3, 3, 1, 0, 0, 0, 0, 0, 1, 3, 3, 3, 3, 3, 3, 1, 2, 2, 2, 2, 1, 3, 3, 3, 3, 3, 3, 1, 2, 3, 2, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 2, 2, 2, 0, 0, 0]
     objectLevel.width = 12
     objectLevel.height = 8
     objectLevel.mapArray = []
@@ -2697,11 +2645,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[151] = objectLevel
 
-
     objectLevel = {
-        name: 'level_153'
+        "name": 'level_153'
     }
-    objectLevel.map = [0,0,0,3,0,0,0,0,0,3,3,2,3,0,0,0,0,0,3,3,3,3,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,0,3,0,3,0,0,3,0,3,0,3,0,3,0,0,3,0,3,0,3,0,3,0,0,3,0,3,0,3,0,3,0,0,3,0,3,0,3,0,3,0,0,3,0,3]
+    objectLevel.map = [0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 3, 2, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 3, 3, 3, 0, 3, 0, 3, 0, 0, 3, 0, 3, 0, 3, 0, 3, 0, 0, 3, 0, 3, 0, 3, 0, 3, 0, 0, 3, 0, 3, 0, 3, 0, 3, 0, 0, 3, 0, 3, 0, 3, 0, 3, 0, 0, 3, 0, 3]
     objectLevel.width = 9
     objectLevel.height = 17
     objectLevel.mapArray = []
@@ -2715,9 +2662,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[152] = objectLevel
 
     objectLevel = {
-        name: 'level_154'
+        "name": 'level_154'
     }
-    objectLevel.map = [0,0,0,2,0,2,0,2,0,0,0,0,0,0,2,2,2,2,2,0,0,0,0,0,2,2,0,0,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,2,0,2,0,2,2,2,2,2,2,2,2,0,2,0,0,2,2,2,2,2,2,2,0,0,0,0,2,2,0,0,0,2,2,0,0,0,0,2,2,0,0,0,2,2,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,0,2,0,0]
+    objectLevel.map = [0, 0, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0]
     objectLevel.width = 11
     objectLevel.height = 14
     objectLevel.mapArray = []
@@ -2730,11 +2677,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[153] = objectLevel
 
-
     objectLevel = {
-        name: 'level_155'
+        "name": 'level_155'
     }
-    objectLevel.map = [0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,3,2,2,2,3,0,0,0,0,0,0,0,3,2,3,2,3,2,3,0,0,0,0,0,0,3,2,2,1,2,2,3,0,0,0,0,0,3,3,3,2,2,2,3,3,3,0,0,0,3,3,3,3,2,2,2,3,3,3,3,0,3,3,3,3,3,2,2,2,3,3,3,3,3,3,3,0,3,3,2,2,2,3,3,0,3,3,0,0,0,3,3,2,2,2,3,3,0,0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 2, 2, 2, 3, 0, 0, 0, 0, 0, 0, 0, 3, 2, 3, 2, 3, 2, 3, 0, 0, 0, 0, 0, 0, 3, 2, 2, 1, 2, 2, 3, 0, 0, 0, 0, 0, 3, 3, 3, 2, 2, 2, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3, 2, 2, 2, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 2, 2, 2, 3, 3, 0, 3, 3, 0, 0, 0, 3, 3, 2, 2, 2, 3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 13
     objectLevel.height = 12
     objectLevel.mapArray = []
@@ -2747,11 +2693,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[154] = objectLevel
 
-
     objectLevel = {
-        name: 'level_156'
+        "name": 'level_156'
     }
-    objectLevel.map = [0,0,3,3,0,0,0,0,0,3,3,3,3,0,0,0,3,2,1,2,3,0,0,0,1,2,2,2,3,3,0,0,0,2,2,3,3,3,0,0,0,2,2,3,3,3,0,0,0,1,2,3,3,3,3,0,0,1,1,1,3,3,3,0,0,0,1,1,2,3,3,3,0,0,3,0,3,0,0,0]
+    objectLevel.map = [0, 0, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 3, 0, 0, 0, 3, 2, 1, 2, 3, 0, 0, 0, 1, 2, 2, 2, 3, 3, 0, 0, 0, 2, 2, 3, 3, 3, 0, 0, 0, 2, 2, 3, 3, 3, 0, 0, 0, 1, 2, 3, 3, 3, 3, 0, 0, 1, 1, 1, 3, 3, 3, 0, 0, 0, 1, 1, 2, 3, 3, 3, 0, 0, 3, 0, 3, 0, 0, 0]
     objectLevel.width = 8
     objectLevel.height = 10
     objectLevel.mapArray = []
@@ -2765,9 +2710,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[155] = objectLevel
 
     objectLevel = {
-        name: 'level_157'
+        "name": 'level_157'
     }
-    objectLevel.map = [3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,3,3,2,1,2,2,2,1,2,3,3,2,2,2,2,2,2,2,3,3,2,2,1,2,1,2,2,3,3,2,2,2,1,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,3,2,3,1,3,2,3,2,3,3,3,1,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3]
+    objectLevel.map = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 1, 2, 2, 2, 1, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 1, 2, 1, 2, 2, 3, 3, 2, 2, 2, 1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 3, 1, 3, 2, 3, 2, 3, 3, 3, 1, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
     objectLevel.width = 9
     objectLevel.height = 12
     objectLevel.mapArray = []
@@ -2780,11 +2725,10 @@ function initObjectRelaxLevels() {
 
     listObjectRelaxLevels[156] = objectLevel
 
-
     objectLevel = {
-        name: 'level_158'
+        "name": 'level_158'
     }
-    objectLevel.map = [0,0,0,0,3,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,3,3,3,0,0,0,0,3,3,3,3,3,3,3,0,3,3,3,2,2,2,3,3,3,3,3,3,2,2,2,3,3,3,0,0,3,2,2,2,3,0,0,0,3,3,3,3,3,3,3,0,0,3,3,3,0,3,3,3,0]
+    objectLevel.map = [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 3, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 3, 3, 3, 2, 2, 2, 3, 3, 3, 3, 3, 3, 2, 2, 2, 3, 3, 3, 0, 0, 3, 2, 2, 2, 3, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 0, 3, 3, 3, 0]
     objectLevel.width = 9
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2798,9 +2742,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[157] = objectLevel
 
     objectLevel = {
-        name: 'level_159'
+        "name": 'level_159'
     }
-    objectLevel.map = [0,3,3,0,0,0,0,0,0,0,0,1,1,0,0,3,3,3,3,0,0,0,0,1,1,1,1,0,3,3,3,3,3,3,0,0,1,1,1,1,1,1,3,3,3,3,0,3,2,2,1,0,1,1,1,1,3,3,3,3,3,0,2,2,0,1,1,1,1,1,3,3,3,3,0,3,2,2,1,0,1,1,1,1,3,3,3,3,3,3,0,0,1,1,1,1,1,1,0,3,3,3,3,0,0,0,0,1,1,1,1,0,0,3,3,0,0,0,0,0,0,0,0,1,1,0]
+    objectLevel.map = [0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 3, 3, 3, 3, 0, 0, 0, 0, 1, 1, 1, 1, 0, 3, 3, 3, 3, 3, 3, 0, 0, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 0, 3, 2, 2, 1, 0, 1, 1, 1, 1, 3, 3, 3, 3, 3, 0, 2, 2, 0, 1, 1, 1, 1, 1, 3, 3, 3, 3, 0, 3, 2, 2, 1, 0, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 0, 0, 1, 1, 1, 1, 1, 1, 0, 3, 3, 3, 3, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
     objectLevel.width = 14
     objectLevel.height = 9
     objectLevel.mapArray = []
@@ -2814,9 +2758,9 @@ function initObjectRelaxLevels() {
     listObjectRelaxLevels[158] = objectLevel
 
     objectLevel = {
-        name: 'level_160'
+        "name": 'level_160'
     }
-    objectLevel.map = [0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,0,2,2,3,3,3,3,2,2,0,0,0,0,0,2,3,3,2,2,2,2,3,3,2,0,0,0,2,3,2,2,3,3,3,3,2,2,3,2,0,0,2,3,2,3,2,2,2,2,3,2,3,2,0,2,3,2,3,2,3,3,3,3,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,3,2,2,3,2,3,2,3,3,2,3,2,3,2,3,2,2,3,2,3,2,2,2,2,3,2,3,2,3,2,0,2,3,2,3,3,3,3,2,3,2,3,2,0,0,2,3,2,2,2,2,2,3,2,2,3,2,0,0,0,2,3,3,3,3,3,2,3,3,2,0,0,0,0,0,2,2,2,2,2,3,2,2,0,0,0,0,0,0,0,0,3,3,3,2,0,0,0,0,0]
+    objectLevel.map = [0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 3, 3, 3, 3, 2, 2, 0, 0, 0, 0, 0, 2, 3, 3, 2, 2, 2, 2, 3, 3, 2, 0, 0, 0, 2, 3, 2, 2, 3, 3, 3, 3, 2, 2, 3, 2, 0, 0, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 3, 2, 0, 2, 3, 2, 3, 2, 3, 3, 3, 3, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 3, 2, 3, 2, 0, 2, 3, 2, 3, 3, 3, 3, 2, 3, 2, 3, 2, 0, 0, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 3, 2, 0, 0, 0, 2, 3, 3, 3, 3, 3, 2, 3, 3, 2, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 3, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 2, 0, 0, 0, 0, 0]
     objectLevel.width = 14
     objectLevel.height = 14
     objectLevel.mapArray = []
@@ -2828,15 +2772,12 @@ function initObjectRelaxLevels() {
     objectLevel.taskStepStar3 = 35
 
     listObjectRelaxLevels[159] = objectLevel
-
-
-
 }
 
 function initObjectLevels() {
     //------------- location_1 begin-------------------------
     var objectLevel = {
-        name: 'test_1'
+        "name": 'test_1'
     }
     objectLevel.map = [0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0]
     objectLevel.width = 5
@@ -2859,7 +2800,7 @@ function initObjectLevels() {
     listObjectLevels[0] = objectLevel
 
     objectLevel = {
-        name: 'test_2'
+        "name": 'test_2'
     }
     objectLevel.map = [0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0]
     objectLevel.width = 6
@@ -2881,7 +2822,7 @@ function initObjectLevels() {
     listObjectLevels[1] = objectLevel
 
     objectLevel = {
-        name: 'test_3'
+        "name": 'test_3'
     }
     objectLevel.map = [0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0]
     objectLevel.width = 5
@@ -2902,7 +2843,7 @@ function initObjectLevels() {
     listObjectLevels[2] = objectLevel
 
     objectLevel = {
-        name: 'test_4'
+        "name": 'test_4'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 9
@@ -2923,7 +2864,7 @@ function initObjectLevels() {
     listObjectLevels[3] = objectLevel
 
     objectLevel = {
-        name: 'test_5'
+        "name": 'test_5'
     }
     objectLevel.map = [0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0]
     objectLevel.width = 7
@@ -2944,7 +2885,7 @@ function initObjectLevels() {
     listObjectLevels[4] = objectLevel
 
     objectLevel = {
-        name: 'test_6'
+        "name": 'test_6'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]
     objectLevel.width = 6
@@ -2965,7 +2906,7 @@ function initObjectLevels() {
     listObjectLevels[5] = objectLevel
 
     objectLevel = {
-        name: 'test_7'
+        "name": 'test_7'
     }
     objectLevel.map = [1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1]
     objectLevel.width = 7
@@ -2986,7 +2927,7 @@ function initObjectLevels() {
     listObjectLevels[6] = objectLevel
 
     objectLevel = {
-        name: 'test_8'
+        "name": 'test_8'
     }
     objectLevel.map = [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0]
     objectLevel.width = 7
@@ -3008,7 +2949,7 @@ function initObjectLevels() {
     listObjectLevels[7] = objectLevel
 
     objectLevel = {
-        name: 'test_9'
+        "name": 'test_9'
     }
     objectLevel.map = [1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1]
     objectLevel.width = 10
@@ -3029,7 +2970,7 @@ function initObjectLevels() {
     listObjectLevels[8] = objectLevel
 
     objectLevel = {
-        name: 'test_10'
+        "name": 'test_10'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3050,7 +2991,7 @@ function initObjectLevels() {
     listObjectLevels[9] = objectLevel
 
     objectLevel = {
-        name: 'test_11'
+        "name": 'test_11'
     }
     objectLevel.map = [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 6
@@ -3072,7 +3013,7 @@ function initObjectLevels() {
     listObjectLevels[10] = objectLevel
 
     objectLevel = {
-        name: 'test_12'
+        "name": 'test_12'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 8
@@ -3093,7 +3034,7 @@ function initObjectLevels() {
     listObjectLevels[11] = objectLevel
 
     objectLevel = {
-        name: 'test_13'
+        "name": 'test_13'
     }
     objectLevel.map = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1]
     objectLevel.width = 9
@@ -3114,7 +3055,7 @@ function initObjectLevels() {
     listObjectLevels[12] = objectLevel
 
     objectLevel = {
-        name: 'test_14'
+        "name": 'test_14'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]
     objectLevel.width = 10
@@ -3135,7 +3076,7 @@ function initObjectLevels() {
     listObjectLevels[13] = objectLevel
 
     objectLevel = {
-        name: 'test_15'
+        "name": 'test_15'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0]
     objectLevel.width = 11
@@ -3157,7 +3098,7 @@ function initObjectLevels() {
     listObjectLevels[14] = objectLevel
 
     objectLevel = {
-        name: 'test_16'
+        "name": 'test_16'
     }
     objectLevel.map = [1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1]
     objectLevel.width = 11
@@ -3178,7 +3119,7 @@ function initObjectLevels() {
     listObjectLevels[15] = objectLevel
 
     objectLevel = {
-        name: 'test_17'
+        "name": 'test_17'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 10
@@ -3200,7 +3141,7 @@ function initObjectLevels() {
     listObjectLevels[16] = objectLevel
 
     objectLevel = {
-        name: 'test_18'
+        "name": 'test_18'
     }
     objectLevel.map = [0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0]
     objectLevel.width = 10
@@ -3222,7 +3163,7 @@ function initObjectLevels() {
     listObjectLevels[17] = objectLevel
 
     objectLevel = {
-        name: 'test_19'
+        "name": 'test_19'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0]
     objectLevel.width = 12
@@ -3243,7 +3184,7 @@ function initObjectLevels() {
     listObjectLevels[18] = objectLevel
 
     objectLevel = {
-        name: 'test_20'
+        "name": 'test_20'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 14
@@ -3267,7 +3208,7 @@ function initObjectLevels() {
 
     //------------- location_2 begin-------------------------
     objectLevel = {
-        name: 'test_21'
+        "name": 'test_21'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0]
     objectLevel.width = 11
@@ -3288,7 +3229,7 @@ function initObjectLevels() {
     listObjectLevels[20] = objectLevel
 
     objectLevel = {
-        name: 'test_22'
+        "name": 'test_22'
     }
     objectLevel.map = [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 11
@@ -3309,7 +3250,7 @@ function initObjectLevels() {
     listObjectLevels[21] = objectLevel
 
     objectLevel = {
-        name: 'test_23'
+        "name": 'test_23'
     }
     objectLevel.map = [0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
     objectLevel.width = 7
@@ -3330,7 +3271,7 @@ function initObjectLevels() {
     listObjectLevels[22] = objectLevel
 
     objectLevel = {
-        name: 'test_24'
+        "name": 'test_24'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0]
     objectLevel.width = 13
@@ -3351,7 +3292,7 @@ function initObjectLevels() {
     listObjectLevels[23] = objectLevel
 
     objectLevel = {
-        name: 'test_25'
+        "name": 'test_25'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 13
@@ -3372,7 +3313,7 @@ function initObjectLevels() {
     listObjectLevels[24] = objectLevel
 
     objectLevel = {
-        name: 'test_26'
+        "name": 'test_26'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -3394,7 +3335,7 @@ function initObjectLevels() {
     listObjectLevels[25] = objectLevel
 
     objectLevel = {
-        name: 'test_27'
+        "name": 'test_27'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3416,7 +3357,7 @@ function initObjectLevels() {
     listObjectLevels[26] = objectLevel
 
     objectLevel = {
-        name: 'test_28'
+        "name": 'test_28'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 10
@@ -3437,7 +3378,7 @@ function initObjectLevels() {
     listObjectLevels[27] = objectLevel
 
     objectLevel = {
-        name: 'test_29'
+        "name": 'test_29'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 13
@@ -3458,7 +3399,7 @@ function initObjectLevels() {
     listObjectLevels[28] = objectLevel
 
     objectLevel = {
-        name: 'test_30'
+        "name": 'test_30'
     }
     objectLevel.map = [1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1]
     objectLevel.width = 13
@@ -3479,7 +3420,7 @@ function initObjectLevels() {
     listObjectLevels[29] = objectLevel
 
     objectLevel = {
-        name: 'test_31'
+        "name": 'test_31'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1]
     objectLevel.width = 11
@@ -3501,7 +3442,7 @@ function initObjectLevels() {
     listObjectLevels[30] = objectLevel
 
     objectLevel = {
-        name: 'test_32'
+        "name": 'test_32'
     }
     objectLevel.map = [1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 10
@@ -3523,7 +3464,7 @@ function initObjectLevels() {
     listObjectLevels[31] = objectLevel
 
     objectLevel = {
-        name: 'test_33'
+        "name": 'test_33'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]
     objectLevel.width = 11
@@ -3544,7 +3485,7 @@ function initObjectLevels() {
     listObjectLevels[32] = objectLevel
 
     objectLevel = {
-        name: 'test_34'
+        "name": 'test_34'
     }
     objectLevel.map = [0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 10
@@ -3565,7 +3506,7 @@ function initObjectLevels() {
     listObjectLevels[33] = objectLevel
 
     objectLevel = {
-        name: 'test_35'
+        "name": 'test_35'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0]
     objectLevel.width = 11
@@ -3586,7 +3527,7 @@ function initObjectLevels() {
     listObjectLevels[34] = objectLevel
 
     objectLevel = {
-        name: 'test_36'
+        "name": 'test_36'
     }
     objectLevel.map = [1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 11
@@ -3607,7 +3548,7 @@ function initObjectLevels() {
     listObjectLevels[35] = objectLevel
 
     objectLevel = {
-        name: 'test_37'
+        "name": 'test_37'
     }
     objectLevel.map = [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0]
     objectLevel.width = 13
@@ -3628,7 +3569,7 @@ function initObjectLevels() {
     listObjectLevels[36] = objectLevel
 
     objectLevel = {
-        name: 'test_38'
+        "name": 'test_38'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0]
     objectLevel.width = 11
@@ -3649,7 +3590,7 @@ function initObjectLevels() {
     listObjectLevels[37] = objectLevel
 
     objectLevel = {
-        name: 'test_39'
+        "name": 'test_39'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -3670,7 +3611,7 @@ function initObjectLevels() {
     listObjectLevels[38] = objectLevel
 
     objectLevel = {
-        name: 'test_40'
+        "name": 'test_40'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 16
@@ -3694,7 +3635,7 @@ function initObjectLevels() {
 
     //------------- location_3 begin-------------------------
     objectLevel = {
-        name: 'test_41'
+        "name": 'test_41'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3715,7 +3656,7 @@ function initObjectLevels() {
     listObjectLevels[40] = objectLevel
 
     objectLevel = {
-        name: 'test_42'
+        "name": 'test_42'
     }
     objectLevel.map = [0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0]
     objectLevel.width = 11
@@ -3736,7 +3677,7 @@ function initObjectLevels() {
     listObjectLevels[41] = objectLevel
 
     objectLevel = {
-        name: 'test_43'
+        "name": 'test_43'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -3758,7 +3699,7 @@ function initObjectLevels() {
     listObjectLevels[42] = objectLevel
 
     objectLevel = {
-        name: 'test_44'
+        "name": 'test_44'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -3780,7 +3721,7 @@ function initObjectLevels() {
     listObjectLevels[43] = objectLevel
 
     objectLevel = {
-        name: 'test_45'
+        "name": 'test_45'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 11
@@ -3801,7 +3742,7 @@ function initObjectLevels() {
     listObjectLevels[44] = objectLevel
 
     objectLevel = {
-        name: 'test_46'
+        "name": 'test_46'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3822,7 +3763,7 @@ function initObjectLevels() {
     listObjectLevels[45] = objectLevel
 
     objectLevel = {
-        name: 'test_47'
+        "name": 'test_47'
     }
     objectLevel.map = [1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -3843,7 +3784,7 @@ function initObjectLevels() {
     listObjectLevels[46] = objectLevel
 
     objectLevel = {
-        name: 'test_48'
+        "name": 'test_48'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3864,7 +3805,7 @@ function initObjectLevels() {
     listObjectLevels[47] = objectLevel
 
     objectLevel = {
-        name: 'test_49'
+        "name": 'test_49'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3885,7 +3826,7 @@ function initObjectLevels() {
     listObjectLevels[48] = objectLevel
 
     objectLevel = {
-        name: 'test_50'
+        "name": 'test_50'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 8
@@ -3906,7 +3847,7 @@ function initObjectLevels() {
     listObjectLevels[49] = objectLevel
 
     objectLevel = {
-        name: 'test_51'
+        "name": 'test_51'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 13
@@ -3927,7 +3868,7 @@ function initObjectLevels() {
     listObjectLevels[50] = objectLevel
 
     objectLevel = {
-        name: 'test_52'
+        "name": 'test_52'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -3948,7 +3889,7 @@ function initObjectLevels() {
     listObjectLevels[51] = objectLevel
 
     objectLevel = {
-        name: 'test_53'
+        "name": 'test_53'
     }
     objectLevel.map = [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 11
@@ -3969,7 +3910,7 @@ function initObjectLevels() {
     listObjectLevels[52] = objectLevel
 
     objectLevel = {
-        name: 'test_54'
+        "name": 'test_54'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -3990,7 +3931,7 @@ function initObjectLevels() {
     listObjectLevels[53] = objectLevel
 
     objectLevel = {
-        name: 'test_55'
+        "name": 'test_55'
     }
     objectLevel.map = [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -4011,7 +3952,7 @@ function initObjectLevels() {
     listObjectLevels[54] = objectLevel
 
     objectLevel = {
-        name: 'test_56'
+        "name": 'test_56'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -4033,7 +3974,7 @@ function initObjectLevels() {
     listObjectLevels[55] = objectLevel
 
     objectLevel = {
-        name: 'test_57'
+        "name": 'test_57'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -4055,7 +3996,7 @@ function initObjectLevels() {
     listObjectLevels[56] = objectLevel
 
     objectLevel = {
-        name: 'test_58'
+        "name": 'test_58'
     }
     objectLevel.map = [0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0]
     objectLevel.width = 13
@@ -4076,7 +4017,7 @@ function initObjectLevels() {
     listObjectLevels[57] = objectLevel
 
     objectLevel = {
-        name: 'test_59'
+        "name": 'test_59'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 10
@@ -4097,7 +4038,7 @@ function initObjectLevels() {
     listObjectLevels[58] = objectLevel
 
     objectLevel = {
-        name: 'test_60'
+        "name": 'test_60'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -4121,7 +4062,7 @@ function initObjectLevels() {
 
     //------------- location_4 begin-------------------------
     objectLevel = {
-        name: 'test_61'
+        "name": 'test_61'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1]
     objectLevel.width = 16
@@ -4142,7 +4083,7 @@ function initObjectLevels() {
     listObjectLevels[60] = objectLevel
 
     objectLevel = {
-        name: 'test_62'
+        "name": 'test_62'
     }
     objectLevel.map = [1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1]
     objectLevel.width = 10
@@ -4164,7 +4105,7 @@ function initObjectLevels() {
     listObjectLevels[61] = objectLevel
 
     objectLevel = {
-        name: 'test_63'
+        "name": 'test_63'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1]
     objectLevel.width = 11
@@ -4185,7 +4126,7 @@ function initObjectLevels() {
     listObjectLevels[62] = objectLevel
 
     objectLevel = {
-        name: 'test_64'
+        "name": 'test_64'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -4206,7 +4147,7 @@ function initObjectLevels() {
     listObjectLevels[63] = objectLevel
 
     objectLevel = {
-        name: 'test_65'
+        "name": 'test_65'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -4227,7 +4168,7 @@ function initObjectLevels() {
     listObjectLevels[64] = objectLevel
 
     objectLevel = {
-        name: 'test_66'
+        "name": 'test_66'
     }
     objectLevel.map = [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 25
@@ -4248,7 +4189,7 @@ function initObjectLevels() {
     listObjectLevels[65] = objectLevel
 
     objectLevel = {
-        name: 'test_67'
+        "name": 'test_67'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -4269,7 +4210,7 @@ function initObjectLevels() {
     listObjectLevels[66] = objectLevel
 
     objectLevel = {
-        name: 'test_68'
+        "name": 'test_68'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -4290,7 +4231,7 @@ function initObjectLevels() {
     listObjectLevels[67] = objectLevel
 
     objectLevel = {
-        name: 'test_69'
+        "name": 'test_69'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -4312,7 +4253,7 @@ function initObjectLevels() {
     listObjectLevels[68] = objectLevel
 
     objectLevel = {
-        name: 'test_70'
+        "name": 'test_70'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -4334,7 +4275,7 @@ function initObjectLevels() {
     listObjectLevels[69] = objectLevel
 
     objectLevel = {
-        name: 'test_71'
+        "name": 'test_71'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -4355,7 +4296,7 @@ function initObjectLevels() {
     listObjectLevels[70] = objectLevel
 
     objectLevel = {
-        name: 'test_72'
+        "name": 'test_72'
     }
     objectLevel.map = [0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0]
     objectLevel.width = 11
@@ -4377,7 +4318,7 @@ function initObjectLevels() {
     listObjectLevels[71] = objectLevel
 
     objectLevel = {
-        name: 'test_73'
+        "name": 'test_73'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -4398,7 +4339,7 @@ function initObjectLevels() {
     listObjectLevels[72] = objectLevel
 
     objectLevel = {
-        name: 'test_74'
+        "name": 'test_74'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -4419,7 +4360,7 @@ function initObjectLevels() {
     listObjectLevels[73] = objectLevel
 
     objectLevel = {
-        name: 'test_75'
+        "name": 'test_75'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 14
@@ -4440,7 +4381,7 @@ function initObjectLevels() {
     listObjectLevels[74] = objectLevel
 
     objectLevel = {
-        name: 'test_76'
+        "name": 'test_76'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -4461,7 +4402,7 @@ function initObjectLevels() {
     listObjectLevels[75] = objectLevel
 
     objectLevel = {
-        name: 'test_77'
+        "name": 'test_77'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 16
@@ -4482,7 +4423,7 @@ function initObjectLevels() {
     listObjectLevels[76] = objectLevel
 
     objectLevel = {
-        name: 'test_78'
+        "name": 'test_78'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 12
@@ -4503,7 +4444,7 @@ function initObjectLevels() {
     listObjectLevels[77] = objectLevel
 
     objectLevel = {
-        name: 'test_79'
+        "name": 'test_79'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 21
@@ -4524,7 +4465,7 @@ function initObjectLevels() {
     listObjectLevels[78] = objectLevel
 
     objectLevel = {
-        name: 'test_80'
+        "name": 'test_80'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -4548,7 +4489,7 @@ function initObjectLevels() {
 
     //------------- location_5 begin-------------------------
     objectLevel = {
-        name: 'test_81'
+        "name": 'test_81'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 22
@@ -4569,7 +4510,7 @@ function initObjectLevels() {
     listObjectLevels[80] = objectLevel
 
     objectLevel = {
-        name: 'test_82'
+        "name": 'test_82'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0]
     objectLevel.width = 14
@@ -4590,7 +4531,7 @@ function initObjectLevels() {
     listObjectLevels[81] = objectLevel
 
     objectLevel = {
-        name: 'test_83'
+        "name": 'test_83'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0]
     objectLevel.width = 14
@@ -4611,7 +4552,7 @@ function initObjectLevels() {
     listObjectLevels[82] = objectLevel
 
     objectLevel = {
-        name: 'test_84'
+        "name": 'test_84'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -4632,7 +4573,7 @@ function initObjectLevels() {
     listObjectLevels[83] = objectLevel
 
     objectLevel = {
-        name: 'test_85'
+        "name": 'test_85'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 7
@@ -4654,7 +4595,7 @@ function initObjectLevels() {
     listObjectLevels[84] = objectLevel
 
     objectLevel = {
-        name: 'test_86'
+        "name": 'test_86'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 10
@@ -4676,7 +4617,7 @@ function initObjectLevels() {
     listObjectLevels[85] = objectLevel
 
     objectLevel = {
-        name: 'test_87'
+        "name": 'test_87'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -4697,7 +4638,7 @@ function initObjectLevels() {
     listObjectLevels[86] = objectLevel
 
     objectLevel = {
-        name: 'test_88'
+        "name": 'test_88'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -4718,7 +4659,7 @@ function initObjectLevels() {
     listObjectLevels[87] = objectLevel
 
     objectLevel = {
-        name: 'test_89'
+        "name": 'test_89'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
     objectLevel.width = 12
@@ -4739,7 +4680,7 @@ function initObjectLevels() {
     listObjectLevels[88] = objectLevel
 
     objectLevel = {
-        name: 'test_90'
+        "name": 'test_90'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 11
@@ -4760,7 +4701,7 @@ function initObjectLevels() {
     listObjectLevels[89] = objectLevel
 
     objectLevel = {
-        name: 'test_91'
+        "name": 'test_91'
     }
     objectLevel.map = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -4781,7 +4722,7 @@ function initObjectLevels() {
     listObjectLevels[90] = objectLevel
 
     objectLevel = {
-        name: 'test_92'
+        "name": 'test_92'
     }
     objectLevel.map = [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 23
@@ -4802,7 +4743,7 @@ function initObjectLevels() {
     listObjectLevels[91] = objectLevel
 
     objectLevel = {
-        name: 'test_93'
+        "name": 'test_93'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0]
     objectLevel.width = 13
@@ -4823,7 +4764,7 @@ function initObjectLevels() {
     listObjectLevels[92] = objectLevel
 
     objectLevel = {
-        name: 'test_94'
+        "name": 'test_94'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
     objectLevel.width = 14
@@ -4845,7 +4786,7 @@ function initObjectLevels() {
     listObjectLevels[93] = objectLevel
 
     objectLevel = {
-        name: 'test_95'
+        "name": 'test_95'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1]
     objectLevel.width = 24
@@ -4866,7 +4807,7 @@ function initObjectLevels() {
     listObjectLevels[94] = objectLevel
 
     objectLevel = {
-        name: 'test_96'
+        "name": 'test_96'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1]
     objectLevel.width = 13
@@ -4887,7 +4828,7 @@ function initObjectLevels() {
     listObjectLevels[95] = objectLevel
 
     objectLevel = {
-        name: 'test_97'
+        "name": 'test_97'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -4908,7 +4849,7 @@ function initObjectLevels() {
     listObjectLevels[96] = objectLevel
 
     objectLevel = {
-        name: 'test_98'
+        "name": 'test_98'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 23
@@ -4929,7 +4870,7 @@ function initObjectLevels() {
     listObjectLevels[97] = objectLevel
 
     objectLevel = {
-        name: 'test_99'
+        "name": 'test_99'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1]
     objectLevel.width = 18
@@ -4950,7 +4891,7 @@ function initObjectLevels() {
     listObjectLevels[98] = objectLevel
 
     objectLevel = {
-        name: 'test_100'
+        "name": 'test_100'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 29
@@ -4974,7 +4915,7 @@ function initObjectLevels() {
 
     //------------- location_6 begin-------------------------
     objectLevel = {
-        name: 'test_101'
+        "name": 'test_101'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -4995,7 +4936,7 @@ function initObjectLevels() {
     listObjectLevels[100] = objectLevel
 
     objectLevel = {
-        name: 'test_102'
+        "name": 'test_102'
     }
     objectLevel.map = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 15
@@ -5016,7 +4957,7 @@ function initObjectLevels() {
     listObjectLevels[101] = objectLevel
 
     objectLevel = {
-        name: 'test_103'
+        "name": 'test_103'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -5037,7 +4978,7 @@ function initObjectLevels() {
     listObjectLevels[102] = objectLevel
 
     objectLevel = {
-        name: 'test_104'
+        "name": 'test_104'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -5058,7 +4999,7 @@ function initObjectLevels() {
     listObjectLevels[103] = objectLevel
 
     objectLevel = {
-        name: 'test_105'
+        "name": 'test_105'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 16
@@ -5080,7 +5021,7 @@ function initObjectLevels() {
 
     //------------- location_6 end-------------------------
     objectLevel = {
-        name: 'test_106'
+        "name": 'test_106'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 25
@@ -5101,7 +5042,7 @@ function initObjectLevels() {
     listObjectLevels[105] = objectLevel
 
     objectLevel = {
-        name: 'test_107'
+        "name": 'test_107'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 11
@@ -5122,7 +5063,7 @@ function initObjectLevels() {
     listObjectLevels[106] = objectLevel
 
     objectLevel = {
-        name: 'test_108'
+        "name": 'test_108'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]
     objectLevel.width = 17
@@ -5143,7 +5084,7 @@ function initObjectLevels() {
     listObjectLevels[107] = objectLevel
 
     objectLevel = {
-        name: 'test_109'
+        "name": 'test_109'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 17
@@ -5164,7 +5105,7 @@ function initObjectLevels() {
     listObjectLevels[108] = objectLevel
 
     objectLevel = {
-        name: 'test_110'
+        "name": 'test_110'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -5186,7 +5127,7 @@ function initObjectLevels() {
     listObjectLevels[109] = objectLevel
 
     objectLevel = {
-        name: 'test_111'
+        "name": 'test_111'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -5208,7 +5149,7 @@ function initObjectLevels() {
     listObjectLevels[110] = objectLevel
 
     objectLevel = {
-        name: 'test_112'
+        "name": 'test_112'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1]
     objectLevel.width = 21
@@ -5229,7 +5170,7 @@ function initObjectLevels() {
     listObjectLevels[111] = objectLevel
 
     objectLevel = {
-        name: 'test_113'
+        "name": 'test_113'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -5250,7 +5191,7 @@ function initObjectLevels() {
     listObjectLevels[112] = objectLevel
 
     objectLevel = {
-        name: 'test_114'
+        "name": 'test_114'
     }
     objectLevel.map = [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 23
@@ -5271,7 +5212,7 @@ function initObjectLevels() {
     listObjectLevels[113] = objectLevel
 
     objectLevel = {
-        name: 'test_115'
+        "name": 'test_115'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1]
     objectLevel.width = 12
@@ -5292,7 +5233,7 @@ function initObjectLevels() {
     listObjectLevels[114] = objectLevel
 
     objectLevel = {
-        name: 'test_116'
+        "name": 'test_116'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 16
@@ -5313,7 +5254,7 @@ function initObjectLevels() {
     listObjectLevels[115] = objectLevel
 
     objectLevel = {
-        name: 'test_117'
+        "name": 'test_117'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 21
@@ -5334,7 +5275,7 @@ function initObjectLevels() {
     listObjectLevels[116] = objectLevel
 
     objectLevel = {
-        name: 'test_118'
+        "name": 'test_118'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 19
@@ -5355,7 +5296,7 @@ function initObjectLevels() {
     listObjectLevels[117] = objectLevel
 
     objectLevel = {
-        name: 'test_119'
+        "name": 'test_119'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -5376,7 +5317,7 @@ function initObjectLevels() {
     listObjectLevels[118] = objectLevel
 
     objectLevel = {
-        name: 'test_120'
+        "name": 'test_120'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 23
@@ -5400,7 +5341,7 @@ function initObjectLevels() {
 
     //------------- location_7 end-------------------------
     objectLevel = {
-        name: 'test_121'
+        "name": 'test_121'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -5421,7 +5362,7 @@ function initObjectLevels() {
     listObjectLevels[120] = objectLevel
 
     objectLevel = {
-        name: 'test_122'
+        "name": 'test_122'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -5442,7 +5383,7 @@ function initObjectLevels() {
     listObjectLevels[121] = objectLevel
 
     objectLevel = {
-        name: 'test_123'
+        "name": 'test_123'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -5463,7 +5404,7 @@ function initObjectLevels() {
     listObjectLevels[122] = objectLevel
 
     objectLevel = {
-        name: 'test_124'
+        "name": 'test_124'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 14
@@ -5484,7 +5425,7 @@ function initObjectLevels() {
     listObjectLevels[123] = objectLevel
 
     objectLevel = {
-        name: 'test_125'
+        "name": 'test_125'
     }
     objectLevel.map = [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -5505,7 +5446,7 @@ function initObjectLevels() {
     listObjectLevels[124] = objectLevel
 
     objectLevel = {
-        name: 'test_126'
+        "name": 'test_126'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 9
@@ -5526,7 +5467,7 @@ function initObjectLevels() {
     listObjectLevels[125] = objectLevel
 
     objectLevel = {
-        name: 'test_127'
+        "name": 'test_127'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -5547,7 +5488,7 @@ function initObjectLevels() {
     listObjectLevels[126] = objectLevel
 
     objectLevel = {
-        name: 'test_128'
+        "name": 'test_128'
     }
     objectLevel.map = [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 17
@@ -5568,7 +5509,7 @@ function initObjectLevels() {
     listObjectLevels[127] = objectLevel
 
     objectLevel = {
-        name: 'test_129'
+        "name": 'test_129'
     }
     objectLevel.map = [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 11
@@ -5590,7 +5531,7 @@ function initObjectLevels() {
     listObjectLevels[128] = objectLevel
 
     objectLevel = {
-        name: 'test_130'
+        "name": 'test_130'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -5612,7 +5553,7 @@ function initObjectLevels() {
     listObjectLevels[129] = objectLevel
 
     objectLevel = {
-        name: 'test_131'
+        "name": 'test_131'
     }
     objectLevel.map = [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 15
@@ -5633,7 +5574,7 @@ function initObjectLevels() {
     listObjectLevels[130] = objectLevel
 
     objectLevel = {
-        name: 'test_132'
+        "name": 'test_132'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -5654,7 +5595,7 @@ function initObjectLevels() {
     listObjectLevels[131] = objectLevel
 
     objectLevel = {
-        name: 'test_133'
+        "name": 'test_133'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0]
     objectLevel.width = 18
@@ -5675,7 +5616,7 @@ function initObjectLevels() {
     listObjectLevels[132] = objectLevel
 
     objectLevel = {
-        name: 'test_134'
+        "name": 'test_134'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -5696,7 +5637,7 @@ function initObjectLevels() {
     listObjectLevels[133] = objectLevel
 
     objectLevel = {
-        name: 'test_135'
+        "name": 'test_135'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 22
@@ -5717,7 +5658,7 @@ function initObjectLevels() {
     listObjectLevels[134] = objectLevel
 
     objectLevel = {
-        name: 'test_136'
+        "name": 'test_136'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 20
@@ -5738,7 +5679,7 @@ function initObjectLevels() {
     listObjectLevels[135] = objectLevel
 
     objectLevel = {
-        name: 'test_137'
+        "name": 'test_137'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
     objectLevel.width = 20
@@ -5759,7 +5700,7 @@ function initObjectLevels() {
     listObjectLevels[136] = objectLevel
 
     objectLevel = {
-        name: 'test_138'
+        "name": 'test_138'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 23
@@ -5780,7 +5721,7 @@ function initObjectLevels() {
     listObjectLevels[137] = objectLevel
 
     objectLevel = {
-        name: 'test_139'
+        "name": 'test_139'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 23
@@ -5801,7 +5742,7 @@ function initObjectLevels() {
     listObjectLevels[138] = objectLevel
 
     objectLevel = {
-        name: 'test_140'
+        "name": 'test_140'
     }
     objectLevel.map = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 19
@@ -5825,7 +5766,7 @@ function initObjectLevels() {
 
     //------------- location_8 begin-------------------------
     objectLevel = {
-        name: 'test_141'
+        "name": 'test_141'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 12
@@ -5846,7 +5787,7 @@ function initObjectLevels() {
     listObjectLevels[140] = objectLevel
 
     objectLevel = {
-        name: 'test_142'
+        "name": 'test_142'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0]
     objectLevel.width = 13
@@ -5867,7 +5808,7 @@ function initObjectLevels() {
     listObjectLevels[141] = objectLevel
 
     objectLevel = {
-        name: 'test_143'
+        "name": 'test_143'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 13
@@ -5888,7 +5829,7 @@ function initObjectLevels() {
     listObjectLevels[142] = objectLevel
 
     objectLevel = {
-        name: 'test_144'
+        "name": 'test_144'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -5909,7 +5850,7 @@ function initObjectLevels() {
     listObjectLevels[143] = objectLevel
 
     objectLevel = {
-        name: 'test_145'
+        "name": 'test_145'
     }
     objectLevel.map = [1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0]
     objectLevel.width = 14
@@ -5931,7 +5872,7 @@ function initObjectLevels() {
     listObjectLevels[144] = objectLevel
 
     objectLevel = {
-        name: 'test_146'
+        "name": 'test_146'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1]
     objectLevel.width = 7
@@ -5953,7 +5894,7 @@ function initObjectLevels() {
     listObjectLevels[145] = objectLevel
 
     objectLevel = {
-        name: 'test_147'
+        "name": 'test_147'
     }
     objectLevel.map = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -5975,7 +5916,7 @@ function initObjectLevels() {
     listObjectLevels[146] = objectLevel
 
     objectLevel = {
-        name: 'test_148'
+        "name": 'test_148'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
     objectLevel.width = 12
@@ -5996,7 +5937,7 @@ function initObjectLevels() {
     listObjectLevels[147] = objectLevel
 
     objectLevel = {
-        name: 'test_149'
+        "name": 'test_149'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 11
@@ -6017,7 +5958,7 @@ function initObjectLevels() {
     listObjectLevels[148] = objectLevel
 
     objectLevel = {
-        name: 'test_150'
+        "name": 'test_150'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0]
     objectLevel.width = 11
@@ -6038,7 +5979,7 @@ function initObjectLevels() {
     listObjectLevels[149] = objectLevel
 
     objectLevel = {
-        name: 'test_151'
+        "name": 'test_151'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 11
@@ -6059,7 +6000,7 @@ function initObjectLevels() {
     listObjectLevels[150] = objectLevel
 
     objectLevel = {
-        name: 'test_152'
+        "name": 'test_152'
     }
     objectLevel.map = [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6080,7 +6021,7 @@ function initObjectLevels() {
     listObjectLevels[151] = objectLevel
 
     objectLevel = {
-        name: 'test_153'
+        "name": 'test_153'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0]
     objectLevel.width = 15
@@ -6101,7 +6042,7 @@ function initObjectLevels() {
     listObjectLevels[152] = objectLevel
 
     objectLevel = {
-        name: 'test_154'
+        "name": 'test_154'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -6122,7 +6063,7 @@ function initObjectLevels() {
     listObjectLevels[153] = objectLevel
 
     objectLevel = {
-        name: 'test_155'
+        "name": 'test_155'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0]
     objectLevel.width = 17
@@ -6143,7 +6084,7 @@ function initObjectLevels() {
     listObjectLevels[154] = objectLevel
 
     objectLevel = {
-        name: 'test_156'
+        "name": 'test_156'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -6164,7 +6105,7 @@ function initObjectLevels() {
     listObjectLevels[155] = objectLevel
 
     objectLevel = {
-        name: 'test_157'
+        "name": 'test_157'
     }
     objectLevel.map = [0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0]
     objectLevel.width = 14
@@ -6185,7 +6126,7 @@ function initObjectLevels() {
     listObjectLevels[156] = objectLevel
 
     objectLevel = {
-        name: 'test_158'
+        "name": 'test_158'
     }
     objectLevel.map = [0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -6206,7 +6147,7 @@ function initObjectLevels() {
     listObjectLevels[157] = objectLevel
 
     objectLevel = {
-        name: 'test_159'
+        "name": 'test_159'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -6227,7 +6168,7 @@ function initObjectLevels() {
     listObjectLevels[158] = objectLevel
 
     objectLevel = {
-        name: 'test_160'
+        "name": 'test_160'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 23
@@ -6251,7 +6192,7 @@ function initObjectLevels() {
 
     //------------- location_9 begin-------------------------
     objectLevel = {
-        name: 'test_161'
+        "name": 'test_161'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 14
@@ -6272,7 +6213,7 @@ function initObjectLevels() {
     listObjectLevels[160] = objectLevel
 
     objectLevel = {
-        name: 'test_162'
+        "name": 'test_162'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 13
@@ -6293,7 +6234,7 @@ function initObjectLevels() {
     listObjectLevels[161] = objectLevel
 
     objectLevel = {
-        name: 'test_163'
+        "name": 'test_163'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 16
@@ -6314,7 +6255,7 @@ function initObjectLevels() {
     listObjectLevels[162] = objectLevel
 
     objectLevel = {
-        name: 'test_164'
+        "name": 'test_164'
     }
     objectLevel.map = [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 14
@@ -6335,7 +6276,7 @@ function initObjectLevels() {
     listObjectLevels[163] = objectLevel
 
     objectLevel = {
-        name: 'test_165'
+        "name": 'test_165'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 13
@@ -6357,7 +6298,7 @@ function initObjectLevels() {
     listObjectLevels[164] = objectLevel
 
     objectLevel = {
-        name: 'test_166'
+        "name": 'test_166'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6379,7 +6320,7 @@ function initObjectLevels() {
     listObjectLevels[165] = objectLevel
 
     objectLevel = {
-        name: 'test_167'
+        "name": 'test_167'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 15
@@ -6401,7 +6342,7 @@ function initObjectLevels() {
     listObjectLevels[166] = objectLevel
 
     objectLevel = {
-        name: 'test_168'
+        "name": 'test_168'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -6422,7 +6363,7 @@ function initObjectLevels() {
     listObjectLevels[167] = objectLevel
 
     objectLevel = {
-        name: 'test_169'
+        "name": 'test_169'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1]
     objectLevel.width = 18
@@ -6443,7 +6384,7 @@ function initObjectLevels() {
     listObjectLevels[168] = objectLevel
 
     objectLevel = {
-        name: 'test_170'
+        "name": 'test_170'
     }
     objectLevel.map = [1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0]
     objectLevel.width = 11
@@ -6464,7 +6405,7 @@ function initObjectLevels() {
     listObjectLevels[169] = objectLevel
 
     objectLevel = {
-        name: 'test_171'
+        "name": 'test_171'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 12
@@ -6485,7 +6426,7 @@ function initObjectLevels() {
     listObjectLevels[170] = objectLevel
 
     objectLevel = {
-        name: 'test_172'
+        "name": 'test_172'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -6506,7 +6447,7 @@ function initObjectLevels() {
     listObjectLevels[171] = objectLevel
 
     objectLevel = {
-        name: 'test_173'
+        "name": 'test_173'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 15
@@ -6527,7 +6468,7 @@ function initObjectLevels() {
     listObjectLevels[172] = objectLevel
 
     objectLevel = {
-        name: 'test_174'
+        "name": 'test_174'
     }
     objectLevel.map = [0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6548,7 +6489,7 @@ function initObjectLevels() {
     listObjectLevels[173] = objectLevel
 
     objectLevel = {
-        name: 'test_175'
+        "name": 'test_175'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6569,7 +6510,7 @@ function initObjectLevels() {
     listObjectLevels[174] = objectLevel
 
     objectLevel = {
-        name: 'test_176'
+        "name": 'test_176'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -6590,7 +6531,7 @@ function initObjectLevels() {
     listObjectLevels[175] = objectLevel
 
     objectLevel = {
-        name: 'test_177'
+        "name": 'test_177'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 18
@@ -6611,7 +6552,7 @@ function initObjectLevels() {
     listObjectLevels[176] = objectLevel
 
     objectLevel = {
-        name: 'test_178'
+        "name": 'test_178'
     }
     objectLevel.map = [0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 11
@@ -6632,7 +6573,7 @@ function initObjectLevels() {
     listObjectLevels[177] = objectLevel
 
     objectLevel = {
-        name: 'test_179'
+        "name": 'test_179'
     }
     objectLevel.map = [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 22
@@ -6653,7 +6594,7 @@ function initObjectLevels() {
     listObjectLevels[178] = objectLevel
 
     objectLevel = {
-        name: 'test_180'
+        "name": 'test_180'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 25
@@ -6677,7 +6618,7 @@ function initObjectLevels() {
 
     //------------- location_10 begin-------------------------
     objectLevel = {
-        name: 'test_181'
+        "name": 'test_181'
     }
     objectLevel.map = [0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0]
     objectLevel.width = 9
@@ -6698,7 +6639,7 @@ function initObjectLevels() {
     listObjectLevels[180] = objectLevel
 
     objectLevel = {
-        name: 'test_182'
+        "name": 'test_182'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6719,7 +6660,7 @@ function initObjectLevels() {
     listObjectLevels[181] = objectLevel
 
     objectLevel = {
-        name: 'test_183'
+        "name": 'test_183'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0]
     objectLevel.width = 11
@@ -6740,7 +6681,7 @@ function initObjectLevels() {
     listObjectLevels[182] = objectLevel
 
     objectLevel = {
-        name: 'test_184'
+        "name": 'test_184'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -6761,7 +6702,7 @@ function initObjectLevels() {
     listObjectLevels[183] = objectLevel
 
     objectLevel = {
-        name: 'test_185'
+        "name": 'test_185'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -6782,7 +6723,7 @@ function initObjectLevels() {
     listObjectLevels[184] = objectLevel
 
     objectLevel = {
-        name: 'test_186'
+        "name": 'test_186'
     }
     objectLevel.map = [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 9
@@ -6804,7 +6745,7 @@ function initObjectLevels() {
     listObjectLevels[185] = objectLevel
 
     objectLevel = {
-        name: 'test_187'
+        "name": 'test_187'
     }
     objectLevel.map = [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0]
     objectLevel.width = 12
@@ -6826,7 +6767,7 @@ function initObjectLevels() {
     listObjectLevels[186] = objectLevel
 
     objectLevel = {
-        name: 'test_188'
+        "name": 'test_188'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0]
     objectLevel.width = 15
@@ -6847,7 +6788,7 @@ function initObjectLevels() {
     listObjectLevels[187] = objectLevel
 
     objectLevel = {
-        name: 'test_189'
+        "name": 'test_189'
     }
     objectLevel.map = [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     objectLevel.width = 11
@@ -6868,7 +6809,7 @@ function initObjectLevels() {
     listObjectLevels[188] = objectLevel
 
     objectLevel = {
-        name: 'test_190'
+        "name": 'test_190'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 14
@@ -6889,7 +6830,7 @@ function initObjectLevels() {
     listObjectLevels[189] = objectLevel
 
     objectLevel = {
-        name: 'test_191'
+        "name": 'test_191'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0]
     objectLevel.width = 16
@@ -6910,7 +6851,7 @@ function initObjectLevels() {
     listObjectLevels[190] = objectLevel
 
     objectLevel = {
-        name: 'test_192'
+        "name": 'test_192'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 17
@@ -6931,7 +6872,7 @@ function initObjectLevels() {
     listObjectLevels[191] = objectLevel
 
     objectLevel = {
-        name: 'test_193'
+        "name": 'test_193'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 16
@@ -6952,7 +6893,7 @@ function initObjectLevels() {
     listObjectLevels[192] = objectLevel
 
     objectLevel = {
-        name: 'test_194'
+        "name": 'test_194'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 16
@@ -6973,7 +6914,7 @@ function initObjectLevels() {
     listObjectLevels[193] = objectLevel
 
     objectLevel = {
-        name: 'test_195'
+        "name": 'test_195'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0]
     objectLevel.width = 14
@@ -6994,7 +6935,7 @@ function initObjectLevels() {
     listObjectLevels[194] = objectLevel
 
     objectLevel = {
-        name: 'test_196'
+        "name": 'test_196'
     }
     objectLevel.map = [0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 11
@@ -7015,7 +6956,7 @@ function initObjectLevels() {
     listObjectLevels[195] = objectLevel
 
     objectLevel = {
-        name: 'test_197'
+        "name": 'test_197'
     }
     objectLevel.map = [0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0]
     objectLevel.width = 21
@@ -7036,7 +6977,7 @@ function initObjectLevels() {
     listObjectLevels[196] = objectLevel
 
     objectLevel = {
-        name: 'test_198'
+        "name": 'test_198'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -7057,7 +6998,7 @@ function initObjectLevels() {
     listObjectLevels[197] = objectLevel
 
     objectLevel = {
-        name: 'test_199'
+        "name": 'test_199'
     }
     objectLevel.map = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
     objectLevel.width = 19
@@ -7078,7 +7019,7 @@ function initObjectLevels() {
     listObjectLevels[198] = objectLevel
 
     objectLevel = {
-        name: 'test_200'
+        "name": 'test_200'
     }
     objectLevel.map = [0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0]
     objectLevel.width = 21
@@ -7104,7 +7045,7 @@ function initObjectLevels() {
 function initObjectLocations() {
     //------------- japan begin-------------------------
     var objectLocation = {
-        name: 'location_1'
+        "name": 'location_1'
     }
     objectLocation.background = "qrc:/resources/images/background_location_1.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7120,7 +7061,7 @@ function initObjectLocations() {
     listObjectLocations[0] = objectLocation
 
     objectLocation = {
-        name: 'location_2'
+        "name": 'location_2'
     }
     objectLocation.background = "qrc:/resources/images/background_location_2.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7136,7 +7077,7 @@ function initObjectLocations() {
     listObjectLocations[1] = objectLocation
 
     objectLocation = {
-        name: 'location_3'
+        "name": 'location_3'
     }
     objectLocation.background = "qrc:/resources/images/background_location_3.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7152,7 +7093,7 @@ function initObjectLocations() {
     listObjectLocations[2] = objectLocation
 
     objectLocation = {
-        name: 'location_4'
+        "name": 'location_4'
     }
     objectLocation.background = "qrc:/resources/images/background_location_4.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7168,7 +7109,7 @@ function initObjectLocations() {
     listObjectLocations[3] = objectLocation
 
     objectLocation = {
-        name: 'location_5'
+        "name": 'location_5'
     }
     objectLocation.background = "qrc:/resources/images/background_location_5.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7184,7 +7125,7 @@ function initObjectLocations() {
     listObjectLocations[4] = objectLocation
 
     objectLocation = {
-        name: 'location_6'
+        "name": 'location_6'
     }
     objectLocation.background = "qrc:/resources/images/background_location_6.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7200,7 +7141,7 @@ function initObjectLocations() {
     listObjectLocations[5] = objectLocation
 
     objectLocation = {
-        name: 'location_7'
+        "name": 'location_7'
     }
     objectLocation.background = "qrc:/resources/images/background_location_7.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7216,7 +7157,7 @@ function initObjectLocations() {
     listObjectLocations[6] = objectLocation
 
     objectLocation = {
-        name: 'location_8'
+        "name": 'location_8'
     }
     objectLocation.background = "qrc:/resources/images/background_location_8.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7232,7 +7173,7 @@ function initObjectLocations() {
     listObjectLocations[7] = objectLocation
 
     objectLocation = {
-        name: 'location_9'
+        "name": 'location_9'
     }
     objectLocation.background = "qrc:/resources/images/background_location_9.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7248,7 +7189,7 @@ function initObjectLocations() {
     listObjectLocations[8] = objectLocation
 
     objectLocation = {
-        name: 'location_10'
+        "name": 'location_10'
     }
     objectLocation.background = "qrc:/resources/images/background_location_10.jpg"
     objectLocation.backgroundLevels = "qrc:/resources/images/background_levels_location_1.jpg"
@@ -7270,7 +7211,7 @@ function setFullCampaigns() {
     initObjectLevels()
     initObjectLocations()
     var objectCampaign = {
-        name: 'japan'
+        "name": 'japan'
     }
     objectCampaign.background = "qrc:/resources/images/background_map_campaign_1.png"
     objectCampaign.listLocations = []
@@ -7307,7 +7248,7 @@ function initObjectCampaigns() {
     initObjectLevels()
     initObjectLocations()
     var objectCampaign = {
-        name: 'japan'
+        "name": 'japan'
     }
     objectCampaign.background = "qrc:/resources/images/background_map_campaign_1.png"
     objectCampaign.listLocations = []
@@ -7597,7 +7538,7 @@ function getRandomInt(min, max) {
 
 function initObjectBranchСross() {
     var objectBranch = {
-        name: 'branch_05'
+        "name": 'branch_05'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_05_00.png"
     objectBranch.left = 1
@@ -7609,7 +7550,7 @@ function initObjectBranchСross() {
     listImageBranchCross[0] = objectBranch
 
     objectBranch = {
-        name: 'branch_05'
+        "name": 'branch_05'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_05_00.png"
     objectBranch.left = 1
@@ -7621,7 +7562,7 @@ function initObjectBranchСross() {
     listImageBranchCross[1] = objectBranch
 
     objectBranch = {
-        name: 'branch_05'
+        "name": 'branch_05'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_05_00.png"
     objectBranch.left = 1
@@ -7633,7 +7574,7 @@ function initObjectBranchСross() {
     listImageBranchCross[2] = objectBranch
 
     objectBranch = {
-        name: 'branch_05'
+        "name": 'branch_05'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_05_00.png"
     objectBranch.left = 1
@@ -7648,7 +7589,7 @@ function initObjectBranchСross() {
 function initObjectBranch() {
     //------------- 1 -------------------------
     var objectBranch = {
-        name: 'branch_01'
+        "name": 'branch_01'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_01_00.png"
     objectBranch.left = 1
@@ -7660,7 +7601,7 @@ function initObjectBranch() {
     listImageBranch[0] = objectBranch
 
     objectBranch = {
-        name: 'branch_01'
+        "name": 'branch_01'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_01_00.png"
     objectBranch.left = 0
@@ -7672,7 +7613,7 @@ function initObjectBranch() {
     listImageBranch[1] = objectBranch
 
     objectBranch = {
-        name: 'branch_01'
+        "name": 'branch_01'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_01_00.png"
     objectBranch.left = 1
@@ -7684,7 +7625,7 @@ function initObjectBranch() {
     listImageBranch[2] = objectBranch
 
     objectBranch = {
-        name: 'branch_01'
+        "name": 'branch_01'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_01_00.png"
     objectBranch.left = 0
@@ -7697,7 +7638,7 @@ function initObjectBranch() {
 
     //--------------- 2 -----------------------------------
     objectBranch = {
-        name: 'branch_02'
+        "name": 'branch_02'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_02_00.png"
     objectBranch.left = 1
@@ -7709,7 +7650,7 @@ function initObjectBranch() {
     listImageBranch[4] = objectBranch
 
     objectBranch = {
-        name: 'branch_02'
+        "name": 'branch_02'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_02_00.png"
     objectBranch.left = 1
@@ -7721,7 +7662,7 @@ function initObjectBranch() {
     listImageBranch[5] = objectBranch
 
     objectBranch = {
-        name: 'branch_02'
+        "name": 'branch_02'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_02_00.png"
     objectBranch.left = 0
@@ -7733,7 +7674,7 @@ function initObjectBranch() {
     listImageBranch[6] = objectBranch
 
     objectBranch = {
-        name: 'branch_02'
+        "name": 'branch_02'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_02_00.png"
     objectBranch.left = 0
@@ -7746,7 +7687,7 @@ function initObjectBranch() {
 
     //----------- 3 ------------------------------------
     objectBranch = {
-        name: 'branch_03'
+        "name": 'branch_03'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_03_00.png"
     objectBranch.left = 1
@@ -7758,7 +7699,7 @@ function initObjectBranch() {
     listImageBranch[8] = objectBranch
 
     objectBranch = {
-        name: 'branch_03'
+        "name": 'branch_03'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_03_00.png"
     objectBranch.left = 0
@@ -7770,7 +7711,7 @@ function initObjectBranch() {
     listImageBranch[9] = objectBranch
 
     objectBranch = {
-        name: 'branch_03'
+        "name": 'branch_03'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_03_00.png"
     objectBranch.left = 1
@@ -7782,7 +7723,7 @@ function initObjectBranch() {
     listImageBranch[10] = objectBranch
 
     objectBranch = {
-        name: 'branch_03'
+        "name": 'branch_03'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_03_00.png"
     objectBranch.left = 1
@@ -7795,7 +7736,7 @@ function initObjectBranch() {
 
     //----------- 4 ------------------------------------
     objectBranch = {
-        name: 'branch_04'
+        "name": 'branch_04'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_04_00.png"
     objectBranch.left = 0
@@ -7807,7 +7748,7 @@ function initObjectBranch() {
     listImageBranch[12] = objectBranch
 
     objectBranch = {
-        name: 'branch_04'
+        "name": 'branch_04'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_04_00.png"
     objectBranch.left = 1
@@ -7819,7 +7760,7 @@ function initObjectBranch() {
     listImageBranch[13] = objectBranch
 
     objectBranch = {
-        name: 'branch_04'
+        "name": 'branch_04'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_04_00.png"
     objectBranch.left = 0
@@ -7831,7 +7772,7 @@ function initObjectBranch() {
     listImageBranch[14] = objectBranch
 
     objectBranch = {
-        name: 'branch_04'
+        "name": 'branch_04'
     }
     objectBranch.source = "qrc:/resources/images/branch/branch_04_00.png"
     objectBranch.left = 0
@@ -7849,8 +7790,8 @@ function setStartBranch() {
         for (var j = 0; j < widthGame; j++) {
             if (listGameBranchObject[i][j] !== null) {
                 arrBranch[arrBranch.length] = {
-                    posI: i,
-                    posJ: j
+                    "posI": i,
+                    "posJ": j
                 }
             }
         }
@@ -7961,15 +7902,17 @@ function createBranchForMap(objectMap) {
     var yPos = 0
     var failBranch = 0
 
-    listColor = [];
+    listColor = []
     for (var i = 0; i < heightGame; i++) {
         listMap[i] = []
         listColor[i] = []
         for (var j = 0; j < widthGame; j++) {
-            if(objectMap.map[pos] > 0) {listMap[i][j] = 1;} else{
+            if (objectMap.map[pos] > 0) {
+                listMap[i][j] = 1
+            } else {
                 listMap[i][j] = objectMap.map[pos]
             }
-            listColor[i][j] = objectMap.map[pos];
+            listColor[i][j] = objectMap.map[pos]
             pos++
         }
     }
@@ -8175,7 +8118,7 @@ function createBranchForMap(objectMap) {
                 var obBranch = getNotBlockBranch(sideLeft, sideRight, sideTop,
                                                  sideBottom)
                 var objectBranch = {
-                    name: obBranch.name
+                    "name": obBranch.name
                 }
                 objectBranch.source = obBranch.source
                 objectBranch.left = obBranch.left
@@ -8194,7 +8137,7 @@ function createBranchForMap(objectMap) {
                 listGameBranch[i][j] = objectBranch
 
                 var objectBranchNew = {
-                    name: obBranch.name
+                    "name": obBranch.name
                 }
                 objectBranchNew.source = obBranch.source
                 objectBranchNew.left = obBranch.left
@@ -8209,7 +8152,7 @@ function createBranchForMap(objectMap) {
                 typeBranch = getRandomInt(0, arrAvailableBranch.length - 1)
 
                 objectBranch = {
-                    name: arrAvailableBranch[typeBranch].name
+                    "name": arrAvailableBranch[typeBranch].name
                 }
                 objectBranch.source = arrAvailableBranch[typeBranch].source
                 objectBranch.left = arrAvailableBranch[typeBranch].left
@@ -8263,7 +8206,7 @@ function createBranchForMap(objectMap) {
                                         0, arrAvailableBranch.length - 1)
 
                             objectBranch = {
-                                name: arrAvailableBranch[typeBranch].name
+                                "name": arrAvailableBranch[typeBranch].name
                             }
                             objectBranch.source = arrAvailableBranch[typeBranch].source
                             objectBranch.left = arrAvailableBranch[typeBranch].left

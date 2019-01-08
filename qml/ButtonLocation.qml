@@ -18,8 +18,8 @@ Image {
                 var component = Qt.createComponent("LevelsMapPage.qml")
                 if (component.status === Component.Ready) {
                     mainStackView.push(component, {
-                                           currentCampaign: currentCampaign,
-                                           currentLocation: currentLocation
+                                           "currentCampaign": currentCampaign,
+                                           "currentLocation": currentLocation
                                        })
                 } else {
                     console.log(component.errorString())

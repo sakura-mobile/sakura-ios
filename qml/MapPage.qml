@@ -18,13 +18,17 @@ Item {
         fillMode: Image.PreserveAspectCrop
 
         onPaintedWidthChanged: {
-            if (width > 0 && height > 0 && sourceSize.width > 0 && sourceSize.height > 0 && paintedWidth > 0 && paintedHeight > 0) {
+            if (width > 0 && height > 0 && sourceSize.width > 0
+                    && sourceSize.height > 0 && paintedWidth > 0
+                    && paintedHeight > 0) {
                 width = paintedWidth
                 height = paintedHeight
             }
         }
         onPaintedHeightChanged: {
-            if (width > 0 && height > 0 && sourceSize.width > 0 && sourceSize.height > 0 && paintedWidth > 0 && paintedHeight > 0) {
+            if (width > 0 && height > 0 && sourceSize.width > 0
+                    && sourceSize.height > 0 && paintedWidth > 0
+                    && paintedHeight > 0) {
                 width = paintedWidth
                 height = paintedHeight
             }
@@ -74,14 +78,14 @@ Item {
 
                 if (component.status === Component.Ready) {
                     mainStackView.push(component, {
-                                           currentLevel: mainWindow.getSetting(
-                                                             "maxLevel", 0),
-                                           currentLocation: mainWindow.getSetting(
-                                                                "maxLevelLocation",
-                                                                0),
-                                           currentCampaign: mainWindow.getSetting(
-                                                                "maxLevelCampaign",
-                                                                0)
+                                           "currentLevel": mainWindow.getSetting(
+                                                               "maxLevel", 0),
+                                           "currentLocation": mainWindow.getSetting(
+                                                                  "maxLevelLocation",
+                                                                  0),
+                                           "currentCampaign": mainWindow.getSetting(
+                                                                  "maxLevelCampaign",
+                                                                  0)
                                        })
                 } else {
                     console.log(component.errorString())

@@ -716,8 +716,8 @@ Item {
                         countStopBranch++
                     }
                     arrBranchRotation[arrBranchRotation.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }
@@ -734,8 +734,8 @@ Item {
                 var jFlickering = arrBranchRotation[startPoint].posJ
                 if (GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].countRotation !== 0) {
                     posFlickering = {
-                        posI: iFlickering,
-                        posJ: jFlickering
+                        "posI": iFlickering,
+                        "posJ": jFlickering
                     }
                     seachBranch = 1
                     GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering()
@@ -760,8 +760,8 @@ Item {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
                 if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
                     arrBranch[arrBranch.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }
@@ -902,8 +902,8 @@ Item {
                         var jFlickering = arrBranchRotation[startPoint].posJ
                         if (GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].countRotation !== 0) {
                             posFlickering = {
-                                posI: iFlickering,
-                                posJ: jFlickering
+                                "posI": iFlickering,
+                                "posJ": jFlickering
                             }
                             seachBranch = 1
                             GenerationBranchScript.listGameBranchObject[iFlickering][jFlickering].startAnimationFlickering()

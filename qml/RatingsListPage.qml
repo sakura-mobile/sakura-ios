@@ -492,26 +492,28 @@ Item {
             if (listTopUsers[i].user_id === mainWindow.getSetting("userUuid",
                                                                   "")) {
                 scoreListModel.append({
-                                          name: mainWindow.getSetting(
-                                                    "nameUser", "NONAME"),
-                                          score: Number(listTopUsers[i].score),
-                                          date: Qt.formatDate(new Date(),
-                                                              "dd.MM.yyyy"),
-                                          giftType: obj.typeGift,
-                                          countGift: obj.countGift,
-                                          position: i + 1,
-                                          colorName: "red"
+                                          "name": mainWindow.getSetting(
+                                                      "nameUser", "NONAME"),
+                                          "score": Number(
+                                                       listTopUsers[i].score),
+                                          "date": Qt.formatDate(new Date(),
+                                                                "dd.MM.yyyy"),
+                                          "giftType": obj.typeGift,
+                                          "countGift": obj.countGift,
+                                          "position": i + 1,
+                                          "colorName": "red"
                                       })
             } else {
                 scoreListModel.append({
-                                          name: listTopUsers[i].user_name,
-                                          score: Number(listTopUsers[i].score),
-                                          date: Qt.formatDate(new Date(),
-                                                              "dd.MM.yyyy"),
-                                          giftType: obj.typeGift,
-                                          countGift: obj.countGift,
-                                          position: i + 1,
-                                          colorName: "black"
+                                          "name": listTopUsers[i].user_name,
+                                          "score": Number(
+                                                       listTopUsers[i].score),
+                                          "date": Qt.formatDate(new Date(),
+                                                                "dd.MM.yyyy"),
+                                          "giftType": obj.typeGift,
+                                          "countGift": obj.countGift,
+                                          "position": i + 1,
+                                          "colorName": "black"
                                       })
             }
         }
@@ -546,14 +548,15 @@ Item {
                 }
                 minScore = res.rows.item(i).SCORE
                 scoreListModel.append({
-                                          name: name,
-                                          score: Number(res.rows.item(i).SCORE),
-                                          date: Qt.formatDate(new Date(),
-                                                              "dd.MM.yyyy"),
-                                          position: i + 1,
-                                          colorName: "black",
-                                          giftType: 1,
-                                          countGift: 1
+                                          "name": name,
+                                          "score": Number(res.rows.item(
+                                                              i).SCORE),
+                                          "date": Qt.formatDate(new Date(),
+                                                                "dd.MM.yyyy"),
+                                          "position": i + 1,
+                                          "colorName": "black",
+                                          "giftType": 1,
+                                          "countGift": 1
                                       })
             }
             tx.executeSql(

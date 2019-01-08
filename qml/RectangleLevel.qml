@@ -80,36 +80,36 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
 
-        onClicked: {            
+        onClicked: {
             if (isAvailable) {
-                var component;
-                if (!isRelax){
+                var component
+                if (!isRelax) {
                     var component = Qt.createComponent("CampaignPage.qml")
 
                     if (component.status === Component.Ready) {
                         mainStackView.push(component, {
-                                               currentLevel: currentLevel,
-                                               currentLocation: currentLocation,
-                                               currentCampaign: currentCampaign
+                                               "currentLevel": currentLevel,
+                                               "currentLocation": currentLocation,
+                                               "currentCampaign": currentCampaign
                                            })
                     } else {
                         console.log(component.errorString())
                     }
                 } else {
-                        //relax page
-                            console.log("relax");
-                        component = Qt.createComponent("RelaxGamePage.qml")
+                    //relax page
+                    console.log("relax")
+                    component = Qt.createComponent("RelaxGamePage.qml")
 
-                        if (component.status === Component.Ready) {
-                            mainStackView.push(component, {
-                                                   currentLevel: currentLevel,
-                                                   currentLocation: currentLocation,
-                                                   currentCampaign: currentCampaign
-                                               })
-                        } else {
-                            console.log(component.errorString())
-                        }
-               }
+                    if (component.status === Component.Ready) {
+                        mainStackView.push(component, {
+                                               "currentLevel": currentLevel,
+                                               "currentLocation": currentLocation,
+                                               "currentCampaign": currentCampaign
+                                           })
+                    } else {
+                        console.log(component.errorString())
+                    }
+                }
             }
         }
     }

@@ -84,35 +84,37 @@ Item {
     }
 
     Component.onCompleted: {
-        GenerationBranchScript.initObjectRelaxLevels();
+        GenerationBranchScript.initObjectRelaxLevels()
         var maxLevelRelax = mainWindow.getSetting("maxLevelRelax", 0)
-        var ratingLevelsUserRelax = mainWindow.getSetting("ratingLevelsUserRelax", "")
+        var ratingLevelsUserRelax = mainWindow.getSetting(
+                    "ratingLevelsUserRelax", "")
         var arrRatingLevelsRelax = []
-        var component, object;
+        var component, object
         if (ratingLevelsUserRelax === "" || ratingLevelsUserRelax === null) {
             arrRatingLevelsRelax[0] = maxLevelRelax
         } else {
             arrRatingLevelsRelax = JSON.parse(ratingLevelsUserRelax)
         }
 
-        currentPageRelax = Math.floor(maxLevelRelax/20);
+        currentPageRelax = Math.floor(maxLevelRelax / 20)
 
-        if(currentPageRelax === 0) {
-            leftButton.source = "qrc:/resources/images/button_triple_left_disabled.png";
+        if (currentPageRelax === 0) {
+            leftButton.source = "qrc:/resources/images/button_triple_left_disabled.png"
         } else {
-            leftButton.source = "qrc:/resources/images/button_triple_left.png";
+            leftButton.source = "qrc:/resources/images/button_triple_left.png"
         }
 
-        if(currentPageRelax === Math.floor((GenerationBranchScript.listObjectRelaxLevels.length - 1)/20)) {
-            rightButton.source = "qrc:/resources/images/button_triple_right_disabled.png";
+        if (currentPageRelax === Math.floor(
+                    (GenerationBranchScript.listObjectRelaxLevels.length - 1) / 20)) {
+            rightButton.source = "qrc:/resources/images/button_triple_right_disabled.png"
         } else {
-            rightButton.source = "qrc:/resources/images/button_triple_right.png";
-
+            rightButton.source = "qrc:/resources/images/button_triple_right.png"
         }
         for (var i = currentPageRelax * 20; i < currentPageRelax * 20 + 20; i++) {
 
-            if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined") || (GenerationBranchScript.listObjectRelaxLevels[i] === null )) {
-                break;
+            if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined")
+                    || (GenerationBranchScript.listObjectRelaxLevels[i] === null)) {
+                break
             }
 
             component = Qt.createComponent("RectangleLevel.qml")
@@ -136,32 +138,32 @@ Item {
             object.isRelax = true
             object.currentLevel = i
             object.changeImgRatingLevel()
-            listRectanglesLevel[i] = object;
-
-
+            listRectanglesLevel[i] = object
         }
     }
 
-
     function nextLevelButton() {
 
-        if(currentPageRelax === Math.floor((GenerationBranchScript.listObjectRelaxLevels.length - 1)/20) ) return;
-        currentPageRelax++;
-        nextPageRelax();
+        if (currentPageRelax === Math.floor(
+                    (GenerationBranchScript.listObjectRelaxLevels.length - 1) / 20))
+            return
+        currentPageRelax++
+        nextPageRelax()
     }
 
     function previousLevelButton() {
-        if(currentPageRelax === 0) return;
-        currentPageRelax--;
-        nextPageRelax();
+        if (currentPageRelax === 0)
+            return
+        currentPageRelax--
+        nextPageRelax()
     }
 
     function nextPageRelax() {
 
-        var component, object;
+        var component, object
         var maxLevelRelax = mainWindow.getSetting("maxLevelRelax", 0)
-        var ratingLevelsUserRelax = mainWindow.getSetting("ratingLevelsUserRelax", "")
-
+        var ratingLevelsUserRelax = mainWindow.getSetting(
+                    "ratingLevelsUserRelax", "")
 
         var arrRatingLevelsRelax = []
         if (ratingLevelsUserRelax === "" || ratingLevelsUserRelax === null) {
@@ -170,30 +172,30 @@ Item {
             arrRatingLevelsRelax = JSON.parse(ratingLevelsUserRelax)
         }
 
-
         if (listRectanglesLevel.length !== 0) {
             for (var keyI in listRectanglesLevel) {
                 if (listRectanglesLevel[keyI] !== null)
-                    listRectanglesLevel[keyI].destroy();
+                    listRectanglesLevel[keyI].destroy()
             }
         }
         listRectanglesLevel = []
-        if(currentPageRelax === 0) {
-            leftButton.source = "qrc:/resources/images/button_triple_left_disabled.png";
+        if (currentPageRelax === 0) {
+            leftButton.source = "qrc:/resources/images/button_triple_left_disabled.png"
         } else {
-            leftButton.source = "qrc:/resources/images/button_triple_left.png";
+            leftButton.source = "qrc:/resources/images/button_triple_left.png"
         }
 
-        if(currentPageRelax === Math.floor((GenerationBranchScript.listObjectRelaxLevels.length - 1)/20)) {
-            rightButton.source = "qrc:/resources/images/button_triple_right_disabled.png";
+        if (currentPageRelax === Math.floor(
+                    (GenerationBranchScript.listObjectRelaxLevels.length - 1) / 20)) {
+            rightButton.source = "qrc:/resources/images/button_triple_right_disabled.png"
         } else {
-            rightButton.source = "qrc:/resources/images/button_triple_right.png";
-
+            rightButton.source = "qrc:/resources/images/button_triple_right.png"
         }
         for (var i = currentPageRelax * 20; i < currentPageRelax * 20 + 20; i++) {
 
-            if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined") || (GenerationBranchScript.listObjectRelaxLevels[i] === null )) {
-                break;
+            if ((typeof GenerationBranchScript.listObjectRelaxLevels[i] === "undefined")
+                    || (GenerationBranchScript.listObjectRelaxLevels[i] === null)) {
+                break
             }
 
             component = Qt.createComponent("RectangleLevel.qml")
@@ -217,15 +219,15 @@ Item {
             object.isRelax = true
             object.currentLevel = i
             object.changeImgRatingLevel()
-            listRectanglesLevel[i] = object;
+            listRectanglesLevel[i] = object
         }
     }
 
     function updateLevelsMapPage() {
 
         var maxLevelRelax = Number(mainWindow.getSetting("maxLevelRelax", 0))
-        var ratingLevelsUserRelax = mainWindow.getSetting("ratingLevelsUserRelax", "")
-
+        var ratingLevelsUserRelax = mainWindow.getSetting(
+                    "ratingLevelsUserRelax", "")
 
         var arrRatingLevelsRelax = []
         if (ratingLevelsUserRelax === "" || ratingLevelsUserRelax === null) {
@@ -251,6 +253,5 @@ Item {
             }
             object.changeImgRatingLevel()
         }
-
     }
 }

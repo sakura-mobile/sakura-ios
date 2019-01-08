@@ -33,7 +33,6 @@ Item {
                 policy: ScrollBar.AsNeeded
             }
 
-
             Column {
                 id: buttonsColumn
                 spacing: 1
@@ -56,7 +55,7 @@ Item {
                     }
 
                     Image {
-                        id : imageCheckMusic
+                        id: imageCheckMusic
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
                         anchors.rightMargin: 40
@@ -70,12 +69,13 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 1) {
-                               imageCheckMusic.source = "qrc:/resources/images/button_off.png"
-                               mainWindow.setSetting("SettingsMusic", 0)
+                            if (Number(mainWindow.getSetting("SettingsMusic",
+                                                             1)) === 1) {
+                                imageCheckMusic.source = "qrc:/resources/images/button_off.png"
+                                mainWindow.setSetting("SettingsMusic", 0)
                             } else {
-                               imageCheckMusic.source = "qrc:/resources/images/button_on.png"
-                               mainWindow.setSetting("SettingsMusic", 1)
+                                imageCheckMusic.source = "qrc:/resources/images/button_on.png"
+                                mainWindow.setSetting("SettingsMusic", 1)
                             }
                         }
                     }
@@ -100,7 +100,7 @@ Item {
                     }
 
                     Image {
-                        id : imageCheckSounds
+                        id: imageCheckSounds
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
                         anchors.rightMargin: 40
@@ -114,11 +114,12 @@ Item {
                         z: 1
 
                         onClicked: {
-                            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 1) {
-                               imageCheckSounds.source = "qrc:/resources/images/button_off.png"
+                            if (Number(mainWindow.getSetting("SettingsSounds",
+                                                             1)) === 1) {
+                                imageCheckSounds.source = "qrc:/resources/images/button_off.png"
                                 mainWindow.setSetting("SettingsSounds", 0)
                             } else {
-                               imageCheckSounds.source = "qrc:/resources/images/button_on.png"
+                                imageCheckSounds.source = "qrc:/resources/images/button_on.png"
                                 mainWindow.setSetting("SettingsSounds", 1)
                             }
                         }
@@ -147,20 +148,20 @@ Item {
         }
     }
 
-     Component.onCompleted: {
-         console.log("SettingsSounds :: " + Number(mainWindow.getSetting("SettingsSounds", 1)));
+    Component.onCompleted: {
+        console.log("SettingsSounds :: " + Number(mainWindow.getSetting(
+                                                      "SettingsSounds", 1)))
 
-         if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 1) {
+        if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 1) {
             imageCheckMusic.source = "qrc:/resources/images/button_on.png"
-         } else {
+        } else {
             imageCheckMusic.source = "qrc:/resources/images/button_off.png"
-         }
+        }
 
-         if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 1) {
+        if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 1) {
             imageCheckSounds.source = "qrc:/resources/images/button_on.png"
-         } else {
+        } else {
             imageCheckSounds.source = "qrc:/resources/images/button_off.png"
-         }
-
-     }
+        }
+    }
 }

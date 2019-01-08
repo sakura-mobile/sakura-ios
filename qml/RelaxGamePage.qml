@@ -268,17 +268,15 @@ Item {
                     onWidthChanged: {
                         backgroundFlickable.initialContentWidth = width
 
-                        backgroundFlickable.initialResize(
-                                    gridMapRelax.width,
-                                    gridMapRelax.height)
+                        backgroundFlickable.initialResize(gridMapRelax.width,
+                                                          gridMapRelax.height)
                     }
 
                     onHeightChanged: {
                         backgroundFlickable.initialContentHeight = height
 
-                        backgroundFlickable.initialResize(
-                                    gridMapRelax.width,
-                                    gridMapRelax.height)
+                        backgroundFlickable.initialResize(gridMapRelax.width,
+                                                          gridMapRelax.height)
                     }
 
                     Grid {
@@ -288,14 +286,12 @@ Item {
 
                         onWidthChanged: {
                             backgroundFlickable.initialResize(
-                                        gridMapRelax.width,
-                                        gridMapRelax.height)
+                                        gridMapRelax.width, gridMapRelax.height)
                         }
 
                         onHeightChanged: {
                             backgroundFlickable.initialResize(
-                                        gridMapRelax.width,
-                                        gridMapRelax.height)
+                                        gridMapRelax.width, gridMapRelax.height)
                         }
                     }
 
@@ -355,7 +351,6 @@ Item {
                 contentHeight = height
             }
         }
-
 
         Row {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -449,8 +444,6 @@ Item {
             }
         }
 
-
-
         Rectangle {
             id: rectCompletedGame
             anchors.horizontalCenter: parent.horizontalCenter
@@ -514,22 +507,23 @@ Item {
                                             "CardPage.qml")
 
                                 if (component.status === Component.Ready) {
-                                    if (relaxGamePage.countPetals === relaxGamePage.countPetalsMax) {
+                                    if (relaxGamePage.countPetals
+                                            === relaxGamePage.countPetalsMax) {
                                         mainStackView.push(component, {
-                                                               currentLevel: currentLevel,
-                                                               isRelax: 1,
-                                                               listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                               isMaxPetals: 1
+                                                               "currentLevel": currentLevel,
+                                                               "isRelax": 1,
+                                                               "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                               "isMaxPetals": 1
                                                            })
                                     } else {
                                         mainStackView.push(component, {
-                                                               currentLevel: currentLevel,
-                                                               isRelax: 1,
-                                                               listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                               isMaxPetals: 0
+                                                               "currentLevel": currentLevel,
+                                                               "isRelax": 1,
+                                                               "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                               "isMaxPetals": 0
                                                            })
                                     }
-                                    mainWindow.setSetting("ShareTooltip", 1);
+                                    mainWindow.setSetting("ShareTooltip", 1)
                                 } else {
                                     console.log(component.errorString())
                                 }
@@ -582,9 +576,9 @@ Item {
                                 }
                                 currentLevel = nextLevel
                                 animationRectCompletedGameDown.running = true
-                                imageShareTooltip.visible = false;
+                                imageShareTooltip.visible = false
                                 timerTooltipShare.stop()
-                                imageShare.source = "qrc:/resources/images/button_share.png";
+                                imageShare.source = "qrc:/resources/images/button_share.png"
                                 loadBranchOnMap()
                                 mixMap()
                                 updateDataLevel()
@@ -593,7 +587,6 @@ Item {
                         }
                     }
                 }
-
 
                 Row {
                     id: rowButtonImage
@@ -638,14 +631,15 @@ Item {
                         relaxGamePage.bannerViewHeight + 8, 20)
                 onStopped: {
 
-                    if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 0){
-                         imageShareTooltip.visible = true;
-                         timerTooltipShare.start();
+                    if (Number(mainWindow.getSetting("ShareTooltip",
+                                                     0)) === 0) {
+                        imageShareTooltip.visible = true
+                        timerTooltipShare.start()
                     }
-                        if (Math.random() < 0.10
-                                && ReachabilityHelper.internetConnected) {
-                            StoreHelper.requestReview()
-                        }
+                    if (Math.random() < 0.10
+                            && ReachabilityHelper.internetConnected) {
+                        StoreHelper.requestReview()
+                    }
                 }
             }
 
@@ -660,9 +654,9 @@ Item {
                 onStopped: {
                     imageShare.visible = true
                     rowButtonImage.visible = true
-                    imageShareTooltip.visible = false;
+                    imageShareTooltip.visible = false
                     timerTooltipShare.stop()
-                    imageShare.source = "qrc:/resources/images/button_share.png";
+                    imageShare.source = "qrc:/resources/images/button_share.png"
                 }
             }
         }
@@ -752,19 +746,19 @@ Item {
         if (StackView.status === StackView.Active
                 && rectCompletedGame.y === imageBackgroundMainMap.height) {
             mixMap()
-            textStepGameLantern.text = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+            textStepGameLantern.text
+                    = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
             imageLanternStep.visible = true
             animationStepDown.running = true
             imageShare.visible = true
             rowButtonImage.visible = true
         }
 
-            if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1){
-                 imageShareTooltip.visible = false;
-                 timerTooltipShare.stop();
-                imageShare.source = "qrc:/resources/images/button_share.png";
-            }
-
+        if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1) {
+            imageShareTooltip.visible = false
+            timerTooltipShare.stop()
+            imageShare.source = "qrc:/resources/images/button_share.png"
+        }
     }
 
     Audio {
@@ -778,7 +772,8 @@ Item {
 
         onPlaybackEnabledChanged: {
 
-            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0)
+                return
 
             if (playbackEnabled) {
                 play()
@@ -804,7 +799,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -823,7 +819,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -842,7 +839,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -880,12 +878,12 @@ Item {
     }
 
     function timerTooltipShare() {
-        if (imageShare.source == "qrc:/resources/images/button_share.png"){
-            imageShare.source = "qrc:/resources/images/button_share_tooltip.png";
+        if (imageShare.source == "qrc:/resources/images/button_share.png") {
+            imageShare.source = "qrc:/resources/images/button_share_tooltip.png"
         } else {
-            imageShare.source = "qrc:/resources/images/button_share.png";
+            imageShare.source = "qrc:/resources/images/button_share.png"
         }
-  }
+    }
 
     function resetParticleSystems() {
         particleSystem1.running = true
@@ -895,7 +893,8 @@ Item {
     }
 
     function updateDataLevel() {
-        textStepGameLantern.text = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+        textStepGameLantern.text
+                = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
         imageLanternStep.visible = true
         animationStepDown.running = true
     }
@@ -903,7 +902,8 @@ Item {
     function setQuickTip() {
         if (GenerationBranchScript.isCompleted === 1)
             return
-        if (countQuickTipLevel >= GenerationBranchScript.listObjectRelaxLevels[currentLevel].countQuickTip)
+        if (countQuickTipLevel
+                >= GenerationBranchScript.listObjectRelaxLevels[currentLevel].countQuickTip)
             return
         var countQuickTipLantern = Number(mainWindow.getSetting(
                                               "countQuickTip", 0))
@@ -971,7 +971,8 @@ Item {
 
     function setScoreUserRotation() {
         GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent++
-        textStepGameLantern.text = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+        textStepGameLantern.text
+                = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
     }
 
     function setInfoQuickTip() {
@@ -980,7 +981,8 @@ Item {
         countQuickTipLevel++
         mainWindow.setSetting("countQuickTip", countQuickTip)
         textCountQuickTipButton.text = countQuickTip
-        if (countQuickTipLevel >= GenerationBranchScript.listObjectRelaxLevels[currentLevel].countQuickTip) {
+        if (countQuickTipLevel
+                >= GenerationBranchScript.listObjectRelaxLevels[currentLevel].countQuickTip) {
             quickTipButton.source = "qrc:/resources/images/button_quick_tip_locked.png"
         } else {
             quickTipButton.source = "qrc:/resources/images/button_quick_tip.png"
@@ -989,9 +991,9 @@ Item {
 
     function repeatGame() {
         animationRectCompletedGameDown.running = true
-        imageShareTooltip.visible = false;
+        imageShareTooltip.visible = false
         timerTooltipShare.stop()
-        imageShare.source = "qrc:/resources/images/button_share.png";
+        imageShare.source = "qrc:/resources/images/button_share.png"
         loadBranchOnMap()
         mixMap()
         updateBoostUser()
@@ -1004,7 +1006,8 @@ Item {
             isLockedQuickTip = 0
         GenerationBranchScript.revivalBranchStart()
         setScoreUserRotation()
-        textStepGameLantern.text = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+        textStepGameLantern.text
+                = GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
         if (GenerationBranchScript.isCompletedGame() === true) {
             GenerationBranchScript.isCompleted = 1
             setRatingUser()
@@ -1012,7 +1015,7 @@ Item {
             startAnimationBranch()
             audioGoodGame.playAudio()
             return
-        }      
+        }
     }
 
     function rotationBranch(i, j) {
@@ -1079,8 +1082,11 @@ Item {
         if (GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
                 <= GenerationBranchScript.listObjectRelaxLevels[currentLevel].step) {
             ratingGame = 3
-        } else if (GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent > GenerationBranchScript.listObjectRelaxLevels[currentLevel].step
-                   && GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent <= GenerationBranchScript.listObjectRelaxLevels[currentLevel].step + GenerationBranchScript.listObjectRelaxLevels[currentLevel].taskStepStar2) {
+        } else if (GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+                   > GenerationBranchScript.listObjectRelaxLevels[currentLevel].step
+                   && GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent
+                   <= GenerationBranchScript.listObjectRelaxLevels[currentLevel].step
+                   + GenerationBranchScript.listObjectRelaxLevels[currentLevel].taskStepStar2) {
             ratingGame = 2
         } else {
             ratingGame = 1
@@ -1116,8 +1122,7 @@ Item {
     function setNewLevel() {
         var newLevel = currentLevel + 1
         if (typeof GenerationBranchScript.listObjectRelaxLevels[newLevel] !== "undefined") {
-            if (typeof arrUserRatingLevels[newLevel]
-                    === "undefined") {
+            if (typeof arrUserRatingLevels[newLevel] === "undefined") {
                 mainWindow.setSetting("maxLevelRelax", newLevel)
             }
             nextLevel = newLevel
@@ -1128,7 +1133,6 @@ Item {
             var utc = d.getTime() + (d.getTimezoneOffset() * 60000)
             var now = new Date(utc + (3600000 * 0))
             mainWindow.setSetting("endedAvailableLevelsRelax", now.getTime())
-
         }
     }
 
@@ -1163,8 +1167,8 @@ Item {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
                 if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
                     arrBranch[arrBranch.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }
@@ -1251,7 +1255,7 @@ Item {
             arrBranch.splice(startPoint, 1)
         }
 
-        GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent = 0;
+        GenerationBranchScript.listObjectRelaxLevels[currentLevel].stepCurrent = 0
     }
 
     function loadBranchOnMap() {
@@ -1260,8 +1264,9 @@ Item {
         countBranchRotationGame = 0
         isLockedQuickTip = 0
         endedAvailableLevels = false
-        GenerationBranchScript.initObjectRelaxLevels();
-        var ratingLevelsUserRelax = mainWindow.getSetting("ratingLevelsUserRelax", "")
+        GenerationBranchScript.initObjectRelaxLevels()
+        var ratingLevelsUserRelax = mainWindow.getSetting(
+                    "ratingLevelsUserRelax", "")
         arrUserRatingLevels = []
         if (ratingLevelsUserRelax === "" || ratingLevelsUserRelax === null) {
             arrUserRatingLevels[currentLevel] = 0
@@ -1292,7 +1297,7 @@ Item {
 
         GenerationBranchScript.listGameBranch = []
 
-        var objMap = GenerationBranchScript.listObjectRelaxLevels[currentLevel];
+        var objMap = GenerationBranchScript.listObjectRelaxLevels[currentLevel]
         GenerationBranchScript.createBranchForMap(objMap)
 
         var widthGame = objMap.width

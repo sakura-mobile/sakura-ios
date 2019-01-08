@@ -84,12 +84,8 @@ Item {
 
                                 if (component.status === Component.Ready) {
                                     mainStackView.push(component, {
-                                                           currentCampaign: mainWindow.getSetting(
-                                                                                "maxLevelCampaign",
-                                                                                0),
-                                                           currentLocation: mainWindow.getSetting(
-                                                                                "maxLevelLocation",
-                                                                                0)
+                                                           "currentCampaign": mainWindow.getSetting("maxLevelCampaign", 0),
+                                                           "currentLocation": mainWindow.getSetting("maxLevelLocation", 0)
                                                        })
                                 } else {
                                     console.log(component.errorString())
@@ -163,7 +159,6 @@ Item {
                             }
                         }
                     }
-
 
                     Image {
                         id: buttonStore
@@ -447,6 +442,8 @@ Item {
     }
 
     Component.onCompleted: {
+
+
         /*
          * Don't offer rewards for Facebook invitations
          *
@@ -471,7 +468,6 @@ Item {
 
         FBHelper.gameRequestCompleted.connect(gameRequestCompleted)
         */
-
         if ((mainWindow.getSetting("endedAvailableLevels", "")
              !== "") && (Number(mainWindow.getSetting("maxLevelCampaign",
                                                       0)) === 0)

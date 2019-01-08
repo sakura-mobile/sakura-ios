@@ -712,7 +712,9 @@ Item {
                 source: "qrc:/resources/images/background_rect_score.png"
                 width: parent.width
                 height: parent.height
- /*               Row {
+
+
+                /*               Row {
                     id: rowButtonImage
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -740,7 +742,6 @@ Item {
                     }
                 }
                 */
-
                 Text {
                     id: textFailedGame
                     anchors.top: parent.top
@@ -764,9 +765,9 @@ Item {
 
                 Row {
                     id: rowRectCompletedGame
-//                    anchors.bottom: parent.bottom
-//                    anchors.horizontalCenter: parent.horizontalCenter
-//                    anchors.bottomMargin: 30
+                    //                    anchors.bottom: parent.bottom
+                    //                    anchors.horizontalCenter: parent.horizontalCenter
+                    //                    anchors.bottomMargin: 30
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.topMargin: 20
@@ -816,25 +817,25 @@ Item {
                                 if (component.status === Component.Ready) {
                                     if (campaignPage.countPetals === campaignPage.countPetalsMax) {
                                         mainStackView.push(component, {
-                                                               currentCampaign: currentCampaign,
-                                                               currentLocation: currentLocation,
-                                                               currentLevel: currentLevel,
-                                                               isCampaign: 1,
-                                                               listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                               isMaxPetals: 1
+                                                               "currentCampaign": currentCampaign,
+                                                               "currentLocation": currentLocation,
+                                                               "currentLevel": currentLevel,
+                                                               "isCampaign": 1,
+                                                               "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                               "isMaxPetals": 1
                                                            })
                                     } else {
                                         mainStackView.push(component, {
-                                                               currentCampaign: currentCampaign,
-                                                               currentLocation: currentLocation,
-                                                               currentLevel: currentLevel,
-                                                               isCampaign: 1,
-                                                               listGameBranchObject: GenerationBranchScript.listGameBranchObject,
-                                                               isMaxPetals: 0
+                                                               "currentCampaign": currentCampaign,
+                                                               "currentLocation": currentLocation,
+                                                               "currentLevel": currentLevel,
+                                                               "isCampaign": 1,
+                                                               "listGameBranchObject": GenerationBranchScript.listGameBranchObject,
+                                                               "isMaxPetals": 0
                                                            })
                                     }
 
-                                    mainWindow.setSetting("ShareTooltip", 1);
+                                    mainWindow.setSetting("ShareTooltip", 1)
                                 } else {
                                     console.log(component.errorString())
                                 }
@@ -899,9 +900,9 @@ Item {
                                 currentLocation = nextLocation
                                 currentCampaign = nextCampaign
 
-                                imageShareTooltip.visible = false;
+                                imageShareTooltip.visible = false
                                 timerTooltipShare.stop()
-                                imageShare.source = "qrc:/resources/images/button_share.png";
+                                imageShare.source = "qrc:/resources/images/button_share.png"
 
                                 animationRectCompletedGameDown.running = true
                                 loadBranchOnMap()
@@ -915,7 +916,8 @@ Item {
 
                 Row {
                     id: rowButtonImage
-/*                    anchors.top: parent.top
+
+                    /*                    anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.topMargin: 20
 */
@@ -963,9 +965,10 @@ Item {
                             StoreHelper.requestReview()
                         }
 
-                        if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 0){
-                             imageShareTooltip.visible = true;
-                             timerTooltipShare.start();
+                        if (Number(mainWindow.getSetting("ShareTooltip",
+                                                         0)) === 0) {
+                            imageShareTooltip.visible = true
+                            timerTooltipShare.start()
                         }
                     }
                 }
@@ -1104,11 +1107,11 @@ Item {
             rowButtonImage.visible = true
         }
 
-            if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1){
-                 imageShareTooltip.visible = false;
-                 timerTooltipShare.stop();
-                imageShare.source = "qrc:/resources/images/button_share.png";
-            }
+        if (Number(mainWindow.getSetting("ShareTooltip", 0)) === 1) {
+            imageShareTooltip.visible = false
+            timerTooltipShare.stop()
+            imageShare.source = "qrc:/resources/images/button_share.png"
+        }
     }
 
     Timer {
@@ -1124,7 +1127,6 @@ Item {
         repeat: true
         onTriggered: campaignPage.timerBlockTime()
     }
-
 
     Timer {
         id: timerTooltipShare
@@ -1143,7 +1145,8 @@ Item {
                                        && campaignPage.StackView.status === StackView.Active
 
         onPlaybackEnabledChanged: {
-            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsMusic", 1)) === 0)
+                return
 
             if (playbackEnabled) {
                 play()
@@ -1169,7 +1172,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -1188,7 +1192,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -1207,7 +1212,8 @@ Item {
         }
 
         function playAudio() {
-            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0) return;
+            if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
+                return
             if (playbackEnabled) {
                 play()
             }
@@ -1245,12 +1251,12 @@ Item {
     }
 
     function timerTooltipShare() {
-        if (imageShare.source == "qrc:/resources/images/button_share.png"){
-            imageShare.source = "qrc:/resources/images/button_share_tooltip.png";
+        if (imageShare.source == "qrc:/resources/images/button_share.png") {
+            imageShare.source = "qrc:/resources/images/button_share_tooltip.png"
         } else {
-            imageShare.source = "qrc:/resources/images/button_share.png";
+            imageShare.source = "qrc:/resources/images/button_share.png"
         }
-  }
+    }
 
     function updateDataLevel() {
         if (GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].typeStep === 1) {
@@ -1462,11 +1468,11 @@ Item {
         }
     }
 
-    function repeatGame() {             
+    function repeatGame() {
         animationRectCompletedGameDown.running = true
-        imageShareTooltip.visible = false;
+        imageShareTooltip.visible = false
         timerTooltipShare.stop()
-        imageShare.source = "qrc:/resources/images/button_share.png";
+        imageShare.source = "qrc:/resources/images/button_share.png"
         loadBranchOnMap()
         mixMap()
         updateBoostUser()
@@ -1744,8 +1750,8 @@ Item {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
                 if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
                     arrBranch[arrBranch.length] = {
-                        posI: i,
-                        posJ: j
+                        "posI": i,
+                        "posJ": j
                     }
                 }
             }

@@ -239,9 +239,11 @@ Rectangle {
     function animationBlossomedBranch() {
 
         //typeColor
-        var typeColorBranch = "";
-        if (typeColor === 2) typeColorBranch = "_1";
-        if (typeColor === 3) typeColorBranch = "_2";
+        var typeColorBranch = ""
+        if (typeColor === 2)
+            typeColorBranch = "_1"
+        if (typeColor === 3)
+            typeColorBranch = "_2"
         switch (typeAnimation) {
         case '1':
             typeAnimation = "2a"
@@ -265,26 +267,27 @@ Rectangle {
             break
         case '2e':
             typeAnimation = "3a"
-            source = "qrc:/resources/images/branch/" + nameItem + "_3a"+ typeColorBranch +".png"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3a" + typeColorBranch + ".png"
             break
         case '3a':
             typeAnimation = "3b"
-            source = "qrc:/resources/images/branch/" + nameItem + "_3b"+ typeColorBranch +".png"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3b" + typeColorBranch + ".png"
             break
         case '3b':
             typeAnimation = "3c"
-            source = "qrc:/resources/images/branch/" + nameItem + "_3c"+ typeColorBranch +".png"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3c" + typeColorBranch + ".png"
             break
         case '3c':
             typeAnimation = "3d"
-            source = "qrc:/resources/images/branch/" + nameItem + "_3d"+ typeColorBranch +".png"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3d" + typeColorBranch + ".png"
             break
         case '3d':
             typeAnimation = "3e"
-            source = "qrc:/resources/images/branch/" + nameItem + "_3e"+ typeColorBranch +".png"
+            source = "qrc:/resources/images/branch/" + nameItem + "_3e" + typeColorBranch + ".png"
             break
         case '3e':
-            imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g"+ typeColorBranch +".png"
+            imageGlare.source = "qrc:/resources/images/branch/" + nameItem
+                    + "_3g" + typeColorBranch + ".png"
             timerBlossomedBranch.stop()
             timerGlareBranch.start()
             break
@@ -292,10 +295,13 @@ Rectangle {
     }
 
     function glareBranchCard() {
-        var typeColorBranch = "";
-        if (typeColor === 2) typeColorBranch = "_1";
-        if (typeColor === 3) typeColorBranch = "_2";
-        imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g"+ typeColorBranch  +".png"
+        var typeColorBranch = ""
+        if (typeColor === 2)
+            typeColorBranch = "_1"
+        if (typeColor === 3)
+            typeColorBranch = "_2"
+        imageGlare.source = "qrc:/resources/images/branch/" + nameItem + "_3g"
+                + typeColorBranch + ".png"
         timerBlossomedBranch.stop()
         timerGlareBranch.start()
     }
