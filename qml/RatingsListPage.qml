@@ -417,11 +417,6 @@ Item {
     StackView.onStatusChanged: {
         if (StackView.status === StackView.Active) {
             nameUser = mainWindow.getSetting("nameUser", "NONAME")
-            if (nameUser === "NONAME") {
-                rectNameUser.visible = true
-                animationRectNameUserUp.running = true
-                textInputName.focus = true
-            }
             animationTimeDown.running = true
         }
     }
