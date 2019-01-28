@@ -713,39 +713,10 @@ Item {
                 width: parent.width
                 height: parent.height
 
-
-                /*               Row {
-                    id: rowButtonImage
-                    anchors.top: parent.top
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin: 20
-                    z: 15
-                    spacing: 5
-
-                    Image {
-                        id: firstStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                    Image {
-                        id: secondStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                    Image {
-                        id: thirdStarImage
-                        width: 70
-                        height: 70
-                        source: "qrc:/resources/images/star_disable.png"
-                    }
-                }
-                */
                 Text {
                     id: textFailedGame
-                    anchors.top: parent.top
-                    anchors.bottom: rowRectCompletedGame.top
+                    anchors.top: rowRectCompletedGame.bottom
+                    anchors.bottom: parent.bottom
                     anchors.left: parent.left
                     anchors.right: parent.right
                     anchors.margins: 16
