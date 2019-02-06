@@ -372,22 +372,18 @@ Item {
                     }
                     TextInput {
                         id: textInputName
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.left: parent.left
+                        anchors.right: parent.right
                         text: mainWindow.getSetting("nameUser", "NONAME")
-                        focus: true
                         font.pointSize: 30
                         color: "white"
                         maximumLength: 10
                         inputMethodHints: Qt.ImhNoPredictiveText
                         font.family: "Helvetica"
+                        horizontalAlignment: TextInput.AlignHCenter
 
-                        MouseArea {
-                            id: mouseAreaTextInputName
-                            anchors.fill: parent
-                            onClicked: {
-                                if (textInputName.text == "NONAME")
-                                    textInputName.text = ""
-                            }
+                        onEditingFinished: {
+                            focus = false
                         }
                     }
                 }
