@@ -381,6 +381,10 @@ Item {
                         font.family: "Helvetica"
                         horizontalAlignment: TextInput.AlignHCenter
 
+                        onEditingFinished: {
+                            focus = false;
+                        }
+
                         MouseArea {
                             anchors.fill: parent
                             propagateComposedEvents: true
