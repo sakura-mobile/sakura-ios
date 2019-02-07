@@ -75,7 +75,6 @@ Item {
                     onClicked: {
                         rectNameUser.visible = true
                         animationRectNameUserUp.running = true
-                        textInputName.focus = true
                     }
                 }
             }
@@ -382,8 +381,29 @@ Item {
                         font.family: "Helvetica"
                         horizontalAlignment: TextInput.AlignHCenter
 
-                        onEditingFinished: {
-                            focus = false
+                        MouseArea {
+                            anchors.fill: parent
+                            propagateComposedEvents: true
+
+                            onPressed: {
+                                if (textInputName.text === "NONAME") {
+                                    textInputName.clear();
+                                }
+
+                                mouse.accepted = false;
+                            }
+
+                            onReleased: {
+                                mouse.accepted = false;
+                            }
+
+                            onPositionChanged: {
+                                mouse.accepted = false;
+                            }
+
+                            onWheel: {
+                                wheel.accepted = false;
+                            }
                         }
                     }
                 }
@@ -472,7 +492,7 @@ Item {
                     id: textAreaCard
                     width: parent.width
                     height: parent.height
-                    focus: false
+                    enabled: false
                     font.pointSize: 20
                     font.bold: true
                     color: "white"
@@ -500,7 +520,6 @@ Item {
                             rectTournamentHint.visible = false
                             rectNameUser.visible = true
                             animationRectNameUserUp.running = true
-                            textInputName.focus = true
                         }
                     }
                 }
