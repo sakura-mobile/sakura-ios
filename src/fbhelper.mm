@@ -47,8 +47,8 @@ FBHelper *FBHelper::Instance = nullptr;
     } else {
         UIViewController * __block root_view_controller = nil;
 
-        [[[UIApplication sharedApplication] windows] enumerateObjectsUsingBlock:^(UIWindow * _Nonnull window, NSUInteger, BOOL * _Nonnull stop) {
-            root_view_controller = [window rootViewController];
+        [UIApplication.sharedApplication.windows enumerateObjectsUsingBlock:^(UIWindow * _Nonnull window, NSUInteger, BOOL * _Nonnull stop) {
+            root_view_controller = window.rootViewController;
 
             *stop = (root_view_controller != nil);
         }];
@@ -57,7 +57,7 @@ FBHelper *FBHelper::Instance = nullptr;
 
         [login_manager logInWithReadPermissions:@[@"public_profile"] fromViewController:root_view_controller handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
             if (error != nil) {
-                qWarning() << QString::fromNSString([error localizedDescription]);
+                qWarning() << QString::fromNSString(error.localizedDescription);
             } else if (!result.isCancelled) {
                 FBSDKGameRequestContent *request_content = [[FBSDKGameRequestContent new] autorelease];
 
@@ -103,7 +103,7 @@ FBHelper *FBHelper::Instance = nullptr;
 {
     Q_UNUSED(gameRequestDialog)
 
-    qWarning() << QString::fromNSString([error localizedDescription]);
+    qWarning() << QString::fromNSString(error.localizedDescription);
 
     if ([error.domain hasPrefix:@"com.facebook.sdk"] && (error.code == 102 ||
                                                          error.code == 190)) {

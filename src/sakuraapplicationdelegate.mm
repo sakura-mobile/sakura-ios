@@ -52,5 +52,5 @@ void InitializeSakuraApplicationDelegate()
 {
     SakuraApplicationDelegateInstance = [[SakuraApplicationDelegate alloc] init];
 
-    [UIApplication sharedApplication].delegate = SakuraApplicationDelegateInstance;
+    UIApplication.sharedApplication.delegate = SakuraApplicationDelegateInstance;
 }
