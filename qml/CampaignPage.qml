@@ -4,6 +4,7 @@ import QtQuick.Particles 2.0
 import QtMultimedia 5.9
 
 import "GenerationBranch.js" as GenerationBranchScript
+import "Util.js" as UtilScript
 
 Item {
     id: campaignPage
@@ -33,6 +34,10 @@ Item {
 
     property real lastMouseX: 0
     property real lastMouseY: 0
+
+    property double lastPressTime: 0.0
+
+    property int countAnimationRotationBranch: 0
 
     property int bannerViewHeight: AdMobHelper.bannerViewHeight
     property bool endedAvailableLevels: false
@@ -106,25 +111,25 @@ Item {
         }
 
         Row {
-            spacing: 5
+            spacing: UtilScript.pt(5)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             Image {
                 id: imageLanternStep
                 source: "qrc:/resources/images/lantern_step.png"
-                width: 70
-                height: 161
+                width: UtilScript.pt(70)
+                height: UtilScript.pt(161)
                 y: imageLanternStep.height * -1
 
                 Column {
                     spacing: 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.bottom: parent.bottom
-                    anchors.bottomMargin: 30
+                    anchors.bottomMargin: UtilScript.pt(30)
 
                     Rectangle {
-                        height: 12
-                        width: 50
+                        height: UtilScript.pt(12)
+                        width: UtilScript.pt(50)
                         color: "transparent"
 
                         Text {
@@ -143,8 +148,8 @@ Item {
                     }
 
                     Rectangle {
-                        height: 18
-                        width: 50
+                        height: UtilScript.pt(18)
+                        width: UtilScript.pt(50)
                         color: "transparent"
 
                         Text {
@@ -163,8 +168,8 @@ Item {
                     }
                     Rectangle {
                         id: rectStepStopLantern
-                        height: 20
-                        width: 50
+                        height: UtilScript.pt(20)
+                        width: UtilScript.pt(50)
                         color: "transparent"
                         visible: false
 
@@ -192,7 +197,7 @@ Item {
                     target: imageLanternStep
                     properties: "y"
                     easing.type: Easing.OutBack
-                    to: -35
+                    to: UtilScript.pt(35) * -1
                 }
 
                 PropertyAnimation {
@@ -212,8 +217,8 @@ Item {
 
             Image {
                 id: imageLanternTime
-                width: 70
-                height: 161
+                width: UtilScript.pt(70)
+                height: UtilScript.pt(161)
                 source: "qrc:/resources/images/lantern_time.png"
                 y: imageLanternTime.height * -1
 
@@ -221,11 +226,11 @@ Item {
                     spacing: 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.bottom: parent.bottom
-                    anchors.bottomMargin: 30
+                    anchors.bottomMargin: UtilScript.pt(30)
 
                     Rectangle {
-                        height: 12
-                        width: 50
+                        height: UtilScript.pt(12)
+                        width: UtilScript.pt(50)
                         color: "transparent"
 
                         Text {
@@ -244,8 +249,8 @@ Item {
                     }
 
                     Rectangle {
-                        height: 18
-                        width: 50
+                        height: UtilScript.pt(18)
+                        width: UtilScript.pt(50)
                         color: "transparent"
 
                         Text {
@@ -265,8 +270,8 @@ Item {
 
                     Rectangle {
                         id: rectTimeStopLantern
-                        height: 20
-                        width: 50
+                        height: UtilScript.pt(20)
+                        width: UtilScript.pt(50)
                         color: "transparent"
                         visible: false
 
@@ -294,7 +299,7 @@ Item {
                     target: imageLanternTime
                     properties: "y"
                     easing.type: Easing.OutBack
-                    to: -40
+                    to: UtilScript.pt(40) * -1
                     onStopped: {
                         timerGame.start()
                     }
@@ -321,7 +326,7 @@ Item {
             boundsBehavior: Flickable.StopAtBounds
             anchors.centerIn: parent
             width: parent.width
-            height: width - 32
+            height: width - UtilScript.pt(32)
             clip: true
 
             property real initialContentWidth: 0.0
@@ -390,7 +395,7 @@ Item {
                     Grid {
                         id: gridMapCampaign
                         anchors.centerIn: parent
-                        spacing: 1
+                        spacing: UtilScript.pt(1)
 
                         onWidthChanged: {
                             backgroundFlickable.initialResize(
@@ -410,21 +415,18 @@ Item {
                         anchors.fill: parent
                         propagateComposedEvents: true
 
-                        onClicked: {
-                            lastMouseX = mouse.x
-                            lastMouseY = mouse.y
+                        onPressed: {
+                            if ((new Date()).getTime() - lastPressTime < 250 &&
+                                Math.abs(mouse.x - lastMouseX) * scale < UtilScript.pt(16) &&
+                                Math.abs(mouse.y - lastMouseY) * scale < UtilScript.pt(16)) {
+                                backgroundFlickable.initialResize(gridMapCampaign.width, gridMapCampaign.height);
+                            } else {
+                                lastMouseX    = mouse.x
+                                lastMouseY    = mouse.y
+                                lastPressTime = (new Date()).getTime()
+                            }
 
                             mouse.accepted = false
-                        }
-
-                        onDoubleClicked: {
-                            if (Math.abs(mouse.x - lastMouseX) * scale < 16
-                                    && Math.abs(
-                                        mouse.y - lastMouseY) * scale < 16) {
-                                backgroundFlickable.initialResize(
-                                            gridMapCampaign.width,
-                                            gridMapCampaign.height)
-                            }
                         }
                     }
                 }
@@ -440,7 +442,7 @@ Item {
                     var scale = 1.0 + pinch.scale - pinch.previousScale
 
                     if (backgroundFlickable.contentWidth * scale
-                            / backgroundFlickable.initialContentWidth >= 0.25
+                            / backgroundFlickable.initialContentWidth >= 0.75
                             && backgroundFlickable.contentWidth * scale
                             / backgroundFlickable.initialContentWidth <= 3.0) {
                         backgroundFlickable.resizeContent(
@@ -465,16 +467,16 @@ Item {
         Row {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: Math.max(campaignPage.bannerViewHeight + 8,
-                                           20)
-            spacing: 15
+            anchors.bottomMargin: Math.max(campaignPage.bannerViewHeight + UtilScript.pt(8),
+                                           UtilScript.pt(20))
+            spacing: UtilScript.pt(15)
 
             Image {
                 id: backButton
                 anchors.bottom: parent.bottom
                 source: "qrc:/resources/images/back.png"
-                width: 50
-                height: 50
+                width: UtilScript.pt(50)
+                height: UtilScript.pt(50)
 
                 MouseArea {
                     id: mouseAreaBackButton
@@ -487,17 +489,17 @@ Item {
 
             Column {
                 Rectangle {
-                    width: 50
-                    height: 20
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(20)
                     color: "transparent"
 
                     Rectangle {
                         anchors.centerIn: parent
-                        width: 50
-                        height: 20
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(20)
                         color: "black"
                         opacity: 0.3
-                        radius: 10
+                        radius:  UtilScript.pt(10)
                     }
 
                     Text {
@@ -519,8 +521,8 @@ Item {
                 Image {
                     id: iceStepButton
                     source: "qrc:/resources/images/lantern_step_ice_booster.png"
-                    width: 50
-                    height: 50
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(50)
 
                     MouseArea {
                         id: mouseAreaIceStepButton
@@ -556,17 +558,17 @@ Item {
             Column {
 
                 Rectangle {
-                    width: 50
-                    height: 20
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(20)
                     color: "transparent"
 
                     Rectangle {
                         anchors.centerIn: parent
-                        width: 50
-                        height: 20
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(20)
                         color: "black"
                         opacity: 0.3
-                        radius: 10
+                        radius:  UtilScript.pt(10)
                     }
 
                     Text {
@@ -588,8 +590,8 @@ Item {
                 Image {
                     id: iceTimeButton
                     source: "qrc:/resources/images/lantern_time_ice_booster.png"
-                    width: 50
-                    height: 50
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(50)
 
                     MouseArea {
                         id: mouseAreaIceTimeButton
@@ -624,16 +626,16 @@ Item {
 
             Column {
                 Rectangle {
-                    width: 50
-                    height: 20
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(20)
                     color: "transparent"
                     Rectangle {
                         anchors.centerIn: parent
-                        width: 50
-                        height: 20
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(20)
                         color: "black"
                         opacity: 0.3
-                        radius: 10
+                        radius:  UtilScript.pt(10)
                     }
                     Text {
                         id: textCountQuickTipButton
@@ -653,8 +655,8 @@ Item {
                 Image {
                     id: quickTipButton
                     source: "qrc:/resources/images/button_quick_tip.png"
-                    width: 50
-                    height: 50
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(50)
 
                     MouseArea {
                         id: mouseAreaQuickTipButton
@@ -687,8 +689,8 @@ Item {
                 id: refreshButton
                 anchors.bottom: parent.bottom
                 source: "qrc:/resources/images/refresh.png"
-                width: 50
-                height: 50
+                width: UtilScript.pt(50)
+                height: UtilScript.pt(50)
 
                 MouseArea {
                     id: mouseAreaRefreshButton
@@ -704,8 +706,8 @@ Item {
             id: rectCompletedGame
             anchors.horizontalCenter: parent.horizontalCenter
             y: imageBackgroundMainMap.height
-            width: 300
-            height: 200
+            width: UtilScript.pt(300)
+            height: UtilScript.pt(200)
             color: "transparent"
             Image {
                 id: backgroundCompletedGame
@@ -713,13 +715,42 @@ Item {
                 width: parent.width
                 height: parent.height
 
+
+                /*               Row {
+                    id: rowButtonImage
+                    anchors.top: parent.top
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.topMargin: 20
+                    z: 15
+                    spacing: 5
+
+                    Image {
+                        id: firstStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: secondStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                    Image {
+                        id: thirdStarImage
+                        width: 70
+                        height: 70
+                        source: "qrc:/resources/images/star_disable.png"
+                    }
+                }
+                */
                 Text {
                     id: textFailedGame
                     anchors.top: rowRectCompletedGame.bottom
                     anchors.bottom: parent.bottom
                     anchors.left: parent.left
                     anchors.right: parent.right
-                    anchors.margins: 16
+                    anchors.margins: UtilScript.pt(16)
                     z: 15
                     visible: false
                     text: qsTr("Game over. Do you want to play again?")
@@ -741,15 +772,15 @@ Item {
                     //                    anchors.bottomMargin: 30
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin: 20
+                    anchors.topMargin: UtilScript.pt(20)
                     z: 15
-                    height: 50
-                    spacing: 15
+                    height: UtilScript.pt(50)
+                    spacing: UtilScript.pt(15)
 
                     Image {
                         id: imageRepeatGame
-                        width: 50
-                        height: 50
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(50)
                         source: "qrc:/resources/images/button_repeat_game.png"
                         MouseArea {
                             id: mouseAreaPlayRepeatGame
@@ -761,8 +792,8 @@ Item {
                     }
                     Image {
                         id: imageSeachLevel
-                        width: 50
-                        height: 50
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(50)
                         source: "qrc:/resources/images/button_seach_levels.png"
                         MouseArea {
                             id: mouseAreaSeachLevel
@@ -775,8 +806,8 @@ Item {
                     }
                     Image {
                         id: imageShare
-                        width: 50
-                        height: 50
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(50)
                         source: "qrc:/resources/images/button_share.png"
                         MouseArea {
                             id: mouseAreaImageShare
@@ -817,18 +848,18 @@ Item {
                             id: imageShareTooltip
                             anchors.bottom: imageShare.top
                             anchors.horizontalCenter: parent.horizontalCenter
-                            width: 200
-                            height: 70
+                            width: UtilScript.pt(200)
+                            height: UtilScript.pt(70)
                             visible: false
                             source: "qrc:/resources/images/tooltip.png"
 
                             Text {
                                 id: textTooltipShare
                                 anchors.fill: parent
-                                anchors.topMargin: 8
-                                anchors.bottomMargin: 16
-                                anchors.leftMargin: 12
-                                anchors.rightMargin: 12
+                                anchors.topMargin: UtilScript.pt(8)
+                                anchors.bottomMargin: UtilScript.pt(16)
+                                anchors.leftMargin: UtilScript.pt(12)
+                                anchors.rightMargin: UtilScript.pt(12)
                                 z: 15
                                 visible: true
                                 text: qsTr("Create postcard and share with friends")
@@ -846,8 +877,8 @@ Item {
                     }
                     Image {
                         id: imagePlayGame
-                        width: 50
-                        height: 50
+                        width: UtilScript.pt(50)
+                        height: UtilScript.pt(50)
                         source: "qrc:/resources/images/button_play_game.png"
 
                         MouseArea {
@@ -897,26 +928,26 @@ Item {
 */
                     anchors.bottom: parent.bottom
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottomMargin: 30
+                    anchors.bottomMargin: UtilScript.pt(30)
                     z: 15
-                    spacing: 5
+                    spacing: UtilScript.pt(5)
 
                     Image {
                         id: firstStarImage
-                        width: 70
-                        height: 70
+                        width: UtilScript.pt(70)
+                        height: UtilScript.pt(70)
                         source: "qrc:/resources/images/star_disable.png"
                     }
                     Image {
                         id: secondStarImage
-                        width: 70
-                        height: 70
+                        width: UtilScript.pt(70)
+                        height: UtilScript.pt(70)
                         source: "qrc:/resources/images/star_disable.png"
                     }
                     Image {
                         id: thirdStarImage
-                        width: 70
-                        height: 70
+                        width: UtilScript.pt(70)
+                        height: UtilScript.pt(70)
                         source: "qrc:/resources/images/star_disable.png"
                     }
                 }
@@ -931,7 +962,7 @@ Item {
                 properties: "y"
                 easing.type: Easing.InQuad
                 to: imageBackgroundMainMap.height - rectCompletedGame.height - Math.max(
-                        campaignPage.bannerViewHeight + 8, 20)
+                        campaignPage.bannerViewHeight + UtilScript.pt(8), UtilScript.pt(20))
                 onStopped: {
                     if (!textFailedGame.visible) {
                         if (Math.random() < 0.10
@@ -968,8 +999,8 @@ Item {
             id: rectNotAvailableLevels
             y: rectNotAvailableLevels.height * -1
             anchors.horizontalCenter: imageBackgroundMainMap.horizontalCenter
-            width: 300
-            height: 200
+            width: UtilScript.pt(300)
+            height: UtilScript.pt(200)
             color: "transparent"
             Image {
                 id: backgroundRectNotAvailableLevels
@@ -983,7 +1014,7 @@ Item {
                     anchors.bottom: imageOkNotAvailableLevels.top
                     anchors.left: parent.left
                     anchors.right: parent.right
-                    anchors.margins: 16
+                    anchors.margins: UtilScript.pt(16)
                     text: qsTr("Congratulations, you completed all available levels! Stay tuned for updates with new levels, challenges and more.")
                     font.pointSize: 16
                     font.bold: true
@@ -998,10 +1029,10 @@ Item {
 
                 Image {
                     id: imageOkNotAvailableLevels
-                    width: 50
-                    height: 50
+                    width: UtilScript.pt(50)
+                    height: UtilScript.pt(50)
                     anchors.bottom: parent.bottom
-                    anchors.bottomMargin: 16
+                    anchors.bottomMargin: UtilScript.pt(16)
                     anchors.horizontalCenter: parent.horizontalCenter
                     source: "qrc:/resources/images/button_ok.png"
                     MouseArea {
@@ -1290,26 +1321,26 @@ Item {
         for (var i = 0; i < GenerationBranchScript.heightGame; i++) {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
                 if (GenerationBranchScript.listGameBranchObject[i][j] !== null) {
-                    if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+                    if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent
                             != GenerationBranchScript.listGameBranch[i][j].rotation) {
                         if (GenerationBranchScript.listGameBranchObject[i][j].nameItem
                                 == 'branch_05')
                             continue
                         if (GenerationBranchScript.listGameBranchObject[i][j].nameItem
                                 == 'branch_01'
-                                && ((GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 0
+                                && ((GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 0
                                      && GenerationBranchScript.listGameBranch[i][j].rotation
                                      === 180)
-                                    || (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 90
+                                    || (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 90
                                         && GenerationBranchScript.listGameBranch[i][j].rotation
                                         === 270))) {
                             continue
                         } else if (GenerationBranchScript.listGameBranchObject[i][j].nameItem
                                    == 'branch_01'
-                                   && ((GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 180
+                                   && ((GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 180
                                         && GenerationBranchScript.listGameBranch[i][j].rotation
                                         === 0)
-                                       || (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 270
+                                       || (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 270
                                            && GenerationBranchScript.listGameBranch[i][j].rotation
                                            === 90))) {
                             continue
@@ -1321,6 +1352,7 @@ Item {
                         setInfoQuickTip()
 
                         GenerationBranchScript.listGameBranchObject[i][j].startAnimationQuickTip()
+                        GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent = GenerationBranchScript.listGameBranch[i][j].rotation
                         if (GenerationBranchScript.listGameBranch[i][j].rotation == 0) {
                             GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = 360
                         } else {
@@ -1328,7 +1360,8 @@ Item {
                                     = GenerationBranchScript.listGameBranch[i][j].rotation
                         }
                         GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
-                                = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+                                = GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent
+                        countAnimationRotationBranch++;
                         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
                         audioClickBranch.playAudio()
                         GenerationBranchScript.listGameBranchObject[i][j].posLeft
@@ -1492,11 +1525,12 @@ Item {
 
     function stopRotationBranchGame(ii, jj) {
         if (isLockedQuickTip == 1)
-            isLockedQuickTip = 0
+            isLockedQuickTip = 0;
+        countAnimationRotationBranch--
         GenerationBranchScript.revivalBranchStart()
         setScoreUserRotation()
         textStepGameLantern.text = GenerationBranchScript.listObjectCampaigns[currentCampaign].listLocations[currentLocation].listLevels[currentLevel].stepCurrent
-        if (GenerationBranchScript.isCompletedGame() === true) {
+        if (countAnimationRotationBranch <=0 && GenerationBranchScript.isCompletedGame() === true) {
             GenerationBranchScript.isCompleted = 1
             if (timerGame.running === true)
                 timerGame.stop()
@@ -1517,10 +1551,11 @@ Item {
 
     function rotationBranch(i, j) {
 
+        GenerationBranchScript.listGameBranchObject[i][j].stopAnimationRotationBranch()
         if (!GenerationBranchScript.isPlayGame
                 || GenerationBranchScript.isCompleted)
             return
-        var paramRotation = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+        var paramRotation = GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent
         var paramRotation2 = 0
 
         if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_05') {
@@ -1541,9 +1576,11 @@ Item {
             }
         }
 
+        GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent = paramRotation
         GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
                 = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
         GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch = paramRotation2
+        countAnimationRotationBranch++;
         GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotationGame()
         audioClickBranch.playAudio()
 
@@ -1719,6 +1756,7 @@ Item {
 
         resetParticleSystems()
         isLockedQuickTip = 1
+        countAnimationRotationBranch = 0
         var arrBranch = []
         for (var i = 0; i < GenerationBranchScript.heightGame; i++) {
             for (var j = 0; j < GenerationBranchScript.widthGame; j++) {
@@ -1747,7 +1785,7 @@ Item {
             j = arrBranch[startPoint].posJ
 
             if (GenerationBranchScript.listGameBranchObject[i][j].nameItem !== 'branch_05') {
-                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 270) {
+                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 270) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
                         arrRotation = [270, 180]
                     } else {
@@ -1755,14 +1793,14 @@ Item {
                     }
                 }
 
-                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 0) {
+                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 0) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
                         arrRotation = [0, 270]
                     } else {
                         arrRotation = [0, 270, 180, 90]
                     }
                 }
-                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 180) {
+                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 180) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
                         arrRotation = [180, 90]
                     } else {
@@ -1770,7 +1808,7 @@ Item {
                     }
                 }
 
-                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranch === 90) {
+                if (GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent === 90) {
                     if (GenerationBranchScript.listGameBranchObject[i][j].nameItem == 'branch_01') {
                         arrRotation = [90, 0]
                     } else {
@@ -1784,10 +1822,11 @@ Item {
                     typeRotation = 1
 
                 GenerationBranchScript.listGameBranchObject[i][j].fromRotationBranch
-                        = GenerationBranchScript.listGameBranchObject[i][j].rotationBranch
+                        = GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent
                 GenerationBranchScript.listGameBranchObject[i][j].toRotationBranch
                         = arrRotation[typeRotation]
                 GenerationBranchScript.listGameBranchObject[i][j].stopRotation = 0
+                GenerationBranchScript.listGameBranchObject[i][j].rotationBranchCurrent = arrRotation[typeRotation]
                 GenerationBranchScript.listGameBranchObject[i][j].startAnimationRotation()
 
                 for (var n = 0; n < GenerationBranchScript.listImageBranchFull.length; n++) {
@@ -1900,6 +1939,7 @@ Item {
                     object = component.createObject(gridMapCampaign)
                     object.source = GenerationBranchScript.listGameBranch[i][j].source
                     object.rotationBranch = GenerationBranchScript.listGameBranch[i][j].rotation
+                    object.rotationBranchCurrent = GenerationBranchScript.listGameBranch[i][j].rotation
                     object.posLeft = GenerationBranchScript.listGameBranch[i][j].left
                     object.posRight = GenerationBranchScript.listGameBranch[i][j].right
                     object.posTop = GenerationBranchScript.listGameBranch[i][j].top

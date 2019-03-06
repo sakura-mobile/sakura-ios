@@ -18,5 +18,6 @@
         <file>qml/RelaxPage.qml</file>
         <file>qml/RelaxGamePage.qml</file>
         <file>qml/SettingsPage.qml</file>
+        <file>qml/Util.js</file>
     </qresource>
 </RCC>

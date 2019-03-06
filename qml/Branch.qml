@@ -1,10 +1,11 @@
 import QtQuick 2.9
 import "GenerationBranch.js" as GenerationBranchScript
+import "Util.js" as UtilScript
 
 Rectangle {
     id: imageBranch
-    width: 30
-    height: 30
+    width: UtilScript.pt(30)
+    height: UtilScript.pt(30)
     property int posI: 0
     property int posJ: 0
     property int posLeft: 0
@@ -25,10 +26,12 @@ Rectangle {
     property int toRotationBranch: 0
     property int typeColor: 0
     signal clickedBranch(int positI, int positJ)
+    signal pressedBranch(int positI, int positJ)
     signal stopRotationTime(int positI, int positJ)
     signal stopRotationTimeGame(int positI, int positJ)
     property string source: ""
     property int rotationBranch: 0
+    property int rotationBranchCurrent: 0
     color: "transparent"
 
     Image {
@@ -61,7 +64,7 @@ Rectangle {
 
         PropertyAnimation {
             id: animationRotationGame
-            duration: 50
+            duration: 150
             from: fromRotationBranch
             target: imageBranchOpacity
             properties: "rotation"
@@ -306,12 +309,18 @@ Rectangle {
         timerGlareBranch.start()
     }
 
-    function funcRotationBranch() {}
+    function stopAnimationRotationBranch() {
+        if (animationRotationGame.running) animationRotationGame.complete()
+    }
+
+    function setEnabledMouseArea() {
+        mouseAreaBranch.enabled = Qt.binding(function() { return !animationRotationGame.running && !animationRotation.running })
+    }
 
     MouseArea {
         id: mouseAreaBranch
         anchors.fill: parent
-        enabled: !animationRotationGame.running && !animationRotation.running
+        enabled: !animationRotation.running
         onClicked: {
             clickedBranch(posI, posJ)
         }

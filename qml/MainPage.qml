@@ -1,5 +1,6 @@
 import QtQuick 2.9
 import "GenerationBranch.js" as GenerationBranchScript
+import "Util.js" as UtilScript
 
 Item {
     id: mainPage
@@ -23,18 +24,18 @@ Item {
 
                 Column {
                     anchors.centerIn: parent
-                    spacing: 10
+                    spacing: UtilScript.pt(10)
 
                     Image {
                         id: buttonTutorial
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("TUTORIAL")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -61,13 +62,13 @@ Item {
                     Image {
                         id: buttonCampaign
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("CAMPAIGN")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -97,13 +98,13 @@ Item {
                     Image {
                         id: buttonTournament
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("TOURNAMENT")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -130,13 +131,13 @@ Item {
                     Image {
                         id: buttonRelax
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("RELAX")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -163,13 +164,13 @@ Item {
                     Image {
                         id: buttonStore
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("STORE")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -189,13 +190,13 @@ Item {
                     Image {
                         id: buttonSettings
                         source: "qrc:/resources/images/button.png"
-                        width: 240
-                        height: 50
+                        width: UtilScript.pt(240)
+                        height: UtilScript.pt(50)
 
                         Text {
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.bottom: parent.bottom
-                            anchors.bottomMargin: 10
+                            anchors.bottomMargin: UtilScript.pt(10)
                             text: qsTr("SETTINGS")
                             font.pointSize: 24
                             font.family: "ChalkboardSE"
@@ -224,10 +225,10 @@ Item {
             Image {
                 id: buttonFacebook
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: 50
+                anchors.bottomMargin: UtilScript.pt(50)
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: 54
-                width: 70
+                height: UtilScript.pt(54)
+                width: UtilScript.pt(70)
                 source: showGift ? "qrc:/resources/images/fb_invite_gift.png" : "qrc:/resources/images/fb_invite.png"
 
                 property bool showGift: false
@@ -260,8 +261,8 @@ Item {
                 id: rectGiftsGame
                 anchors.horizontalCenter: parent.horizontalCenter
                 y: rectFacebookGifts.height
-                width: 300
-                height: 200
+                width: UtilScript.pt(300)
+                height: UtilScript.pt(200)
                 color: "transparent"
                 Image {
                     id: backgroundAwardsGame
@@ -271,12 +272,12 @@ Item {
 
                     Column {
                         anchors.centerIn: parent
-                        spacing: 1
+                        spacing: UtilScript.pt(1)
 
                         Text {
                             id: textGiftsAreOver
-                            width: 260
-                            height: 120
+                            width: UtilScript.pt(260)
+                            height: UtilScript.pt(120)
                             text: qsTr("Thank you! New gifts for Facebook invitations will be available tomorrow.")
                             font.pointSize: 20
                             font.bold: true
@@ -293,13 +294,13 @@ Item {
                         Row {
                             id: rowQuickTip
                             z: 15
-                            spacing: 15
+                            spacing: UtilScript.pt(15)
                             visible: false
 
                             Image {
                                 id: imageQuickTip
-                                width: 40
-                                height: 40
+                                width: UtilScript.pt(40)
+                                height: UtilScript.pt(40)
                                 source: "qrc:/resources/images/button_quick_tip.png"
                             }
                             Text {
@@ -324,13 +325,13 @@ Item {
                         Row {
                             id: rowStepIce
                             z: 15
-                            spacing: 15
+                            spacing: UtilScript.pt(15)
                             visible: false
 
                             Image {
                                 id: imageStepIce
-                                width: 40
-                                height: 40
+                                width: UtilScript.pt(40)
+                                height: UtilScript.pt(40)
                                 source: "qrc:/resources/images/lantern_step_ice_booster.png"
                             }
                             Text {
@@ -355,13 +356,13 @@ Item {
                         Row {
                             id: rowTimeIce
                             z: 15
-                            spacing: 15
+                            spacing: UtilScript.pt(15)
                             visible: false
 
                             Image {
                                 id: imageTimeIce
-                                width: 40
-                                height: 40
+                                width: UtilScript.pt(40)
+                                height: UtilScript.pt(40)
                                 source: "qrc:/resources/images/lantern_time_ice_booster.png"
                             }
                             Text {
@@ -386,13 +387,14 @@ Item {
                         Row {
                             id: rowOk
                             z: 15
-                            spacing: 15
+                            spacing: UtilScript.pt(15)
                             anchors.horizontalCenter: parent.horizontalCenter
+                            visible: false
 
                             Image {
                                 id: imageOk
-                                width: 50
-                                height: 50
+                                width: UtilScript.pt(50)
+                                height: UtilScript.pt(50)
                                 source: "qrc:/resources/images/button_ok.png"
 
                                 MouseArea {
@@ -435,6 +437,7 @@ Item {
                         rectFacebookGifts.visible = false
                         buttonFacebook.showGift = false
                         textGiftsAreOver.visible = false
+                        rowOk.visible = false
                     }
                 }
             }
@@ -510,12 +513,14 @@ Item {
                         ) === lastDay.getDate()) {
                 rectFacebookGifts.visible = true
                 textGiftsAreOver.visible = true
+                rowOk.visible = true
                 animationRectGiftsGameUp.running = true
                 return
             }
         }
 
         rectFacebookGifts.visible = true
+        rowOk.visible = true
         animationRectGiftsGameUp.running = true
 
         if (recipientsCount > 0 && recipientsCount < 3) {
