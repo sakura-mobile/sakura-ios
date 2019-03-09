@@ -1,5 +1,5 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.2
+import QtQuick 2.12
+import QtQuick.Controls 2.5
 
 import "GenerationBranch.js" as GenerationBranchScript
 import "Util.js" as UtilScript
@@ -111,10 +111,10 @@ Item {
             if (maxLevelLocation >= keyLocation
                     && maxLevelCampaign >= currentCampaign) {
 
-                object.source = listLocations[keyLocation].imageLabelAvaible
+                object.source = listLocations[keyLocation].imageLabelAvailable
                 object.isAvailable = true
             } else {
-                object.source = listLocations[keyLocation].imageLabelNotAvaible
+                object.source = listLocations[keyLocation].imageLabelNotAvailable
                 object.isAvailable = false
             }
             object.currentLocation = keyLocation

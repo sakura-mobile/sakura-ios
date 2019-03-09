@@ -1,7 +1,7 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.2
-import QtQuick.Particles 2.0
-import QtMultimedia 5.9
+import QtQuick 2.12
+import QtQuick.Controls 2.5
+import QtQuick.Particles 2.12
+import QtMultimedia 5.12
 
 import "GenerationBranch.js" as GenerationBranchScript
 import "Util.js" as UtilScript
@@ -871,12 +871,12 @@ Item {
                     }
                 }
                 Image {
-                    id: imageSeachLevel
+                    id: imageSearchLevel
                     width: UtilScript.pt(50)
                     height: UtilScript.pt(50)
-                    source: "qrc:/resources/images/button_seach_levels.png"
+                    source: "qrc:/resources/images/button_search_levels.png"
                     MouseArea {
-                        id: mouseAreaSeachLevel
+                        id: mouseAreaSearchLevel
                         anchors.fill: parent
                         onClicked: {
                             mainStackView.pop()

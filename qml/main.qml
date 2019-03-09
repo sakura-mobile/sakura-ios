@@ -1,7 +1,7 @@
-import QtQuick 2.9
-import QtQuick.Window 2.3
-import QtQuick.Controls 2.2
-import QtQuick.LocalStorage 2.0
+import QtQuick 2.12
+import QtQuick.Window 2.12
+import QtQuick.Controls 2.5
+import QtQuick.LocalStorage 2.12
 
 Window {
     id:         mainWindow
@@ -81,7 +81,7 @@ Window {
 
             onCurrentItemChanged: {
                 for (var i = 0; i < depth; i++) {
-                    var item = get(i, false);
+                    var item = get(i, StackView.DontLoad);
 
                     if (item !== null) {
                         item.focus = false;
