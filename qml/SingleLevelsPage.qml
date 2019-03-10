@@ -384,6 +384,8 @@ Item {
 
                         onEditingFinished: {
                             focus = false;
+
+                            singleLevelsPage.forceActiveFocus();
                         }
 
                         MouseArea {
