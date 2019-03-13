@@ -14,7 +14,7 @@ class ReachabilityHelper : public QObject
 
 public:
     explicit ReachabilityHelper(QObject *parent = nullptr);
-    virtual ~ReachabilityHelper();
+    ~ReachabilityHelper() override;
 
     bool internetAvailable() const;
     bool internetConnected() const;

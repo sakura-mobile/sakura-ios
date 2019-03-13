@@ -11,7 +11,7 @@ class AudioHelper : public QObject
 
 public:
     explicit AudioHelper(QObject *parent = nullptr);
-    virtual ~AudioHelper();
+    ~AudioHelper() override = default;
 
     bool silenceAudio() const;
 

@@ -128,7 +128,7 @@ FBHelper::~FBHelper()
     [FBDelegateInstance release];
 }
 
-void FBHelper::showGameRequest(QString title, QString message)
+void FBHelper::showGameRequest(const QString &title, const QString &message)
 {
     [FBDelegateInstance showGameRequestWithTitle:title.toNSString() withMessage:message.toNSString()];
 }

@@ -9,10 +9,6 @@ AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
     SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
 }
 
-AudioHelper::~AudioHelper()
-{
-}
-
 bool AudioHelper::silenceAudio() const
 {
     return SilenceAudio;

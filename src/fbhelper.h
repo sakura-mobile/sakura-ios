@@ -14,9 +14,9 @@ class FBHelper : public QObject
 
 public:
     explicit FBHelper(QObject *parent = nullptr);
-    virtual ~FBHelper();
+    ~FBHelper() override;
 
-    Q_INVOKABLE void showGameRequest(QString title, QString message);
+    Q_INVOKABLE void showGameRequest(const QString &title, const QString &message);
     Q_INVOKABLE void logout();
 
     static void notifyGameRequestCompleted(int recipients_count);

@@ -2,6 +2,7 @@
 #define UUIDCREATOR_H
 
 #include <QtCore/QObject>
+#include <QtCore/QString>
 
 class UuidCreator : public QObject
 {
@@ -9,7 +10,7 @@ class UuidCreator : public QObject
 
 public:
     explicit UuidCreator(QObject *parent = nullptr);
-    virtual ~UuidCreator();
+    ~UuidCreator() override = default;
 
     Q_INVOKABLE QString createUuid();
 };
