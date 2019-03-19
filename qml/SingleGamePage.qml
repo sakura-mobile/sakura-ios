@@ -1045,6 +1045,7 @@ Item {
         function playAudio() {
             if (Number(mainWindow.getSetting("SettingsSounds", 1)) === 0)
                 return
+
             if (playbackEnabled) {
                 play()
             }
