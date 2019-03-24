@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:~/Qt/5.11.2/ios/bin
+PATH=$PATH:~/Qt/5.12.2/ios/bin
 
 lupdate ../sakura.pro -ts ../translations/sakura_ru.src.ts
 lupdate ../qml        -ts ../translations/sakura_ru.qml.ts
