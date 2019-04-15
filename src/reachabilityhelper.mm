@@ -19,10 +19,8 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
     InternetAvailable = false;
     InternetConnected = false;
 
-    struct sockaddr_in           address;
+    struct sockaddr_in           address = {};
     SCNetworkReachabilityContext context = { 0, nullptr, nullptr, nullptr, nullptr };
-
-    bzero(&address, sizeof(address));
 
     address.sin_len    = sizeof(address);
     address.sin_family = AF_INET;
@@ -31,39 +29,43 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
 
     ReachabilityRef = SCNetworkReachabilityCreateWithAddress(kCFAllocatorDefault, reinterpret_cast<const struct sockaddr *>(&address));
 
-    if (SCNetworkReachabilitySetCallback(ReachabilityRef, ReachabilityCallback, &context)) {
-        dispatch_queue_t queue = dispatch_queue_create(nullptr, nullptr);
+    if (ReachabilityRef != nullptr && ReachabilityRef != nil) {
+        if (SCNetworkReachabilitySetCallback(ReachabilityRef, ReachabilityCallback, &context)) {
+            dispatch_queue_t queue = dispatch_queue_create(nullptr, nullptr);
 
-        if (SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, queue)) {
-            SCNetworkReachabilityFlags flags;
+            if (SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, queue)) {
+                SCNetworkReachabilityFlags flags;
 
-            if (SCNetworkReachabilityGetFlags(ReachabilityRef, &flags)) {
-                if (flags & kSCNetworkReachabilityFlagsReachable) {
-                    InternetAvailable = true;
+                if (SCNetworkReachabilityGetFlags(ReachabilityRef, &flags)) {
+                    if (flags & kSCNetworkReachabilityFlagsReachable) {
+                        InternetAvailable = true;
 
-                    if (flags & kSCNetworkReachabilityFlagsConnectionRequired) {
-                        InternetConnected = false;
+                        if (flags & kSCNetworkReachabilityFlagsConnectionRequired) {
+                            InternetConnected = false;
+                        } else {
+                            InternetConnected = true;
+                        }
                     } else {
-                        InternetConnected = true;
+                        InternetAvailable = false;
+                        InternetConnected = false;
                     }
-                } else {
-                    InternetAvailable = false;
-                    InternetConnected = false;
                 }
+            } else {
+                qWarning() << QString("SCNetworkReachabilitySetDispatchQueue() failed: %1").arg(SCErrorString(SCError()));
+
+                SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
             }
+
+            dispatch_release(queue);
         } else {
-            qWarning() << QString("SCNetworkReachabilitySetDispatchQueue() failed: %1").arg(SCErrorString(SCError()));
-
-            SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
+            qWarning() << QString("SCNetworkReachabilitySetCallback() failed: %1").arg(SCErrorString(SCError()));
         }
-
-        dispatch_release(queue);
     } else {
-        qWarning() << QString("SCNetworkReachabilitySetCallback() failed: %1").arg(SCErrorString(SCError()));
+        qWarning() << QString("SCNetworkReachabilityCreateWithAddress() failed: %1").arg(SCErrorString(SCError()));
     }
 }
 
-ReachabilityHelper::~ReachabilityHelper()
+ReachabilityHelper::~ReachabilityHelper() noexcept
 {
     SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
     SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, nullptr);

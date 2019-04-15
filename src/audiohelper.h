@@ -11,7 +11,14 @@ class AudioHelper : public QObject
 
 public:
     explicit AudioHelper(QObject *parent = nullptr);
-    ~AudioHelper() override = default;
+
+    AudioHelper(const AudioHelper&) = delete;
+    AudioHelper(const AudioHelper&&) noexcept = delete;
+
+    AudioHelper& operator=(const AudioHelper&) = delete;
+    AudioHelper& operator=(const AudioHelper&&) noexcept = delete;
+
+    ~AudioHelper() noexcept override = default;
 
     bool silenceAudio() const;
 

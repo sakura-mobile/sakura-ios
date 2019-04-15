@@ -6,7 +6,11 @@ AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
 {
     AVAudioSession *session = [AVAudioSession sharedInstance];
 
-    SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+    if (@available(iOS 8, *)) {
+        SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+    } else {
+        assert(0);
+    }
 }
 
 bool AudioHelper::silenceAudio() const
@@ -18,7 +22,11 @@ void AudioHelper::refresh()
 {
     AVAudioSession *session = [AVAudioSession sharedInstance];
 
-    SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+    if (@available(iOS 8, *)) {
+        SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+    } else {
+        assert(0);
+    }
 
     emit silenceAudioChanged(SilenceAudio);
 }

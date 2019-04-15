@@ -14,7 +14,14 @@ class ReachabilityHelper : public QObject
 
 public:
     explicit ReachabilityHelper(QObject *parent = nullptr);
-    ~ReachabilityHelper() override;
+
+    ReachabilityHelper(const ReachabilityHelper&) = delete;
+    ReachabilityHelper(const ReachabilityHelper&&) noexcept = delete;
+
+    ReachabilityHelper& operator=(const ReachabilityHelper&) = delete;
+    ReachabilityHelper& operator=(const ReachabilityHelper&&) noexcept = delete;
+
+    ~ReachabilityHelper() noexcept override;
 
     bool internetAvailable() const;
     bool internetConnected() const;

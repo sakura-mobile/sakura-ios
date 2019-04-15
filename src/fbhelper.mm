@@ -1,3 +1,4 @@
+#import <UIKit/UIKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
@@ -123,7 +124,7 @@ FBHelper::FBHelper(QObject *parent) : QObject(parent)
     FBDelegateInstance = [[FBDelegate alloc] init];
 }
 
-FBHelper::~FBHelper()
+FBHelper::~FBHelper() noexcept
 {
     [FBDelegateInstance release];
 }

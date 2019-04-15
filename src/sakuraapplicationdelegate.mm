@@ -37,11 +37,15 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                      openURL:url
-                                                      sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-                                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]] ||
-           [super application:application openURL:url options:options];
+    if (@available(iOS 9, *)) {
+        return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                          sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                                          annotation:options[UIApplicationOpenURLOptionsAnnotationKey]] ||
+               [super application:application openURL:url options:options];
+    } else {
+        assert(0);
+    }
 }
 
 @end
