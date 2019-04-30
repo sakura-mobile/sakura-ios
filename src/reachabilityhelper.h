@@ -16,10 +16,10 @@ public:
     explicit ReachabilityHelper(QObject *parent = nullptr);
 
     ReachabilityHelper(const ReachabilityHelper&) = delete;
-    ReachabilityHelper(const ReachabilityHelper&&) noexcept = delete;
+    ReachabilityHelper(ReachabilityHelper&&) noexcept = delete;
 
     ReachabilityHelper& operator=(const ReachabilityHelper&) = delete;
-    ReachabilityHelper& operator=(const ReachabilityHelper&&) noexcept = delete;
+    ReachabilityHelper& operator=(ReachabilityHelper&&) noexcept = delete;
 
     ~ReachabilityHelper() noexcept override;
 

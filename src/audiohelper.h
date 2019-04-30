@@ -13,10 +13,10 @@ public:
     explicit AudioHelper(QObject *parent = nullptr);
 
     AudioHelper(const AudioHelper&) = delete;
-    AudioHelper(const AudioHelper&&) noexcept = delete;
+    AudioHelper(AudioHelper&&) noexcept = delete;
 
     AudioHelper& operator=(const AudioHelper&) = delete;
-    AudioHelper& operator=(const AudioHelper&&) noexcept = delete;
+    AudioHelper& operator=(AudioHelper&&) noexcept = delete;
 
     ~AudioHelper() noexcept override = default;
 
