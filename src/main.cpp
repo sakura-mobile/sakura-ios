@@ -28,14 +28,14 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    engine.rootContext()->setContextProperty(QStringLiteral("AdMobHelper"), new AdMobHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("FBHelper"), new FBHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), new ShareHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), new StoreHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), new AudioHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), new ReachabilityHelper(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), new GIFCreator(&app));
-    engine.rootContext()->setContextProperty(QStringLiteral("UuidCreator"), new UuidCreator(&app));
+    engine.rootContext()->setContextProperty(QStringLiteral("AdMobHelper"), &AdMobHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("FBHelper"), &FBHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), &ShareHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), &StoreHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), &AudioHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), &ReachabilityHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), &GIFCreator::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("UuidCreator"), &UuidCreator::GetInstance());
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 

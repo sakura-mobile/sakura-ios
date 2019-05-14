@@ -12,16 +12,18 @@ class ReachabilityHelper : public QObject
     Q_PROPERTY(bool internetAvailable READ internetAvailable NOTIFY internetAvailableChanged)
     Q_PROPERTY(bool internetConnected READ internetConnected NOTIFY internetConnectedChanged)
 
-public:
+private:
     explicit ReachabilityHelper(QObject *parent = nullptr);
+    ~ReachabilityHelper() noexcept override;
 
+public:
     ReachabilityHelper(const ReachabilityHelper&) = delete;
     ReachabilityHelper(ReachabilityHelper&&) noexcept = delete;
 
     ReachabilityHelper &operator=(const ReachabilityHelper&) = delete;
     ReachabilityHelper &operator=(ReachabilityHelper&&) noexcept = delete;
 
-    ~ReachabilityHelper() noexcept override;
+    static ReachabilityHelper &GetInstance();
 
     bool internetAvailable() const;
     bool internetConnected() const;

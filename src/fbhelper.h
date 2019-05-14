@@ -12,16 +12,18 @@ class FBHelper : public QObject
 {
     Q_OBJECT
 
-public:
+private:
     explicit FBHelper(QObject *parent = nullptr);
+    ~FBHelper() noexcept override;
 
+public:
     FBHelper(const FBHelper&) = delete;
     FBHelper(FBHelper&&) noexcept = delete;
 
     FBHelper &operator=(const FBHelper&) = delete;
     FBHelper &operator=(FBHelper&&) noexcept = delete;
 
-    ~FBHelper() noexcept override;
+    static FBHelper &GetInstance();
 
     Q_INVOKABLE void showGameRequest(const QString &title, const QString &message);
     Q_INVOKABLE void logout();
@@ -32,11 +34,10 @@ signals:
     void gameRequestCompleted(int recipientsCount);
 
 private:
-    static FBHelper *Instance;
 #ifdef __OBJC__
-    FBDelegate      *FBDelegateInstance;
+    FBDelegate *FBDelegateInstance;
 #else
-    void            *FBDelegateInstance;
+    void       *FBDelegateInstance;
 #endif
 };
 

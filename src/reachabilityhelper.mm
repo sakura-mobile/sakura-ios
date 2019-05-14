@@ -73,6 +73,13 @@ ReachabilityHelper::~ReachabilityHelper() noexcept
     CFRelease(ReachabilityRef);
 }
 
+ReachabilityHelper &ReachabilityHelper::GetInstance()
+{
+    static ReachabilityHelper instance;
+
+    return instance;
+}
+
 bool ReachabilityHelper::internetAvailable() const
 {
     return InternetAvailable;

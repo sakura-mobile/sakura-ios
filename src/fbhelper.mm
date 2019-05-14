@@ -7,8 +7,6 @@
 
 #include "fbhelper.h"
 
-FBHelper *FBHelper::Instance = nullptr;
-
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 
 - (id)init;
@@ -120,13 +118,19 @@ FBHelper *FBHelper::Instance = nullptr;
 
 FBHelper::FBHelper(QObject *parent) : QObject(parent)
 {
-    Instance           = this;
     FBDelegateInstance = [[FBDelegate alloc] init];
 }
 
 FBHelper::~FBHelper() noexcept
 {
     [FBDelegateInstance release];
+}
+
+FBHelper &FBHelper::GetInstance()
+{
+    static FBHelper instance;
+
+    return instance;
 }
 
 void FBHelper::showGameRequest(const QString &title, const QString &message)
@@ -141,5 +145,5 @@ void FBHelper::logout()
 
 void FBHelper::notifyGameRequestCompleted(int recipients_count)
 {
-    emit Instance->gameRequestCompleted(recipients_count);
+    emit GetInstance().gameRequestCompleted(recipients_count);
 }

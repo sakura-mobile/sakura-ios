@@ -13,6 +13,13 @@ AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
     }
 }
 
+AudioHelper &AudioHelper::GetInstance()
+{
+    static AudioHelper instance;
+
+    return instance;
+}
+
 bool AudioHelper::silenceAudio() const
 {
     return SilenceAudio;

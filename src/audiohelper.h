@@ -9,16 +9,18 @@ class AudioHelper : public QObject
 
     Q_PROPERTY(bool silenceAudio READ silenceAudio NOTIFY silenceAudioChanged)
 
-public:
+private:
     explicit AudioHelper(QObject *parent = nullptr);
+    ~AudioHelper() noexcept override = default;
 
+public:
     AudioHelper(const AudioHelper&) = delete;
     AudioHelper(AudioHelper&&) noexcept = delete;
 
     AudioHelper &operator=(const AudioHelper&) = delete;
     AudioHelper &operator=(AudioHelper&&) noexcept = delete;
 
-    ~AudioHelper() noexcept override = default;
+    static AudioHelper &GetInstance();
 
     bool silenceAudio() const;
 
