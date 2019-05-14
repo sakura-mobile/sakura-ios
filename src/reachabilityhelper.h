@@ -18,8 +18,8 @@ public:
     ReachabilityHelper(const ReachabilityHelper&) = delete;
     ReachabilityHelper(ReachabilityHelper&&) noexcept = delete;
 
-    ReachabilityHelper& operator=(const ReachabilityHelper&) = delete;
-    ReachabilityHelper& operator=(ReachabilityHelper&&) noexcept = delete;
+    ReachabilityHelper &operator=(const ReachabilityHelper&) = delete;
+    ReachabilityHelper &operator=(ReachabilityHelper&&) noexcept = delete;
 
     ~ReachabilityHelper() noexcept override;
 

@@ -15,8 +15,8 @@ public:
     AudioHelper(const AudioHelper&) = delete;
     AudioHelper(AudioHelper&&) noexcept = delete;
 
-    AudioHelper& operator=(const AudioHelper&) = delete;
-    AudioHelper& operator=(AudioHelper&&) noexcept = delete;
+    AudioHelper &operator=(const AudioHelper&) = delete;
+    AudioHelper &operator=(AudioHelper&&) noexcept = delete;
 
     ~AudioHelper() noexcept override = default;
 
