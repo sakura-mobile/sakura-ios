@@ -9,29 +9,12 @@
 
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 
-- (id)init;
-- (void)dealloc;
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message;
 - (void)logout;
 
 @end
 
 @implementation FBDelegate
-
-- (id)init
-{
-    self = [super init];
-
-    if (self) {
-    }
-
-    return self;
-}
-
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message
 {
