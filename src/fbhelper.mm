@@ -9,12 +9,27 @@
 
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 
+- (instancetype)initWithHelper:(FBHelper *)helper;
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message;
 - (void)logout;
 
 @end
 
 @implementation FBDelegate
+{
+    FBHelper *FBHelperInstance;
+}
+
+- (instancetype)initWithHelper:(FBHelper *)helper
+{
+    self = [super init];
+
+    if (self) {
+        FBHelperInstance = helper;
+    }
+
+    return self;
+}
 
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message
 {
@@ -72,7 +87,7 @@
                          [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
         NSArray *to = [results objectForKey:@"to"];
 
-        FBHelper::notifyGameRequestCompleted(static_cast<int>(to.count));
+        FBHelperInstance->notifyGameRequestCompleted(static_cast<int>(to.count));
     }
 }
 
@@ -101,7 +116,7 @@
 
 FBHelper::FBHelper(QObject *parent) : QObject(parent)
 {
-    FBDelegateInstance = [[FBDelegate alloc] init];
+    FBDelegateInstance = [[FBDelegate alloc] initWithHelper:this];
 }
 
 FBHelper::~FBHelper() noexcept
@@ -128,5 +143,5 @@ void FBHelper::logout()
 
 void FBHelper::notifyGameRequestCompleted(int recipients_count)
 {
-    emit GetInstance().gameRequestCompleted(recipients_count);
+    emit gameRequestCompleted(recipients_count);
 }

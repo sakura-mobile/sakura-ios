@@ -13,7 +13,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 @interface BannerViewDelegate : NSObject<GADBannerViewDelegate>
 
-- (instancetype)init;
+- (instancetype)initWithHelper:(AdMobHelper *)helper;
 - (void)dealloc;
 - (void)loadAd;
 
@@ -22,13 +22,16 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 @implementation BannerViewDelegate
 {
     GADBannerView *BannerView;
+    AdMobHelper   *AdMobHelperInstance;
 }
 
-- (instancetype)init
+- (instancetype)initWithHelper:(AdMobHelper *)helper
 {
     self = [super init];
 
     if (self) {
+        AdMobHelperInstance = helper;
+
         UIViewController * __block root_view_controller = nil;
 
         [UIApplication.sharedApplication.windows enumerateObjectsUsingBlock:^(UIWindow * _Nonnull window, NSUInteger, BOOL * _Nonnull stop) {
@@ -59,31 +62,14 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
                 [BannerView.centerXAnchor constraintEqualToAnchor:guide.centerXAnchor],
                 [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
             ]];
+
+            AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
         } else {
             assert(0);
         }
-
-        [self performSelector:@selector(deferredInit) withObject:nil afterDelay:0.0];
     }
 
     return self;
-}
-
-- (void)deferredInit
-{
-    UIViewController * __block root_view_controller = nil;
-
-    [UIApplication.sharedApplication.windows enumerateObjectsUsingBlock:^(UIWindow * _Nonnull window, NSUInteger, BOOL * _Nonnull stop) {
-        root_view_controller = window.rootViewController;
-
-        *stop = (root_view_controller != nil);
-    }];
-
-    if (@available(iOS 11, *)) {
-        AdMobHelper::setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
-    } else {
-        assert(0);
-    }
 }
 
 - (void)dealloc
@@ -138,7 +124,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 @interface InterstitialDelegate : NSObject<GADInterstitialDelegate>
 
-- (instancetype)init;
+- (instancetype)initWithHelper:(AdMobHelper *)helper;
 - (void)dealloc;
 - (void)loadAd;
 - (void)show;
@@ -149,14 +135,16 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 @implementation InterstitialDelegate
 {
     GADInterstitial *Interstitial;
+    AdMobHelper     *AdMobHelperInstance;
 }
 
-- (instancetype)init
+- (instancetype)initWithHelper:(AdMobHelper *)helper
 {
     self = [super init];
 
     if (self) {
-        Interstitial = nil;
+        Interstitial        = nil;
+        AdMobHelperInstance = helper;
     }
 
     return self;
@@ -223,7 +211,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 {
     Q_UNUSED(ad)
 
-    AdMobHelper::setInterstitialActive(true);
+    AdMobHelperInstance->setInterstitialActive(true);
 }
 
 - (void)interstitialWillDismissScreen:(GADInterstitial *)ad
@@ -235,7 +223,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 {
     Q_UNUSED(ad)
 
-    AdMobHelper::setInterstitialActive(false);
+    AdMobHelperInstance->setInterstitialActive(false);
 
     [self performSelector:@selector(loadAd) withObject:nil afterDelay:10.0];
 }
@@ -263,7 +251,7 @@ AdMobHelper::AdMobHelper(QObject *parent) : QObject(parent)
     InterstitialActive           = false;
     BannerViewHeight             = 0;
     BannerViewDelegateInstance   = nullptr;
-    InterstitialDelegateInstance = [[InterstitialDelegate alloc] init];
+    InterstitialDelegateInstance = [[InterstitialDelegate alloc] initWithHelper:this];
 
     [InterstitialDelegateInstance loadAd];
 }
@@ -311,7 +299,7 @@ void AdMobHelper::showBannerView()
         BannerViewDelegateInstance = nil;
     }
 
-    BannerViewDelegateInstance = [[BannerViewDelegate alloc] init];
+    BannerViewDelegateInstance = [[BannerViewDelegate alloc] initWithHelper:this];
 
     [BannerViewDelegateInstance loadAd];
 }
@@ -336,14 +324,14 @@ void AdMobHelper::showInterstitial()
 
 void AdMobHelper::setInterstitialActive(bool active)
 {
-    GetInstance().InterstitialActive = active;
+    InterstitialActive = active;
 
-    emit GetInstance().interstitialActiveChanged(GetInstance().InterstitialActive);
+    emit interstitialActiveChanged(InterstitialActive);
 }
 
 void AdMobHelper::setBannerViewHeight(int height)
 {
-    GetInstance().BannerViewHeight = height;
+    BannerViewHeight = height;
 
-    emit GetInstance().bannerViewHeightChanged(GetInstance().BannerViewHeight);
+    emit bannerViewHeightChanged(BannerViewHeight);
 }
