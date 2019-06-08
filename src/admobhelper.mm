@@ -13,7 +13,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 @interface BannerViewDelegate : NSObject<GADBannerViewDelegate>
 
-- (id)init;
+- (instancetype)init;
 - (void)dealloc;
 - (void)loadAd;
 
@@ -24,7 +24,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
     GADBannerView *BannerView;
 }
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
 
@@ -138,7 +138,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 @interface InterstitialDelegate : NSObject<GADInterstitialDelegate>
 
-- (id)init;
+- (instancetype)init;
 - (void)dealloc;
 - (void)loadAd;
 - (void)show;
@@ -151,7 +151,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
     GADInterstitial *Interstitial;
 }
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
 
