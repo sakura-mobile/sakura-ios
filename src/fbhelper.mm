@@ -87,7 +87,7 @@
                          [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
         NSArray *to = [results objectForKey:@"to"];
 
-        FBHelperInstance->notifyGameRequestCompleted(static_cast<int>(to.count));
+        emit FBHelperInstance->gameRequestCompleted(static_cast<int>(to.count));
     }
 }
 
@@ -139,9 +139,4 @@ void FBHelper::showGameRequest(const QString &title, const QString &message)
 void FBHelper::logout()
 {
     [FBDelegateInstance logout];
-}
-
-void FBHelper::notifyGameRequestCompleted(int recipients_count)
-{
-    emit gameRequestCompleted(recipients_count);
 }

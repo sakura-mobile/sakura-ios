@@ -28,8 +28,6 @@ public:
     Q_INVOKABLE void showGameRequest(const QString &title, const QString &message);
     Q_INVOKABLE void logout();
 
-    void notifyGameRequestCompleted(int recipients_count);
-
 signals:
     void gameRequestCompleted(int recipientsCount);
 
