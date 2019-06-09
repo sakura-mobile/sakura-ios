@@ -10,6 +10,7 @@
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 
 - (instancetype)initWithHelper:(FBHelper *)helper;
+- (void)removeHelperAndAutorelease;
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message;
 - (void)logout;
 
@@ -29,6 +30,13 @@
     }
 
     return self;
+}
+
+- (void)removeHelperAndAutorelease
+{
+    FBHelperInstance = nullptr;
+
+    [self autorelease];
 }
 
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message
@@ -87,7 +95,9 @@
                          [[results objectForKey:@"to"] isKindOfClass:[NSArray class]]) {
         NSArray *to = [results objectForKey:@"to"];
 
-        emit FBHelperInstance->gameRequestCompleted(static_cast<int>(to.count));
+        if (FBHelperInstance != nullptr) {
+            emit FBHelperInstance->gameRequestCompleted(static_cast<int>(to.count));
+        }
     }
 }
 
@@ -121,7 +131,7 @@ FBHelper::FBHelper(QObject *parent) : QObject(parent)
 
 FBHelper::~FBHelper() noexcept
 {
-    [FBDelegateInstance release];
+    [FBDelegateInstance removeHelperAndAutorelease];
 }
 
 FBHelper &FBHelper::GetInstance()

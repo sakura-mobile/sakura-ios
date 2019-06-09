@@ -15,6 +15,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 - (instancetype)initWithHelper:(AdMobHelper *)helper;
 - (void)dealloc;
+- (void)removeHelperAndAutorelease;
 - (void)loadAd;
 
 @end
@@ -63,7 +64,9 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
                 [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
             ]];
 
-            AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
+            if (AdMobHelperInstance != nullptr) {
+                AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
+            }
         } else {
             assert(0);
         }
@@ -78,6 +81,13 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
     [BannerView release];
 
     [super dealloc];
+}
+
+- (void)removeHelperAndAutorelease
+{
+    AdMobHelperInstance = nullptr;
+
+    [self autorelease];
 }
 
 - (void)loadAd
@@ -126,6 +136,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 
 - (instancetype)initWithHelper:(AdMobHelper *)helper;
 - (void)dealloc;
+- (void)removeHelperAndAutorelease;
 - (void)loadAd;
 - (void)show;
 - (BOOL)isReady;
@@ -157,6 +168,13 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
     }
 
     [super dealloc];
+}
+
+- (void)removeHelperAndAutorelease
+{
+    AdMobHelperInstance = nullptr;
+
+    [self autorelease];
 }
 
 - (void)loadAd
@@ -211,7 +229,9 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 {
     Q_UNUSED(ad)
 
-    AdMobHelperInstance->setInterstitialActive(true);
+    if (AdMobHelperInstance != nullptr) {
+        AdMobHelperInstance->setInterstitialActive(true);
+    }
 }
 
 - (void)interstitialWillDismissScreen:(GADInterstitial *)ad
@@ -223,7 +243,9 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      ("");
 {
     Q_UNUSED(ad)
 
-    AdMobHelperInstance->setInterstitialActive(false);
+    if (AdMobHelperInstance != nullptr) {
+        AdMobHelperInstance->setInterstitialActive(false);
+    }
 
     [self performSelector:@selector(loadAd) withObject:nil afterDelay:10.0];
 }
@@ -259,10 +281,10 @@ AdMobHelper::AdMobHelper(QObject *parent) : QObject(parent)
 AdMobHelper::~AdMobHelper() noexcept
 {
     if (BannerViewDelegateInstance != nullptr && BannerViewDelegateInstance != nil) {
-        [BannerViewDelegateInstance release];
+        [BannerViewDelegateInstance removeHelperAndAutorelease];
     }
 
-    [InterstitialDelegateInstance release];
+    [InterstitialDelegateInstance removeHelperAndAutorelease];
 }
 
 AdMobHelper &AdMobHelper::GetInstance()
@@ -290,7 +312,7 @@ int AdMobHelper::bannerViewHeight() const
 void AdMobHelper::showBannerView()
 {
     if (BannerViewDelegateInstance != nullptr && BannerViewDelegateInstance != nil) {
-        [BannerViewDelegateInstance release];
+        [BannerViewDelegateInstance removeHelperAndAutorelease];
 
         BannerViewHeight = 0;
 
@@ -307,7 +329,7 @@ void AdMobHelper::showBannerView()
 void AdMobHelper::hideBannerView()
 {
     if (BannerViewDelegateInstance != nullptr && BannerViewDelegateInstance != nil) {
-        [BannerViewDelegateInstance release];
+        [BannerViewDelegateInstance removeHelperAndAutorelease];
 
         BannerViewHeight = 0;
 
