@@ -25,7 +25,7 @@
 {
     self = [super init];
 
-    if (self) {
+    if (self != nil) {
         FBHelperInstance = helper;
     }
 
