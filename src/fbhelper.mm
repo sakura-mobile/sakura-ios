@@ -9,7 +9,8 @@
 
 @interface FBDelegate : NSObject<FBSDKGameRequestDialogDelegate>
 
-- (instancetype)initWithHelper:(FBHelper *)helper;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithHelper:(FBHelper *)helper NS_DESIGNATED_INITIALIZER;
 - (void)removeHelperAndAutorelease;
 - (void)showGameRequestWithTitle:(NSString *)title withMessage:(NSString *)message;
 - (void)logout;
