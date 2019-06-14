@@ -14,11 +14,11 @@ private:
     ~AudioHelper() noexcept override = default;
 
 public:
-    AudioHelper(const AudioHelper&) = delete;
-    AudioHelper(AudioHelper&&) noexcept = delete;
+    AudioHelper(const AudioHelper &) = delete;
+    AudioHelper(AudioHelper &&) noexcept = delete;
 
-    AudioHelper &operator=(const AudioHelper&) = delete;
-    AudioHelper &operator=(AudioHelper&&) noexcept = delete;
+    AudioHelper &operator=(const AudioHelper &) = delete;
+    AudioHelper &operator=(AudioHelper &&) noexcept = delete;
 
     static AudioHelper &GetInstance();
 

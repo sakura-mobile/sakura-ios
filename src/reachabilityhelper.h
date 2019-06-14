@@ -17,11 +17,11 @@ private:
     ~ReachabilityHelper() noexcept override;
 
 public:
-    ReachabilityHelper(const ReachabilityHelper&) = delete;
-    ReachabilityHelper(ReachabilityHelper&&) noexcept = delete;
+    ReachabilityHelper(const ReachabilityHelper &) = delete;
+    ReachabilityHelper(ReachabilityHelper &&) noexcept = delete;
 
-    ReachabilityHelper &operator=(const ReachabilityHelper&) = delete;
-    ReachabilityHelper &operator=(ReachabilityHelper&&) noexcept = delete;
+    ReachabilityHelper &operator=(const ReachabilityHelper &) = delete;
+    ReachabilityHelper &operator=(ReachabilityHelper &&) noexcept = delete;
 
     static ReachabilityHelper &GetInstance();
 
