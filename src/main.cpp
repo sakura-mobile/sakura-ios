@@ -4,6 +4,7 @@
 #include <QtGui/QGuiApplication>
 #include <QtQml/QQmlApplicationEngine>
 #include <QtQml/QQmlContext>
+#include <QtQuickControls2/QQuickStyle>
 
 #include "sakuraapplicationdelegate.h"
 #include "admobhelper.h"
@@ -36,6 +37,8 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), &ReachabilityHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), &GIFCreator::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("UuidCreator"), &UuidCreator::GetInstance());
+
+    QQuickStyle::setStyle("Default");
 
     engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
 

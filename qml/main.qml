@@ -3,7 +3,7 @@ import QtQuick.Window 2.12
 import QtQuick.Controls 2.5
 import QtQuick.LocalStorage 2.12
 
-Window {
+ApplicationWindow {
     id:         mainWindow
     title:      qsTr("Sakura")
     visibility: Window.FullScreen
@@ -116,10 +116,9 @@ Window {
             id: storePage
         }
 
-        MouseArea {
-            id:           screenLockMouseArea
+        MultiPointTouchArea {
             anchors.fill: parent
-            z:            100
+            z:            1
             enabled:      mainStackView.busy
         }
 
