@@ -20,7 +20,7 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
     InternetConnected = false;
 
     struct sockaddr_in           address = {};
-    SCNetworkReachabilityContext context = { 0, nullptr, nullptr, nullptr, nullptr };
+    SCNetworkReachabilityContext context = {0, nullptr, nullptr, nullptr, nullptr};
 
     address.sin_len    = sizeof(address);
     address.sin_family = AF_INET;

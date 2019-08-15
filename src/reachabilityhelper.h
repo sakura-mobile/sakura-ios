@@ -31,8 +31,8 @@ public:
     void analyzeFlags(SCNetworkReachabilityFlags flags);
 
 signals:
-    void internetAvailableChanged(bool available);
-    void internetConnectedChanged(bool connected);
+    void internetAvailableChanged(bool internetAvailable);
+    void internetConnectedChanged(bool internetConnected);
 
 private:
     bool                     InternetAvailable, InternetConnected;
