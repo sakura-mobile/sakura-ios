@@ -67,10 +67,12 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
 
 ReachabilityHelper::~ReachabilityHelper() noexcept
 {
-    SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
-    SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, nullptr);
+    if (ReachabilityRef != nullptr && ReachabilityRef != nil) {
+        SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
+        SCNetworkReachabilitySetDispatchQueue(ReachabilityRef, nullptr);
 
-    CFRelease(ReachabilityRef);
+        CFRelease(ReachabilityRef);
+    }
 }
 
 ReachabilityHelper &ReachabilityHelper::GetInstance()
