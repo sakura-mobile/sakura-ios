@@ -1,6 +1,0 @@
-#ifndef SAKURAAPPLICATIONDELEGATE_H
-#define SAKURAAPPLICATIONDELEGATE_H
-
-void InitializeSakuraApplicationDelegate();
-
-#endif // SAKURAAPPLICATIONDELEGATE_H

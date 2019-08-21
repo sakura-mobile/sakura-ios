@@ -12,6 +12,8 @@ ApplicationWindow {
     property bool appInForeground: Qt.application.active
     property bool disableAds:      false
 
+    property string adMobConsent:  ""
+
     onAppInForegroundChanged: {
         AudioHelper.refresh();
     }
@@ -19,21 +21,13 @@ ApplicationWindow {
     onDisableAdsChanged: {
         setSetting("DisableAds", disableAds ? "true" : "false");
 
-        if (mainStackView.depth > 0 && typeof mainStackView.currentItem.bannerViewHeight === "number") {
-            if (disableAds) {
-                AdMobHelper.hideBannerView();
-            } else {
-                AdMobHelper.showBannerView();
-            }
-        } else {
-            AdMobHelper.hideBannerView();
-        }
+        updateFeatures();
     }
 
-    function showInterstitial() {
-        if (!disableAds) {
-            AdMobHelper.showInterstitial();
-        }
+    onAdMobConsentChanged: {
+        setSetting("AdMobConsent", adMobConsent);
+
+        updateFeatures();
     }
 
     function addScore(text, score, difficulty) {
@@ -73,59 +67,101 @@ ApplicationWindow {
         return value;
     }
 
-    Rectangle {
+    function updateFeatures() {
+        if (!disableAds && (adMobConsent === "PERSONALIZED" || adMobConsent === "NON_PERSONALIZED")) {
+            AdMobHelper.setPersonalization(adMobConsent === "PERSONALIZED");
+
+            AdMobHelper.initAds();
+        }
+
+        if (mainStackView.depth > 0 && typeof mainStackView.currentItem.bannerViewHeight === "number") {
+            if (disableAds) {
+                AdMobHelper.hideBannerView();
+            } else {
+                AdMobHelper.showBannerView();
+            }
+        } else {
+            AdMobHelper.hideBannerView();
+        }
+    }
+
+    function showInterstitial() {
+        if (!disableAds) {
+            AdMobHelper.showInterstitial();
+        }
+    }
+
+    function showAdMobConsentDialog() {
+        adMobConsentDialog.open();
+    }
+
+    StackView {
+        id:           mainStackView
         anchors.fill: parent
-        color:        "black"
 
-        StackView {
-            id:           mainStackView
-            anchors.fill: parent
+        onCurrentItemChanged: {
+            for (var i = 0; i < depth; i++) {
+                var item = get(i, StackView.DontLoad);
 
-            onCurrentItemChanged: {
-                for (var i = 0; i < depth; i++) {
-                    var item = get(i, StackView.DontLoad);
-
-                    if (item !== null) {
-                        item.focus = false;
-                    }
+                if (item !== null) {
+                    item.focus = false;
                 }
+            }
 
-                if (depth > 0) {
-                    currentItem.forceActiveFocus();
+            if (depth > 0) {
+                currentItem.forceActiveFocus();
 
-                    if (typeof currentItem.bannerViewHeight === "number") {
-                        if (mainWindow.disableAds) {
-                            AdMobHelper.hideBannerView();
-                        } else {
-                            AdMobHelper.showBannerView();
-                        }
-                    } else {
+                if (typeof currentItem.bannerViewHeight === "number") {
+                    if (mainWindow.disableAds) {
                         AdMobHelper.hideBannerView();
+                    } else {
+                        AdMobHelper.showBannerView();
                     }
                 } else {
                     AdMobHelper.hideBannerView();
                 }
+            } else {
+                AdMobHelper.hideBannerView();
             }
         }
+    }
 
-        MainPage {
-            id: mainPage
+    MainPage {
+        id: mainPage
+    }
+
+    StorePage {
+        id: storePage
+    }
+
+    MultiPointTouchArea {
+        anchors.fill: parent
+        z:            1
+        enabled:      mainStackView.busy
+    }
+
+    AdMobConsentDialog {
+        id: adMobConsentDialog
+
+        onPersonalizedAdsSelected: {
+            mainWindow.adMobConsent = "PERSONALIZED";
         }
 
-        StorePage {
-            id: storePage
+        onNonPersonalizedAdsSelected: {
+            mainWindow.adMobConsent = "NON_PERSONALIZED";
         }
+    }
 
-        MultiPointTouchArea {
-            anchors.fill: parent
-            z:            1
-            enabled:      mainStackView.busy
-        }
+    Component.onCompleted: {
+        disableAds   = (getSetting("DisableAds",   "false") === "true");
+        adMobConsent =  getSetting("AdMobConsent", "");
 
-        Component.onCompleted: {
-            disableAds = (getSetting("DisableAds", "false") === "true");
+        updateFeatures();
 
-            mainStackView.push(mainPage);
+        mainStackView.push(mainPage);
+
+        if (!disableAds && adMobConsent !== "PERSONALIZED" && adMobConsent !== "NON_PERSONALIZED") {
+            adMobConsentDialog.open();
         }
     }
 }

@@ -6,9 +6,7 @@
 #include <QtQml/QQmlContext>
 #include <QtQuickControls2/QQuickStyle>
 
-#include "sakuraapplicationdelegate.h"
 #include "admobhelper.h"
-#include "fbhelper.h"
 #include "sharehelper.h"
 #include "storehelper.h"
 #include "audiohelper.h"
@@ -25,12 +23,9 @@ int main(int argc, char *argv[])
         QGuiApplication::installTranslator(&translator);
     }
 
-    InitializeSakuraApplicationDelegate();
-
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty(QStringLiteral("AdMobHelper"), &AdMobHelper::GetInstance());
-    engine.rootContext()->setContextProperty(QStringLiteral("FBHelper"), &FBHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), &ShareHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), &StoreHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), &AudioHelper::GetInstance());
