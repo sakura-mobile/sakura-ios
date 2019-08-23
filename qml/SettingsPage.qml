@@ -156,7 +156,7 @@ Item {
                         z: 1
 
                         onClicked: {
-                            mainWindow.showAdMobConsentDialog();
+                            adMobConsentDialog.open();
                         }
                     }
                 }
