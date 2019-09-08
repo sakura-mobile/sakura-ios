@@ -94,19 +94,30 @@ bool ReachabilityHelper::internetConnected() const
 
 void ReachabilityHelper::analyzeFlags(SCNetworkReachabilityFlags flags)
 {
+    bool internet_available, internet_connected;
+
     if (flags & kSCNetworkReachabilityFlagsReachable) {
-        InternetAvailable = true;
+        internet_available = true;
 
         if (flags & kSCNetworkReachabilityFlagsConnectionRequired) {
-            InternetConnected = false;
+            internet_connected = false;
         } else {
-            InternetConnected = true;
+            internet_connected = true;
         }
     } else {
-        InternetAvailable = false;
-        InternetConnected = false;
+        internet_available = false;
+        internet_connected = false;
     }
 
-    emit internetAvailableChanged(InternetAvailable);
-    emit internetConnectedChanged(InternetConnected);
+    if (InternetAvailable != internet_available) {
+        InternetAvailable = internet_available;
+
+        emit internetAvailableChanged(InternetAvailable);
+    }
+
+    if (InternetConnected != internet_connected) {
+        InternetConnected = internet_connected;
+
+        emit internetConnectedChanged(InternetConnected);
+    }
 }

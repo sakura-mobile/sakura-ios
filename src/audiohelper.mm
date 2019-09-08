@@ -30,10 +30,14 @@ void AudioHelper::refresh()
     AVAudioSession *session = [AVAudioSession sharedInstance];
 
     if (@available(iOS 8, *)) {
-        SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
+        bool silence_audio = session.secondaryAudioShouldBeSilencedHint;
+
+        if (SilenceAudio != silence_audio) {
+            SilenceAudio = silence_audio;
+
+            emit silenceAudioChanged(SilenceAudio);
+        }
     } else {
         assert(0);
     }
-
-    emit silenceAudioChanged(SilenceAudio);
 }
