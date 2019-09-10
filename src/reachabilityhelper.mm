@@ -51,17 +51,17 @@ ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
                     }
                 }
             } else {
-                qWarning() << QString("SCNetworkReachabilitySetDispatchQueue() failed: %1").arg(SCErrorString(SCError()));
+                qWarning() << QStringLiteral("SCNetworkReachabilitySetDispatchQueue() failed: %1").arg(QString::fromUtf8(SCErrorString(SCError())));
 
                 SCNetworkReachabilitySetCallback(ReachabilityRef, nullptr, nullptr);
             }
 
             dispatch_release(queue);
         } else {
-            qWarning() << QString("SCNetworkReachabilitySetCallback() failed: %1").arg(SCErrorString(SCError()));
+            qWarning() << QStringLiteral("SCNetworkReachabilitySetCallback() failed: %1").arg(QString::fromUtf8(SCErrorString(SCError())));
         }
     } else {
-        qWarning() << QString("SCNetworkReachabilityCreateWithAddress() failed: %1").arg(SCErrorString(SCError()));
+        qWarning() << QStringLiteral("SCNetworkReachabilityCreateWithAddress() failed: %1").arg(QString::fromUtf8(SCErrorString(SCError())));
     }
 }
 
