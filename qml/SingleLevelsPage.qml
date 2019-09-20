@@ -22,11 +22,11 @@ Item {
             Image {
                 id: awardButton
                 anchors.top: parent.top
-                anchors.topMargin: UtilScript.pt(30)
+                anchors.topMargin: UtilScript.dp(30)
                 anchors.horizontalCenter: parent.horizontalCenter
                 source: "qrc:/resources/images/button_award.png"
-                width: UtilScript.pt(80)
-                height: UtilScript.pt(80)
+                width: UtilScript.dp(80)
+                height: UtilScript.dp(80)
 
                 MouseArea {
                     id: mouseAreaAwardButton
@@ -47,16 +47,16 @@ Item {
             }
             Rectangle {
                 anchors.top: parent.top
-                anchors.topMargin: UtilScript.pt(30)
+                anchors.topMargin: UtilScript.dp(30)
                 anchors.left: parent.left
-                anchors.leftMargin: UtilScript.pt(15)
+                anchors.leftMargin: UtilScript.dp(15)
                 color: "transparent"
-                width: UtilScript.pt(100)
-                height: UtilScript.pt(40)
+                width: UtilScript.dp(100)
+                height: UtilScript.dp(40)
                 Rectangle {
                     anchors.fill: parent
                     color: "black"
-                    radius: UtilScript.pt(20)
+                    radius: UtilScript.dp(20)
                     opacity: 0.3
                 }
 
@@ -91,14 +91,14 @@ Item {
             Row {
                 id: rowButtonGame
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: UtilScript.pt(80)
+                anchors.bottomMargin: UtilScript.dp(80)
                 anchors.horizontalCenter: parent.horizontalCenter
-                spacing: UtilScript.pt(15)
+                spacing: UtilScript.dp(15)
                 Image {
                     id: leftButton
                     source: "qrc:/resources/images/button_triple_left.png"
-                    width: UtilScript.pt(80)
-                    height: UtilScript.pt(80)
+                    width: UtilScript.dp(80)
+                    height: UtilScript.dp(80)
                     visible: true
                     MouseArea {
                         id: mouseAreaLeftButton
@@ -112,8 +112,8 @@ Item {
                 Image {
                     id: playButton
                     source: "qrc:/resources/images/button_play_last_location.png"
-                    width: UtilScript.pt(80)
-                    height: UtilScript.pt(80)
+                    width: UtilScript.dp(80)
+                    height: UtilScript.dp(80)
                     MouseArea {
                         id: mouseAreaPlayButton
                         anchors.fill: parent
@@ -126,8 +126,8 @@ Item {
                 Image {
                     id: rightButton
                     source: "qrc:/resources/images/button_triple_right.png"
-                    width: UtilScript.pt(80)
-                    height: UtilScript.pt(80)
+                    width: UtilScript.dp(80)
+                    height: UtilScript.dp(80)
                     MouseArea {
                         id: mouseAreaRightButton
                         anchors.fill: parent
@@ -141,11 +141,11 @@ Item {
             Image {
                 id: backButton
                 source: "qrc:/resources/images/back.png"
-                width: UtilScript.pt(60)
-                height: UtilScript.pt(60)
+                width: UtilScript.dp(60)
+                height: UtilScript.dp(60)
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: UtilScript.pt(16)
-                anchors.leftMargin: UtilScript.pt(15)
+                anchors.bottomMargin: UtilScript.dp(16)
+                anchors.leftMargin: UtilScript.dp(15)
                 anchors.left: parent.left
 
                 MouseArea {
@@ -160,7 +160,7 @@ Item {
             Text {
                 anchors.bottom: parent.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottomMargin: UtilScript.pt(16)
+                anchors.bottomMargin: UtilScript.dp(16)
                 id: textLevel
                 font.pointSize: 35
                 font.bold: true
@@ -173,8 +173,8 @@ Item {
             id: rectAwardsGame
             anchors.horizontalCenter: parent.horizontalCenter
             y: imageBackgroundMainLevel.height
-            width: UtilScript.pt(300)
-            height: UtilScript.pt(200)
+            width: UtilScript.dp(300)
+            height: UtilScript.dp(200)
             color: "transparent"
             Image {
                 id: backgroundAwardsGame
@@ -184,11 +184,11 @@ Item {
 
                 Column {
                     anchors.centerIn: parent
-                    spacing: UtilScript.pt(3)
+                    spacing: UtilScript.dp(3)
 
                     Text {
                         id: textRewardUser
-                        anchors.topMargin: UtilScript.pt(15)
+                        anchors.topMargin: UtilScript.dp(15)
                         text: qsTr("Your reward:")
                         font.pointSize: 25
                         font.bold: true
@@ -199,14 +199,14 @@ Item {
                     Row {
                         id: rowQuickTip
                         z: 15
-                        spacing: UtilScript.pt(15)
+                        spacing: UtilScript.dp(15)
                         visible: false
                         anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageQuickTip
-                            width: UtilScript.pt(40)
-                            height: UtilScript.pt(40)
+                            width: UtilScript.dp(40)
+                            height: UtilScript.dp(40)
                             source: "qrc:/resources/images/button_quick_tip.png"
                         }
                         Text {
@@ -230,14 +230,14 @@ Item {
                     Row {
                         id: rowStepIce
                         z: 15
-                        spacing: UtilScript.pt(15)
+                        spacing: UtilScript.dp(15)
                         visible: false
                         anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageStepIce
-                            width: UtilScript.pt(40)
-                            height: UtilScript.pt(40)
+                            width: UtilScript.dp(40)
+                            height: UtilScript.dp(40)
                             source: "qrc:/resources/images/lantern_step_ice_booster.png"
                         }
                         Text {
@@ -261,14 +261,14 @@ Item {
                     Row {
                         id: rowTimeIce
                         z: 15
-                        spacing: UtilScript.pt(15)
+                        spacing: UtilScript.dp(15)
                         visible: false
                         anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageTimeIce
-                            width: UtilScript.pt(40)
-                            height: UtilScript.pt(40)
+                            width: UtilScript.dp(40)
+                            height: UtilScript.dp(40)
                             source: "qrc:/resources/images/lantern_time_ice_booster.png"
                         }
                         Text {
@@ -292,13 +292,13 @@ Item {
                     Row {
                         id: rowOk
                         z: 15
-                        spacing: UtilScript.pt(15)
+                        spacing: UtilScript.dp(15)
                         anchors.horizontalCenter: parent.horizontalCenter
 
                         Image {
                             id: imageOk
-                            width: UtilScript.pt(50)
-                            height: UtilScript.pt(50)
+                            width: UtilScript.dp(50)
+                            height: UtilScript.dp(50)
                             source: "qrc:/resources/images/button_ok.png"
 
                             MouseArea {
@@ -343,8 +343,8 @@ Item {
             id: rectNameUser
             y: imageBackgroundMainLevel.height
             anchors.horizontalCenter: imageBackgroundMainLevel.horizontalCenter
-            width: UtilScript.pt(300)
-            height: UtilScript.pt(200)
+            width: UtilScript.dp(300)
+            height: UtilScript.dp(200)
             visible: false
             color: "transparent"
             Image {
@@ -357,9 +357,9 @@ Item {
                     id: rowTextNameUser
                     anchors.top: parent.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.topMargin: UtilScript.pt(30)
+                    anchors.topMargin: UtilScript.dp(30)
                     z: 15
-                    spacing: UtilScript.pt(5)
+                    spacing: UtilScript.dp(5)
                     visible: true
                     Text {
                         id: textNameUser
@@ -415,10 +415,10 @@ Item {
                 }
                 Image {
                     id: imageOkName
-                    width: UtilScript.pt(50)
-                    height: UtilScript.pt(50)
+                    width: UtilScript.dp(50)
+                    height: UtilScript.dp(50)
                     anchors.bottom: parent.bottom
-                    anchors.bottomMargin: UtilScript.pt(16)
+                    anchors.bottomMargin: UtilScript.dp(16)
                     anchors.horizontalCenter: parent.horizontalCenter
                     source: "qrc:/resources/images/button_ok.png"
                     MouseArea {
@@ -482,11 +482,11 @@ Item {
                 id: rectHint
                 anchors.centerIn: parent
                 color: "black"
-                radius: UtilScript.pt(20)
-                width: UtilScript.pt(250)
-                height: UtilScript.pt(200)
+                radius: UtilScript.dp(20)
+                width: UtilScript.dp(250)
+                height: UtilScript.dp(200)
                 border.color: "#C5007F"
-                border.width: UtilScript.pt(10)
+                border.width: UtilScript.dp(10)
                 gradient: Gradient {
                     GradientStop {
                         position: 0.0
@@ -515,11 +515,11 @@ Item {
                 }
                 Image {
                     anchors.bottom: rectHint.bottom
-                    anchors.bottomMargin: UtilScript.pt(10)
+                    anchors.bottomMargin: UtilScript.dp(10)
                     anchors.horizontalCenter: parent.horizontalCenter
                     id: imageHintOk
-                    width: UtilScript.pt(50)
-                    height: UtilScript.pt(50)
+                    width: UtilScript.dp(50)
+                    height: UtilScript.dp(50)
                     source: "qrc:/resources/images/button_ok.png"
 
                     MouseArea {
