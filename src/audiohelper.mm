@@ -1,5 +1,7 @@
 #import <AVFoundation/AVFoundation.h>
 
+#include <cstdlib>
+
 #include "audiohelper.h"
 
 AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
@@ -9,7 +11,7 @@ AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
     if (@available(iOS 8, *)) {
         SilenceAudio = session.secondaryAudioShouldBeSilencedHint;
     } else {
-        assert(0);
+        abort();
     }
 }
 
@@ -38,6 +40,6 @@ void AudioHelper::refresh()
             emit silenceAudioChanged(SilenceAudio);
         }
     } else {
-        assert(0);
+        abort();
     }
 }

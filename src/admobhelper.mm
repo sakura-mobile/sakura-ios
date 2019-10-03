@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
+#include <cstdlib>
+
 #include <QtCore/QtGlobal>
 #include <QtCore/QtMath>
 #include <QtCore/QDebug>
@@ -57,7 +59,7 @@ static const NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
         if (@available(iOS 6, *)) {
             BannerView.translatesAutoresizingMaskIntoConstraints = NO;
         } else {
-            assert(0);
+            abort();
         }
 
         [root_view_controller.view addSubview:BannerView];
@@ -74,7 +76,7 @@ static const NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
                 AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
             }
         } else {
-            assert(0);
+            abort();
         }
     }
 
