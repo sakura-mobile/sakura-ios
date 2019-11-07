@@ -384,9 +384,9 @@ Item {
             if (xhr.readyState != 4)
                 return
             if (xhr.status != 200) {
-                console.log(xhr.status + ': ' + xhr.statusText)
+                console.error(xhr.status + ': ' + xhr.statusText)
             } else {
-                console.log("xhr.responseText :: " + xhr.responseText)
+                console.debug("xhr.responseText :: " + xhr.responseText)
                 var res = JSON.parse(xhr.responseText)
                 if (res["result"] === "success") {
                     var listTop = res["top"]
@@ -397,7 +397,7 @@ Item {
                     }
                     tournamentScores()
                 } else {
-                    console.log(res)
+                    console.warn(res)
                 }
             }
         }

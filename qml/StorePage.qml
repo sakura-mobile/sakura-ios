@@ -48,7 +48,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -79,7 +79,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -110,7 +110,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -140,7 +140,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -171,7 +171,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -202,7 +202,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -250,7 +250,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()
@@ -276,7 +276,7 @@ Item {
 
             onPurchaseFailed: {
                 if (transaction.failureReason === Transaction.ErrorOccurred) {
-                    console.log(transaction.errorString)
+                    console.error(transaction.errorString)
                 }
 
                 transaction.finalize()

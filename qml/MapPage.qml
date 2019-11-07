@@ -89,7 +89,7 @@ Item {
                                                                   0)
                                        })
                 } else {
-                    console.log(component.errorString())
+                    console.error(component.errorString())
                 }
             }
         }

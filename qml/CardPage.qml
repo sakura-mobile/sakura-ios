@@ -465,20 +465,23 @@ Item {
         repeat: true
         triggeredOnStart: true
 
-        property int frameNumber: 0
-        property int framesCount: 5
+        readonly property int framesCount: 5
+
+        property int frameNumber:          0
+        property int capturedFramesCount:  0
 
         onRunningChanged: {
             if (running) {
                 waitRectangle.visible = true
 
-                frameNumber = 0
+                frameNumber         = 0
+                capturedFramesCount = 0
             } else {
-                if (frameNumber >= framesCount) {
+                if (capturedFramesCount >= framesCount) {
                     if (GIFCreator.createGIF(framesCount, interval / 10)) {
                         ShareHelper.showShareToView(GIFCreator.gifFilePath)
                     } else {
-                        console.log("createGIF() failed")
+                        console.error("createGIF() failed")
                     }
                 }
 
@@ -489,17 +492,26 @@ Item {
         onTriggered: {
             if (frameNumber < framesCount) {
                 var frame_number = frameNumber
+
                 if (!imageBackgroundMainMap.grabToImage(function (result) {
-                    result.saveToFile(GIFCreator.imageFilePathMask.arg(
-                                          frame_number))
+                    if (result.saveToFile(GIFCreator.imageFilePathMask.arg(frame_number))) {
+                        capturedFramesCount = capturedFramesCount + 1
+
+                        if (capturedFramesCount >= framesCount) {
+                            stop()
+                        }
+                    } else {
+                        console.error("saveToFile() failed for frame %1".arg(frame_number))
+
+                        stop()
+                    }
                 })) {
-                    console.log("grabToImage() failed for frame %1".arg(
-                                    frame_number))
+                    console.error("grabToImage() failed for frame %1".arg(frame_number))
+
+                    stop()
                 }
 
                 frameNumber = frameNumber + 1
-            } else {
-                stop()
             }
         }
     }
@@ -521,13 +533,15 @@ Item {
         waitRectangle.visible = true
 
         if (!imageBackgroundMainMap.grabToImage(function (result) {
-            result.saveToFile(ShareHelper.imageFilePath)
-
-            ShareHelper.showShareToView(ShareHelper.imageFilePath)
+            if (result.saveToFile(ShareHelper.imageFilePath)) {
+                ShareHelper.showShareToView(ShareHelper.imageFilePath)
+            } else {
+                console.error("saveToFile() failed")
+            }
 
             waitRectangle.visible = false
         })) {
-            console.log("grabToImage() failed")
+            console.error("grabToImage() failed")
 
             waitRectangle.visible = false
         }

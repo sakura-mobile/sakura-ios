@@ -819,7 +819,7 @@ Item {
 
                                     mainWindow.setSetting("ShareTooltip", 1)
                                 } else {
-                                    console.log(component.errorString())
+                                    console.error(component.errorString())
                                 }
                                 mainWindow.showInterstitial()
                             }
@@ -1141,7 +1141,7 @@ Item {
         }
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
     }
 
@@ -1153,7 +1153,7 @@ Item {
         property bool playbackEnabled: !AudioHelper.silenceAudio
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
 
         function playAudio() {
@@ -1174,7 +1174,7 @@ Item {
         property bool playbackEnabled: !AudioHelper.silenceAudio
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
 
         function playAudio() {
@@ -1195,7 +1195,7 @@ Item {
         property bool playbackEnabled: !AudioHelper.silenceAudio
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
 
         function playAudio() {

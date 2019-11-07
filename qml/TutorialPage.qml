@@ -541,7 +541,7 @@ Item {
         property bool playbackEnabled: !AudioHelper.silenceAudio
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
 
         function playAudio() {
@@ -562,7 +562,7 @@ Item {
         property bool playbackEnabled: !AudioHelper.silenceAudio
 
         onError: {
-            console.log(errorString)
+            console.error(errorString)
         }
 
         function playAudio() {
