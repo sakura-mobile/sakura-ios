@@ -6,26 +6,27 @@ CONFIG += c++11
 
 DEFINES += QT_DEPRECATED_WARNINGS QT_NO_CAST_FROM_ASCII QT_NO_CAST_TO_ASCII
 
-SOURCES += src/main.cpp \
+SOURCES += \
     src/gifcreator.cpp \
+    src/main.cpp \
     src/uuidcreator.cpp
 
 OBJECTIVE_SOURCES += \
-    src/sharehelper.mm \
     src/admobhelper.mm \
-    src/storehelper.mm \
     src/audiohelper.mm \
-    src/reachabilityhelper.mm
+    src/reachabilityhelper.mm \
+    src/sharehelper.mm \
+    src/storehelper.mm
 
 HEADERS += \
-    src/uuidcreator.h \
+    src/admobhelper.h \
+    src/audiohelper.h \
     src/gif.h \
     src/gifcreator.h \
+    src/reachabilityhelper.h \
     src/sharehelper.h \
-    src/admobhelper.h \
     src/storehelper.h \
-    src/audiohelper.h \
-    src/reachabilityhelper.h
+    src/uuidcreator.h
 
 RESOURCES += \
     qml.qrc \
@@ -33,14 +34,14 @@ RESOURCES += \
     translations.qrc
 
 TRANSLATIONS += \
-    translations/sakura_ru.ts \
     translations/sakura_de.ts \
+    translations/sakura_es.ts \
     translations/sakura_fr.ts \
     translations/sakura_it.ts \
-    translations/sakura_es.ts \
-    translations/sakura_zh.ts \
     translations/sakura_ja.ts \
-    translations/sakura_ko.ts
+    translations/sakura_ko.ts \
+    translations/sakura_ru.ts \
+    translations/sakura_zh.ts
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
