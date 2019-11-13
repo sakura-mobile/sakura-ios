@@ -7,11 +7,11 @@
 #include <QtQuickControls2/QQuickStyle>
 
 #include "admobhelper.h"
+#include "audiohelper.h"
+#include "gifcreator.h"
+#include "reachabilityhelper.h"
 #include "sharehelper.h"
 #include "storehelper.h"
-#include "audiohelper.h"
-#include "reachabilityhelper.h"
-#include "gifcreator.h"
 #include "uuidcreator.h"
 
 int main(int argc, char *argv[])
@@ -26,11 +26,11 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     engine.rootContext()->setContextProperty(QStringLiteral("AdMobHelper"), &AdMobHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), &AudioHelper::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), &GIFCreator::GetInstance());
+    engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), &ReachabilityHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("ShareHelper"), &ShareHelper::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("StoreHelper"), &StoreHelper::GetInstance());
-    engine.rootContext()->setContextProperty(QStringLiteral("AudioHelper"), &AudioHelper::GetInstance());
-    engine.rootContext()->setContextProperty(QStringLiteral("ReachabilityHelper"), &ReachabilityHelper::GetInstance());
-    engine.rootContext()->setContextProperty(QStringLiteral("GIFCreator"), &GIFCreator::GetInstance());
     engine.rootContext()->setContextProperty(QStringLiteral("UuidCreator"), &UuidCreator::GetInstance());
 
     QQuickStyle::setStyle(QStringLiteral("Default"));
