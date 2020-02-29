@@ -1,8 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-#include <cstdlib>
-
 #include <QtCore/QtGlobal>
 #include <QtCore/QtMath>
 #include <QtCore/QDebug>
@@ -51,32 +49,23 @@ static const NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
         BannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
 
-        BannerView.adUnitID           = AdMobHelper::ADMOB_BANNERVIEW_UNIT_ID.toNSString();
-        BannerView.autoloadEnabled    = YES;
-        BannerView.rootViewController = root_view_controller;
-        BannerView.delegate           = self;
-
-        if (@available(iOS 6, *)) {
-            BannerView.translatesAutoresizingMaskIntoConstraints = NO;
-        } else {
-            abort();
-        }
+        BannerView.adUnitID                                  = AdMobHelper::ADMOB_BANNERVIEW_UNIT_ID.toNSString();
+        BannerView.autoloadEnabled                           = YES;
+        BannerView.translatesAutoresizingMaskIntoConstraints = NO;
+        BannerView.rootViewController                        = root_view_controller;
+        BannerView.delegate                                  = self;
 
         [root_view_controller.view addSubview:BannerView];
 
-        if (@available(iOS 11, *)) {
-            UILayoutGuide *guide = root_view_controller.view.safeAreaLayoutGuide;
+        UILayoutGuide *guide = root_view_controller.view.safeAreaLayoutGuide;
 
-            [NSLayoutConstraint activateConstraints:@[
-                [BannerView.centerXAnchor constraintEqualToAnchor:guide.centerXAnchor],
-                [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
-            ]];
+        [NSLayoutConstraint activateConstraints:@[
+            [BannerView.centerXAnchor constraintEqualToAnchor:guide.centerXAnchor],
+            [BannerView.bottomAnchor  constraintEqualToAnchor:guide.bottomAnchor]
+        ]];
 
-            if (AdMobHelperInstance != nullptr) {
-                AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
-            }
-        } else {
-            abort();
+        if (AdMobHelperInstance != nullptr) {
+            AdMobHelperInstance->setBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
         }
     }
 
