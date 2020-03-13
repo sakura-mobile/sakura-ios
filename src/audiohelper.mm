@@ -2,7 +2,8 @@
 
 #include "audiohelper.h"
 
-AudioHelper::AudioHelper(QObject *parent) : QObject(parent)
+AudioHelper::AudioHelper(QObject *parent) :
+    QObject(parent)
 {
     AVAudioSession *session = [AVAudioSession sharedInstance];
 

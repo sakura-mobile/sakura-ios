@@ -11,14 +11,14 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 {
     Q_UNUSED(target)
 
-    (static_cast<ReachabilityHelper *>(info))->analyzeFlags(flags);
+    (static_cast<ReachabilityHelper *>(info))->AnalyzeFlags(flags);
 }
 
-ReachabilityHelper::ReachabilityHelper(QObject *parent) : QObject(parent)
+ReachabilityHelper::ReachabilityHelper(QObject *parent) :
+    QObject          (parent),
+    InternetAvailable(false),
+    InternetConnected(false)
 {
-    InternetAvailable = false;
-    InternetConnected = false;
-
     struct sockaddr_in           address = {};
     SCNetworkReachabilityContext context = {};
 
@@ -92,7 +92,7 @@ bool ReachabilityHelper::internetConnected() const
     return InternetConnected;
 }
 
-void ReachabilityHelper::analyzeFlags(SCNetworkReachabilityFlags flags)
+void ReachabilityHelper::AnalyzeFlags(SCNetworkReachabilityFlags flags)
 {
     bool internet_available, internet_connected;
 

@@ -28,7 +28,7 @@ public:
     bool internetAvailable() const;
     bool internetConnected() const;
 
-    void analyzeFlags(SCNetworkReachabilityFlags flags);
+    void AnalyzeFlags(SCNetworkReachabilityFlags flags);
 
 signals:
     void internetAvailableChanged(bool internetAvailable);
