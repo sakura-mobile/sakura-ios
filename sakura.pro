@@ -6,6 +6,8 @@ CONFIG += c++17 resources_big
 
 DEFINES += QT_DEPRECATED_WARNINGS QT_NO_CAST_FROM_ASCII QT_NO_CAST_TO_ASCII
 
+INCLUDEPATH += 3rdparty
+
 SOURCES += \
     src/contextguard.cpp \
     src/gifcreator.cpp \
@@ -20,10 +22,10 @@ OBJECTIVE_SOURCES += \
     src/storehelper.mm
 
 HEADERS += \
+    3rdparty/gif-h/gif.h \
     src/admobhelper.h \
     src/audiohelper.h \
     src/contextguard.h \
-    src/gif.h \
     src/gifcreator.h \
     src/reachabilityhelper.h \
     src/sharehelper.h \
