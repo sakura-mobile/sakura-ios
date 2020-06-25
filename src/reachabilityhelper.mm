@@ -8,12 +8,14 @@
 #include "reachabilityhelper.h"
 
 namespace {
-    void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info)
-    {
-        Q_UNUSED(target)
 
-        (static_cast<ReachabilityHelper *>(info))->AnalyzeFlags(flags);
-    }
+void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info)
+{
+    Q_UNUSED(target)
+
+    (static_cast<ReachabilityHelper *>(info))->AnalyzeFlags(flags);
+}
+
 }
 
 ReachabilityHelper::ReachabilityHelper(QObject *parent) :
