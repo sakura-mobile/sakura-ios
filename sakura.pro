@@ -64,6 +64,7 @@ ios {
             -framework GoogleAppMeasurement \
             -framework GoogleMobileAds \
             -framework GoogleUtilities \
+            -framework PromisesObjC \
             -framework nanopb \
             -framework Foundation \
             -framework AVFoundation \
