@@ -183,8 +183,11 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
     if (self != nil) {
         ShowPersonalizedAds = NO;
-        Interstitial        = nil;
         AdMobHelperInstance = helper;
+
+        Interstitial = [[GADInterstitial alloc] initWithAdUnitID:AdMobHelper::ADMOB_INTERSTITIAL_UNIT_ID.toNSString()];
+
+        Interstitial.delegate = self;
     }
 
     return self;
@@ -215,14 +218,6 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
 - (void)loadAd
 {
-    Interstitial.delegate = nil;
-
-    [Interstitial release];
-
-    Interstitial = [[GADInterstitial alloc] initWithAdUnitID:AdMobHelper::ADMOB_INTERSTITIAL_UNIT_ID.toNSString()];
-
-    Interstitial.delegate = self;
-
     GADRequest *request = [GADRequest request];
 
     if (!ShowPersonalizedAds) {
@@ -283,9 +278,17 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 {
     Q_UNUSED(ad)
 
+    Interstitial.delegate = nil;
+
+    [Interstitial release];
+
     if (AdMobHelperInstance != nullptr) {
         AdMobHelperInstance->SetInterstitialActive(false);
     }
+
+    Interstitial = [[GADInterstitial alloc] initWithAdUnitID:AdMobHelper::ADMOB_INTERSTITIAL_UNIT_ID.toNSString()];
+
+    Interstitial.delegate = self;
 
     [self performSelector:@selector(loadAd) withObject:nil afterDelay:0.0];
 }
