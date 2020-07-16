@@ -67,6 +67,9 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
 - (void)dealloc
 {
+    BannerView.rootViewController = nil;
+    BannerView.delegate           = nil;
+
     [BannerView removeFromSuperview];
     [BannerView release];
 
@@ -189,6 +192,8 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
 - (void)dealloc
 {
+    Interstitial.delegate = nil;
+
     [Interstitial release];
 
     [super dealloc];
@@ -210,6 +215,8 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
 - (void)loadAd
 {
+    Interstitial.delegate = nil;
+
     [Interstitial release];
 
     Interstitial = [[GADInterstitial alloc] initWithAdUnitID:AdMobHelper::ADMOB_INTERSTITIAL_UNIT_ID.toNSString()];
