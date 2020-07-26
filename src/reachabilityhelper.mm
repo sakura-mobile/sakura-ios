@@ -2,6 +2,7 @@
 
 #include <netinet/in.h>
 
+#include <QtCore/QtGlobal>
 #include <QtCore/QString>
 #include <QtCore/QDebug>
 
