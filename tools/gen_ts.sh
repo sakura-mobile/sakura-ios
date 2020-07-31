@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PATH=$PATH:~/Qt/5.12.9/ios/bin
+PATH="$PATH:~/Qt/5.12.9/ios/bin"
 
 lupdate -locations absolute ../sakura.pro -ts ../translations/sakura_de.src.ts
 lupdate -locations absolute ../qml        -ts ../translations/sakura_de.qml.ts
