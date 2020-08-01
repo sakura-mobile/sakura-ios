@@ -15,7 +15,7 @@ const QString AdMobHelper::ADMOB_TEST_DEVICE_ID      (QLatin1String(""));
 
 namespace {
 
-constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
+constexpr NSTimeInterval AD_RELOAD_DELAY = 60.0;
 
 }
 
@@ -129,6 +129,8 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
     if (AdMobHelperInstance != nullptr) {
         AdMobHelperInstance->SetBannerViewHeight(qFloor(BannerView.frame.size.height + root_view_controller.view.safeAreaInsets.bottom));
     }
+
+    [self performSelector:@selector(loadAd) withObject:nil afterDelay:AD_RELOAD_DELAY];
 }
 
 - (void)adViewWillPresentScreen:(GADBannerView *)adView
@@ -152,7 +154,7 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
     qWarning() << QString::fromNSString(error.localizedDescription);
 
-    [self performSelector:@selector(loadAd) withObject:nil afterDelay:AD_RELOAD_ON_FAILURE_DELAY];
+    [self performSelector:@selector(loadAd) withObject:nil afterDelay:AD_RELOAD_DELAY];
 }
 
 @end
@@ -304,7 +306,7 @@ constexpr NSTimeInterval AD_RELOAD_ON_FAILURE_DELAY = 60.0;
 
     qWarning() << QString::fromNSString(error.localizedDescription);
 
-    [self performSelector:@selector(loadAd) withObject:nil afterDelay:AD_RELOAD_ON_FAILURE_DELAY];
+    [self performSelector:@selector(loadAd) withObject:nil afterDelay:AD_RELOAD_DELAY];
 }
 
 @end
