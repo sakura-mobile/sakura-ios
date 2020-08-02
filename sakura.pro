@@ -15,13 +15,6 @@ SOURCES += \
     src/main.cpp \
     src/uuidcreator.cpp
 
-OBJECTIVE_SOURCES += \
-    src/admobhelper.mm \
-    src/audiohelper.mm \
-    src/reachabilityhelper.mm \
-    src/sharehelper.mm \
-    src/storehelper.mm
-
 HEADERS += \
     3rdparty/gif-h/gif.h \
     src/admobhelper.h \
@@ -63,6 +56,13 @@ ios {
 
     INCLUDEPATH += ios/frameworks
     DEPENDPATH += ios/frameworks
+
+    OBJECTIVE_SOURCES += \
+        src/admobhelper.mm \
+        src/audiohelper.mm \
+        src/reachabilityhelper.mm \
+        src/sharehelper.mm \
+        src/storehelper.mm
 
     LIBS += -F $$PWD/ios/frameworks \
             -framework GoogleAppMeasurement \
