@@ -10,7 +10,6 @@ INCLUDEPATH += \
     3rdparty/gif-h
 
 SOURCES += \
-    src/contextguard.cpp \
     src/gifcreator.cpp \
     src/main.cpp \
     src/uuidcreator.cpp
@@ -19,7 +18,6 @@ HEADERS += \
     3rdparty/gif-h/gif.h \
     src/admobhelper.h \
     src/audiohelper.h \
-    src/contextguard.h \
     src/gifcreator.h \
     src/reachabilityhelper.h \
     src/sharehelper.h \
