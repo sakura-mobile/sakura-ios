@@ -12,20 +12,12 @@ ApplicationWindow {
     property bool appInForeground: Qt.application.active
     property bool disableAds:      false
 
-    property string adMobConsent:  ""
-
     onAppInForegroundChanged: {
         AudioHelper.refresh();
     }
 
     onDisableAdsChanged: {
         setSetting("DisableAds", disableAds ? "true" : "false");
-
-        updateFeatures();
-    }
-
-    onAdMobConsentChanged: {
-        setSetting("AdMobConsent", adMobConsent);
 
         updateFeatures();
     }
@@ -68,9 +60,7 @@ ApplicationWindow {
     }
 
     function updateFeatures() {
-        if (!disableAds && (adMobConsent === "PERSONALIZED" || adMobConsent === "NON_PERSONALIZED")) {
-            AdMobHelper.setPersonalization(adMobConsent === "PERSONALIZED");
-
+        if (!disableAds) {
             AdMobHelper.initAds();
         }
 
@@ -136,28 +126,11 @@ ApplicationWindow {
         enabled:      mainStackView.busy
     }
 
-    AdMobConsentDialog {
-        id: adMobConsentDialog
-
-        onPersonalizedAdsSelected: {
-            mainWindow.adMobConsent = "PERSONALIZED";
-        }
-
-        onNonPersonalizedAdsSelected: {
-            mainWindow.adMobConsent = "NON_PERSONALIZED";
-        }
-    }
-
     Component.onCompleted: {
-        disableAds   = (getSetting("DisableAds",   "false") === "true");
-        adMobConsent =  getSetting("AdMobConsent", "");
+        disableAds = (getSetting("DisableAds", "false") === "true");
 
         updateFeatures();
 
         mainStackView.push(mainPage);
-
-        if (!disableAds && adMobConsent !== "PERSONALIZED" && adMobConsent !== "NON_PERSONALIZED") {
-            adMobConsentDialog.open();
-        }
     }
 }
