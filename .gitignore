@@ -1,0 +1,15 @@
+.DS_Store
+/.qmake.stash
+/Makefile
+/moc_*.cpp
+/qml_*.cpp
+/qmlcache_loader.cpp
+/qrc_*.cpp
+/sakura.pro.user
+/sakura_plugin_import.cpp
+/sakura_qml_plugin_import.cpp
+/.xcode/
+/Debug-iphoneos/
+/Release-iphoneos/
+/sakura/Images.xcassets/
+/sakura.xcodeproj/
