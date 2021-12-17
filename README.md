@@ -13,6 +13,7 @@ additional information.
 ---
 
 [![Build Status](https://github.com/sakura-mobile/sakura-ios/workflows/Build/badge.svg)](https://github.com/sakura-mobile/sakura-ios/actions?query=workflow%3A%22Build%22)
+[![Xcode Analysis Status](https://github.com/sakura-mobile/sakura-ios/workflows/Xcode%20Analysis/badge.svg)](https://github.com/sakura-mobile/sakura-ios/actions?query=workflow%3A%22Xcode%20Analysis%22)
 [![SonarCloud Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sakura-mobile_sakura-ios&metric=alert_status)](https://sonarcloud.io/dashboard?id=sakura-mobile_sakura-ios)
 
 [![SonarCloud Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=sakura-mobile_sakura-ios&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=sakura-mobile_sakura-ios)
